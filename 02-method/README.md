@@ -1,3 +1,11 @@
 # Method
 
-> Here: upload a .md file that describes your research question, a motivation to explore it with references to literature/ projects as well as the methodology you chose, as well as clarifications about it (number of interviews, places you’ll observe, etc.).
+Focusing in on a large community with more readily available documentation and a smaller one, such as Tidal Cycles.
+
+Contrast
+
+Combination of qualitative and quantiative methodologies
+
+Interview, Interview guide, Interview plan
+
+

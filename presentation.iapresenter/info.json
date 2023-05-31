@@ -1,0 +1,14 @@
+{
+  "creatorIdentifier" : "net.ia.presenter",
+  "net.ia.presenter" : {
+    "appearance" : "light",
+    "footerleading" : "230504 Thesis",
+    "footermiddle" : "Tibor Udvari",
+    "footertrailing" : "slideNumber",
+    "preset" : "Default",
+    "template" : "zurich"
+  },
+  "transient" : false,
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
+}
