@@ -1,0 +1,998 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - multithreading</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Tools_action_display_num_1045182290.html#Examples" class="nav">Topics & Contributions
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Tools.html" class="nav">Tools</a> </b>(Moderator: REAS)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    multithreading</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_Tools_action_display_num_1080842851.html">Previous topic</a> | <a href="board_Tools_action_display_num_1082055374.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/thread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: multithreading</b> &nbsp;(Read 3033 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Martin</b><br><BR><a href="board_Tools_action_icqpager_UIN_122417302.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=122417302&img=5" alt="122417302" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=122417302" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="122417302" BORDER=0></a><a href="http://edit.yahoo.com/config/send_webmesg.target=martingomez_lists" target="_blank"><img src="public_html/YaBBImages/yim.gif" alt="martingomez_lists" border="0"></a><img SRC="http://opi.yahoo.com/online?u=martingomez_lists&m=g&t=0" BORDER=0 alt=""><a href="aim:goim?screenname=mg1ph&message=Hi.+Are+you+there"><img src="public_html/YaBBImages/aim.gif" alt="mg1ph" border="0"></a>
+             <a href="http://decode.ateneo.edu/martin/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>multithreading</b><BR>
+                &#171; <B> on:</B> Feb 10<sup>th</sup>, 2003, 8:55pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            <b>Multithreading Example</b> <br> &nbsp;<br> Multithreading makes running several processes at the same time possible. Being able to do this, a visual element does not have to wait for another to finish its course. Thus, this concept would open avenues to dynamic form in parallel composition. <br> &nbsp;<br> <a href="http://studio.instituteofmedia.com/experiments/multithread/" target="_blank">http://studio.instituteofmedia.com/experiments/multithread/</a> <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Glen Murphy</b><br><BR>
+             <a href="http://glenmurphy.com/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: multithreading</b><BR>
+                &#171; <B>Reply #1 on:</B> Feb 11<sup>th</sup>, 2003, 4:14am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Handy code to have. Cheers! 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>REAS</b><br><i></i><BR><BR>
+     <a href="http://reas.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: multithreading</b><BR>
+                &#171; <B>Reply #2 on:</B> Feb 12<sup>th</sup>, 2003, 10:09pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Martin, <br> &nbsp;<br> Could you please elaborate on the ramifications of your threading code... <br> &nbsp;<br> + Casey 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Martin</b><br><BR><a href="board_Tools_action_icqpager_UIN_122417302.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=122417302&img=5" alt="122417302" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=122417302" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="122417302" BORDER=0></a><a href="http://edit.yahoo.com/config/send_webmesg.target=martingomez_lists" target="_blank"><img src="public_html/YaBBImages/yim.gif" alt="martingomez_lists" border="0"></a><img SRC="http://opi.yahoo.com/online?u=martingomez_lists&m=g&t=0" BORDER=0 alt=""><a href="aim:goim?screenname=mg1ph&message=Hi.+Are+you+there"><img src="public_html/YaBBImages/aim.gif" alt="mg1ph" border="0"></a>
+             <a href="http://decode.ateneo.edu/martin/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: multithreading</b><BR>
+                &#171; <B>Reply #3 on:</B> Feb 13<sup>th</sup>, 2003, 8:07am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            hi casey, big word (ramifications) <img border=0 src="public_html/YaBBImages/smiley.gif"> ... what do you mean? i mean, what do you mean specifically? (put comments on the code? and/or, further explain the description? ... ) cheers! best, martin 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>REAS</b><br><i></i><BR><BR>
+     <a href="http://reas.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: multithreading</b><BR>
+                &#171; <B>Reply #4 on:</B> Feb 13<sup>th</sup>, 2003, 11:45am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            what's it good for? 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="5"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Martin</b><br><BR><a href="board_Tools_action_icqpager_UIN_122417302.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=122417302&img=5" alt="122417302" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=122417302" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="122417302" BORDER=0></a><a href="http://edit.yahoo.com/config/send_webmesg.target=martingomez_lists" target="_blank"><img src="public_html/YaBBImages/yim.gif" alt="martingomez_lists" border="0"></a><img SRC="http://opi.yahoo.com/online?u=martingomez_lists&m=g&t=0" BORDER=0 alt=""><a href="aim:goim?screenname=mg1ph&message=Hi.+Are+you+there"><img src="public_html/YaBBImages/aim.gif" alt="mg1ph" border="0"></a>
+             <a href="http://decode.ateneo.edu/martin/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: multithreading</b><BR>
+                &#171; <B>Reply #5 on:</B> Feb 13<sup>th</sup>, 2003, 6:59pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            short answer: a whole lot of things. specifically the example code provided are the ff: <br> - able to do an infinite loop even if draw() is used, &nbsp;<br> &nbsp; without using loop() ... and show the output in &nbsp;<br> &nbsp; realtime. <br> - draw something once while draw other elements in a &nbsp;<br> &nbsp; loop of sorts <br> - show how multithreading can be done in proce55ing <br> - show what multithreading is (quite blurry i must &nbsp;<br> &nbsp; admit) and how things can run in &quot;parallel&quot; <br> - good for posting in the 'learning' section of this &nbsp;<br> &nbsp; site <img border=0 src="public_html/YaBBImages/tongue.gif"> (or, maybe i should come up with something &nbsp;<br> &nbsp; nicer) <br> &nbsp;<br> long answer to follow. look to this weekend. <img border=0 src="public_html/YaBBImages/smiley.gif"> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Feb 13<sup>th</sup>, 2003, 7:03pm by Martin</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="6"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>martin_publicterm</b><br>Guest
+            <BR><img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: multithreading</b><BR>
+                &#171; <B>Reply #6 on:</B> Feb 14<sup>th</sup>, 2003, 4:04am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+  
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            wondering, do the images show up on your computers? i'm using a public terminal right now and it's either they don't show or the connection is really bad. however, when i load it at home, they show up good. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="7"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>martin_publicterm</b><br>Guest
+            <BR><img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: multithreading</b><BR>
+                &#171; <B>Reply #7 on:</B> Feb 14<sup>th</sup>, 2003, 4:15am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+  
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            ah... it's with the java vm. hhmm... i installed jdk1.4.0 on this terminal and it's now loading fine. tsk... 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="8"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Martin</b><br><BR><a href="board_Tools_action_icqpager_UIN_122417302.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=122417302&img=5" alt="122417302" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=122417302" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="122417302" BORDER=0></a><a href="http://edit.yahoo.com/config/send_webmesg.target=martingomez_lists" target="_blank"><img src="public_html/YaBBImages/yim.gif" alt="martingomez_lists" border="0"></a><img SRC="http://opi.yahoo.com/online?u=martingomez_lists&m=g&t=0" BORDER=0 alt=""><a href="aim:goim?screenname=mg1ph&message=Hi.+Are+you+there"><img src="public_html/YaBBImages/aim.gif" alt="mg1ph" border="0"></a>
+             <a href="http://decode.ateneo.edu/martin/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: multithreading</b><BR>
+                &#171; <B>Reply #8 on:</B> Feb 17<sup>th</sup>, 2003, 4:41pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            <B>on Feb 13<sup>th</sup>, 2003, 6:59pm, <a href="board_Tools_action_display_num_1045182290.html#5">Martin  wrote</a>:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td width="100%"><table cellpadding="2" cellspacing="0" class="quote" width="100%"><tr><td width="100%"><font face="Arial,Helvetica" class="quote" size="1">long answer to follow. look to this weekend. <img border=0 src="public_html/YaBBImages/smiley.gif"> </font></td></tr></table></td></tr></table> <br> &nbsp;<br> there will be a slight delay. been stuck with work in the real world. thank you for your patience. <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="9"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Martin</b><br><BR><a href="board_Tools_action_icqpager_UIN_122417302.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=122417302&img=5" alt="122417302" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=122417302" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="122417302" BORDER=0></a><a href="http://edit.yahoo.com/config/send_webmesg.target=martingomez_lists" target="_blank"><img src="public_html/YaBBImages/yim.gif" alt="martingomez_lists" border="0"></a><img SRC="http://opi.yahoo.com/online?u=martingomez_lists&m=g&t=0" BORDER=0 alt=""><a href="aim:goim?screenname=mg1ph&message=Hi.+Are+you+there"><img src="public_html/YaBBImages/aim.gif" alt="mg1ph" border="0"></a>
+             <a href="http://decode.ateneo.edu/martin/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: multithreading</b><BR>
+                &#171; <B>Reply #9 on:</B> Feb 23<sup>rd</sup>, 2003, 1:58pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            One of the good things about multithreading is if you want to speak and listen at the same time, it offers you that possibility. <br> &nbsp;<br> I've posted an elaboration at <a href="http://proce55ing.net/discourse/yabb/board_Tools_action_display_num_1046005023.html" target="_blank">http://proce55ing.net/discourse/yabb/board_Tools_action_display__num_1046005023.html</a> <br> &nbsp;<br> I don't know if it should fall under &quot;Tools&quot; or &quot;Beyond Categories&quot;... I just placed it here. <img border=0 src="public_html/YaBBImages/smiley.gif"> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Feb 23<sup>rd</sup>, 2003, 2:00pm by Martin</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="10"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>mflux</b><br><BR><a href="aim:goim?screenname=fluxhavoc&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="fluxhavoc" border="0"></a>
+     <a href="http://www.design.ucla.edu/~mflux" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: multithreading</b><BR>
+                &#171; <B>Reply #10 on:</B> Oct 29<sup>th</sup>, 2003, 12:16pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I'm sorry but can you elaborate more on this? <br> &nbsp;<br> Some questions: <br> &nbsp;<br> -Just how is it running without loop()? <br> -The concept of things running in parallel is alien to me, please explain how... <br> -How do they know when to update themselves? What causes this? <br> -I'm also having trouble reading how your code exactly works... <br> &nbsp;<br> It seems to me, the computer only runs code one line at a time. In order to simulate real-time dynamic things you still need to go through a list and update/redraw each of them one by one. <br> &nbsp;<br> What benefits do you get by not doing so? Is it faster? The only advantage I can see for this is for better cellular automata where the order in which cells are simulated really matter. Does this negate that shortcoming? 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="11"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>benelek</b><br><BR><a href="board_Tools_action_icqpager_UIN_3516098.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=3516098&img=5" alt="3516098" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=3516098" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="3516098" BORDER=0></a>
+             <a href="http://www.benelek.cjb.net" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: multithreading</b><BR>
+                &#171; <B>Reply #11 on:</B> Oct 30<sup>th</sup>, 2003, 4:09pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            in a basic sense, loop() as you'd have been using it is an example of a single thread. most of the curtom threading stuff which you see in Martin's example is done by p5 or by java itself behind the scenes. <br> &nbsp;<br> the way a thread accomplishes the loop or does an update, is by setting a delay() after which it restarts its infinite loop (occuring within the run() method of a thread class). this might take the following form: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">while&#40;true&#41; { <br> &nbsp; &#47;&#47;do something&#46; <br> &nbsp; rect&#40;5,5,10,10&#41;; <br> &nbsp; &#47;&#47;wait 10ms before repeating&#46; <br> &nbsp; delay&#40;10&#41;; <br> } </font></td></tr></table></td></tr></table> <br> &nbsp;<br> technically, things do not run in parallel on computers. it's easier to think of it as two pieces of software running at the same time: they do not need to wait for each other to complete tasks, they can run tasks at different speeds, and are essentially independant of each other. but deep down in the techie world of specifics, no particular action of the computer is done precisely at the same time as something else. <br> &nbsp;<br> this is what leads to performance increases - not having to wait for overall processes to be finished before moving onto others, and being able to work when something else has to wait. For instance, when you set the framerate of your applet using framrate(), you're telling p5 to pause for a certain period of time in between each run of loop(). if you're running something else in &quot;parallel&quot;, it can be working during that pause period. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="12"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>arkadyan</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: multithreading</b><BR>
+                &#171; <B>Reply #12 on:</B> Apr 15<sup>th</sup>, 2004, 4:49am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            martin, <br> &nbsp;<br> the instituteofmedia domain seems to have expired, so it's no longer possible to see examples there. It sounds like there are some very useful things that were there - it would be nice to see them continue to exist somewhere. <br> &nbsp;<br> cheers <br> matt 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="13"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>fphunct</b><br><BR>
+     <a href="http://tyrannasaur.us" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: multithreading</b><BR>
+                &#171; <B>Reply #13 on:</B> Apr 20<sup>th</sup>, 2004, 6:06pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I have used multithreading in P5 to play two audio files at the same time. &nbsp;Currently, I'm not a aware of how this could be implemented with a singlethreaded application because the code generally looks like this: <br> &nbsp;<br> ** <br> play(audio1); <br> play(audio2); <br> ** <br> &nbsp;<br> Unless you have an EXTREMELY fast machine, those two sounds won't play at the same time because &nbsp;it plays audio1 before audio2. &nbsp;With multithreading, you could have one thread handling audio1 and another thread running audio2. &nbsp;This way, audio1 is executing at the same time as audio2. <br> &nbsp;<br> An example of an implementation of multithreading could be found in the following link: <br> &nbsp;<br> <a href="http://tyrannasaur.us/experiments/beastbox/" target="_blank">http://tyrannasaur.us/experiments/beastbox/</a> <br> &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_Tools_action_display_num_1045182290.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option value="?board=Programs">&nbsp; - Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option selected value="?board=Tools">=> Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_Tools_action_display_num_1080842851.html">Previous topic</a> | <a href="board_Tools_action_display_num_1082055374.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

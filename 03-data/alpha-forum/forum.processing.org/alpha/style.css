@@ -1,0 +1,48 @@
+
+/* General layout */
+A:link        { text-decoration: none; font-weight: normal; color: #CC6600; }
+A:visited     { text-decoration: none; color: #CC6600; font-weight: normal; }
+A:hover       { text-decoration: underline; color: #777744; }
+BODY          { font-family: Verdana, Helvetica, Arial; 
+                font-size:11px; margin-top: 0; margin-left: 0; margin-right: 0; padding-top: 0; padding-left: 0; 
+                padding-right: 0; }
+text          { font-family: Verdana, Helvetica, Arial; font-size: 11px; }
+TD            { font-family: Verdana, Helvetica, Arial; color: #000000; font-size: 11px; }
+input         { background-color: #FFFFFF; font-family: Verdana, Helvetica, Arial; font-size: 11px; color: #000000; } #9
+textarea      { background-color: #FFFFFF; font-family: Verdana, Helvetica, Arial; font-size: 11px; color: #000000; } #9
+select        { background-color: #FFFFFF; font-family: Verdana, Helvetica, Arial; font-size: 11px; color: #000000; } #7
+.copyright    { font-family: Verdana, Helvetica, Arial; font-size: 11px; }
+
+/* YaBB navigation links */
+.nav          { font-size: 11px; text-decoration: none; color: #333333; }
+.nav:link     { font-size: 11px; text-decoration: none; color: #333333; }
+.nav:visited  { font-size: 11px; text-decoration: none; color: #333333; }
+.nav:hover    { font-size: 11px; text-decoration: none; color: #CC9900; font-weight: normal; text-decoration: underline; }
+
+/* YaBB alternating bgcolors */
+.windowbg     { background-color: #D7D7AF; font-size: 11px; font-family: Verdana; color: #000000; }
+.windowbg2    { background-color: #FFFFFF; font-size: 11px; font-family: Verdana; color: #000000; }
+.windowbg3    { background-color: #D7D7AF; font-size: 11px; font-family: Verdana; color: #000000; }
+
+/* Misc./title/category colors */
+.hr           { color: #996600; }
+.titlebg      { background-color: #999966; color: #FFFFFF; } 
+.text1        { font-style: normal; font-weight: normal; font-size: 11px; color: #FFFFFF; }
+.catbg        { background-color: #B0B07E; color: #FFFFFF; font-weight: normal; font-size: 11px; }
+.bordercolor  { background-color: #FFFFFF; }
+
+/* Image fonts */
+.imgbg        { font-style: normal; font-size: 10px; color: #CC6600; font-weight: bold; }
+.imgcatbg     { font-style: normal; font-size: 11px; color: #FFFFFF; font-weight: bold; }
+.imgtitlebg   { font-style: normal; font-size: 11px; color: #FFFFFF; font-weight: bold; }
+.imgwindowbg  { font-style: normal; font-size: 11px; color: #CC6600; font-weight: bold; }
+.imgmenu      { font-style: normal; font-size: 11px; color: #FFFFFF; font-weight: bold; }
+
+/* Post quote/code colors */
+.quote        { font-size: 11px; font-family: Verdana, Helvetica, Arial; color: #000000; background-color: #E2E2BE; }
+.code         { font-size: 11px; font-family: Courier New; color: #000000; background-color: #E2E2BE; }
+
+#menu_right a
+{
+	color: white;
+}

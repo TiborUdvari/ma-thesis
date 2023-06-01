@@ -1,0 +1,770 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - LiveOutputEvent - manual sample looping</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Contributions_Audiovisual_action_display_num_1084432501.html#Examples" class="nav">Topics & Contributions
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Contributions_Audiovisual.html" class="nav">Sound</a> </b>(Moderators: pitaru, REAS)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    LiveOutputEvent - manual sample looping</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_Contributions_Audiovisual_action_display_num_1086282601.html">Previous topic</a> | <a href="board_Contributions_Audiovisual_action_display_num_1084807925.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/thread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: LiveOutputEvent - manual sample looping</b> &nbsp;(Read 530 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>js</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>LiveOutputEvent - manual sample looping</b><BR>
+                &#171; <B> on:</B> May 13<sup>th</sup>, 2004, 9:15am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Hello. I'm looking into how to use LiveOutputEvent in Sonia for playing back samples more flexibly instead of using Sample objects, but there's something that doesn't work properly. &nbsp;<br> &nbsp;<br> In this case, I have a mono 16-bit 44.1kHz sample (&quot;adv2_mono.aiff&quot;) that I want to loop, using a variable, loopPos, which is the number of the current frame. For some reason, the sample skips, jumps and restarts very often. Can somebody help me, please? <br> &nbsp;<br> &nbsp;<br> &nbsp;<br> int streamSize = 8192; <br> Sample mySample; <br> float[] sampleData; <br> int sampleFrames; <br> int loopPos; <br> &nbsp;<br> void setup(){ <br> &nbsp; // setup sample <br> &nbsp; size(200,200); <br> &nbsp; Sonia.start(this,44100); <br> &nbsp; &nbsp;<br> &nbsp; mySample = new Sample(&quot;adv2_mono.aif&quot;); &nbsp; <br> &nbsp; sampleFrames = mySample.getNumFrames(); <br> &nbsp; sampleData = new float[sampleFrames]; <br> &nbsp; mySample.read(sampleData); <br> &nbsp; loopPos = 0; <br> &nbsp; &nbsp;<br> &nbsp; LiveOutput.start(streamSize,streamSize*2); <br> &nbsp; LiveOutput.startStream(); <br> } <br> &nbsp; &nbsp;<br> void loop(){ <br> } <br> &nbsp;<br> void liveOutputEvent(){ <br> &nbsp; for(int i=0;i&lt;LiveOutput.data.length;i++) { <br> &nbsp; &nbsp; LiveOutput.data[i] = sampleData[loopPos]; <br> &nbsp; &nbsp; loopPos++; <br> &nbsp; &nbsp; // end reached, start again from beginning of sample (loop) <br> &nbsp; &nbsp; if (loopPos == sampleFrames) loopPos = 0; <br> &nbsp; } <br> } <br> &nbsp;<br> public void stop(){ <br> &nbsp; Sonia.stop(); <br> &nbsp; super.stop(); <br> } <br> &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>pitaru</b><br><i></i><BR><BR>
+             <a href="http://pitaru.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: LiveOutputEvent - manual sample looping</b><BR>
+                &#171; <B>Reply #1 on:</B> May 13<sup>th</sup>, 2004, 3:12pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Hmm.. your code seems to work fine with an aiff sample i tried. &nbsp;<br> &nbsp;<br> I notice that you are hardcoding the stream size with - &nbsp;<br> &nbsp; int streamSize = 8192; &nbsp;<br> &nbsp;<br> Are you sure this is the size of your sample. To be sure, you could add this in the setup .. <br> &nbsp;<br> &nbsp; streamSize = sampleFrames; <br> &nbsp;<br> Also, which system and Processing/Sonia version are you using? <br> &nbsp;<br> amit <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>js</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: LiveOutputEvent - manual sample looping</b><BR>
+                &#171; <B>Reply #2 on:</B> May 13<sup>th</sup>, 2004, 5:56pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I'm using Processing V68 and Sonia V2.6_c9. No, the streamSize is just arbitrarily set (2^13), and my sample is something like 18032 frames, but I want to be able to handle samples of any length, independantly of the streamSize. I thought that the global loopPos variable could be used for this, since the feeding of a sample to the stream might take several calls to liveOutputEvent, but somehow it doesn't. <br> &nbsp;<br> Thanks for a very nice library! 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>pitaru</b><br><i></i><BR><BR>
+             <a href="http://pitaru.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: LiveOutputEvent - manual sample looping</b><BR>
+                &#171; <B>Reply #3 on:</B> May 13<sup>th</sup>, 2004, 9:57pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Ahh... i smell a bug somewhere. I need to take a look. <br> &nbsp;<br> btw - there's a newer version of Sonia available, but it has the same problem. <br> &nbsp;<br> this will be fixed in the next version! <br> sorry! <br> &nbsp;<br> amit 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>pitaru</b><br><i></i><BR><BR>
+             <a href="http://pitaru.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: LiveOutputEvent - manual sample looping</b><BR>
+                &#171; <B>Reply #4 on:</B> May 15<sup>th</sup>, 2004, 12:11am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            OK, can you please try out this file with your program? <br> &nbsp;<br> <a href="http://pitaru.com/sonia/download/beta/sonia_v2_8_beta.jar" target="_blank">http://pitaru.com/sonia/download/beta/sonia_v2_8_beta.jar</a> <br> &nbsp;<br> Simply replace this file with the current sonia_v2_7.jar file in the code folder. <br> &nbsp;<br> if it works, i'l package it into the next sonia version. <br> &nbsp;<br> amit <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="5"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>js</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: LiveOutputEvent - manual sample looping</b><BR>
+                &#171; <B>Reply #5 on:</B> May 18<sup>th</sup>, 2004, 9:20am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Thanks Amit! The looping works a bit better now, but there are still pops in the beginning of the loop. However, I tried several different options for liveOutputEvent(), and strangely enough, this very similar piece of code works: <br> &nbsp;<br> void liveOutputEvent(){ &nbsp;<br> &nbsp; for(int i=0;i&lt;LiveOutput.data.length;i++) { &nbsp;<br> &nbsp; &nbsp; LiveOutput.data[i] = sampleData[loopPos]; &nbsp; <br> &nbsp; &nbsp; // end reached, start again from beginning of sample (loop) &nbsp;<br> &nbsp; &nbsp; if (loopPos++ == sampleFrames) loopPos = 0; &nbsp;<br> &nbsp; } &nbsp;<br> } &nbsp;<br> &nbsp;<br> What's making it more confusing is that the reference manual for processing describes &quot;++&quot; in the wrong way. Usually (or, at least in C++) the operation is done at the end of the whole command, so that <br> &nbsp;<br> if (loopPos++ == sampleFrames) { } <br> &nbsp;<br> would first compare loopPos to sampleFrames, and increase its value by 1 afterwards. This can be demonstrated by just running the example for the &quot;++&quot; command (it doesn't work as described). &nbsp;<br> &nbsp;<br> Anyway, this doesn't explain why this latter piece of code works better. Any suggestions? <br> &nbsp;<br> /johan 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="6"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>pitaru</b><br><i></i><BR><BR>
+             <a href="http://pitaru.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: LiveOutputEvent - manual sample looping</b><BR>
+                &#171; <B>Reply #6 on:</B> May 18<sup>th</sup>, 2004, 2:59pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Johan, i'm not sure why loopPos++ works better for you. On my machine i get the predictable missing-frame pop sound. Which system are you working with. &nbsp;<br> &nbsp;<br> &gt; but there are still pops in the beginning of the loop <br> &nbsp;<br> Do you mean at the beginning of the LiveOutput loop, or at the beginning of the Sample's loop? I've tried your code with a simple sine-wave sample (<a href="http://pitaru.com/sonia/download/beta/sine.wav" target="_blank">http://pitaru.com/sonia/download/beta/sine.wav</a>) and it sounds squeaky clean. It's important that the sample itself loops cleanly. <br> &nbsp;<br> &nbsp;<br> &nbsp;<br> Here's my code: &nbsp;<br> &nbsp;<br> &nbsp;<br> &nbsp;<br> int streamSize; <br> Sample mySample; <br> short[] sampleData; <br> float[] fsampleData; <br> int sampleFrames; <br> int loopPos; <br> &nbsp;<br> void setup(){ <br> &nbsp; // setup sample <br> &nbsp; size(200,200); <br> &nbsp; Sonia.start(this,11050); <br> &nbsp;<br> &nbsp; mySample = new Sample(&quot;sine.aiff&quot;); <br> &nbsp; sampleFrames = mySample.getNumFrames(); <br> &nbsp; streamSize = 256; <br> &nbsp;<br> &nbsp; sampleData = new short[sampleFrames]; <br> &nbsp; fsampleData = new float[sampleFrames]; <br> &nbsp;<br> &nbsp; mySample.read(sampleData); <br> &nbsp; mySample.read(fsampleData); <br> &nbsp; loopPos = 0; <br> &nbsp; LiveOutput.start(streamSize, streamSize*2); <br> &nbsp; LiveOutput.startStream(); <br> &nbsp;<br> } <br> &nbsp;<br> void loop(){ } <br> &nbsp;<br> void liveOutputEvent(){ <br> &nbsp;<br> &nbsp; for(int i=0;i&lt;=streamSize;i++) { <br> &nbsp;   float amp = 0.5; <br> &nbsp;   LiveOutput.data[i] = fsampleData[loopPos] * amp; <br> &nbsp;   loopPos++; <br> &nbsp;   // end reached, start again from beginning of sample (loop) <br> &nbsp;   if (loopPos == sampleFrames){ <br> &nbsp;     loopPos = 0; <br> &nbsp;   } <br> &nbsp;<br> &nbsp; } <br> } <br> &nbsp;<br> public void stop(){ <br> &nbsp; Sonia.stop(); <br> &nbsp; super.stop(); <br> } <br> &nbsp;<br> &nbsp;<br> &nbsp;<br> amit 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: May 18<sup>th</sup>, 2004, 3:00pm by pitaru</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="7"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>js</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: LiveOutputEvent - manual sample looping</b><BR>
+                &#171; <B>Reply #7 on:</B> May 19<sup>th</sup>, 2004, 9:16am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Thanks for the code. I tried it, and it works perfect with an increased streamSize of 1024. This is probably due to that I'm working on an old IBM ThinkPad 600 series with a staggering 64Mb of RAM + Win200. &nbsp;<br> &nbsp;<br> This whole thing is very strange, though. A summary: If I use my old code from the first post, it seems as if I get clicks in the beginning of each LiveOutput loop. I edited the sample so that it runs perfectly smooth, but it makes no difference. Also, the pops seem to coincide with reading from the harddrive while the program is running. Could it be a virtual memory error? But on the other hand, if I change the code so that it reads past the sample, like this: <br> &nbsp;<br> &nbsp;<br> void liveOutputEvent(){ &nbsp; <br> &nbsp; for(int i=0;i&lt;LiveOutput.data.length;i++) { &nbsp; <br> &nbsp; &nbsp; LiveOutput.data[i] = sampleData[loopPos]; &nbsp; &nbsp;<br> &nbsp; &nbsp; // end reached, start again from beginning of sample (loop) &nbsp; <br> &nbsp; &nbsp; if (loopPos++ == sampleFrames) loopPos = 0; &nbsp; <br> &nbsp; } &nbsp; <br> } &nbsp;<br> &nbsp;<br> &nbsp;<br> it works fine, but not if I do this: <br> &nbsp;<br> &nbsp;<br> void liveOutputEvent(){ &nbsp; <br> &nbsp; for(int i=0;i&lt;LiveOutput.data.length;i++) { &nbsp; <br> &nbsp; &nbsp; LiveOutput.data[i] = sampleData[loopPos]; &nbsp; &nbsp;<br> &nbsp; &nbsp; loopPos++; <br> &nbsp; &nbsp; // end reached, start again from beginning of sample (loop) &nbsp; <br> &nbsp; &nbsp; if (loopPos == (sampleFrames+1)) loopPos = 0; &nbsp; <br> &nbsp; } &nbsp; <br> } &nbsp;<br> &nbsp;<br> &nbsp;<br> To add to the confusion, reading past the sample only works with my samples, not with &quot;sine.wav&quot;. I'll try experimenting more tonight - it could be a problem with my soundfile-editor. Thanks for all your kind help this far! <br> &nbsp;<br> /johan <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="8"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>mattgilbert</b><br><BR><a href="aim:goim?screenname=tangramkid&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="tangramkid" border="0"></a>
+             <a href="http://www.mattgilbert.net/soundStrandGenerator/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: LiveOutputEvent - manual sample looping</b><BR>
+                &#171; <B>Reply #8 on:</B> May 21<sup>st</sup>, 2004, 3:59am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I had just run into a similar problem, and the sonia 2.8 beta solved it! Thanks to both of you for finding and dealing with this problem, and thanks especially to pitaru for sonia! <br> &nbsp;<br> matt <br> &nbsp;<br> &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="9"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>pitaru</b><br><i></i><BR><BR>
+             <a href="http://pitaru.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>e: LiveOutputEvent - manual sample looping</b><BR>
+                &#171; <B>Reply #9 on:</B> May 21<sup>st</sup>, 2004, 7:48pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            my pleasure matt. &nbsp;<br> &nbsp;<br> there's a new beta here: &nbsp;<br> &nbsp;<a href="http://pitaru.com/sonia/download/beta/sonia_v2_8_beta_2.jar" target="_blank">http://pitaru.com/sonia/download/beta/sonia_v2_8_beta_2.jar</a> &nbsp;<br> &nbsp;<br> This version should further optimize performance with LiveOutput. &nbsp;<br> &nbsp;<br> It also fixes the functionality of mySample.getSpectrum(fftbins, sampleFrame) -- for non real-time fft analysis of sample data. I'll soon document the various new features. <br> &nbsp;<br> amit 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_Contributions_Audiovisual_action_display_num_1084432501.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option value="?board=Programs">&nbsp; - Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option selected value="?board=Contributions_Audiovisual">=> Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_Contributions_Audiovisual_action_display_num_1086282601.html">Previous topic</a> | <a href="board_Contributions_Audiovisual_action_display_num_1084807925.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

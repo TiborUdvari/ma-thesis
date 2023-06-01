@@ -1,0 +1,770 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - How to evaluate a closed Bezier</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Programs_action_display_num_1060407618.html#help" class="nav">Programming Questions & Help
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Programs.html" class="nav">Programs</a> </b>(Moderators: fry, REAS)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    How to evaluate a closed Bezier</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_Programs_action_display_num_1062088871.html">Previous topic</a> | <a href="board_Programs_action_display_num_1061511128.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/thread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: How to evaluate a closed Bezier</b> &nbsp;(Read 460 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>skloopy</b><br><BR>
+     <a href="http://elfman.vendetta.com/ryan" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>How to evaluate a closed Bezier</b><BR>
+                &#171; <B> on:</B> Aug 9<sup>th</sup>, 2003, 7:40am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I've been looking all over the internet for how to evaluate the X, Y and tangents of a closed bezier curve (where it loops around and has no beginning or end) but i havn't found anything. <br> &nbsp;<br> Do any of you know how to do that sort of thing? 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>fry</b><br><i></i><BR><BR>
+     <a href="http://acg.media.mit.edu/people/fry/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: How to evaluate a closed Bezier</b><BR>
+                &#171; <B>Reply #1 on:</B> Aug 14<sup>th</sup>, 2003, 6:37pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            not sure i follow.. do you have an example image? the bezier() functions in p5 won't do it? or are you trying to use multiple segments? 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>skloopy</b><br><BR>
+     <a href="http://elfman.vendetta.com/ryan" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: How to evaluate a closed Bezier</b><BR>
+                &#171; <B>Reply #2 on:</B> Aug 21<sup>st</sup>, 2003, 3:03am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Hi sorry it took me so long to reply. <br> &nbsp;<br> This is what I mean. I want to be able to draw this: <br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">beginShape&#40;LINE_LOOP&#41;&#059; <br> bezierVertex&#40;20,20&#41;&#059; <br> bezierVertex&#40;180,20&#41;&#059; <br> bezierVertex&#40;180,180&#41;&#059; <br> bezierVertex&#40;20,180&#41;&#059; <br> endShape&#40;&#41;&#059; </font></td></tr></table></td></tr></table> <br> and then determine the XY of a certain point on the curve, but P5 doesn't close the loop like it should. With those 4 points it should draw more or less a circle. <br> &nbsp;<br> I was also wondering about this: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">beginShape&#40;LINE_STRIP&#41;&#059; <br> bezierVertex&#40;20,20&#41;&#059; <br> bezierVertex&#40;180,20&#41;&#059; <br> bezierVertex&#40;180,180&#41;&#059; <br> bezierVertex&#40;20,180&#41;&#059; <br> bezierVertex&#40;20,50&#41;&#059; <br> endShape&#40;&#41;&#059; </font></td></tr></table></td></tr></table> <br> P5 doesn't draw the 5th point, but i was wondering anyway how to get the XY on a bezier more than 4 points long. Is it really complicated? <br> &nbsp;<br> ryan 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>flight404</b><br><BR>
+             <a href="http://www.flight404.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: How to evaluate a closed Bezier</b><BR>
+                &#171; <B>Reply #3 on:</B> Aug 21<sup>st</sup>, 2003, 5:53am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I think part of the problem (please slap me around if I am wrong) is that when using bezierVertex, the first vertex is the first anchor point, the second vertex is the first control point, the third vertex is the second control point, and the fourth anchor is the second anchor point. <br> &nbsp;<br> I was able to make a circle thusly... <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> beginShape&#40;LINE_STRIP&#41;; &nbsp;<br> bezierVertex&#40;100,50&#41;; &nbsp;<br> bezierVertex&#40;200,50&#41;; &nbsp;<br> bezierVertex&#40;200,200&#41;; &nbsp;<br> bezierVertex&#40;100,200&#41;; <br> endShape&#40;&#41;; <br> &nbsp;<br> beginShape&#40;LINE_STRIP&#41;; &nbsp;<br> bezierVertex&#40;100,200&#41;; &nbsp;<br> bezierVertex&#40;0,200&#41;; &nbsp;<br> bezierVertex&#40;0,50&#41;; &nbsp;<br> bezierVertex&#40;100,50&#41;; <br> endShape&#40;&#41;; &nbsp;<br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> ...but admittedly, my knowledge of bezier curves is rather base.  However, I know nothing about the math for finding points on that curve.  But after a little searching and poking, I found this post by Fry about recent additions to Processing.  Does this help <br> &nbsp;<br> - a new function has been added to calculate points along a bezier curve, rather than just drawing it. so for the old function: bezier(x1, y1, x2, y2, x3, y3, x4, y4);   <br> &nbsp;<br> if you wanted to draw 10 segments along it: &nbsp;<br> &nbsp; <br> beginShape(LINE_STRIP); &nbsp;<br> &nbsp;  for (int i = 0; i &lt;= 10; i++) { &nbsp;<br> &nbsp;    float t = i / 10.0;  // t should go from 0..1 along the curve &nbsp;<br> &nbsp;    float x = bezier(x1, x2, x3, x4, t);  // get the x coordinate &nbsp;<br> &nbsp;    float y = bezier(y1, y2, y3, y4, t);  // get the y coordinate &nbsp;<br> &nbsp;    vertex(x, y); &nbsp;<br> &nbsp;  } &nbsp;<br> endShape(); &nbsp;<br> &nbsp;  <br> &nbsp;  this was also asked for/inquired about in the following bboard posts: &nbsp;<br> &nbsp;  <a href="http://proce55ing.net/discourse/yabb/board_Proce55ing_Software_action_display_num_1053449577.html" target="_blank">http://proce55ing.net/discourse/yabb/board_Proce55ing_Software__action_display_num_1053449577.html</a> &nbsp;<br> &nbsp;  <a href="http://proce55ing.net/discourse/yabb/board_Proce55ing_Software_action_display_num_1057393989.html" target="_blank">http://proce55ing.net/discourse/yabb/board_Proce55ing_Software__action_display_num_1057393989.html</a> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Aug 21<sup>st</sup>, 2003, 5:54am by flight404</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>skloopy</b><br><BR>
+     <a href="http://elfman.vendetta.com/ryan" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: How to evaluate a closed Bezier</b><BR>
+                &#171; <B>Reply #4 on:</B> Aug 21<sup>st</sup>, 2003, 7:27pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Thanks flight404, that's a good idea, but i was thinking of something a little different <img border=0 src="public_html/YaBBImages/wink.gif"> <br> &nbsp;<br> I think that this is sort of what i'm thinking, except this is would be using p5 curves, not beziers. I'm still looking for a good example of beziers. Maybe what i'm talking about are b-splines? <br> &nbsp;<br> <a href="http://www.cse.unsw.edu.au/~lambert/splines/natcubicclosed.html" target="_blank">http://www.cse.unsw.edu.au/~lambert/splines/natcubicclosed.html</a> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Aug 21<sup>st</sup>, 2003, 7:32pm by skloopy</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="5"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>skloopy</b><br><BR>
+     <a href="http://elfman.vendetta.com/ryan" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: How to evaluate a closed Bezier</b><BR>
+                &#171; <B>Reply #5 on:</B> Aug 21<sup>st</sup>, 2003, 11:08pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Here's my progress so far. <br> &nbsp;<br> I tried to do it using the new bezier function, but it didn't work for this. I'm guessing that beziers and b-splines are not the same? Every example of doing this i've found is way too confusing so i've just been doing it my own way.. here's where i am so far. Any suggestions? <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">float xp&#91;&#93; = {20,180,180,20,100}; <br> float yp&#91;&#93; = {20,20,180,180,100}; <br> &nbsp;<br> void setup&#40;&#41; <br> { <br> &nbsp; size&#40;200,200&#41;; <br> } <br> &nbsp;<br> void loop&#40;&#41; <br> { <br> &nbsp; bspline&#40;xp, yp, 50&#41;; <br> } <br> &nbsp;<br> void bspline&#40;float x&#91;&#93;, float y&#91;&#93;, int res&#41; <br> { <br> &nbsp; int v1, v2, v3; <br> &nbsp; int nv = x&#46;length; <br> &nbsp;<br> &nbsp; float res3 = res * 3; <br> &nbsp; float onethird = 1&#46;0f &#47; 3&#46;0f; <br> &nbsp;<br> &nbsp; for&#40;int v = 0; v &lt; nv; v++&#41; { <br> &nbsp; &nbsp; point&#40;x&#91;v&#93;, y&#91;v&#93;&#41;; <br> &nbsp; } <br> &nbsp;<br> &nbsp; beginShape&#40;LINE_LOOP&#41;; <br> &nbsp; for&#40;int v = 0; v &lt; nv; v++&#41; { <br> &nbsp; &nbsp; v1 = &#40;v + 1&#41; % nv; <br> &nbsp; &nbsp; v2 = &#40;v + 2&#41; % nv; <br> &nbsp; &nbsp; v3 = &#40;v + 3&#41; % nv; <br> &nbsp;<br> &nbsp; &nbsp; for&#40;int i = 1; i &lt; res; i++&#41; { <br> &nbsp;float t = onethird + i &#47; res3; &nbsp;&#47;&#47; t should go from 0&#46;&#46;1 along the curve <br> &nbsp;float vx = bezier&#40;x&#91;v&#93;, x&#91;v1&#93;, x&#91;v2&#93;, x&#91;v3&#93;, t&#41;; &nbsp;&#47;&#47; get the x coordinate <br> &nbsp;float vy = bezier&#40;y&#91;v&#93;, y&#91;v1&#93;, y&#91;v2&#93;, y&#91;v3&#93;, t&#41;; &nbsp;&#47;&#47; get the y coordinate <br> &nbsp;vertex&#40;vx + random&#40;0&#41;, vy + random&#40;0&#41;&#41;; <br> &nbsp; &nbsp; } <br> &nbsp; } <br> &nbsp; endShape&#40;&#41;; <br> } </font></td></tr></table></td></tr></table> <br> ry 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="6"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>fry</b><br><i></i><BR><BR>
+     <a href="http://acg.media.mit.edu/people/fry/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: How to evaluate a closed Bezier</b><BR>
+                &#171; <B>Reply #6 on:</B> Aug 22<sup>nd</sup>, 2003, 1:19am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            yes, beziers and b-splines are indeed different. &nbsp;<br> &nbsp;<br> and flight404 is correct in the assertion that the first pt is the on-curve, then middle two are the control, and the next is another on-curve. i believe illustrator, for instance, uses four such bezier segments to draw a circle properly. &nbsp;<br> &nbsp;<br> from the reference, you can see how the on-curve points relate to the control points: <br> <a href="http://proce55ing.net/reference/bezier_.html" target="_blank">http://proce55ing.net/reference/bezier_.html</a> <br> the orange lines are like the 'handles' from an app like adobe illustrator. <br> &nbsp;<br> fwiw, for a corner point, the control point and on-curve point are the same. i always use something like illustrator to mess around with this till it starts making sense. <br> &nbsp;<br> not very obvious conceptually.. that's why we included the generic curve() function, which uses catmull-rom curves, which are more intuitive, but sometimes less 'functional' (since everything uses beziers..) 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="7"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>skloopy</b><br><BR>
+     <a href="http://elfman.vendetta.com/ryan" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: How to evaluate a closed Bezier</b><BR>
+                &#171; <B>Reply #7 on:</B> Aug 22<sup>nd</sup>, 2003, 2:52am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Hmm <br> &nbsp;<br> I guess i'm gonna have to keep looking for how to draw b-splines. Or is it possible in p5 to draw a smoothly closed catmull-rom curve? I tried using LINE_LOOP with curveVertex() but it doesn't close right. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="8"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>fry</b><br><i></i><BR><BR>
+     <a href="http://acg.media.mit.edu/people/fry/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: How to evaluate a closed Bezier</b><BR>
+                &#171; <B>Reply #8 on:</B> Aug 22<sup>nd</sup>, 2003, 4:39am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            to back up, what is it you're hoping to do with these? &nbsp;<br> &nbsp;<br> for instance, if you're just looking to evaluate points on a circle, that's gonna be a lot simpler.. &nbsp;<br> &nbsp;<br> for what it's worth, these aren't p5-specific issues, it's more about how the curves themselves work. all we can do is implement <img border=0 src="public_html/YaBBImages/wink.gif"> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="9"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>skloopy</b><br><BR>
+     <a href="http://elfman.vendetta.com/ryan" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: How to evaluate a closed Bezier</b><BR>
+                &#171; <B>Reply #9 on:</B> Aug 23<sup>rd</sup>, 2003, 6:37am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Sorry I should've been more clear. <br> &nbsp;<br> Here's what I'm trying to do. I want to take this typing sketch i made.. <br> &nbsp;<br> <a href="http://elfman.vendetta.com/ryan/type/" target="_blank">http://elfman.vendetta.com/ryan/type/</a> <br> &nbsp;<br> (just click inside the applet and then start typing) ..and I'm trying to make a bubble around the paragraph that's being typed. I was thinking that i'd need more that 4 points and that's why I was saying b-splines might work. <br> &nbsp;<br> But the problem is that i'm not sure how to draw a closed curve so that there is no hard corner at the beginning and the end. I thought about using just a basic shape like a circle or something, but I want to control the shape with springs so that wouldn't work. <br> &nbsp;<br> So I guess what i've figured out is that i'm gonna need to use a closed b-spline but i'm having trouble finding out how to make one because all the stuff on the internet about it is really technical with math equations and stuff.. *cringe* ..unless there's a way to do that with p5's beziers, but they can only have 4 control points. <br> &nbsp;<br> I guess I should add bsplines to the suggestions list <img border=0 src="public_html/YaBBImages/wink.gif"> <br> &nbsp;<br> Sorry that's kind of long but i hope it makes it clearer. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_Programs_action_display_num_1060407618.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option selected value="?board=Programs">=> Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_Programs_action_display_num_1062088871.html">Previous topic</a> | <a href="board_Programs_action_display_num_1061511128.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

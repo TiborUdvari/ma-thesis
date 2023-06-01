@@ -1,0 +1,1055 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - DXF File exporter</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Tools_action_display_num_1066220263_start_.html#Examples" class="nav">Topics & Contributions
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Tools.html" class="nav">Tools</a> </b>(Moderator: REAS)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    DXF File exporter</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_Tools_action_display_num_1100117834.html">Previous topic</a> | <a href="board_Tools_action_display_num_1045129896.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;<a href="board_Tools_action_display_num_1066220263_start_15.html">2</a>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/hotthread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: DXF File exporter</b> &nbsp;(Read 3355 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>simong</b><br><BR>
+             <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>DXF File exporter</b><BR>
+                &#171; <B> on:</B> Oct 15<sup>th</sup>, 2003, 2:17pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Hi. I've written a little hack to export Processing graphics as 3D DXF files, which can be read into AutoCad, 3D Studio, Rhino, etc. <br> &nbsp;<br> It's geometry-only, and it will all come out as a mesh of triangles, but it works. It will export all triangle-based graphics: polygons, rects, boxes, spheres, but not lines or raster graphics like images, text, movies, etc. It's ugly in that it uses undocumented internal structures of BGraphics, which are subject to change, but it works on 65 Alpha. <br> &nbsp;<br> There are three calls of note: <br> 1) DXFinit(); // Must be the first line of setup. <br> 2) DXFloop(); // Should be the first line of loop. <br> 3) DXFwrite(String fileName); // Call at the end of your drawing stuff, but DON'T CALL IT IN LOOP WITHOUT PROTECTING IT FROM EXECUTING EVERY TIME. Probably good to put it on a key trigger or something. <br> &nbsp;<br> Here's an example app: <br> &nbsp;<br> <a href="http://www.architecture.yale.edu/872a/processingExamples/DXFWriter/" target="_blank">http://www.architecture.yale.edu/872a/processingExamples/DXFWriter/</a> <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> &#47;&#47; Demonstrates the use of DXF exporter for Processing graphics&#46; <br> &#47;&#47; Works with Processing 65 Alpha&#46; Untested with other versions&#46; <br> &#47;&#47; 10&#46;14&#46;03 Simon Greenwold &#40;simong@media&#46;mit&#46;edu&#41; <br> &nbsp;<br> void setup&#40;&#41; { <br> &nbsp; DXFinit&#40;&#41;; &nbsp;&#47;&#47; Must be first line of setup&#40;&#41;&#46; <br> &nbsp; size&#40;200,200&#41;; <br> } <br> &nbsp;<br> void loop&#40;&#41; { <br> &nbsp; DXFloop&#40;&#41;; &nbsp; &#47;&#47; Must be first line of loop&#40;&#41;&#46; <br> &nbsp;<br> &nbsp;<br> &nbsp; &#47;&#47; Any kind of graphics calls you want go here&#46; <br> &nbsp; &#47;&#47; Note that pixels, lines, images, movies, and text <br> &nbsp; &#47;&#47; will not be exported to DXF&#46; <br> &nbsp; &#47;&#47; Only rectangles, triangles, polygons, boxes, spheres, etc&#46; <br> &nbsp; triangle&#40;1, 2, 40, 50, 20, 2&#41;; <br> &nbsp; rect&#40;10, 10, 45, 60&#41;; <br> &nbsp; translate&#40;width&#47;2, height&#47;2&#41;; <br> &nbsp; rotateX&#40;PI&#47;8&#41;; <br> &nbsp; rotateZ&#40;PI&#47;6&#41;; <br> &nbsp; box&#40;40&#41;; <br> &nbsp; scale&#40;2, 1, 3&#41;; <br> &nbsp; translate&#40;20, 30, 40&#41;; <br> &nbsp; sphere&#40;10&#41;; <br> &nbsp;<br> &nbsp;<br> &nbsp; &#47;&#47; If the 'w' key is pressed, write the file&#46; &nbsp;<br> &nbsp; if &#40;keyPressed &amp;&amp; key == 'w'&#41; { <br> &nbsp; &nbsp; DXFwrite&#40;&quot;Tester&#46;dxf&quot;&#41;; &nbsp;&#47;&#47; Should appear at the end of loop&#40;&#41;&#46; <br> &nbsp; } <br> } <br> &nbsp;<br> &#47;&#47;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; DXFwrite &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; <br> &#47;&#47; Writes all current triangle&#45;based graphics <br> &#47;&#47; &#40;polygons, boxes, spheres, etc&#46;&#41; to a DXF file&#46; <br> &#47;&#47; Call this at the end of your loop &#40;after everything has drawn&#41;&#46; <br> &#47;&#47; But be sure to put a condition like a keypress on it&#33; <br> &#47;&#47; You don't want it running over and over in a loop&#46; <br> &#47;&#47; File will appear in the same folder as the <br> &#47;&#47; Processing executable&#46; <br> &nbsp;<br> void DXFwrite&#40;String fileName&#41; { <br> &nbsp; java&#46;util&#46;ArrayList text = new java&#46;util&#46;ArrayList&#40;100&#41;; <br> &nbsp; DXFheader&#40;text&#41;; <br> &nbsp; DXFgraphics&#40;text&#41;; <br> &nbsp; DXFfooter&#40;text&#41;; <br> &nbsp; saveStrings&#40;fileName, &#40;String&#91;&#93;&#41;text&#46;toArray&#40;new String&#91;0&#93;&#41;&#41;; <br> &nbsp; println&#40;&quot;DXF file &#92;&quot;&quot; + fileName + &quot;&#92;&quot; written with &quot; + g&#46;triangles_count + &quot; triangles&#46;&quot;&#41;; <br> } <br> &nbsp;<br> &#47;&#47;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; DXFinit &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; <br> &#47;&#47; Should be called as the first line of setup&#40;&#41; <br> &#47;&#47; Makes sure that graphics are drawn in a way that <br> &#47;&#47; the writer can use&#46; <br> void DXFinit&#40;&#41; { <br> &nbsp; hint&#40;NEW_GRAPHICS&#41;; <br> &nbsp; lights&#40;&#41;; <br> } <br> &nbsp;<br> &#47;&#47;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; DXFloop &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; <br> &#47;&#47; Should be called as the first line of loop&#40;&#41; <br> &#47;&#47; It makes sure that all triangles are done in 3D <br> void DXFloop&#40;&#41; { <br> &nbsp; rotateX&#40;PI&#47;8&#41;; <br> &nbsp; rotateX&#40;&#45;PI&#47;8&#41;; <br> } <br> &nbsp;<br> &#47;&#47; DXFwrite utility functions below&#46; Do not use&#46; <br> void DXFheader&#40;java&#46;util&#46;ArrayList text&#41; { <br> &nbsp; text&#46;add&#40;&quot;0&quot;&#41;; <br> &nbsp; text&#46;add&#40;&quot;SECTION&quot;&#41;; <br> &nbsp; text&#46;add&#40;&quot;2&quot;&#41;; <br> &nbsp; text&#46;add&#40;&quot;ENTITIES&quot;&#41;; <br> } <br> &nbsp;<br> void DXFfooter&#40;java&#46;util&#46;ArrayList text&#41; { <br> &nbsp; text&#46;add&#40;&quot;0&quot;&#41;; <br> &nbsp; text&#46;add&#40;&quot;ENDSEC&quot;&#41;; <br> &nbsp; text&#46;add&#40;&quot;0&quot;&#41;; <br> &nbsp; text&#46;add&#40;&quot;EOF&quot;&#41;; <br> } <br> &nbsp;<br> void DXFgraphics&#40;java&#46;util&#46;ArrayList text&#41; { <br> &nbsp; float a&#91;&#93;; <br> &nbsp; float b&#91;&#93;; <br> &nbsp; float c&#91;&#93;; <br> &nbsp; for &#40;int i = 0; i &lt; g&#46;triangles_count; i++&#41; { <br> &nbsp; &nbsp; a = g&#46;vertices&#91;g&#46;triangles&#91;i&#93;&#91;0&#93;&#93;; <br> &nbsp; &nbsp; b = g&#46;vertices&#91;g&#46;triangles&#91;i&#93;&#91;1&#93;&#93;; <br> &nbsp; &nbsp; c = g&#46;vertices&#91;g&#46;triangles&#91;i&#93;&#91;2&#93;&#93;; <br> &nbsp;<br> &nbsp; &nbsp; if &#40;a&#91;VW&#93; &#33;= 0&#46;0 &amp;&amp; b&#91;VW&#93; &#33;= 0&#46;0 &amp;&amp; c&#91;VW&#93; &#33;= 0&#46;0&#41; { <br> &nbsp;text&#46;add&#40;&quot;0&quot;&#41;; <br> &nbsp;text&#46;add&#40;&quot;3DFACE&quot;&#41;; <br> &nbsp;text&#46;add&#40;&quot;8&quot;&#41;; <br> &nbsp;text&#46;add&#40;&quot;0&quot;&#41;; <br> &nbsp;<br> &nbsp;text&#46;add&#40;&quot;10&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;a&#91;VX&#93;&#47;a&#91;VW&#93;&#41;&#41;; <br> &nbsp;text&#46;add&#40;&quot;20&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;a&#91;VY&#93;&#47;a&#91;VW&#93;&#41;&#41;; <br> &nbsp;text&#46;add&#40;&quot;30&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;a&#91;VZ&#93;&#47;a&#91;VW&#93;&#41;&#41;; <br> &nbsp;text&#46;add&#40;&quot;11&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;b&#91;VX&#93;&#47;b&#91;VW&#93;&#41;&#41;; <br> &nbsp;text&#46;add&#40;&quot;21&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;b&#91;VY&#93;&#47;b&#91;VW&#93;&#41;&#41;; <br> &nbsp;text&#46;add&#40;&quot;31&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;b&#91;VZ&#93;&#47;b&#91;VW&#93;&#41;&#41;; <br> &nbsp;text&#46;add&#40;&quot;12&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;c&#91;VX&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp;text&#46;add&#40;&quot;22&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;c&#91;VY&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp;text&#46;add&#40;&quot;32&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;c&#91;VZ&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp;text&#46;add&#40;&quot;13&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;c&#91;VX&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp;text&#46;add&#40;&quot;23&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;c&#91;VY&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp;text&#46;add&#40;&quot;33&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;c&#91;VZ&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp; &nbsp; } <br> &nbsp; } <br> } <br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> Let me know how it works for you, <br> -Simon 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>simong</b><br><BR>
+             <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>An improvement...</b><BR>
+                &#171; <B>Reply #1 on:</B> Oct 20<sup>th</sup>, 2003, 4:54am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I've improved this slightly so that you can export things to different layers, which lets you manipulate them independently in your 3D program. Here's a link to a short tutorial on using it: <br> &nbsp;<br> <a href="http://www.architecture.yale.edu/872a/assignment5/dxfWriter.html" target="_blank">http://www.architecture.yale.edu/872a/assignment5/dxfWriter.html</a> <br> &nbsp;<br> And here is the code: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> &#47;&#47;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; DXFwrite &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; <br> &#47;&#47; Writes all current triangle&#45;based graphics <br> &#47;&#47; &#40;polygons, boxes, spheres, etc&#46;&#41; to a DXF file&#46; <br> &#47;&#47; Call this at the end of your loop &#40;after everything has drawn&#41;&#46; <br> &#47;&#47; But be sure to put a condition like a keypress on it&#33; <br> &#47;&#47; You don't want it running over and over in a loop&#46; <br> &#47;&#47; File will appear in the same folder as the <br> &#47;&#47; Processing executable&#46; <br> &nbsp;<br> void DXFwrite&#40;String fileName&#41; { <br> &nbsp; java&#46;util&#46;ArrayList text = new java&#46;util&#46;ArrayList&#40;100&#41;; <br> &nbsp; DXFheader&#40;text&#41;; <br> &nbsp; DXFgraphics&#40;text&#41;; <br> &nbsp; DXFfooter&#40;text&#41;; <br> &nbsp; saveStrings&#40;fileName, &#40;String&#91;&#93;&#41;text&#46;toArray&#40;new String&#91;0&#93;&#41;&#41;; <br> &nbsp; println&#40;&quot;DXF file &#92;&quot;&quot; + fileName + &quot;&#92;&quot; written with &quot; + g&#46;triangles_count + &quot; triangles&#46;&quot;&#41;; <br> } <br> &nbsp;<br> final int MAX_TRI_LAYERS = 100000; <br> final int DXF_NO_LAYER = &#45;1; <br> int currentDXFLayer = 0; <br> int&#91;&#93; DXFLayerList = new int&#91;MAX_TRI_LAYERS&#93;; <br> &nbsp;<br> &#47;&#47;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; DXFinit &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; <br> &#47;&#47; Should be called as the first line of setup&#40;&#41; <br> &#47;&#47; Makes sure that graphics are drawn in a way that <br> &#47;&#47; the writer can use&#46; <br> void DXFinit&#40;&#41; { <br> &nbsp; hint&#40;NEW_GRAPHICS&#41;; <br> &nbsp; lights&#40;&#41;; <br> } <br> &nbsp;<br> &#47;&#47;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; DXFloop &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; <br> &#47;&#47; Should be called as the first line of loop&#40;&#41; <br> &#47;&#47; It makes sure that all triangles are done in 3D <br> void DXFloop&#40;&#41; { <br> &nbsp; rotateX&#40;PI&#47;8&#41;; <br> &nbsp; rotateX&#40;&#45;PI&#47;8&#41;; <br> &nbsp; for &#40;int i = 0; i &lt; MAX_TRI_LAYERS; i++&#41; { <br> &nbsp; &nbsp; DXFLayerList&#91;i&#93; = DXF_NO_LAYER; <br> &nbsp; } <br> &nbsp; DXFlayer&#40;0&#41;; <br> } <br> &nbsp;<br> &#47;&#47; DXFwrite utility functions below&#46; Do not use&#46; <br> void DXFheader&#40;java&#46;util&#46;ArrayList text&#41; { <br> &nbsp; text&#46;add&#40;&quot;0&quot;&#41;; <br> &nbsp; text&#46;add&#40;&quot;SECTION&quot;&#41;; <br> &nbsp; text&#46;add&#40;&quot;2&quot;&#41;; <br> &nbsp; text&#46;add&#40;&quot;ENTITIES&quot;&#41;; <br> } <br> &nbsp;<br> void DXFfooter&#40;java&#46;util&#46;ArrayList text&#41; { <br> &nbsp; text&#46;add&#40;&quot;0&quot;&#41;; <br> &nbsp; text&#46;add&#40;&quot;ENDSEC&quot;&#41;; <br> &nbsp; text&#46;add&#40;&quot;0&quot;&#41;; <br> &nbsp; text&#46;add&#40;&quot;EOF&quot;&#41;; <br> } <br> &nbsp;<br> &nbsp;<br> &nbsp;<br> void DXFlayer&#40;int layer&#41; { <br> &nbsp; currentDXFLayer = layer; <br> &nbsp;<br> &nbsp; if &#40;g&#46;triangles_count &gt;= MAX_TRI_LAYERS&#41; { <br> &nbsp; &nbsp; return; <br> &nbsp; } <br> &nbsp; DXFLayerList&#91;g&#46;triangles_count&#93; = currentDXFLayer; <br> &nbsp;<br> } <br> &nbsp;<br> void DXFgraphics&#40;java&#46;util&#46;ArrayList text&#41; { <br> &nbsp; float a&#91;&#93;; <br> &nbsp; float b&#91;&#93;; <br> &nbsp; float c&#91;&#93;; <br> &nbsp;<br> &nbsp; currentDXFLayer = 0; <br> &nbsp; &nbsp;<br> &nbsp; for &#40;int i = 0; i &lt; g&#46;triangles_count; i++&#41; { <br> &nbsp; &nbsp; a = g&#46;vertices&#91;g&#46;triangles&#91;i&#93;&#91;0&#93;&#93;; <br> &nbsp; &nbsp; b = g&#46;vertices&#91;g&#46;triangles&#91;i&#93;&#91;1&#93;&#93;; <br> &nbsp; &nbsp; c = g&#46;vertices&#91;g&#46;triangles&#91;i&#93;&#91;2&#93;&#93;; <br> &nbsp;<br> &nbsp; &nbsp; if &#40;a&#91;VW&#93; &#33;= 0&#46;0 &amp;&amp; b&#91;VW&#93; &#33;= 0&#46;0 &amp;&amp; c&#91;VW&#93; &#33;= 0&#46;0&#41; { <br> &nbsp;text&#46;add&#40;&quot;0&quot;&#41;; <br> &nbsp;text&#46;add&#40;&quot;3DFACE&quot;&#41;; <br> &nbsp;text&#46;add&#40;&quot;8&quot;&#41;; <br> &nbsp; <br> &nbsp;if &#40;i &lt; MAX_TRI_LAYERS&#41; { <br> &nbsp; &nbsp;if &#40;DXFLayerList&#91;i&#93; &gt;= 0&#41; { <br> &nbsp; &nbsp; &nbsp;currentDXFLayer = DXFLayerList&#91;i&#93;; <br> &nbsp; &nbsp;} <br> &nbsp;} <br> &nbsp;text&#46;add&#40;Integer&#46;toString&#40;currentDXFLayer&#41;&#41;; <br> &nbsp;<br> &nbsp;text&#46;add&#40;&quot;10&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;a&#91;VX&#93;&#47;a&#91;VW&#93;&#41;&#41;; <br> &nbsp;text&#46;add&#40;&quot;20&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;a&#91;VY&#93;&#47;a&#91;VW&#93;&#41;&#41;; <br> &nbsp;text&#46;add&#40;&quot;30&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;a&#91;VZ&#93;&#47;a&#91;VW&#93;&#41;&#41;; <br> &nbsp;text&#46;add&#40;&quot;11&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;b&#91;VX&#93;&#47;b&#91;VW&#93;&#41;&#41;; <br> &nbsp;text&#46;add&#40;&quot;21&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;b&#91;VY&#93;&#47;b&#91;VW&#93;&#41;&#41;; <br> &nbsp;text&#46;add&#40;&quot;31&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;b&#91;VZ&#93;&#47;b&#91;VW&#93;&#41;&#41;; <br> &nbsp;text&#46;add&#40;&quot;12&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;c&#91;VX&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp;text&#46;add&#40;&quot;22&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;c&#91;VY&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp;text&#46;add&#40;&quot;32&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;c&#91;VZ&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp;text&#46;add&#40;&quot;13&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;c&#91;VX&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp;text&#46;add&#40;&quot;23&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;c&#91;VY&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp;text&#46;add&#40;&quot;33&quot;&#41;; <br> &nbsp;text&#46;add&#40;Float&#46;toString&#40;c&#91;VZ&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp; &nbsp; } <br> &nbsp; } <br> } <br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> Enjoy! <br> -Simon 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>REAS</b><br><i></i><BR><BR>
+     <a href="http://reas.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: DXF File exporter</b><BR>
+                &#171; <B>Reply #2 on:</B> Oct 23<sup>rd</sup>, 2003, 11:31pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            This is exciting. I'm going to post it on the &quot;tutorials&quot; section of the site: <br> <a href="http://www.proce55ing.net/learning/tutorials/index.html" target="_blank">http://www.proce55ing.net/learning/tutorials/index.html</a> <br> &nbsp;<br> I'd love to see the results of people using this. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>SeanC</b><br>Guest
+            <BR><img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: DXF File exporter</b><BR>
+                &#171; <B>Reply #3 on:</B> Oct 26<sup>th</sup>, 2003, 1:46am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+  
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Is there any way to add in vector curves? &nbsp;It would be amazing if that could be exported in .dxf format. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>simong</b><br><BR>
+             <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: DXF File exporter</b><BR>
+                &#171; <B>Reply #4 on:</B> Oct 27<sup>th</sup>, 2003, 3:03am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Here's an example from someone in my class: <br> &nbsp;<br> <a href="http://www.architecture.yale.edu/872a/students/Malaika/mk_sks/HW5/031022_planarb/applet/index.html" target="_blank">http://www.architecture.yale.edu/872a/students/Malaika/mk_sks/HW5/031022 _planarb/applet/index.html</a> <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="5"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>REAS</b><br><i></i><BR><BR>
+     <a href="http://reas.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: DXF File exporter</b><BR>
+                &#171; <B>Reply #5 on:</B> Oct 27<sup>th</sup>, 2003, 3:51am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I'm a rendering dummy. What environment was this project imported into and rendered. How do you distinguish different areas of the model to give them different materials and colors? 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="6"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>REAS</b><br><i></i><BR><BR>
+     <a href="http://reas.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: DXF File exporter</b><BR>
+                &#171; <B>Reply #6 on:</B> Oct 27<sup>th</sup>, 2003, 4:14am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Simon, &nbsp;<br> &nbsp;<br> FYI. There is some aspect of your DXF code which in not compatible with the Java 1.1 syntax. It's not possible to view the applets with the default JVM included with many browsers. <br> &nbsp;<br> + Casey <br> &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="7"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>mflux</b><br><BR><a href="aim:goim?screenname=fluxhavoc&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="fluxhavoc" border="0"></a>
+     <a href="http://www.design.ucla.edu/~mflux" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: DXF File exporter</b><BR>
+                &#171; <B>Reply #7 on:</B> Oct 29<sup>th</sup>, 2003, 10:14am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            It's probably &nbsp;<br> &nbsp;<br> &nbsp; text.add(&quot;0&quot;); &nbsp;<br> &nbsp; text.add(&quot;SECTION&quot;); &nbsp;<br> &nbsp; text.add(&quot;2&quot;); &nbsp;<br> &nbsp; text.add(&quot;ENTITIES&quot;); <br> &nbsp;<br> That's breaking. Current processing versions are having trouble with the java vector class when you use add. &nbsp;<br> &nbsp;<br> Try using text.addElement(&quot;blah&quot;); That should fix it. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="8"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>simong</b><br><BR>
+             <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: DXF File exporter</b><BR>
+                &#171; <B>Reply #8 on:</B> Oct 29<sup>th</sup>, 2003, 10:45pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Thanks for the addElement fix. That'll probably do it. <br> &nbsp;<br> As for the environment, I'm not sure what she brought it into. My favorite is Rhino, but that's not free. Blender is free but it's hard to learn. Basically there's nothing out there that can't read a DXF. <br> &nbsp;<br> You separate objects from each other by calling DXFLayer(layerNum); after each call to this, any new drawing will occur on layerNum until you call it again with a different layer. So you separate your meshes by layer. <br> &nbsp;<br> Let me know if it works for you, <br> -Simon 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="9"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>REAS</b><br><i></i><BR><BR>
+     <a href="http://reas.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: DXF File exporter</b><BR>
+                &#171; <B>Reply #9 on:</B> Oct 30<sup>th</sup>, 2003, 8:23pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            ah, thank you for the info. <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="10"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>simong</b><br><BR>
+             <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>A vast improvement...</b><BR>
+                &#171; <B>Reply #10 on:</B> Nov 2<sup>nd</sup>, 2003, 2:28pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            This is a much improved version. It is faster and will not run out of memory. It also now works with JVM 1.1 browsers. <br> &nbsp;<br> Here is an example app: <br> <a href="http://www.architecture.yale.edu/872a/processingExamples/DXFWriter/" target="_blank">http://www.architecture.yale.edu/872a/processingExamples/DXFWriter/</a> <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> &nbsp;&#47;&#47;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; DXFwrite &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; <br> &nbsp; &#47;&#47; Writes all current triangle&#45;based graphics <br> &nbsp; &#47;&#47; &#40;polygons, boxes, spheres, etc&#46;&#41; to a DXF file&#46; <br> &nbsp; &#47;&#47; Call this at the end of your loop &#40;after everything has drawn&#41;&#46; <br> &nbsp; &#47;&#47; But be sure to put a condition like a keypress on it&#33; <br> &nbsp; &#47;&#47; You don't want it running over and over in a loop&#46; <br> &nbsp; &#47;&#47; File will appear in the same folder as the <br> &nbsp; &#47;&#47; Processing executable&#46; <br> &nbsp;<br> &nbsp; void DXFwrite&#40;String fileName&#41; { <br> &nbsp; &nbsp; try { <br> &nbsp;BufferedWriter fileWriter = new BufferedWriter&#40;new FileWriter&#40;fileName&#41;&#41;; <br> &nbsp;DXFheader&#40;fileWriter&#41;; <br> &nbsp;DXFgraphics&#40;fileWriter&#41;; <br> &nbsp;DXFfooter&#40;fileWriter&#41;; <br> &nbsp;fileWriter&#46;close&#40;&#41;; <br> &nbsp; &nbsp; } <br> &nbsp; &nbsp; catch &#40;IOException e&#41; { <br> &nbsp;e&#46;printStackTrace&#40;&#41;; &nbsp;&#47;&#47;To change body of catch statement use Options &#124; File Templates&#46; <br> &nbsp;return; <br> &nbsp; &nbsp; } <br> &nbsp; &nbsp; &#47;&#47;saveStrings&#40;fileName, &#40;String&#91;&#93;&#41;text&#46;toArray&#40;new String&#91;0&#93;&#41;&#41;; <br> &nbsp; &nbsp; println&#40;&quot;DXF file &#92;&quot;&quot; + fileName + &quot;&#92;&quot; written with &quot; + g&#46;triangles_count + &quot; triangles&#46;&quot;&#41;; <br> &nbsp; } <br> &nbsp;<br> &nbsp; final int MAX_TRI_LAYERS = 500000; <br> &nbsp; final int DXF_NO_LAYER = &#45;1; <br> &nbsp; int currentDXFLayer = 0; <br> &nbsp; int&#91;&#93; DXFLayerList = new int&#91;MAX_TRI_LAYERS&#93;; <br> &nbsp;<br> &nbsp; &#47;&#47;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; DXFinit &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; <br> &nbsp; &#47;&#47; Should be called as the first line of setup&#40;&#41; <br> &nbsp; &#47;&#47; Makes sure that graphics are drawn in a way that <br> &nbsp; &#47;&#47; the writer can use&#46; <br> &nbsp; void DXFinit&#40;&#41; { <br> &nbsp; &nbsp; hint&#40;NEW_GRAPHICS&#41;; <br> &nbsp; &nbsp; lights&#40;&#41;; <br> &nbsp; } <br> &nbsp;<br> &nbsp; &#47;&#47;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; DXFloop &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; <br> &nbsp; &#47;&#47; Should be called as the first line of loop&#40;&#41; <br> &nbsp; &#47;&#47; It makes sure that all triangles are done in 3D <br> &nbsp; void DXFloop&#40;&#41; { <br> &nbsp; &nbsp; rotateX&#40;PI&#47;8&#41;; <br> &nbsp; &nbsp; rotateX&#40;&#45;PI&#47;8&#41;; <br> &nbsp; &nbsp; for &#40;int i = 0; i &lt; MAX_TRI_LAYERS; i++&#41; { <br> &nbsp;DXFLayerList&#91;i&#93; = DXF_NO_LAYER; <br> &nbsp; &nbsp; } <br> &nbsp; &nbsp; DXFlayer&#40;0&#41;; <br> &nbsp; } <br> &nbsp;<br> &nbsp; &#47;&#47; DXFwrite utility functions below&#46; Do not use&#46; <br> &nbsp; private void DXFheader&#40;BufferedWriter writer&#41; throws IOException { <br> &nbsp; &nbsp; writer&#46;write&#40;&quot;0&quot;&#41;; <br> &nbsp; &nbsp; writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp; writer&#46;write&#40;&quot;SECTION&quot;&#41;; <br> &nbsp; &nbsp; writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp; writer&#46;write&#40;&quot;2&quot;&#41;; <br> &nbsp; &nbsp; writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp; writer&#46;write&#40;&quot;ENTITIES&quot;&#41;; <br> &nbsp; &nbsp; writer&#46;newLine&#40;&#41;; <br> &nbsp; } <br> &nbsp;<br> &nbsp; private void DXFfooter&#40;BufferedWriter writer&#41; throws IOException { <br> &nbsp; &nbsp; writer&#46;write&#40;&quot;0&quot;&#41;; <br> &nbsp; &nbsp; writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp; writer&#46;write&#40;&quot;ENDSEC&quot;&#41;; <br> &nbsp; &nbsp; writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp; writer&#46;write&#40;&quot;0&quot;&#41;; <br> &nbsp; &nbsp; writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp; writer&#46;write&#40;&quot;EOF&quot;&#41;; <br> &nbsp; &nbsp; writer&#46;newLine&#40;&#41;; <br> &nbsp; } <br> &nbsp;<br> &nbsp;<br> &nbsp;<br> &nbsp; void DXFlayer&#40;int layer&#41; { <br> &nbsp; &nbsp; currentDXFLayer = layer; <br> &nbsp;<br> &nbsp; &nbsp; if &#40;g&#46;triangles_count &gt;= MAX_TRI_LAYERS&#41; { <br> &nbsp;return; <br> &nbsp; &nbsp; } <br> &nbsp; &nbsp; DXFLayerList&#91;g&#46;triangles_count&#93; = currentDXFLayer; <br> &nbsp;<br> &nbsp; } <br> &nbsp;<br> &nbsp; private void DXFgraphics&#40;BufferedWriter writer&#41; throws IOException { <br> &nbsp; &nbsp; float a&#91;&#93;; <br> &nbsp; &nbsp; float b&#91;&#93;; <br> &nbsp; &nbsp; float c&#91;&#93;; <br> &nbsp;<br> &nbsp; &nbsp; currentDXFLayer = 0; <br> &nbsp;<br> &nbsp; &nbsp; for &#40;int i = 0; i &lt; g&#46;triangles_count; i++&#41; { <br> &nbsp;a = g&#46;vertices&#91;g&#46;triangles&#91;i&#93;&#91;0&#93;&#93;; <br> &nbsp;b = g&#46;vertices&#91;g&#46;triangles&#91;i&#93;&#91;1&#93;&#93;; <br> &nbsp;c = g&#46;vertices&#91;g&#46;triangles&#91;i&#93;&#91;2&#93;&#93;; <br> &nbsp;<br> &nbsp;if &#40;a&#91;VW&#93; &#33;= 0&#46;0 &amp;&amp; b&#91;VW&#93; &#33;= 0&#46;0 &amp;&amp; c&#91;VW&#93; &#33;= 0&#46;0&#41; { <br> &nbsp; &nbsp;writer&#46;write&#40;&quot;0&quot;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;&quot;3DFACE&quot;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;&quot;8&quot;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp;<br> &nbsp; &nbsp;if &#40;i &lt; MAX_TRI_LAYERS&#41; { <br> &nbsp; &nbsp; &nbsp;if &#40;DXFLayerList&#91;i&#93; &gt;= 0&#41; { <br> &nbsp; currentDXFLayer = DXFLayerList&#91;i&#93;; <br> &nbsp; &nbsp; &nbsp;} <br> &nbsp; &nbsp;} <br> &nbsp; &nbsp;writer&#46;write&#40;Integer&#46;toString&#40;currentDXFLayer&#41;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp;<br> &nbsp; &nbsp;writer&#46;write&#40;&quot;10&quot;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;Float&#46;toString&#40;a&#91;VX&#93;&#47;a&#91;VW&#93;&#41;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;&quot;20&quot;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;Float&#46;toString&#40;a&#91;VY&#93;&#47;a&#91;VW&#93;&#41;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;&quot;30&quot;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;Float&#46;toString&#40;a&#91;VZ&#93;&#47;a&#91;VW&#93;&#41;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;&quot;11&quot;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;Float&#46;toString&#40;b&#91;VX&#93;&#47;b&#91;VW&#93;&#41;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;&quot;21&quot;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;Float&#46;toString&#40;b&#91;VY&#93;&#47;b&#91;VW&#93;&#41;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;&quot;31&quot;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;Float&#46;toString&#40;b&#91;VZ&#93;&#47;b&#91;VW&#93;&#41;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;&quot;12&quot;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;Float&#46;toString&#40;c&#91;VX&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;&quot;22&quot;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;Float&#46;toString&#40;c&#91;VY&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;&quot;32&quot;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;Float&#46;toString&#40;c&#91;VZ&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;&quot;13&quot;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;Float&#46;toString&#40;c&#91;VX&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;&quot;23&quot;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;Float&#46;toString&#40;c&#91;VY&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;&quot;33&quot;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp; &nbsp;writer&#46;write&#40;Float&#46;toString&#40;c&#91;VZ&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp; &nbsp;writer&#46;newLine&#40;&#41;; <br> &nbsp;} <br> &nbsp; &nbsp; } <br> &nbsp; } <br>  </font></td></tr></table></td></tr></table> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="11"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>fry</b><br><BR>
+     <a href="http://acg.media.mit.edu/people/fry/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: DXF File exporter</b><BR>
+                &#171; <B>Reply #11 on:</B> Nov 3<sup>rd</sup>, 2003, 6:17pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            you oughta be able to put a PrintWriter around that BufferedWriter (or instead of it?) and just use println() and print() instead of having to call newLine() each time. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="12"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>simong</b><br><BR>
+             <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: DXF File exporter</b><BR>
+                &#171; <B>Reply #12 on:</B> Nov 8<sup>th</sup>, 2003, 5:22pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Sho nuff. This is better: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> &nbsp; &#47;&#47;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; DXFwrite &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; <br> &nbsp; &nbsp;&#47;&#47; Writes all current triangle&#45;based graphics <br> &nbsp; &nbsp;&#47;&#47; &#40;polygons, boxes, spheres, etc&#46;&#41; to a DXF file&#46; <br> &nbsp; &nbsp;&#47;&#47; Call this at the end of your loop &#40;after everything has drawn&#41;&#46; <br> &nbsp; &nbsp;&#47;&#47; But be sure to put a condition like a keypress on it&#33; <br> &nbsp; &nbsp;&#47;&#47; You don't want it running over and over in a loop&#46; <br> &nbsp; &nbsp;&#47;&#47; File will appear in the same folder as the <br> &nbsp; &nbsp;&#47;&#47; Processing executable&#46; <br> &nbsp;<br> &nbsp; &nbsp;void DXFwrite&#40;String fileName&#41; { <br> &nbsp;try { <br> &nbsp; &nbsp; PrintWriter fileWriter = new PrintWriter&#40;new BufferedWriter&#40;new FileWriter&#40;fileName&#41;&#41;&#41;; <br> &nbsp; &nbsp; DXFheader&#40;fileWriter&#41;; <br> &nbsp; &nbsp; DXFgraphics&#40;fileWriter&#41;; <br> &nbsp; &nbsp; DXFfooter&#40;fileWriter&#41;; <br> &nbsp; &nbsp; fileWriter&#46;close&#40;&#41;; <br> &nbsp;} <br> &nbsp;catch &#40;IOException e&#41; { <br> &nbsp; &nbsp; e&#46;printStackTrace&#40;&#41;; &nbsp;&#47;&#47;To change body of catch statement use Options &#124; File Templates&#46; <br> &nbsp; &nbsp; return; <br> &nbsp;} <br> &nbsp;&#47;&#47;saveStrings&#40;fileName, &#40;String&#91;&#93;&#41;text&#46;toArray&#40;new String&#91;0&#93;&#41;&#41;; <br> &nbsp;println&#40;&quot;DXF file &#92;&quot;&quot; + fileName + &quot;&#92;&quot; written with &quot; + g&#46;triangles_count + &quot; triangles&#46;&quot;&#41;; <br> &nbsp; &nbsp;} <br> &nbsp;<br> &nbsp; &nbsp;final int MAX_TRI_LAYERS = 500000; <br> &nbsp; &nbsp;final int DXF_NO_LAYER = &#45;1; <br> &nbsp; &nbsp;int currentDXFLayer = 0; <br> &nbsp; &nbsp;int&#91;&#93; DXFLayerList = new int&#91;MAX_TRI_LAYERS&#93;; <br> &nbsp;<br> &nbsp; &nbsp;&#47;&#47;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; DXFinit &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; <br> &nbsp; &nbsp;&#47;&#47; Should be called as the first line of setup&#40;&#41; <br> &nbsp; &nbsp;&#47;&#47; Makes sure that graphics are drawn in a way that <br> &nbsp; &nbsp;&#47;&#47; the writer can use&#46; <br> &nbsp; &nbsp;void DXFinit&#40;&#41; { <br> &nbsp;hint&#40;NEW_GRAPHICS&#41;; <br> &nbsp;lights&#40;&#41;; <br> &nbsp; &nbsp;} <br> &nbsp;<br> &nbsp; &nbsp;&#47;&#47;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; DXFloop &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; <br> &nbsp; &nbsp;&#47;&#47; Should be called as the first line of loop&#40;&#41; <br> &nbsp; &nbsp;&#47;&#47; It makes sure that all triangles are done in 3D <br> &nbsp; &nbsp;void DXFloop&#40;&#41; { <br> &nbsp;rotateX&#40;PI&#47;8&#41;; <br> &nbsp;rotateX&#40;&#45;PI&#47;8&#41;; <br> &nbsp;for &#40;int i = 0; i &lt; MAX_TRI_LAYERS; i++&#41; { <br> &nbsp; &nbsp; DXFLayerList&#91;i&#93; = DXF_NO_LAYER; <br> &nbsp;} <br> &nbsp;DXFlayer&#40;0&#41;; <br> &nbsp; &nbsp;} <br> &nbsp;<br> &nbsp; &nbsp;&#47;&#47; DXFwrite utility functions below&#46; Do not use&#46; <br> &nbsp; &nbsp;private void DXFheader&#40;PrintWriter writer&#41; throws IOException { <br> &nbsp;writer&#46;println&#40;&quot;0&quot;&#41;; <br> &nbsp;writer&#46;println&#40;&quot;SECTION&quot;&#41;; <br> &nbsp;writer&#46;println&#40;&quot;2&quot;&#41;; <br> &nbsp;writer&#46;println&#40;&quot;ENTITIES&quot;&#41;; <br> &nbsp; &nbsp;} <br> &nbsp;<br> &nbsp; &nbsp;private void DXFfooter&#40;PrintWriter writer&#41; throws IOException { <br> &nbsp;writer&#46;println&#40;&quot;0&quot;&#41;; <br> &nbsp;writer&#46;println&#40;&quot;ENDSEC&quot;&#41;; <br> &nbsp;writer&#46;println&#40;&quot;0&quot;&#41;; <br> &nbsp;writer&#46;println&#40;&quot;EOF&quot;&#41;; <br> &nbsp; &nbsp;} <br> &nbsp;<br> &nbsp;<br> &nbsp;<br> &nbsp; &nbsp;void DXFlayer&#40;int layer&#41; { <br> &nbsp;currentDXFLayer = layer; <br> &nbsp;<br> &nbsp;if &#40;g&#46;triangles_count &gt;= MAX_TRI_LAYERS&#41; { <br> &nbsp; &nbsp; return; <br> &nbsp;} <br> &nbsp;DXFLayerList&#91;g&#46;triangles_count&#93; = currentDXFLayer; <br> &nbsp;<br> &nbsp; &nbsp;} <br> &nbsp;<br> &nbsp; &nbsp;private void DXFgraphics&#40;PrintWriter writer&#41; throws IOException { <br> &nbsp;float a&#91;&#93;; <br> &nbsp;float b&#91;&#93;; <br> &nbsp;float c&#91;&#93;; <br> &nbsp;<br> &nbsp;currentDXFLayer = 0; <br> &nbsp;<br> &nbsp;for &#40;int i = 0; i &lt; g&#46;triangles_count; i++&#41; { <br> &nbsp; &nbsp; a = g&#46;vertices&#91;g&#46;triangles&#91;i&#93;&#91;0&#93;&#93;; <br> &nbsp; &nbsp; b = g&#46;vertices&#91;g&#46;triangles&#91;i&#93;&#91;1&#93;&#93;; <br> &nbsp; &nbsp; c = g&#46;vertices&#91;g&#46;triangles&#91;i&#93;&#91;2&#93;&#93;; <br> &nbsp;<br> &nbsp; &nbsp; if &#40;a&#91;VW&#93; &#33;= 0&#46;0 &amp;&amp; b&#91;VW&#93; &#33;= 0&#46;0 &amp;&amp; c&#91;VW&#93; &#33;= 0&#46;0&#41; { <br> &nbsp; writer&#46;println&#40;&quot;0&quot;&#41;; <br> &nbsp; writer&#46;println&#40;&quot;3DFACE&quot;&#41;; <br> &nbsp; writer&#46;println&#40;&quot;8&quot;&#41;; <br> &nbsp;<br> &nbsp; if &#40;i &lt; MAX_TRI_LAYERS&#41; { <br> &nbsp; &nbsp; &nbsp;if &#40;DXFLayerList&#91;i&#93; &gt;= 0&#41; { <br> &nbsp; &nbsp;currentDXFLayer = DXFLayerList&#91;i&#93;; <br> &nbsp; &nbsp; &nbsp;} <br> &nbsp; } <br> &nbsp; writer&#46;println&#40;Integer&#46;toString&#40;currentDXFLayer&#41;&#41;; <br> &nbsp;<br> &nbsp; writer&#46;println&#40;&quot;10&quot;&#41;; <br> &nbsp; writer&#46;println&#40;Float&#46;toString&#40;a&#91;VX&#93;&#47;a&#91;VW&#93;&#41;&#41;; <br> &nbsp; writer&#46;println&#40;&quot;20&quot;&#41;; <br> &nbsp; writer&#46;println&#40;Float&#46;toString&#40;a&#91;VY&#93;&#47;a&#91;VW&#93;&#41;&#41;; <br> &nbsp; writer&#46;println&#40;&quot;30&quot;&#41;; <br> &nbsp; writer&#46;println&#40;Float&#46;toString&#40;a&#91;VZ&#93;&#47;a&#91;VW&#93;&#41;&#41;; <br> &nbsp; writer&#46;println&#40;&quot;11&quot;&#41;; <br> &nbsp; writer&#46;println&#40;Float&#46;toString&#40;b&#91;VX&#93;&#47;b&#91;VW&#93;&#41;&#41;; <br> &nbsp; writer&#46;println&#40;&quot;21&quot;&#41;; <br> &nbsp; writer&#46;println&#40;Float&#46;toString&#40;b&#91;VY&#93;&#47;b&#91;VW&#93;&#41;&#41;; <br> &nbsp; writer&#46;println&#40;&quot;31&quot;&#41;; <br> &nbsp; writer&#46;println&#40;Float&#46;toString&#40;b&#91;VZ&#93;&#47;b&#91;VW&#93;&#41;&#41;; <br> &nbsp; writer&#46;println&#40;&quot;12&quot;&#41;; <br> &nbsp; writer&#46;println&#40;Float&#46;toString&#40;c&#91;VX&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp; writer&#46;println&#40;&quot;22&quot;&#41;; <br> &nbsp; writer&#46;println&#40;Float&#46;toString&#40;c&#91;VY&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp; writer&#46;println&#40;&quot;32&quot;&#41;; <br> &nbsp; writer&#46;println&#40;Float&#46;toString&#40;c&#91;VZ&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp; writer&#46;println&#40;&quot;13&quot;&#41;; <br> &nbsp; writer&#46;println&#40;Float&#46;toString&#40;c&#91;VX&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp; writer&#46;println&#40;&quot;23&quot;&#41;; <br> &nbsp; writer&#46;println&#40;Float&#46;toString&#40;c&#91;VY&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp; writer&#46;println&#40;&quot;33&quot;&#41;; <br> &nbsp; writer&#46;println&#40;Float&#46;toString&#40;c&#91;VZ&#93;&#47;c&#91;VW&#93;&#41;&#41;; <br> &nbsp; &nbsp; } <br> &nbsp;} </font></td></tr></table></td></tr></table> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="13"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>fry</b><br><BR>
+     <a href="http://acg.media.mit.edu/people/fry/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: DXF File exporter</b><BR>
+                &#171; <B>Reply #13 on:</B> Nov 8<sup>th</sup>, 2003, 6:15pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            and another tiny that might be useful.. nf() is a number-formatting replacement for Float.toString() or similar methods. i use it when generating illustrator files to make sure it doesn't produce too many decimals and hork the file (ai can't take more than 4 digits.. though you may want more digits accuracy for dxf..) <br> &nbsp;<br> so writer.println(Float.toString(c[VZ]/c[VW])); &nbsp;<br> &nbsp;<br> becomes writer.println(nf(c[VZ]/c[VW], 0, 4)); <br> &nbsp;<br> the zero means not to set a specific # of digits on the lefthand side of the decimal, and the 4 means 4 digits to the right of the decimal place. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="14"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>cheewee2000</b><br><BR>
+             <a href="http://cwwang.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: DXF File exporter</b><BR>
+                &#171; <B>Reply #14 on:</B> Oct 25<sup>th</sup>, 2004, 12:36am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            How do I get the DXF file exporter to export to a specific location on the server when the file is played as an applet on the web? 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;<a href="board_Tools_action_display_num_1066220263_start_15.html">2</a>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_Tools_action_display_num_1066220263_start_.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option value="?board=Programs">&nbsp; - Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option selected value="?board=Tools">=> Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_Tools_action_display_num_1100117834.html">Previous topic</a> | <a href="board_Tools_action_display_num_1045129896.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

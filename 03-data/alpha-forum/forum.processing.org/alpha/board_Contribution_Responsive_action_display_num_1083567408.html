@@ -1,0 +1,656 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - Rotation-calculating.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Contribution_Responsive_action_display_num_1083567408.html#Examples" class="nav">Topics & Contributions
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Contribution_Responsive.html" class="nav">Responsive Form, Games</a> </b>(Moderator: REAS)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    Rotation-calculating.</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_Contribution_Responsive_action_display_num_1088138048.html">Previous topic</a> | <a href="board_Contribution_Responsive_action_display_num_1083347011.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/thread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: Rotation-calculating.</b> &nbsp;(Read 1903 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>sinkblot</b><br><BR><a href="aim:goim?screenname=sinkblot&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="sinkblot" border="0"></a>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Rotation-calculating.</b><BR>
+                &#171; <B> on:</B> May 3<sup>rd</sup>, 2004, 8:56am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I have a simple game-type thing which I've been using to learn various behaviors - &nbsp;but I'm gummed down on what I think is a very simple operation. &nbsp;Each object has a current rotation [ r1 ] and a target rotation [ r2 ] - at the moment, the target rotation is the atan2 of the mouse position, but of course now I can't figure out how to aim the current rotation towards the target at a set speed. &nbsp; &nbsp;Meaning, it does that fine, but if the r2 passes TWO_PI it resets and the object rotates all the way around the opposite direction to match. <br> &nbsp;<br> I don't like to post such simple questions, but after an hour of searching the threads I get frustrated. <br> &nbsp;<br> Thanks a million. <br> &nbsp;<br> &nbsp;<br> /*_gm03 for behaviors and interfacing <br> &nbsp;<br> STRIPPED FOR POSTING <br> */ <br> &nbsp;<br> float rvel=.2; <br> int tlength=135; <br> int w,h; <br> int shiptrack=12; <br> int shipcount=2; <br> Ship[] ships; <br> float gfriction=-.05; <br> float turnrange=.1; <br> int dr1=130; <br> void setup(){ <br> &nbsp; size(300,200); <br> &nbsp;<br> &nbsp; ships = new Ship[shipcount]; <br> &nbsp; for (int j=0;j&lt;shipcount;j++)ships[j]=new Ship( j , &quot;Barthes&quot; ); <br> &nbsp; w=width; <br> &nbsp; h=height; <br> &nbsp; rectMode(CENTER_DIAMETER); <br> &nbsp; ellipseMode(CENTER_DIAMETER); <br> &nbsp; fill(255,255,255,100); <br> &nbsp;<br> } <br> &nbsp;<br> void loop(){ <br> &nbsp; background(155); <br> &nbsp;<br> &nbsp; for(int j=0;j&lt;shipcount;j++)ships[j].updateship(mouseX,mouseY); <br> } <br> &nbsp;<br> class Ship{ <br> &nbsp; int shipnum; <br> &nbsp; String shipname; <br> &nbsp; int dimx,dimy; <br> &nbsp; int behavior; <br> &nbsp; float x,y,z,fx,fy,velr,velt,vel1; <br> &nbsp; float r1,r2,r3; <br> &nbsp; int[] tx= new int[tlength]; <br> &nbsp; int[] ty= new int[tlength]; <br> &nbsp;<br> &nbsp; float thr; <br> &nbsp; Ship(int _shipnum,String _shipname){ <br> &nbsp; &nbsp; this.shipname=_shipname; <br> &nbsp; &nbsp; this.r1=0; &nbsp;//actual rotation <br> &nbsp; &nbsp; this.r2=0; &nbsp;//targ rotation <br> &nbsp; &nbsp; this.x=random(0,width); <br> &nbsp; &nbsp; this.y=random(0,height); <br> &nbsp; &nbsp; this.shipnum=_shipnum; <br> &nbsp; &nbsp; this.dimx=20; <br> &nbsp; &nbsp; this.dimy=20; <br> &nbsp; &nbsp; this.behavior=1; <br> &nbsp; &nbsp; this.vel1=0; <br> &nbsp; &nbsp; this.velr=0; <br> &nbsp; &nbsp; this.thr=0; <br> &nbsp; &nbsp; this.tx=new int[tlength+1]; <br> &nbsp; &nbsp; this.ty=new int[tlength+1]; <br> &nbsp; } <br> &nbsp;<br> &nbsp; void updateship( float newx, float newy){ <br> &nbsp; &nbsp; //stroke(255,255,0); <br> &nbsp; &nbsp; for(int i=0;i&lt;tlength;i++){ <br> &nbsp;stroke(0,0,0,50); <br> &nbsp;<br> &nbsp;line(this.tx[i],this.ty[i],this.tx[i+1],this.ty[i+1]); <br> &nbsp;// &nbsp; ellipse(this.tx[i],this.ty[i],10,10); <br> &nbsp;this.tx[i]=this.tx[i+1]; <br> &nbsp;this.ty[i]=this.ty[i+1]; <br> &nbsp; &nbsp; } <br> &nbsp; &nbsp; this.tx[tlength]=int(this.x); <br> &nbsp; &nbsp; this.ty[tlength]=int(this.y); <br> &nbsp;<br> &nbsp; &nbsp; if(this.behavior==1){ <br> &nbsp;<br> &nbsp;float dx=mouseX-this.x; <br> &nbsp;float dy=mouseY-this.y; <br> &nbsp;this.r2=float(Math.atan2(-dy,-dx)); <br> &nbsp;<br> &nbsp;if(this.r1&lt;this.r2+turnrange&amp;&amp;this.r1&gt;this.r2-turnrange){ <br> &nbsp; &nbsp;rvel=0; <br> &nbsp;}else{ <br> &nbsp; &nbsp;rvel=.1; <br> &nbsp;<br> &nbsp; &nbsp;//here is the faulty method <br> &nbsp; &nbsp;if(this.r1&lt;this.r2)this.r1+=rvel; <br> &nbsp; &nbsp;if(this.r1&gt;this.r2)this.r1-=rvel; <br> &nbsp;<br> &nbsp; &nbsp;if(mousePressed){ <br> &nbsp; &nbsp; &nbsp;println(&quot;currrotation:&quot; +this.r1); <br> &nbsp; &nbsp; &nbsp;println(&quot;targrotation:&quot; + &nbsp;this.r2); <br> &nbsp;<br> &nbsp; &nbsp;} <br> &nbsp;} <br> &nbsp;<br> &nbsp;if (this.r1&gt;=TWO_PI)this.r1=-TWO_PI; <br> &nbsp;if (this.r1&lt;=-TWO_PI)this.r1=TWO_PI; <br> &nbsp;<br> &nbsp;if (this.r2&gt;=TWO_PI)this.r2=-TWO_PI; <br> &nbsp;if (this.r2&lt;=-TWO_PI)this.r2=TWO_PI; <br> &nbsp;<br> &nbsp;fill(255,255,255,100); <br> &nbsp;<br> &nbsp;noFill(); <br> &nbsp;ellipse(this.x,this.y,2*dr1,2*dr1); <br> &nbsp;fill(255,255,255,100); <br> &nbsp;ellipse(this.x,this.y,20,20); <br> &nbsp;line(this.x,this.y,mouseX,mouseY); <br> &nbsp;<br> &nbsp; <br> &nbsp;if(dist(this.x,this.y,mouseX,mouseY)&gt;dr1){ <br> &nbsp; &nbsp;this.thr+=.1; <br> &nbsp;}else{ <br> &nbsp; &nbsp;if(this.thr&gt;0)this.thr-=.1; <br> &nbsp;} <br> &nbsp;<br> &nbsp;this.vel1+=this.thr; <br> &nbsp;<br> &nbsp;this.vel1*=.6; <br> &nbsp;//this.vel1+=gfriction; <br> &nbsp;this.x+=this.vel1*sin(-1*r1-HALF_PI); <br> &nbsp;this.y+=this.vel1*cos(-1*r1-HALF_PI); <br> &nbsp; &nbsp; } <br> &nbsp;<br> &nbsp; &nbsp; //wrap <br> &nbsp; &nbsp; if(this.x&lt;0)this.x=w; <br> &nbsp; &nbsp; if(this.x&gt;w)this.x=0; <br> &nbsp; &nbsp; if(this.y&lt;0)this.y=h; <br> &nbsp; &nbsp; if(this.y&gt;h)this.y=0; <br> &nbsp;<br> &nbsp; &nbsp; this.drawship(); <br> &nbsp; } <br> &nbsp;<br> &nbsp; void drawship() { <br> &nbsp; &nbsp; push(); <br> &nbsp; &nbsp; translate(this.x,this.y,this.z); <br> &nbsp; &nbsp; rotateZ(r1+HALF_PI); <br> &nbsp; &nbsp; stroke(0); <br> &nbsp; &nbsp; //rect(0,0,10,10); <br> &nbsp;<br> &nbsp; &nbsp; beginShape(POLYGON); <br> &nbsp; &nbsp; vertex(0,dimy); <br> &nbsp; &nbsp; vertex(.5*dimx,-.5*dimy); <br> &nbsp; &nbsp; vertex(0,0); <br> &nbsp; &nbsp; vertex(-.5*dimx,-.5*dimy); <br> &nbsp; &nbsp; endShape(); <br> &nbsp;<br> &nbsp; &nbsp; pop(); <br> &nbsp; } <br> } <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>mflux</b><br><BR><a href="aim:goim?screenname=fluxhavoc&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="fluxhavoc" border="0"></a>
+     <a href="http://www.design.ucla.edu/~mflux" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Rotation-calculating.</b><BR>
+                &#171; <B>Reply #1 on:</B> May 3<sup>rd</sup>, 2004, 10:24am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Have a function return the normalized angle (0-360) even after your values have become over 360 or even negative. <br> &nbsp;<br> So... let your variable keep your angle the same (any value) so that it could be continuously added or subtracted, but before you use it, convert that number into a normalized value. <br> &nbsp;<br> Here's my normalize function, which works on degrees only: <br> &nbsp;<br> float normalizeHeading(float ang) &nbsp; &nbsp;//normalizes a heading between 0 and 360 <br> { <br> &nbsp; while(ang &gt; 360)ang -= 360; <br> &nbsp; while(ang &lt; 0)ang += 360; <br> &nbsp; return ang; <br> } 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Glen Murphy</b><br><BR>
+             <a href="http://glenmurphy.com/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Rotation-calculating.</b><BR>
+                &#171; <B>Reply #2 on:</B> May 3<sup>rd</sup>, 2004, 3:04pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Wouldn't 'ang = ang % 360' be faster? 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>mflux</b><br><BR><a href="aim:goim?screenname=fluxhavoc&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="fluxhavoc" border="0"></a>
+     <a href="http://www.design.ucla.edu/~mflux" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Rotation-calculating.</b><BR>
+                &#171; <B>Reply #3 on:</B> May 3<sup>rd</sup>, 2004, 6:10pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            hmmmmmmmmm you're right... there was some reason I resorted to while loops. &nbsp;<br> &nbsp;<br> *thinks* 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>narain</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Rotation-calculating.</b><BR>
+                &#171; <B>Reply #4 on:</B> May 4<sup>th</sup>, 2004, 6:34am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I'm not sure that'll work, mflux... The function will do what it's supposed to do, but it won't solve the problem. <br> &nbsp;<br> The problem is that when you're at angle 340', and you want to get to 30', you shouldn't decrease the angle but increase it; you should go via 340' -&gt; 360'/0' -&gt; 30'. You should pass Go, and you should collect $200. <br> &nbsp;<br> So you need to find the direction of turn which will take you through the smallest turning angle. <br> &nbsp;<br> This function will do it: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">float turnAngle &#40;float current, float target&#41; { <br> &nbsp; &#47;&#47; assuming current and target are both between 0 and TWO_PI <br> &nbsp; float angle = target &#45; current; <br> &nbsp; if &#40;angle &gt; PI&#41; angle &#45;= TWO_PI; <br> &nbsp; if &#40;angle &lt; &#45;PI&#41; angle += TWO_PI; <br> &nbsp; return angle; <br> } <br>  </font></td></tr></table></td></tr></table> <br> This will tell you both how much to turn and in what direction. You can call this and check if it is greater than or less than zero in your &quot;faulty method&quot;. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="5"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>mflux</b><br><BR><a href="aim:goim?screenname=fluxhavoc&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="fluxhavoc" border="0"></a>
+     <a href="http://www.design.ucla.edu/~mflux" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Rotation-calculating.</b><BR>
+                &#171; <B>Reply #5 on:</B> May 4<sup>th</sup>, 2004, 7:38am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            my way actually works, just not terribly efficient. your way is much much better, but I didn't think about it back then when I ran into this same problem <img border=0 src="public_html/YaBBImages/smiley.gif"> <br> &nbsp;<br> thanks for sharing 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="6"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>sinkblot</b><br><BR><a href="aim:goim?screenname=sinkblot&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="sinkblot" border="0"></a>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Rotation-calculating.</b><BR>
+                &#171; <B>Reply #6 on:</B> May 5<sup>th</sup>, 2004, 8:20pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            They all work beautifully - thanks so much! 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="7"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Markavian</b><br><BR><a href="aim:goim?screenname=Markavian+iTX&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="Markavian+iTX" border="0"></a>
+     <a href="http://mkv25.net/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Rotation-calculating.</b><BR>
+                &#171; <B>Reply #7 on:</B> May 20<sup>th</sup>, 2004, 11:35am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I was dealing with a similar problem. I had 24 photos of a model being rotated on a turn table. The viewer (which I wrote in flash) turned to different points on the model based on buttons (front - back - left - right). I wanted it to turn to the point through the shortest distance. <br> &nbsp;<br> The shortest distance is the direction to turn in. So, calculate the distance in both directions, pick the closest, and then turn in that direction. <br> &nbsp;<br> The problem I had was working out the closest. The way I solved it was to first balance the distance to &nbsp;<br> the target within my range, so: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">range = 24; &nbsp; &#47;&#47; total frames&#47;angle <br> current = 10; &#47;&#47;&#40;angle&#47;value&#47;frame&#41; <br> target = 22; &nbsp;&#47;&#47; target to get to <br> &nbsp;<br> if&#40;target &gt;= current &#41; { <br> &nbsp; balanced_target = target &#45; current; &nbsp;<br> } else { <br> &nbsp; balanced_target = target &#45; current + range; <br> } </font></td></tr></table></td></tr></table> <br> &nbsp;<br> so: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">0 &lt;= balanced_target &lt; range; </font></td></tr></table></td></tr></table> <br> &nbsp;<br> Then, I could make a decision based on the balanced value: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> if&#40;balanced_target &lt;= &#40;range&#47;2&#41;&#41; { <br> &nbsp; current++; &#47;&#47; Turn one way <br> } else { <br> &nbsp; current&#45;&#45;; &#47;&#47; Turn the other way <br> }  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> ..and so, the animation would turn towards the target in the closest direction. This code was in a loop, and was ran until <b>current == target</b>, then it stopped. <br> &nbsp;<br> &nbsp;<br> This is the same as narain said, but he used 2PI as his range (360 degrees), I'm using a variable range. Either way, you can easily convert the value across depending on if you need an exact angle, or need a precise animation frame. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_Contribution_Responsive_action_display_num_1083567408.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option value="?board=Programs">&nbsp; - Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option selected value="?board=Contribution_Responsive">=> Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_Contribution_Responsive_action_display_num_1088138048.html">Previous topic</a> | <a href="board_Contribution_Responsive_action_display_num_1083347011.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

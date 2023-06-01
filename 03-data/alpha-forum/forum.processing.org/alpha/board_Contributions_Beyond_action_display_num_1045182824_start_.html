@@ -1,0 +1,1055 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - first code</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Contributions_Beyond_action_display_num_1045182824_start_.html#Examples" class="nav">Topics & Contributions
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Contributions_Beyond.html" class="nav">Beyond Categories</a> </b>(Moderator: REAS)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    first code</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_Contributions_Beyond_action_display_num_1067101634.html">Previous topic</a> | <a href="board_Contributions_Beyond_action_display_num_1068155650.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;<a href="board_Contributions_Beyond_action_display_num_1045182824_start_15.html">2</a>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/hotthread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: first code</b> &nbsp;(Read 6137 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>adrien</b><br><BR>
+     <a href="http://www.boring.ch" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>first code</b><BR>
+                &#171; <B> on:</B> Aug 3<sup>rd</sup>, 2002, 12:57am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            post your first experiments with P5! 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">Signature: Signatures are displayed at the bottom of each post...
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>adrien</b><br><BR>
+     <a href="http://www.boring.ch" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>hello world</b><BR>
+                &#171; <B>Reply #1 on:</B> Aug 3<sup>rd</sup>, 2002, 1:01am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            my hello world program is a scribbler. it prints hello world to the screen, but in a very verbose alien language resembling what earthlings might draw on crack. <br> &nbsp;<br> // scribble <br> // by Adrien Cater <br> // --my first P5 code-- <br> &nbsp;<br> int width = 412; <br> int height = 256; <br> int freak = 32; <br> float x1 = width / 2; <br> float y1 = height / 2; <br> float x2 = x1 + random(freak * 1, freak * -1); <br> float y2 = y1 + random(freak * 1, freak * -1); <br> float mycolor = 153; <br> &nbsp;<br> &nbsp;<br> &nbsp;<br> void setup() &nbsp;<br> { <br> &nbsp; size(width, height); <br> &nbsp; background(51); <br> } <br> &nbsp;<br> void loop() &nbsp;<br> { <br> &nbsp; noBackground(); <br> &nbsp; stroke(mycolor); <br> &nbsp; noFill(); <br> &nbsp; line(x1, y1, x2, y2); <br> &nbsp; x1 = x2; <br> &nbsp; y1 = y2; <br> &nbsp; mycolor += random(freak * 1, freak * -1); <br> &nbsp; x2 += random(freak * 1, freak * -1); <br> &nbsp; y2 += random(freak * 1, freak * -1); <br> &nbsp;<br> &nbsp; if(x2 &lt; 0){x2 += freak;} <br> &nbsp; if(x2 &gt; width){x2 -= freak;} <br> &nbsp;<br> &nbsp; if(y2 &lt; 0){y2 += freak;} <br> &nbsp; if(y2 &gt; height){y2 -= freak;} <br> &nbsp; &nbsp;<br> &nbsp; if(mycolor &lt; 0){mycolor += freak;} <br> &nbsp; if(mycolor &gt; 255){mycolor -= freak;} <br> } <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">Signature: Signatures are displayed at the bottom of each post...
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>eviltyler</b><br><BR>
+     <a href="http://praytothemachine.com/evil/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: first code</b><BR>
+                &#171; <B>Reply #2 on:</B> Aug 3<sup>rd</sup>, 2002, 2:02am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            // simple cube rotation <br> // by tyler weir <br> // a simple cube that you can rotate with the keys, w, // a, s, and d. <br> &nbsp;<br> // globals <br> int windowHeight = 200; <br> int windowWidth = 200; <br> float a; <br> float b; <br> &nbsp;<br> &nbsp;<br> // setup <br> void setup() <br> { <br> &nbsp; size(windowHeight, windowWidth); <br> &nbsp; background(255, 204, 0); <br> &nbsp; lights(); <br> } <br> &nbsp;<br> &nbsp;<br> // loop <br> void loop() <br> { <br> &nbsp; translate((windowWidth/2), (windowHeight/2), 0); <br> &nbsp; &nbsp; <br> &nbsp; if(keyPressed) <br> &nbsp; { &nbsp;<br> &nbsp; &nbsp; if (key == 'd' &#124;&#124; key == 'D') <br> &nbsp; &nbsp; { <br> &nbsp;b += goingRight(); <br> &nbsp; &nbsp; } <br> &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; if (key == 'a' &#124;&#124; key == 'A') <br> &nbsp; &nbsp; { <br> &nbsp;b += goingLeft(); <br> &nbsp; &nbsp; } <br> &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; if (key == 'w' &#124;&#124; key == 'W') <br> &nbsp; &nbsp; { <br> &nbsp;a += goingUp(); <br> &nbsp; &nbsp; } <br> &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; if (key == 's' &#124;&#124; key == 'S') <br> &nbsp; &nbsp; { <br> &nbsp;a += goingDown(); <br> &nbsp; &nbsp; } <br> &nbsp; } <br> &nbsp; <br> &nbsp; rotateX(a); <br> &nbsp; rotateY(b); <br> &nbsp; box(40); <br> &nbsp;<br> } <br> &nbsp;<br> &nbsp;<br> // util functions <br> float goingUp() <br> { <br> &nbsp; return 0.1; <br> } <br> &nbsp;<br> float goingDown() <br> { <br> &nbsp; return -0.1; <br> } <br> &nbsp;<br> float goingRight() <br> { <br> &nbsp; return 0.1; <br> } <br> &nbsp;<br> float goingLeft() <br> { <br> &nbsp; return -0.1; <br> } <br> &nbsp;<br> &nbsp;<br> &nbsp;<br> &nbsp;<br> //EDIT: added header comments 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Aug 3<sup>rd</sup>, 2002, 1:34pm by eviltyler</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>ik0</b><br><BR><a href="board_Contributions_Beyond_action_icqpager_UIN_20288568.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=20288568&img=5" alt="20288568" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=20288568" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="20288568" BORDER=0></a>
+     <a href="http://prac.net" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: first code</b><BR>
+                &#171; <B>Reply #3 on:</B> Aug 3<sup>rd</sup>, 2002, 3:04am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Took the liberty to play around with some values etc &nbsp;<br> in the example motion02 code. <br> Not sure if this is usefull to anybody <img border=0 src="public_html/YaBBImages/smiley.gif"> <br> &nbsp;<br> original <br> <a href="http://www.proce55ing.net/learning/examples/motion02.html" target="_blank">http://www.proce55ing.net/learning/examples/motion02.html</a> <br> &nbsp;<br> alternated <br> <a href="http://www.prac.net/proce55ing/motion02ik1/" target="_blank">http://www.prac.net/proce55ing/motion02ik1/</a> <br> <a href="http://www.prac.net/proce55ing/motion02ik2/" target="_blank">http://www.prac.net/proce55ing/motion02ik2/</a> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Processing</b><br><B></B><BR>
+             <a href="http://www.proce55ing.net" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: first code, Please Comment</b><BR>
+                &#171; <B>Reply #4 on:</B> Aug 3<sup>rd</sup>, 2002, 9:33am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Please follow Adrien's example and write a few lines of comments at the beginning of your programs. If you are basing your new code on previous code please make a reference. For example: &nbsp;<br> &nbsp;<br> // Example 001 &nbsp;<br> // by Proce55ing <br> // based on Scribble by Adrien Cater &nbsp;<br> // This program ... <br> &nbsp;<br> Also, commenting your code well is really helpful to everyone. (We'll try to do a better job with this in the future as well) 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="5"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Mike Davis</b><br><BR>
+     <a href="http://www.lightcycle.org" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: first code</b><BR>
+                &#171; <B>Reply #5 on:</B> Aug 3<sup>rd</sup>, 2002, 11:24am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            // Conway's Game of Life <br> // by Mike Davis <br> // This program is a simple version of Conway's <br> // game of Life.  A lit point turns off if there <br> // are fewer than two or more than three surrounding <br> // lit points.  An unlit point turns on if there <br> // are exactly three lit neighbors.  The 'density' <br> // parameter determines how much of the board will <br> // start out lit. <br> &nbsp;<br> // set canvas size, 'on' cell density <br> &nbsp;<br> int sx = 100, sy = 100; <br> float density = 0.1; <br> &nbsp;<br> int[][][] world = new int[sx][sy][2]; <br> &nbsp;<br> void setup() <br> { <br> &nbsp; size(sx,sy); <br> &nbsp; background(0); <br> &nbsp; stroke(255); <br> &nbsp;  <br> &nbsp; // Set random cells to 'on' <br> &nbsp; for (int i = 0; i &lt; sx * sy * density; i++) { <br> &nbsp;   world[(int)random(sx)][(int)random(sy)][1] = 1; <br> &nbsp; } <br> } <br> &nbsp;<br> void loop() <br> { <br> &nbsp; // Drawing and update cycle <br> &nbsp; for (int x = 0; x &lt; sx; x=x+1) { <br> &nbsp;   for (int y = 0; y &lt; sy; y=y+1) { <br> &nbsp;     if (world[x][y][1] == 1) <br> &nbsp;     { <br> &nbsp;       world[x][y][0] = 1; <br> &nbsp;       point(x, y); <br> &nbsp;     } <br> &nbsp;     if (world[x][y][1] == -1) <br> &nbsp;     { <br> &nbsp;       world[x][y][0] = 0; <br> &nbsp;     } <br> &nbsp;     world[x][y][1] = 0; <br> &nbsp;   } <br> &nbsp; } <br> &nbsp; // Birth and death cycle <br> &nbsp; for (int x = 0; x &lt; sx; x=x+1) { <br> &nbsp;   for (int y = 0; y &lt; sy; y=y+1) { <br> &nbsp;     int count = neighbors(x, y); <br> &nbsp;     if (count == 3 &amp;&amp; world[x][y][0] == 0) <br> &nbsp;     { <br> &nbsp;       world[x][y][1] = 1; <br> &nbsp;     } <br> &nbsp;     if ((count &lt; 2 &#124;&#124; count &gt; 3) &amp;&amp; world[x][y][0] == 1) <br> &nbsp;    { <br> &nbsp;       world[x][y][1] = -1; <br> &nbsp;     } <br> &nbsp;   } <br> &nbsp; } <br> } <br> &nbsp;<br> // Count the number of adjacent cells 'on' <br> int neighbors(int x, int y) <br> { <br> &nbsp; return world[(x + 1) % sx][y][0] + <br> &nbsp;        world[x][(y + 1) % sy][0] + <br> &nbsp;        world[(x + sx - 1) % sx][y][0] + <br> &nbsp;        world[x][(y + sy - 1) % sy][0] + <br> &nbsp;        world[(x + 1) % sx][(y + 1) % sy][0] + <br> &nbsp;        world[(x + sx - 1) % sx][(y + 1) % sy][0] + <br> &nbsp;        world[(x + sx - 1) % sx][(y + sy - 1) % sy][0] + <br> &nbsp;        world[(x + 1) % sx][(y + sy - 1) % sy][0]; <br> } 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Aug 6<sup>th</sup>, 2002, 9:11pm by Mike Davis</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="6"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>eviltyler</b><br><BR>
+     <a href="http://praytothemachine.com/evil/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: first code</b><BR>
+                &#171; <B>Reply #6 on:</B> Aug 3<sup>rd</sup>, 2002, 1:37pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            mike, your game of life is pretty badass. &nbsp;nice work. <br> &nbsp;<br> //edit: corrected terrible grammar mistake <img border=0 src="public_html/YaBBImages/wink.gif"> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Aug 5<sup>th</sup>, 2002, 4:13pm by eviltyler</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="7"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>tomek</b><br><BR>
+             <a href="http://www.pixelbox.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: first code</b><BR>
+                &#171; <B>Reply #7 on:</B> Aug 3<sup>rd</sup>, 2002, 6:02pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Is there a way to showcase directly on this board examples produced in proce55ing? Or just still images? That would make the 'examples' section more interesting to browse through. What I mean the code is interesting..., but the end result is what is really interesting! Actually, this post probably should go into improvements topics. <br> &nbsp;<br> If there was a feature that would let you make 'attachements' to the messages on the board it would be ideal. Those would contain either source code or stills or actual application that is posted on the author's own website. It would make it more readable and browsable. Alternatively, can we use HTML tags to manually insert the links? <br> &nbsp;<br> The programs will become longer and more complex and with larger community the source code will fill lots of space hiding the discussion. I would also hope that bringing the (final) work more to the focus it would redirect the discussion also towards the visual arts, design, composition, colors, etc... topics, not keeping it only around the programming and technical issues. <br> &nbsp;<br> Any thoughts? 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="8"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Takachin</b><br><BR>
+     <a href="http://www.generative.info/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: first code</b><BR>
+                &#171; <B>Reply #8 on:</B> Aug 4<sup>th</sup>, 2002, 8:41am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            //Stripe One <br> //by Takachin <br> // based on Response 03 by Casey Reas (<a href="http://proce55ing.net/learning/examples/int03.html" target="_blank">http://proce55ing.net/learning/examples/int03.html</a>) <br> //This is my 1st code. <br> &nbsp;<br> float xpos1 = 0.0; <br> void setup() &nbsp;<br> { <br> &nbsp; size(200, 200); <br> &nbsp; //background(117,147,19<img border=0 src="public_html/YaBBImages/cool.gif">; <br> &nbsp; noBackground(); &nbsp;<br> } <br> &nbsp;<br> void loop() &nbsp;<br> { <br> &nbsp; float mx = mouseX * 0.4 - width/5; <br> &nbsp;<br> &nbsp; xpos1 += mx/10; <br> &nbsp; &nbsp;<br> &nbsp;line(xpos1,0,xpos1,200); <br> &nbsp;if (xpos1 &gt; width) { <br> &nbsp; &nbsp;xpos1 = 0; <br> &nbsp; &nbsp;mx = mouseX * 0.2 - width/5; <br> &nbsp; &nbsp;stroke(204, 102, 0); <br> &nbsp;} else if (xpos1 &lt; 0) { <br> &nbsp; &nbsp;xpos1 = width; <br> &nbsp; &nbsp;mx = mouseX * 0.4 - width/5; <br> &nbsp; &nbsp;stroke(98, 0, 255); <br> &nbsp;} <br> &nbsp;<br> } <br> &nbsp;<br> &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="9"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>jlee</b><br><BR>
+             <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: first code</b><BR>
+                &#171; <B>Reply #9 on:</B> Aug 7<sup>th</sup>, 2002, 7:26pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            // AlphaPaint <br> // by john lee <br> // <br> // The unpack method is from Ken Perlin's <br> // <a href="http://mrl.nyu.edu/perlin/bucky/PixApplet.java" target="_blank">http://mrl.nyu.edu/perlin/bucky/PixApplet.java</a> &nbsp;<br> // The blend method is from from Jim Blinn's book <br> // Dirty Pixels. <br> // <br> // Simple painting program that paints squares of red, <br> // green or blue which are <br> // blended with the background. <br> // <br> // Move the mouse to &quot;paint&quot; and click the mouse to &nbsp;<br> // change the &quot;brush.&quot; <br> // <br> &nbsp;<br> int w = 512; <br> int h = 512; <br> &nbsp;<br> // the size of the square being painted. <br> int s = h/16; <br> &nbsp;<br> // the opacity of the current color <br> float a = 0.125; <br> &nbsp;<br> color[] brush = new color[3]; <br> &nbsp;<br> // current color <br> int c; <br> &nbsp;<br> int r = 0; <br> &nbsp;<br> void setup() { <br> &nbsp; size(w, h); <br> &nbsp; noBackground(); <br> &nbsp; &nbsp;<br> &nbsp; brush[0] = color(255, 0, 0); <br> &nbsp; brush[1] = color(0, 255, 0); <br> &nbsp; brush[2] = color(0, 0, 255); <br> &nbsp;<br> &nbsp; for (int i = 0; i &lt; w*h; i++) { <br> &nbsp; &nbsp; // set the canvas to black <br> &nbsp; &nbsp; pixels[i] = 0; <br> &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; // set the canvas to white <br> &nbsp; &nbsp; //pixels[i] = 0xffffffff; <br> &nbsp; } <br> } <br> &nbsp;<br> void loop() { <br> &nbsp; if (mouseX != pmouseX &amp;&amp; mouseY != pmouseY) { <br> &nbsp; &nbsp; for (int i = 0; i &lt; s; i++) { <br> &nbsp;for (int j = 0; j &lt; s; j++) { <br> &nbsp;<br> &nbsp; &nbsp;// simple bounds checking <br> &nbsp; &nbsp;if (mouseX+i &gt;= 0 &amp;&amp; mouseX+i &lt; w &amp;&amp; mouseY+j &gt;= 0 &amp;&amp; mouseY+j &lt; h) { <br> &nbsp; &nbsp; &nbsp;c = blend(brush[r], getPixel(mouseX+i, mouseY+j), a); <br> &nbsp; &nbsp; &nbsp;setPixel(mouseX + i, mouseY + j, c); <br> &nbsp; &nbsp;} <br> &nbsp;} <br> &nbsp; &nbsp; } <br> &nbsp; } <br> } <br> &nbsp;<br> void mouseReleased() { <br> &nbsp; // change the current color. <br> &nbsp; r = int(random(3)); <br> } <br> &nbsp;<br> int[] fg = new int[3]; <br> int[] bg = new int[3]; <br> &nbsp;<br> int blend(color f, color b, float a) { <br> &nbsp; unpack(fg, f); <br> &nbsp; unpack(bg, b); <br> &nbsp;<br> &nbsp; for (int i = 0; i &lt; 3; i++) { <br> &nbsp; &nbsp; // F over B alpha blending <br> &nbsp; &nbsp; fg[i] = int(bg[i] + a * (fg[i] - bg[i])); <br> &nbsp; } <br> &nbsp;<br> &nbsp; return color(fg[0], fg[1], fg[2]); <br> } <br> &nbsp;<br> // decomposes a color into an int array <br> void unpack(int[] rgb, color c) { <br> &nbsp; rgb[0] = (c &gt;&gt; &nbsp; &nbsp;16) &amp; 255; <br> &nbsp; rgb[1] = (c &gt;&gt; (8+0)) &amp; 255; <br> &nbsp; rgb[2] = (c &nbsp; &nbsp;) &amp; 255; <br> } 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="10"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Bertrand Saint-Guillain</b><br><BR><a href="board_Contributions_Beyond_action_icqpager_UIN_170736171.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=170736171&img=5" alt="170736171" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=170736171" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="170736171" BORDER=0></a><a href="http://edit.yahoo.com/config/send_webmesg.target=super_satori" target="_blank"><img src="public_html/YaBBImages/yim.gif" alt="super_satori" border="0"></a><img SRC="http://opi.yahoo.com/online?u=super_satori&m=g&t=0" BORDER=0 alt="">
+             <a href="http://www.supersatori.com/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: first code</b><BR>
+                &#171; <B>Reply #10 on:</B> Aug 9<sup>th</sup>, 2002, 6:47pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            // dots/grey <br> // by Bertrand Saint-Guillain <br> // <br> // hold space to keep scale <br> // hold w to keep B/W value <br> // very first code on prc55ng <br> // --&gt; very dirty &nbsp;<br> &nbsp;<br> // --- global <br> int w=200; // width <br> int h=200; // height <br> float diam=w/2; // distance between dots - starts at half width <br> float posY=h/2; // let's say it's kind of an expression of the value <br> void setup() <br> { <br> &nbsp; size(w, h); <br> &nbsp; background(255); <br> } <br> void loop() <br> { <br> &nbsp; // test for space <br> &nbsp; if (!(keyPressed &amp;&amp; key==' ')){ <br> &nbsp;   // not pressed ? then diam tends towards mouse X/2 &nbsp;<br> &nbsp;   diam+=(min(max(mouseX/2,1),w)-diam)/15; <br> &nbsp; } <br> &nbsp; noStroke(); <br> &nbsp; float maxD; // max circle diameter <br> &nbsp; float diameter; // current diameter <br> //  float mDia=sqrt(sq(diam*1.5)*2); &nbsp;<br> &nbsp; mDia=diam*2; &nbsp;<br> &nbsp; if (!keyPressed &#124;&#124; !(key=='w')) { <br> &nbsp;   // w is not pressed ? then posY tends towards mouseY <br> &nbsp;   posY+=(mouseY-posY)/20; <br> &nbsp; } <br> &nbsp; if (posY&lt;(h/2)) { <br> &nbsp;   // value &lt; 0.5 <br> &nbsp;   // big black dots on white <br> &nbsp;   background(255); <br> &nbsp;   fill(0); <br> &nbsp;   diameter=mDia-mDia*posY/h; <br> &nbsp; } <br> &nbsp; else { <br> &nbsp;   // value &gt; 0.5 <br> &nbsp;   // big white dots on black <br> &nbsp;   background(0); <br> &nbsp;   fill(255); <br> &nbsp;   diameter=mDia*posY/h; <br> &nbsp; } <br> &nbsp; float step=diam; <br> &nbsp; ellipseMode(CENTER_DIAMETER); <br> &nbsp; // if drawing white dots <br> &nbsp; // we'll start in the corner <br> &nbsp; int pair=(posY&lt;h/2) ? 0 : 1 ; <br> &nbsp; int xp; <br> &nbsp; for (int cx=1;cx&lt;=(w+diam);cx+=step) { <br> &nbsp;    xp=0; <br> &nbsp;    for (int  cy=0;cy&lt;=(h+diam);cy+=step) { <br> &nbsp;      //  draw a circle out of two steps. <br> &nbsp;      xp++; <br> &nbsp;      if ((xp%2)==pair) { <br> &nbsp;          ellipse(cx,cy,diameter,diameter); <br> &nbsp;      } <br> &nbsp;    } <br> &nbsp;    pair= (pair+1)%2; <br> &nbsp; } <br> } 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Aug 9<sup>th</sup>, 2002, 8:08pm by Bertrand Saint-Guillain</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="11"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>ezdac</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: first code</b><BR>
+                &#171; <B>Reply #11 on:</B> Sep 1<sup>st</sup>, 2002, 12:13pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            hello, <br> here's one of my first codes. <br> it makes the screen like like a broken TV. <br> some others are at <br> <a href="http://ezdac.free.fr/ezp55/" target="_blank">http://ezdac.free.fr/ezp55/</a> <br> if you want codes just e-mail me. &nbsp;<br> &nbsp;<br> //TVnaz <br> //by ezdac <br> //is like a broken TV <br> //you can change color and &quot;shapes&quot; by moving the mouse around <br> //slowly move from left to right <br> &nbsp;<br> int r = 128; <br> int v = 128; <br> int b = 128; <br> int amp ; <br> float colr; <br> float colv; <br> float colb; <br> &nbsp;<br> &nbsp;<br> void setup() <br> { <br> size(200,200); <br> colorMode(RGB,255); <br> } <br> &nbsp;<br> &nbsp;<br> void loop() <br> { <br> &nbsp; if(mousePressed) <br> &nbsp; {delay(1000);} <br> &nbsp; &nbsp;<br> &nbsp; amp=mouseX/12; <br> &nbsp; colr=(200-mouseY)/200.; <br> &nbsp; colb=(mouseY)/200.; <br> &nbsp; colv=abs(100-mouseY)/100.; <br> &nbsp; for(int y=0;y&lt;200;y++) <br> &nbsp; { <br> &nbsp; &nbsp; for(int x=0;x&lt;200;x++) <br> &nbsp; &nbsp; { <br> &nbsp;r = r+ int(random(amp)-2); <br> &nbsp; &nbsp; if ( r&lt;0 &nbsp;){r=255;} <br> &nbsp; &nbsp; if ( r&gt;255){r=0;} <br> &nbsp;v = v+ int(random(amp)-2); <br> &nbsp; &nbsp; if ( v&lt;0 &nbsp;){v=255;} <br> &nbsp; &nbsp; if ( v&gt;255){v=0;} <br> &nbsp;b = b+ int(random(amp)-2); <br> &nbsp; &nbsp; if ( b&lt;0 &nbsp;){b=255;} <br> &nbsp; &nbsp; if ( b&gt;255){b=0;} <br> &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp;<br> &nbsp; &nbsp; setPixel(x,y,color(r*colr,v*colv,b*colb)); <br> &nbsp; &nbsp; } <br> &nbsp; } <br> } 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="12"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>anagma</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: first code</b><BR>
+                &#171; <B>Reply #12 on:</B> Oct 16<sup>th</sup>, 2002, 5:09pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Hi.this is my first code. <br> and this is preview_ <a href="http://www.iamas.ac.jp/~anagma00/proce55ing/" target="_blank">http://www.iamas.ac.jp/~anagma00/proce55ing/</a> <br> &nbsp;<br> -----___=-;//////////////////////// <br> &nbsp;<br> int lineAmount = 80; <br> float[] rads = new float[360]; <br> float[] sins = new float[360]; <br> float[] coss = new float[360]; <br> int[][] pos = new int[lineAmount][3]; <br> int[] colors = new int[lineAmount]; <br> int[] temppos = new int[4]; <br> int offset = lineAmount; <br> boolean mode = false; <br> &nbsp;<br> void setup() <br> { <br> &nbsp; size(400, 400); <br> &nbsp; colorMode(RGB, 255); <br> &nbsp; background(0); <br> &nbsp; stroke(255); <br> &nbsp; ellipseMode(CENTER_DIAMETER); <br> &nbsp; noFill(); <br> &nbsp; float cols = 200/lineAmount; <br> &nbsp; for(int i = 0; i &lt; 360; i++){ <br> &nbsp;   rads[i] = radians(i); <br> &nbsp;   sins[i] = sin(rads[i]); <br> &nbsp;   coss[i] = cos(rads[i]); <br> &nbsp; } <br> &nbsp; for(int i = 0; i &lt; lineAmount; i++){ <br> &nbsp;   for(int j = 0; j &lt; 3; j++){ <br> &nbsp;     pos[i][j] = 0; <br> &nbsp;   } <br> &nbsp;   colors[i] = (int)(255-(cols*i)); <br> &nbsp; } <br> } <br> &nbsp;<br> void loop() <br> { <br> &nbsp; next(); <br> &nbsp; for(int i = 0; i &lt; lineAmount; i++){ <br> &nbsp;   temppos = pos[i]; <br> &nbsp;   push(); <br> &nbsp;   translate(width/2,height/2); <br> &nbsp;   rotateX(rads[temppos[0]]); <br> &nbsp;   rotateY(rads[temppos[1]]); <br> &nbsp;   rotateZ(rads[temppos[2]]); <br> &nbsp;   stroke(colors[i]); <br> &nbsp;   if(mode){ <br> &nbsp;     ellipse(0,0,i*5+100,i*5+100); <br> &nbsp;   }else{ <br> &nbsp;     line(-300,i*2-offset,300,i*2-offset); <br> &nbsp;   } <br> &nbsp;   pop(); <br> &nbsp; } <br> } <br> void mousePressed(){ <br> &nbsp; if(mode){ <br> &nbsp;   mode = false; <br> &nbsp; }else{ <br> &nbsp;   mode = true; <br> &nbsp; } <br> } <br> void next(){ <br> &nbsp; int[] temp = new int[3]; <br> &nbsp; temp[0] = (int)(((float)(mouseX)/width)*360); <br> &nbsp; temp[1] = ((int)(((float)(mouseY)/width)*360)+90)%360; <br> &nbsp; temp[2] = 179-(int)(((float)(mouseX)/width)*180); <br> &nbsp; for(int i=lineAmount-1; i&gt;0; i--){ <br> &nbsp;   pos[i] = pos[i-1]; <br> &nbsp; } <br> &nbsp; for(int i = 0; i&lt;3; i++){ <br> &nbsp;   if(pos[0][i]==temp[i]){ <br> &nbsp;     temp[i] = pos[0][i]; <br> &nbsp;   }else if(pos[0][i]&gt;temp[i]){ <br> &nbsp;     temp[i] = pos[0][i]-1; <br> &nbsp;   }else{ <br> &nbsp;     temp[i] = pos[0][i]+1; <br> &nbsp;   } <br> &nbsp;   if(temp[i]&gt;359){ <br> &nbsp;     temp[i]=0; <br> &nbsp;   } <br> &nbsp;   if(temp[i]&lt;0){ <br> &nbsp;     temp[i] = 359; <br> &nbsp;   } <br> &nbsp; } <br> &nbsp; pos[0] = temp; <br> &nbsp;  <br> } <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Oct 16<sup>th</sup>, 2002, 5:14pm by anagma</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="13"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Glen Murphy</b><br><BR>
+             <a href="http://glenmurphy.com/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: first code</b><BR>
+                &#171; <B>Reply #13 on:</B> Oct 30<sup>th</sup>, 2002, 5:44am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Going for extremely simple here. I'm sure you'll all be caught aghast by my coding style. <br> &nbsp;<br> View at: <a href="http://bodytag.org/nav.php?u=ptest1/" target="_blank">http://bodytag.org/nav.php?u=ptest1/</a> <br> &nbsp;<br> Source: <br> -------------------- <br> &nbsp;<br> // PTEST1 <br> // by Glen Murphy <br> &nbsp;<br> // Extends the 'Combinging Transforms' example <br> // given on the Proce55ing site. <br> &nbsp;<br> float a = 0.0f; <br> &nbsp;<br> void setup() { <br> &nbsp; size(320, 320); <br> &nbsp; background(#eeeeee); <br> &nbsp; stroke(#ffffff); <br> &nbsp; fill(#cccccc); <br> &nbsp; } <br> &nbsp;<br> void loop() { <br> &nbsp; a += 0.001; <br> &nbsp; translate(230, 170, -100); <br> &nbsp; for(float i = 120; i &gt; 20; i--) { <br> &nbsp;   translate(i*0.01, i*0.01, 0); <br> &nbsp;   float rot = a*(1+(0.00002*i)); <br> &nbsp;   rotateX(rot); <br> &nbsp;   rotateY(rot); <br> &nbsp;   rotateZ(rot); <br> &nbsp;   rect(-i, -i, -i, i); <br> &nbsp;   } <br> &nbsp; } 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Oct 30<sup>th</sup>, 2002, 5:49am by Glen Murphy</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="14"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Andrew</b><br><BR>
+     <a href="http://www.andrewchilds.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: first code</b><BR>
+                &#171; <B>Reply #14 on:</B> Nov 3<sup>rd</sup>, 2002, 9:38am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            it's rather embarrassing to post this, but what the hell. my first sketch with proce55ing. <br> &nbsp;<br> <a href="http://www.megatight.com/p5/1/" target="_blank">http://www.megatight.com/p5/1/</a> <br> &nbsp;<br> the source is at <br> <a href="http://www.megatight.com/p5/1/source.txt" target="_blank">http://www.megatight.com/p5/1/source.txt</a> <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;<a href="board_Contributions_Beyond_action_display_num_1045182824_start_15.html">2</a>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_Contributions_Beyond_action_display_num_1045182824_start_.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option value="?board=Programs">&nbsp; - Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option selected value="?board=Contributions_Beyond">=> Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_Contributions_Beyond_action_display_num_1067101634.html">Previous topic</a> | <a href="board_Contributions_Beyond_action_display_num_1068155650.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

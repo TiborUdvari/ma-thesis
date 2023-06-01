@@ -1,0 +1,941 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - 3D object renderer... suggestions?</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Programs_action_display_num_1062123934.html#help" class="nav">Programming Questions & Help
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Programs.html" class="nav">Programs</a> </b>(Moderators: fry, REAS)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    3D object renderer... suggestions?</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_Programs_action_display_num_1064648791.html">Previous topic</a> | <a href="board_Programs_action_display_num_1063901733.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/thread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: 3D object renderer... suggestions?</b> &nbsp;(Read 827 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Jerronimo</b><br><BR>
+     <a href="http://www.cis.rit.edu/~jerry/Software/p5" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>3D object renderer... suggestions?</b><BR>
+                &#171; <B> on:</B> Aug 29<sup>th</sup>, 2003, 4:25am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Okay, so I have this sketch: <br> &nbsp;<br> &nbsp; &nbsp; <a href="http://www.cis.rit.edu/~jerry/Software/p5/flatware_view/" target="_blank">http://www.cis.rit.edu/~jerry/Software/p5/flatware_view/</a> <br> &nbsp;<br> hit 1-6 to change the object, move the mouse to rotate, click and drag to bring it closer. <br> &nbsp;<br> I need suggestions though on a few things. &nbsp;If you look at the sketch code: <br> &nbsp;<br> &nbsp; &nbsp; <a href="http://www.cis.rit.edu/~jerry/Software/p5/flatware_view/flatware_view.pde" target="_blank">http://www.cis.rit.edu/~jerry/Software/p5/flatware_view/flatware_view.pd e</a> <br> &nbsp;<br> Beware: It is huge and gross. &nbsp;It makes the Processing sketchpad painful to use on my computer (Powerbook G4 500mhz, OS X 10.2.6) &nbsp;I noticed it slowing down as i added more and more code. <br> &nbsp;<br> So what I'd like suggestions on are: <br> &nbsp;<br> is there a better way to store the objects? &nbsp;Should I parse them in from a file on the fly? &nbsp;(the original simple file format for these objects can be seen here: <a href="http://www.cis.rit.edu/~jerry/Software/projects/mujaki/mujaki/demo/3/" target="_blank">http://www.cis.rit.edu/~jerry/Software/projects/mujaki/mujaki/demo/3/</a> ) &nbsp;I wrote a perl script to convert these into the lines of P5 seen in the sketch... i can just as easily convert them into another format for P5. <br> &nbsp;<br> Is there a better way to get more definition in the 3d renders themselves? <br> &nbsp;<br> Do any of you have any suggestions to get the code to be better organized? <br> &nbsp;<br> I know that the code is gross, and there's more than likely a better way to do this, but I've only been using the language for about 2 days now, and I'm pretty inexperienced... I'm wide open to any suggestions at all. <br> &nbsp;<br> (although it says something about the language in that I was able to make a 3-d renderer after only having looked at the language for 2 days! &nbsp;<img border=0 border=0 src="public_html/YaBBImages/cheesy.gif"> ) 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Glen Murphy</b><br><BR>
+             <a href="http://glenmurphy.com/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: 3D object renderer... suggestions?</b><BR>
+                &#171; <B>Reply #1 on:</B> Aug 29<sup>th</sup>, 2003, 11:00am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+             <B>Quote:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td width="100%"><table cellpadding="2" cellspacing="0" class="quote" width="100%"><tr><td width="100%"><font face="Arial,Helvetica" class="quote" size="1"> <br> Is there a better way to get more definition in the 3d renders themselves? &nbsp;<br>  </font></td></tr></table></td></tr></table> <br> You could turn the lights() on. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Collin Allen</b><br>Guest
+            <BR><img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: 3D object renderer... suggestions?</b><BR>
+                &#171; <B>Reply #2 on:</B> Sep 21<sup>st</sup>, 2003, 4:30am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+  
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Is there an easier way to create 3d polygons other than doing it manually? <br> &nbsp;<br> I created a fairly simple polygon in 3ds max 5 and exported it as an ASCII Scene, and there are vertices in that file you can format for Processing, but it has issues with the order in which they are given. &nbsp;If I use the points without modification, the two main faces of the object are correct, but the smaller edges are gone except for one side where an &quot;X&quot; has formed (where the Z jumpts to the other face). &nbsp; <br> &nbsp;<br> If I reorder the vertices and put each face in its own beginShape(), it works fine. &nbsp;What a pain, though. &nbsp;Any ideas? 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>elout</b><br><BR><a href="https://forum.processing.org/alpha/board_Programs_action_icqpager_UIN_1274737.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=1274737&img=5" alt="1274737" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=1274737" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="1274737" BORDER=0></a>
+     <a href="http://www.xs4all.nl/~elout/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: 3D object renderer... suggestions?</b><BR>
+                &#171; <B>Reply #3 on:</B> Sep 21<sup>st</sup>, 2003, 12:32pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I made also a simple .ase reader although, although I had to clean it up a bit. (getting rid of all the tabs, and extra unneeded information) <br> &nbsp;<br> <a href="http://proce55ing.net/discourse/yabb/board_Tools_action_display_num_1063823160.html" target="_blank">http://proce55ing.net/discourse/yabb/board_Tools_action_display__num_1063823160.html</a> <br> <a href="http://www.xs4all.nl/~elout/proce55ing/meshtest02/" target="_blank">http://www.xs4all.nl/~elout/proce55ing/meshtest02/</a> <br> &nbsp;<br> The other thing is if you want to add different lights, put this in your setup. <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> lights&#40;&#41;; <br> &nbsp; &#47;&#47;set&#45;up the lights <br> &nbsp; for &#40;int i=0;i&lt;5;i++&#41; <br> &nbsp; { <br> &nbsp; &nbsp; g&#46;lightR&#91;i&#93; = 1&#46;0f; <br> &nbsp; &nbsp; g&#46;lightG&#91;i&#93; = 1&#46;0f; <br> &nbsp; &nbsp; g&#46;lightB&#91;i&#93; = 1&#46;0f; <br> &nbsp; &nbsp; g&#46;lightX&#91;i&#93;= 0&#46;0f; <br> &nbsp; &nbsp; g&#46;lightY&#91;i&#93;= 0&#46;0f; <br> &nbsp; &nbsp; g&#46;lightZ&#91;i&#93;= 0&#46;0f; <br> &nbsp; &nbsp; g&#46;lightKind&#91;i&#93; = DIFFUSE; <br> &nbsp; } &nbsp; <br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> I guess light[0] is the default light, and can`t be changed I guess. the rest of the lights can, I guess up to 10 different lights are supported. <br> lightning example; <br> <a href="http://www.xs4all.nl/~elout/proce55ing/loise/" target="_blank">http://www.xs4all.nl/~elout/proce55ing/loise/</a> <br> &nbsp;<br> I noticed as well when smooth(); turned on you get wierd gaps/edges on your faces. <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>elout</b><br><BR><a href="https://forum.processing.org/alpha/board_Programs_action_icqpager_UIN_1274737.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=1274737&img=5" alt="1274737" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=1274737" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="1274737" BORDER=0></a>
+     <a href="http://www.xs4all.nl/~elout/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: 3D object renderer... suggestions?</b><BR>
+                &#171; <B>Reply #4 on:</B> Sep 21<sup>st</sup>, 2003, 2:17pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I found out today you can do texturemapping as well. <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> BImage a; <br> &nbsp;<br> void setup&#40;&#41; &nbsp;<br> { <br> &nbsp; size&#40;550,550&#41;; <br> &nbsp; background&#40;0, 0, 0&#41;; &nbsp;<br> &nbsp; &#47;&#47;a 200*200 pixel size image &#45; in your data folder&#46; <br> &nbsp; a = loadImage&#40;&quot;florence03&#46;jpg&quot;&#41;; &nbsp;<br> } <br> void loop&#40;&#41; &nbsp;<br> { <br> &nbsp; translate&#40;width&#47;2, height&#47;2, mouseY&#41;; <br> &nbsp; rotateX&#40;mouseX&#47;10&#46;0&#41;; &nbsp;<br> &nbsp; rotateY&#40;mouseY&#47;10&#46;0&#41;; &nbsp;<br> &nbsp; rotateZ&#40;mouseY&#45;mouseX&#47;10&#46;0&#41;; &nbsp;<br> &nbsp; beginShape&#40;QUADS&#41;; &nbsp; <br> &nbsp; &nbsp;textureImage&#40;a&#41;; <br> &nbsp; &nbsp;vertexTexture&#40;0,0&#41;; <br> &nbsp; &nbsp;vertex&#40;0,0,0&#41;; <br> &nbsp; &nbsp;vertexTexture&#40;200,0&#41;; &nbsp; &nbsp; <br> &nbsp; &nbsp;vertex&#40;100,0,0&#41;; <br> &nbsp; &nbsp;vertexTexture&#40;200,200&#41;; &nbsp; &nbsp; <br> &nbsp; &nbsp;vertex&#40;100,100,0&#41;; <br> &nbsp; &nbsp;vertexTexture&#40;0,200&#41;; &nbsp; &nbsp; <br> &nbsp; &nbsp;vertex&#40;0,100,0&#41;; <br> &nbsp; endShape&#40;&#41;; <br> } <br>  </font></td></tr></table></td></tr></table> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="5"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Koenie</b><br><BR><a href="https://forum.processing.org/alpha/board_Programs_action_icqpager_UIN_170825270.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=170825270&img=5" alt="170825270" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=170825270" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="170825270" BORDER=0></a><a href="aim:goim?screenname=koeniedesign&message=Hi.+Are+you+there"><img src="public_html/YaBBImages/aim.gif" alt="koeniedesign" border="0"></a>
+             <a href="http://koeniedesign.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: 3D object renderer... suggestions?</b><BR>
+                &#171; <B>Reply #5 on:</B> Sep 21<sup>st</sup>, 2003, 2:28pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Where did you find that texture mapping thing? I have made a sketch that does the same kinda thing, only it's so much slower: <a href="http://koeniedesign.com/?k=6" target="_blank">http://koeniedesign.com/?k=6</a> <br> &nbsp;<br> Koenie 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr"><a href="http://koeniedesign.com" target="_blank">http://koeniedesign.com</a>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="6"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>elout</b><br><BR><a href="https://forum.processing.org/alpha/board_Programs_action_icqpager_UIN_1274737.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=1274737&img=5" alt="1274737" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=1274737" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="1274737" BORDER=0></a>
+     <a href="http://www.xs4all.nl/~elout/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: 3D object renderer... suggestions?</b><BR>
+                &#171; <B>Reply #6 on:</B> Sep 21<sup>st</sup>, 2003, 3:43pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            to be honest, &nbsp;<br> &nbsp;<br> I decompiled some of the class files too figure if there were any other 'secret' commands like the light stuff. And then I stumbled onto the texture thing, among several other interesting stuff. <br> &nbsp;<br> After that I remembered arielm did some 3D texture stuff, and he uses it as well. <br> &nbsp;<br> (I hope processing gets opensource in the near-future) <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="7"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>mKoser</b><br><BR>
+             <a href="http://www.beyondthree.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: 3D object renderer... suggestions?</b><BR>
+                &#171; <B>Reply #7 on:</B> Sep 21<sup>st</sup>, 2003, 5:25pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            nice hacking elout!... <br> &nbsp;<br> i just gave your texture-mapping example a try (nice and clean example btw!) ... i ended up doing a calaidoscopic cheesy sketch, but nevertheless a small step into exploring texture-mapping! <br> &nbsp;<br> <a href="http://proce55ing.beyondthree.com/?chapter=sketch&project=texturemapping" target="_blank">http://proce55ing.beyondthree.com/?chapter=sketch&amp;project=texturemap ping</a> <br> &nbsp;<br> + mikkel <br> &nbsp;<br> <b>UPDATE / woops</b> <br> hmm, i guess this post doesn't really belong here. (sorry!) <br> I guess I'll play more with textures and re-post in Responsive Form and Games! 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Nov 5<sup>th</sup>, 2003, 4:36pm by mKoser</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">mikkel crone koser | <a href="http://www.beyondthree.com" target="_blank">www.beyondthree.com</a>   |    <a href="http://processing.beyondthree.com" target="_blank">http://processing.beyondthree.com</a>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="8"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Collin Allen</b><br>Guest
+            <BR><img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: 3D object renderer... suggestions?</b><BR>
+                &#171; <B>Reply #8 on:</B> Sep 21<sup>st</sup>, 2003, 9:30pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+  
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Slick! I'll give ASE loading and texture mapping a shot. &nbsp;*still waiting for my password conf email....* 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="9"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>fry</b><br><i></i><BR><BR>
+     <a href="http://acg.media.mit.edu/people/fry/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: 3D object renderer... suggestions?</b><BR>
+                &#171; <B>Reply #9 on:</B> Sep 21<sup>st</sup>, 2003, 10:04pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            <B>on Sep 21<sup>st</sup>, 2003, 3:43pm, <a href="board_Programs_action_display_num_1062123934.html#6">elout  wrote</a>:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td width="100%"><table cellpadding="2" cellspacing="0" class="quote" width="100%"><tr><td width="100%"><font face="Arial,Helvetica" class="quote" size="1">to be honest, &nbsp;<br> &nbsp;<br> I decompiled some of the class files too figure if there were any other 'secret' commands like the light stuff. And then I stumbled onto the texture thing, among several other interesting stuff. <br> &nbsp;<br> After that I remembered arielm did some 3D texture stuff, and he uses it as well. <br> &nbsp;<br> (I hope processing gets opensource in the near-future) <br>  </font></td></tr></table></td></tr></table> <br> we don't intend to keep any of the commands secret, it's just that things that are in flux (or are considered 'advanced' features) aren't documented as well just yet. lights qualify for both of those criteria, since they'll be changing soon (rev 61, prolly). i've made some posts elsewhere on the bboard about how they work (with more info and caveats). <br> &nbsp;<br> and believe me, i hope p5 gets open source soon too.. right now we're only held up by the licensing people at MIT. hopefully it's just a formality but we have to get a rubber stamp for releasing the code. unfortunately these things move slowly and so it'll likely be several weeks before we get the green light. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="10"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>fry</b><br><i></i><BR><BR>
+     <a href="http://acg.media.mit.edu/people/fry/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: 3D object renderer... suggestions?</b><BR>
+                &#171; <B>Reply #10 on:</B> Sep 22<sup>nd</sup>, 2003, 4:40am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            the lighting posts are linked from the 'technotes' section of the site. (<a href="http://proce55ing.net/reference/technotes/" target="_blank">http://proce55ing.net/reference/technotes/</a>) <br> &nbsp;<br> <a href="http://proce55ing.net/discourse/yabb/board_Proce55ing_Software_action_display_num_1039496510.html" target="_blank">http://proce55ing.net/discourse/yabb/board_Proce55ing_Software__action_display_num_1039496510.html</a> <br> <a href="http://proce55ing.net/discourse/yabb/board_Syntax_action_display_num_1057115468.html" target="_blank">http://proce55ing.net/discourse/yabb/board_Syntax_action_displa_y_num_1057115468.html</a> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="11"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>elout</b><br><BR><a href="https://forum.processing.org/alpha/board_Programs_action_icqpager_UIN_1274737.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=1274737&img=5" alt="1274737" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=1274737" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="1274737" BORDER=0></a>
+     <a href="http://www.xs4all.nl/~elout/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: 3D object renderer... suggestions?</b><BR>
+                &#171; <B>Reply #11 on:</B> Sep 23<sup>rd</sup>, 2003, 11:14pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            thx fry; <br> &nbsp;<br> next time I put in my code a command wich p5-version I used, <br> the same 'simple' texture mapping thing now in v.0060 <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> &#47;&#47; source compiled with p5 &#45; v&#46;0060 <br> BImage a; <br> &nbsp; <br> void setup&#40;&#41; &nbsp; <br> { <br> &nbsp; size&#40;550,550&#41;; <br> &nbsp;<br> &nbsp; &#47;&#47;load a 200*200 pixel size image &nbsp;<br> &nbsp; &#47;&#47;put this image in your data folder&#33; <br> &nbsp; a = loadImage&#40;&quot;arch&#46;jpg&quot;&#41;; &nbsp; <br> } <br> void loop&#40;&#41; &nbsp; <br> { <br> &nbsp; &#47;&#47;clear screen <br> &nbsp; background&#40;0, 0, 0&#41;; &nbsp; <br> &nbsp; &nbsp;<br> &nbsp; &#47;&#47;rotation with mouse <br> &nbsp; translate&#40;width&#47;2, height&#47;2, mouseY&#41;; <br> &nbsp; rotateX&#40;mouseX&#47;10&#46;0&#41;; &nbsp; <br> &nbsp; rotateY&#40;mouseY&#47;10&#46;0&#41;; &nbsp; <br> &nbsp; rotateZ&#40;mouseY&#45;mouseX&#47;10&#46;0&#41;; &nbsp; <br> &nbsp; &nbsp;<br> &nbsp; &#47;&#47;draw texture <br> &nbsp; beginShape&#40;QUADS&#41;; &nbsp; <br> &nbsp; &nbsp;texture&#40;a&#41;; <br> &nbsp; &nbsp;&#47;&#47;vertex &#45; x,y,z, u,v <br> &nbsp; &nbsp;&#47;&#47;x,y,z is position &#124; &nbsp;u&#47;v is texture&#45;image position <br> &nbsp; &nbsp;vertex&#40;0,0,0, &nbsp;0,0&#41;; <br> &nbsp; &nbsp;vertex&#40;100,0,0, 200,0&#41;; <br> &nbsp; &nbsp;vertex&#40;100,100,0, &nbsp;200,200&#41;; <br> &nbsp; &nbsp;vertex&#40;0,100,0, &nbsp;0,200&#41;; <br> &nbsp; endShape&#40;&#41;; <br> } &nbsp;<br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> anyway, started working on this -alpha-; 'gestures' &nbsp;<br> shift=flip hands random &#124; mouseclick change lightning &nbsp;<br> <a href="http://www.xs4all.nl/~elout/fingers/" target="_blank">http://www.xs4all.nl/~elout/fingers/</a> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Sep 23<sup>rd</sup>, 2003, 11:56pm by elout</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="12"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>arielm</b><br><BR>
+     <a href="http://www.chronotext.org" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: 3D object renderer... suggestions?</b><BR>
+                &#171; <B>Reply #12 on:</B> Sep 24<sup>th</sup>, 2003, 3:34am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            <B>on Sep 23<sup>rd</sup>, 2003, 11:14pm, <a href="board_Programs_action_display_num_1062123934.html#11">elout  wrote</a>:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td width="100%"><table cellpadding="2" cellspacing="0" class="quote" width="100%"><tr><td width="100%"><font face="Arial,Helvetica" class="quote" size="1">anyway, started working on this -alpha-; 'gestures' &nbsp;<br> shift=flip hands random &#124; mouseclick change lightning &nbsp;<br> <a href="http://www.xs4all.nl/~elout/fingers/" target="_blank">http://www.xs4all.nl/~elout/fingers/</a> </font></td></tr></table></td></tr></table> <br> kraftwerk!!! <br> &nbsp;<br> &nbsp;<br> (btw, pressing 5 times the shift key on win2k is bringing the system &quot;sticky keys&quot; popup) 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">Ariel Malka | <a href="http://www.chronotext.org" target="_blank">www.chronotext.org</a>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_Programs_action_display_num_1062123934.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option selected value="?board=Programs">=> Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_Programs_action_display_num_1064648791.html">Previous topic</a> | <a href="board_Programs_action_display_num_1063901733.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

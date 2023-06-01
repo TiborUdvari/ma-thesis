@@ -1,0 +1,1055 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - v68: code folder bug</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Proce55ing_software_bugs_action_display_num_1076679293_start_15.html#Bugs" class="nav">Bugs
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Proce55ing_software_bugs.html" class="nav">Software Bugs</a> </b>(Moderator: fry)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    v68: code folder bug</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_Proce55ing_software_bugs_action_display_num_1083221401.html">Previous topic</a> | <a href="board_Proce55ing_software_bugs_action_display_num_1083019329.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <a href="https://forum.processing.org/alpha/board_Proce55ing_software_bugs_action_display_num_1076679293_start_.html">1</a>&nbsp;<b>2</b>&nbsp;<a href="board_Proce55ing_software_bugs_action_display_num_1076679293_start_30.html">3</a>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/veryhotthread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: v68: code folder bug</b> &nbsp;(Read 3346 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="15"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>mattgilbert</b><br><BR><a href="aim:goim?screenname=tangramkid&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="tangramkid" border="0"></a>
+             <a href="http://www.mattgilbert.net/soundStrandGenerator/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: v68: code folder bug</b><BR>
+                &#171; <B>Reply #15 on:</B> Apr 16<sup>th</sup>, 2004, 6:16am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            When I download processing versions 66-69 for mac, and look for the RXTXcomm.jar file in the lib folder of each one, I come up with nothing. With all these version installed, a search of my entire hard drive for &quot;RXTXcomm.jar&quot; or even just &quot;RXTXcomm&quot; or &quot;comm&quot; comes up with nothing. <br> &nbsp;<br> My friend who uses Mac OSX and processing 68 doesn't have the file either. <br> &nbsp;<br> I did find a file by that name in the Linux version of Processing 68. But putting it in the code folder didn't help any. Putting it in the lib folder didn't help either. <br> &nbsp;<br> If any Mac OSX users have this file, I'ld love it if you could send it to me: matt at mattgilbert dot net. <br> &nbsp;<br> If I'm supposed to have this file, something really weird is going on. <br> &nbsp;<br> Matt <br> &nbsp;<br> &nbsp;<br> ***Added later*** <br> &nbsp;<br> So then I tried installing RXTX myself onto my machine. I installed it fine, then found the RXTXcomm.jar file and put it in my code folder and Processing's lib folder. When I try to run a processing sketch that uses both serial and sonia libraries, it seems to recognize the new RXTX stuff, because when the sketch is starting up, the debug window says: <br> &nbsp;<br> Devel Library <br> ============================= <br> Native lib Version = RXTX-2.1-7pre7 <br> Java lib Version &nbsp; = RXTX-2.1-7pre7 <br> JSyn using native library JSynV142 <br> JSyn for OS X, Built 5/5/03. <br> Input Device #0: Built-in Audio has 2 channels <br> Input Device #1: Built-in Audio has 2 channels <br> &nbsp;<br> The first 4 lines weren't there before I installed RXTX. It's worth noting that it says the same thing when a copy of the RXTXcomm.jar file is not in the code folder. Also, whether or not the RXTXcomm.jar file is in the lib folder doesn't seem to make a difference either. With everything I've tried, the sketch still doesn't receive serial events. (The sound stuff works as usual, though, and like i said before, a sketch that uses the serial library and not a code folder or the sonia library works wonderfully.) <br> &nbsp;<br> I don't know if that helps at all, but I'm trying to do as much as I can to define the problem on my end. <br> &nbsp;<br> Matt 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Apr 16<sup>th</sup>, 2004, 9:23am by mattgilbert</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="16"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>fry</b><br><i></i><BR><BR>
+     <a href="http://acg.media.mit.edu/people/fry/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: v68: code folder bug</b><BR>
+                &#171; <B>Reply #16 on:</B> Apr 16<sup>th</sup>, 2004, 6:37pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            k, appears that there's a goof with the mac distro that it doesn't include the jar file. but the weird thing is that i don't know why it would be working at all for you, versus just not when run in java mode. <br> &nbsp;<br> serial works when not using a code folder for you, right? <br> &nbsp;<br> (those four lines are RXTX jabbering that it's installed.. however, you're using a different version than what's supposed to be included with p5, so that's gonna give you trouble prolly) <br> &nbsp;<br> update, a copy of the rxtx comm file: &nbsp;<br> <a href="http://acg.media.mit.edu/people/fry/temp/RXTXcomm.jar" target="_blank">http://acg.media.mit.edu/people/fry/temp/RXTXcomm.jar</a> <br> try placing this in your 'code' folder, along with libSerial.jnilib and hopefully that'll get things on track... 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Apr 16<sup>th</sup>, 2004, 6:44pm by fry</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="17"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>mattgilbert</b><br><BR><a href="aim:goim?screenname=tangramkid&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="tangramkid" border="0"></a>
+             <a href="http://www.mattgilbert.net/soundStrandGenerator/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: v68: code folder bug</b><BR>
+                &#171; <B>Reply #17 on:</B> Apr 16<sup>th</sup>, 2004, 7:54pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            it's not fixed yet, but i think i found a useful clue. <br> &nbsp;<br> when I include this line of code: <br> println(gnu.io.RXTXVersion.getVersion()); <br> in the setup() method, the sketch that uses only serial and works fine (has always worked fine, even before I tried installing RXTX myself), always prints &quot;RXTX-1.5-667&quot;. This is the same version as the download you provided, and so whatever RXTXcomm.jar file it's looking to (I haven't figured out where it's looking) is the right one. &nbsp;<br> &nbsp;<br> However, when I run the sketch that uses serial and sonia (and a code folder), with the same version check, it prints &quot;RXTX-2.1-7pre7&quot;. We allready knew that it was using the wrong version, but here's the real clue: <br> &nbsp;<br> The serial/sonia sketch reports &quot;RXTX-1.5-667&quot; only when I replace the RXTXcomm.jar file in the /Library/Java/Extensions folder with the 1.5-667 version. Putting the 1.5-677 version file in the sketch's code folder, the lib folder, or the Processing folder doesn't change anything. It only reports the 1.5-667 version when I replace the RXTXcomm.jar file that's used by everything else java on my computer. &nbsp;<br> &nbsp;<br> So, to recap, it seems that a sketch with no code folder sees the correct version of RXTX (RXTX-1.5-667), &nbsp;although I don't know where it's looking to find that file, and a sketch with a code folder and sonia is looking to the OS's RXTXcomm.jar file, and it isn't looking for it anywhere in the Processing folder. <br> &nbsp;<br> However, even when the correct rxtx version is in the Library/Java/Extensions folder, the sketch with the code folder and sonia still doesn't recieve serial events while the sketch with no code folder does. <br> &nbsp;<br> Does that clear anything up? <br> &nbsp;<br> Matt <br> &nbsp;<br> &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Apr 16<sup>th</sup>, 2004, 7:56pm by mattgilbert</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="18"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>fry</b><br><i></i><BR><BR>
+     <a href="http://acg.media.mit.edu/people/fry/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: v68: code folder bug</b><BR>
+                &#171; <B>Reply #18 on:</B> Apr 16<sup>th</sup>, 2004, 8:41pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            k.. so the 1.5 version is the one that you want. it soudns like there's some other app that might have the rxtx stuff installed in your CLASSPATH somehow, and that seems to be affecting things. but that's a guess. <br> &nbsp;<br> also, you may need to restart processing in-between attempts on this stuff, if you're not doing so already. who knows how the dynamic loading works on the mac. it may not be so dynamic. <br> &nbsp;<br> things to try: &nbsp;<br> &nbsp;<br> 1. keep that RXTXcomm.jar in your /System/Library/Java/Extensions/ folder, and copy libSerial.jnilib to &nbsp;<br> /System/Library/Frameworks/JavaVM.framework/Libraries <br> &nbsp;<br> 2. hopefully you've tried this one, but remove the RXTXcomm.jar from Extensions (and the libSerial.jnilib from Libraries) and put them both in your 'code' folder. thoguh i think what we're finding is that the mac doesn't seem to like that idea for libs. &nbsp;<br> &nbsp;<br> 3. panic <br> &nbsp;<br> 4. report back and we'll try more things. sorry this is a pain in the ass. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="19"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>mattgilbert</b><br><BR><a href="aim:goim?screenname=tangramkid&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="tangramkid" border="0"></a>
+             <a href="http://www.mattgilbert.net/soundStrandGenerator/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: v68: code folder bug</b><BR>
+                &#171; <B>Reply #19 on:</B> Apr 16<sup>th</sup>, 2004, 9:50pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            tried those things, here's what happens: <br> &nbsp;<br> 1. no change. <br> &nbsp;<br> 2. i hadn't tried this one before, and when i did, the sketch passed this error: <br> &nbsp;<br> java.lang.UnsatisfiedLinkError: no Serial in java.library.path thrown while loading gnu.io.RXTXCommDriver <br> Esception in thread &quot;main&quot; java.lang.UnsatisfiedLinkError: no Serial in java.library.path <br> &nbsp; at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1491) <br> &nbsp; at java.lang.Runtime.loadLibrary0(Runtime.java:78<img border=0 src="public_html/YaBBImages/cool.gif"> <br> &nbsp; at java.lang.System.loadLibrary(System.java:834) <br> &nbsp; at gnu.io.CommPortIdentifier.&lt;clinit&gt;(CommPortIdentifier.java:83) <br> &nbsp;<br> so that doesn't seem to work. <br> &nbsp;<br> 3. panicing was fun, but it didn't change anything. <br> &nbsp;<br> 4. so here i am. don't worry, it's not such a pain. i only hope that this is helpful to the development of processing and not just a nuisance to you. <br> &nbsp;<br> Matt <br> &nbsp;<br> &nbsp;<br> &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="20"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>fry</b><br><i></i><BR><BR>
+     <a href="http://acg.media.mit.edu/people/fry/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: v68: code folder bug</b><BR>
+                &#171; <B>Reply #20 on:</B> Apr 16<sup>th</sup>, 2004, 10:57pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            another idea.. it's about the two versions of java. so p5 uses java 1.3, where just running java externally (with a code folder) runs java 1.4 (the system default). rxtx might not work with 1.4. <br> &nbsp;<br> to test the hypothesis (the fix comes later): <br> &nbsp;<br> open Processing.app -&gt; &quot;show package contents&quot; -&gt; Contents/Resources/MRJApp.properties <br> &nbsp;<br> and remove the # in front of this line: <br> #com.apple.mrj.application.JVMVersion=1.3+ <br> to make it: <br> com.apple.mrj.application.JVMVersion=1.3+ <br> &nbsp;<br> and put a # in front of the later line that reads: <br> com.apple.mrj.application.JVMVersion=1.3.1 <br> &nbsp;<br> this will move you to java 1.4. then, try running the serial example with no serial folder, and see if it's broken. if so, that at least tells us where the workaroudn needs to be.. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="21"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>mattgilbert</b><br><BR><a href="aim:goim?screenname=tangramkid&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="tangramkid" border="0"></a>
+             <a href="http://www.mattgilbert.net/soundStrandGenerator/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: v68: code folder bug</b><BR>
+                &#171; <B>Reply #21 on:</B> Apr 17<sup>th</sup>, 2004, 4:33am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            i did as you said, and it broke the serial-with-no-code-folder sketch. When run, it passes this error: <br> (in the top of the debug window) <br> You need to modify your classpath, sourcepath, bootclasspath, and/or extdirs setup. Package &quot;netscape/javascript&quot; could not be found in: &nbsp;<br> &nbsp;<br> (then in the lower part) <br> lib/build/Temporary_1926_6993.java:1:200:1:218: Semantic Error: You need to modify your classpath, sourcepath, bootclasspath, and/or extdirs setup. Package &quot;netscape/javascript&quot; could not be found in: <br> ... <br> &nbsp;<br> And then a whole bunch of file directory paths where java stuff is supposed to be, such as &quot;/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Classes/clas ses.jar&quot; <br> and similar stuff. I would copy and paste them all, but &nbsp;there are maybe 50, and anyway you get the idea. (Also, I can't seem to copy and paste stuff from the debug window. I always have to retype it.) <br> &nbsp;<br> Matt <br> &nbsp;<br> &nbsp;<br> &nbsp;<br> &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="22"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>fry</b><br><i></i><BR><BR>
+     <a href="http://acg.media.mit.edu/people/fry/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: v68: code folder bug</b><BR>
+                &#171; <B>Reply #22 on:</B> Apr 17<sup>th</sup>, 2004, 6:07pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            k, that's helpful.. that means rxtx 1.5 doesn't work with java 1.4, as suspected. which means i need to either 1) hack p5 to explicitly launch 1.3 as the external vm, requiring a new release or 2) hack the serial stuff to make rxtx 2.1 work. &nbsp;<br> &nbsp;<br> (also helpful is the error re: netscape/javascript, since that means that the javascript classes are no longer included in 1.4, thus some of the weird errors that people have been seeing elsewhere. so that solves another mystery.) <br> &nbsp;<br> unfortunately rxtx is really finicky and 2.1 isn't likely to work out of the box. it might be worth trying, though. to do so: <br> &nbsp;<br> 1. remove Processing.app/Contents/Resources/Java/RXTXcomm.jar (that's where the comm.jar is that i couldn't recall). &nbsp;<br> &nbsp;<br> 2. download this release of rxtx: <br> <a href="ftp://jarvi.dsl.frii.com/pub/rxtx/rxtx-2.1-7pre17.tar.gz" target="_blank">ftp://jarvi.dsl.frii.com/pub/rxtx/rxtx-2.1-7pre17.tar.gz</a> <br> and from the MACOSX_IDE\ForPackageMaker\Install\Library\Java\Extensions subfolder of that archive, copy RXTXcomm.jar to your /System/Library/Java/Extensions/ folder, and copy libSerial.jnilib to &nbsp; <br> /System/Library/Frameworks/JavaVM.framework/Libraries <br> &nbsp;<br> 3. put a copy of that RXTXcomm.jar inside Processing.app (where you removed the 1.5 from) and replace the libSerial.jnilib from the &quot;Processing 69&quot; folder. &nbsp;<br> &nbsp;<br> 4. set the java version of Processing.app to 1.4, and check to see if serial will work in a non-code folder situation. &nbsp;<br> &nbsp;<br> 4a. if not, set java back to 1.3 and try that. if that's not working, then 2.1 is useless and needs more testing. <br> &nbsp;<br> 4b. if it works in 1.4, then you're just about solved, and adding the code folder in shouldn't be a problem anymore. <br> &nbsp;<br> 5. you'll need a copy of netscape.javascript, so that you don't get all that error spew. in that linux copy of processing, there should be a 'netscape' folder that's a subfolder of 'lib'. you can drop that into the 'lib' folder of your mac copy of processing. or, unzip jaws.jar from /System/Library/Frameworks/JavaVM.framework/Versions/1.3.1 and pull the netscape folder from there. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="23"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>mattgilbert</b><br><BR><a href="aim:goim?screenname=tangramkid&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="tangramkid" border="0"></a>
+             <a href="http://www.mattgilbert.net/soundStrandGenerator/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: v68: code folder bug</b><BR>
+                &#171; <B>Reply #23 on:</B> Apr 17<sup>th</sup>, 2004, 8:08pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            By the way, I'm using Processing 68 instead of 69. While I tried 69 because of the code folder fix that it was said to have, it didn't work for me and i was having other errors when I tried to dump projects from 68 directly over to 69, so I just stuck with 68. I hope all these suggestions and things you've been giving me aren't 69 specific. If so, oops. I guess I should have made that clearer along the way. Let me know if I whould repeat any of these experiments in 69 before moving on. <br> &nbsp;<br> &nbsp;<br> I tried your suggestiongs anyway, and here are my results: <br> &nbsp;<br> Having done all the file replacements you said, and working in java 1.4: <br> &nbsp;<br> For 5), moving the netscape/javascript folders into the lib folder didn't change anything. It still passed the same error looking for those folders. So I took a closer look at the error message and all the folders that it complained it couldn't find the netscape/javascript stuff in. The lib folder wasn't listed, so it apparently wasn't looking for it there, BUT the &quot;/Applications/Processing 68/Processing.app/Contents/Resources/Java/build&quot; folder was listed. That folder didn't exist, but I made it, and put the netscape/javascript stuff in there. That made it stop passing the error message. (If you want to see the complete error message, with all the folders it looked for the netscape/javascript folder in, it is here: <a href="http://www.mattgilbert.net/netscapeFolderErrorGrab.gif" target="_blank">http://www.mattgilbert.net/netscapeFolderErrorGrab.gif</a> ) <br> &nbsp;<br> So it stopped passing that error message, but it still works as before when it's set to use java 1.4: The sketch with only serial stuff and no code folder works fine, and the sketch with serial and sonia and a code folder doesn't receive serial events. (It does do one thing differently; when closing the sketch with a code folder, it passes this error: <a href="http://www.mattgilbert.net/ErrorOnClose.gif" target="_blank">http://www.mattgilbert.net/ErrorOnClose.gif</a> . This doesn't cause any real problem, since I'm closing the sketch at that point anyway.) <br> &nbsp;<br> So, in response to 4) on your list, the non-code folder sketch works with the new RXTX files and java 1.4 <br> &nbsp;<br> But, in response to 4b) on your list, adding in the code folder actually does screw things up, same as before, except for this added error message: <a href="http://www.mattgilbert.net/ErrorOnClose.gif" target="_blank">http://www.mattgilbert.net/ErrorOnClose.gif</a> . Setting Processing back to work with java 1.3 makes the sketches behave the same way, but without this error coming up. <br> &nbsp;<br> Matt <br> &nbsp;<br> &nbsp;<br> &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="24"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>fry</b><br><i></i><BR><BR>
+     <a href="http://acg.media.mit.edu/people/fry/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: v68: code folder bug</b><BR>
+                &#171; <B>Reply #24 on:</B> Apr 17<sup>th</sup>, 2004, 8:19pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            could you verify that you're in fact running java 1.4 with the non code folder serial sketch, and that the rxtx is version 2.1, &nbsp;<br> &nbsp;<br> println(System.getProperty(&quot;java.version&quot;)); <br> println(gnu.io.RXTXVersion.getVersion()); <br> &nbsp;<br> also, i'd try also using the full setup (java 1.4, rxtx 2.1, netscape libs) on rev 69, since that does things slightly differently (hopefully better) for the libs. &nbsp;<br> &nbsp;<br> this is one of those times i wish i could be just sitting at your machine because we could just try a few dozen things and get it straightened out, but oh well.. <img border=0 src="public_html/YaBBImages/undecided.gif"> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="25"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>mattgilbert</b><br><BR><a href="aim:goim?screenname=tangramkid&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="tangramkid" border="0"></a>
+             <a href="http://www.mattgilbert.net/soundStrandGenerator/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: v68: code folder bug</b><BR>
+                &#171; <B>Reply #25 on:</B> Apr 17<sup>th</sup>, 2004, 8:44pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            aw, hell. <br> &nbsp;<br> using: <br> println(System.getProperty(&quot;java.version&quot;)); <br> println(gnu.io.RXTXVersion.getVersion()); &nbsp;<br> &nbsp;<br> both sketches report: <br> 1.4.2_03 <br> RXTX-1.5-667 <br> &nbsp;<br> now double checking the versions of all the RXTX files in their respective locations... will get back to you. <br> &nbsp;<br> matt <br> &nbsp;<br> &nbsp;<br> *****Added later***** <br> &nbsp;<br> I don't get it, but the file at rxtx-2.1-7pre17/MACOSX_IDE/ForPackageMaker/Install/Library/Java/Extensio ns/RXTXcomm.jar is version 1.5-667 . Apparently, that release has different versions for different operating systems. I could dig up a 2.1-7pre17 version that was meant for a different OS, I guess, but there's probably a good reason that the mac os x version that was distributed is different. <br> &nbsp;<br> Matt <br> &nbsp;<br> &nbsp;<br> ****Added later**** <br> &nbsp;<br> I asked the rxtx guys about that file, and apparently it's a mistake and they are going to fix it for an upcoming release. <br> &nbsp;<br> Matt <br> &nbsp;<br> &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Apr 17<sup>th</sup>, 2004, 10:57pm by mattgilbert</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="26"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>fry</b><br><i></i><BR><BR>
+     <a href="http://acg.media.mit.edu/people/fry/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: v68: code folder bug</b><BR>
+                &#171; <B>Reply #26 on:</B> Apr 18<sup>th</sup>, 2004, 7:46pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            mistake as in it's actually 2.1? or that they forgot to update that file to 1.5? <br> &nbsp;<br> unfortunately with it working in 1.4 i'm now stumped as to what it's doing differently with the sonia stuff. i need to figure out who scammed by serial adapter and try to replicate the problem on my machine here to see if i can get a fix. grrr. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="27"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>mattgilbert</b><br><BR><a href="aim:goim?screenname=tangramkid&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="tangramkid" border="0"></a>
+             <a href="http://www.mattgilbert.net/soundStrandGenerator/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: v68: code folder bug</b><BR>
+                &#171; <B>Reply #27 on:</B> Apr 18<sup>th</sup>, 2004, 9:00pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            i meant that the file at rxtx-2.1-7pre17/MACOSX_IDE/ForPackageMaker/Install/Library/Java/Extensio &nbsp;ns/RXTXcomm.jar is version 1.5-667, which is a mistake, and it should be 2.1. Even the text document explaining installation on MacOSX was refering to 1.5. &nbsp;<br> &nbsp;<br> I tried just compiling it from the source, (in &quot;src&quot; folder), but I don't really understand how and so I only got halfway done&amp;#8211;I got the RXTXcomm.jar file of the right version (2.1-7pre17), but not the libSerial.jnilib file. So now, Processing shows this error in the debug window on startup: <br> &nbsp;<br> &nbsp;Devel Library <br> ============================= <br> Native lib Version = RXTX-2.1-7pre12 <br> Java lib Version &nbsp; = RXTX-2.1-7pre17 <br> WARNING: &nbsp;RXTX Version mismatch <br> &nbsp; Jar version = RXTX-2.1-7pre17 <br> &nbsp; native lib version = RXTX-2.1-7pre12 <br> &nbsp;<br> I take that to mean that the libSerial.jnilib I'm using is version 2.1-7pre12 while the RXTXcomm.jar is 2.1-7pre17. Under these conditions, both of the sketches, with and without code folders, print RXTX-2.1-7pre17 as their version when I use println(gnu.io.RXTXVersion.getVersion());, and they both behave the same as before (still no serialEvents with a code folder). <br> &nbsp;<br> Maybe someone has a libSerial.jnilib file (or librxtxSerial.jnilib file, whichever is appropriate) that's the right version that I can try? <br> &nbsp;<br> Matt <br> &nbsp;<br> &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="28"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>ashtonium</b><br><BR><a href="aim:goim?screenname=kravdraard&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="kravdraard" border="0"></a>
+             <a href="http://www.synapticflux.com/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: v68: code folder bug</b><BR>
+                &#171; <B>Reply #28 on:</B> Apr 26<sup>th</sup>, 2004, 2:00am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            any solution to this problem thus far? &nbsp;how about for PC? <br> &nbsp; <br> running: WinXP pro with 68 and trying desperately to bring sonia into a serial controled project of mine. <br> &nbsp;<br> I tried the listed solution i found in another thread (copying win32com.dll, comm.jar and javax.comm.properties into the code folder). &nbsp;I no longer get any errors, but serial communication is still not functioning when i have the code folder present (as noted by others, it works fine without the code folder). <br> &nbsp;<br> ideas? suggestions? any other files i should copy into the code folder? <br> -kevin 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="29"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>mKoser</b><br><BR>
+             <a href="http://www.beyondthree.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: v68: code folder bug</b><BR>
+                &#171; <B>Reply #29 on:</B> Apr 26<sup>th</sup>, 2004, 2:07am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            so far, no solutions have come up ... not sure (don't have time to try things out in detail right now) but try using 0067 instead, that might work. (don't quote me on it though!) <br> &nbsp;<br> + m 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">mikkel crone koser | <a href="http://www.beyondthree.com" target="_blank">www.beyondthree.com</a>   |    <a href="http://processing.beyondthree.com" target="_blank">http://processing.beyondthree.com</a>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <a href="https://forum.processing.org/alpha/board_Proce55ing_software_bugs_action_display_num_1076679293_start_.html">1</a>&nbsp;<b>2</b>&nbsp;<a href="board_Proce55ing_software_bugs_action_display_num_1076679293_start_30.html">3</a>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_Proce55ing_software_bugs_action_display_num_1076679293_start_15.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option value="?board=Programs">&nbsp; - Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option selected value="?board=Proce55ing_software_bugs">=> Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_Proce55ing_software_bugs_action_display_num_1083221401.html">Previous topic</a> | <a href="board_Proce55ing_software_bugs_action_display_num_1083019329.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

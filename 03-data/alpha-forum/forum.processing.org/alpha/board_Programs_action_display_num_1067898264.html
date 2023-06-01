@@ -1,0 +1,599 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - problem modifying arrays</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Programs_action_display_num_1067898264.html#help" class="nav">Programming Questions & Help
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Programs.html" class="nav">Programs</a> </b>(Moderators: fry, REAS)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    problem modifying arrays</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_Programs_action_display_num_1068161559.html">Previous topic</a> | <a href="board_Programs_action_display_num_1068049491.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/thread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: problem modifying arrays</b> &nbsp;(Read 3648 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Steve</b><br><BR><a href="aim:goim?screenname=nerdytone&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="nerdytone" border="0"></a>
+             <a href="http://www.stevegh.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>problem modifying arrays</b><BR>
+                &#171; <B> on:</B> Nov 3<sup>rd</sup>, 2003, 11:24pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Basically what i want to do at the following page <br> <a href="http://p5.stevegh.com/recycle/" target="_blank">http://p5.stevegh.com/recycle/</a> <br> is after you click on the recycle logo, it turns to noise, then when you hit a key, it check the position of the noise on the screen, and stores a point in an array for every black pixel, then i want these points to ease from their positions to the positions of the tree. as of now there is no ease because when i have the lines(found in step 3): <br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">for&#40;int i = 0;i&lt;xTreePos&#46;length;i++&#41;{ <br> &nbsp;     xDotPos&#91;i&#93; += &#40;xTreePos&#91;i&#93;&#45;xDotPos&#91;i&#93;&#41;; <br> } <br> for&#40;int i = 0;i&lt;yTreePos&#46;length;i++&#41;{ <br> &nbsp;     yDotPos&#91;i&#93; += &#40;yTreePos&#91;i&#93;&#45;yDotPos&#91;i&#93;&#41;; <br> } </font></td></tr></table></td></tr></table> <br> if i put in something like: <br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">for&#40;int i = 0;i&lt;xTreePos&#46;length;i++&#41;{ <br> &nbsp;     xDotPos&#91;i&#93; += &#40;xTreePos&#91;i&#93;&#45;xDotPos&#91;i&#93;&#41;&#47;10;&#47;&#47;&lt;&#45; dividing here to get an ease effect <br> } <br> for&#40;int i = 0;i&lt;yTreePos&#46;length;i++&#41;{ <br> &nbsp;     yDotPos&#91;i&#93; += &#40;yTreePos&#91;i&#93;&#45;yDotPos&#91;i&#93;&#41;&#47;10;&#47;&#47;&lt;&#45; <br> } </font></td></tr></table></td></tr></table> <br> the points dont end up in the right place, and they dont appear to start from the same place either. if i move the noise to the top right and press a key the new points appear to come from the bottom left. so if anyone knows why this isnt working i would greatly appreciate any help! &nbsp;<br> &nbsp;<br> sidenote if you are going to play with it the recycle.gif should be in the same dir with the pde. <br> &nbsp;<br> thanks! <br> -steve <br> &nbsp;<br> edit: an example of how wierd it acts is at <br> <a href="http://p5.stevegh.com/recycle2/" target="_blank">http://p5.stevegh.com/recycle2/</a> <br> and in that version you can hit 'r' to restart it after the tree is 'formed' 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Nov 4<sup>th</sup>, 2003, 7:29pm by Steve</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Steve</b><br><BR><a href="aim:goim?screenname=nerdytone&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="nerdytone" border="0"></a>
+             <a href="http://www.stevegh.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: problem modifying arrays</b><BR>
+                &#171; <B>Reply #1 on:</B> Nov 5<sup>th</sup>, 2003, 12:12pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            ok heres what i was helped to find out. i didnt think it would have any effect at the time, but because the array of the tree points is exactly 3666 units long, and when the noise gets scanned it varies from 2000-3400, there are points in that array that dont get defined, and when the array goes to get drawn for the first interpolation between the two, some or the points come from 0,0. so how to fix this? ArrayList(), so i create the array length on the fly, however using this with an ease of the point caused the whole thing to be scaled down, oddly, and it's much too slow. so i propose another option but need some help with syntax to do it. <br> &nbsp;<br> say after the points of noise are scanned and stored into the array thats 3666, but actually only holds 2000-3400 points, that i check to see which points are null(i noticed null turns red in p5, but saw no documentation on in here or at java.sun.com), and then remove those points. then find the difference in the length of the tree points array and this array, and disperse the tree points evenly according to this differece. &nbsp;<br> &nbsp;<br> does this sound feasible? anyone else have any suggestions on why when trying to make the values of an ArrayList ease that the whole array is scaled by the ease value, and why its running so slow? <br> &nbsp;<br> thanks =T <br> -steve 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>toxi</b><br><BR>
+     <a href="http://toxi.co.uk/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: problem modifying arrays</b><BR>
+                &#171; <B>Reply #2 on:</B> Nov 5<sup>th</sup>, 2003, 1:05pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            you're using int[] arrays again instead of float[] to store the pixel coordinates. because of that the end result of the interpolation doesn't yield correct values due to all the rounding errors on the way. you had the same problem in a previous thread. <br> &nbsp;<br> also, if you haven't got enough entries (less than 3666) from parsing the noise image, just fill up the list with random points and you don't have to worry about any &quot;special cases&quot; <br> &nbsp;<br> finally, you can slightly speed up the line: <br> xDotPos[i] += (xTreePos[i]-xDotPos[i])/10; <br> &nbsp;<br> by replacing the division by 10 with a multiply *0.1 <br> xDotPos[i] += (xTreePos[i]-xDotPos[i])*0.1; <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Nov 5<sup>th</sup>, 2003, 1:07pm by toxi</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr"><a href="http://toxi.co.uk/" target="_blank">http://toxi.co.uk/</a>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Steve</b><br><BR><a href="aim:goim?screenname=nerdytone&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="nerdytone" border="0"></a>
+             <a href="http://www.stevegh.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: problem modifying arrays</b><BR>
+                &#171; <B>Reply #3 on:</B> Nov 5<sup>th</sup>, 2003, 6:11pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            perfect! thanks that makes sense now. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>mflux</b><br><BR><a href="aim:goim?screenname=fluxhavoc&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="fluxhavoc" border="0"></a>
+     <a href="http://www.design.ucla.edu/~mflux" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: problem modifying arrays</b><BR>
+                &#171; <B>Reply #4 on:</B> Nov 6<sup>th</sup>, 2003, 12:19pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Toxi: why is division slower than multiplication of a decimal? 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="5"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>toxi</b><br><BR>
+     <a href="http://toxi.co.uk/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: problem modifying arrays</b><BR>
+                &#171; <B>Reply #5 on:</B> Nov 6<sup>th</sup>, 2003, 2:22pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            mike, that's because even todays CPU's have a harder time with division than with the other calculation modes due to a lack of fast division algorithms known. remember that chips are made of millions of logical circuits only executing binary logic operations like AND, OR, NOT, XOR. everything you want the machine to do is ultimately broken down into such basic constructs. for calculating tasks the beauty is, you often don't need all four basic modes of addition, substraction, multiplication and division - you can express most things with addition and multiplication only. and even multiplication is handled via additions internally. there're many algorithms for doing this. eg. a very CPU friendly version is the <a href="http://mathforum.org/dr.math/faq/faq.peasant.html" target="_blank">russian pesant multiplication</a>. it's &quot;friendly&quot; because it's only based on doubling and halfing numbers, something which can be easily (or in other words &quot;fast&quot;!) executed by the chip as multiplication and division by factors of 2 can be considered special cases. without going into too much detail now (a tutorial about this is in preparation) shifting an integer number one bit to the left equals the number times 2, while a 1bit right shift equals a division by 2. again, note though, this is only true for integers. floats are stored in a <a href="http://proce55ing.net/discourse/yabb/board_Syntax_action_display_num_1061302380.html" target="_blank">totally different format</a>, a trade off between higher precision and less CPU friendlyness. this in short explains why integer math is generally faster and why you should avoid floats for timecritical tasks (although the difference is quite small when using floats wisely). from a speed point of view, numbers of the type &quot;double&quot; and &quot;long&quot; are the worst (at least on current 32bit machines). they're actually 64bit long and have to be processed in two halves/steps. <br> &nbsp;<br> here's a quick test script to see the difference: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">float x=10000,y; <br> double xd=10000,yd; <br> int xi=10000,yi; <br> int iter=100000000; <br> &nbsp;<br> &#47;&#47; double division <br> int t0=millis&#40;&#41;; <br> for&#40;int i=0; i&lt;iter; i++&#41; yd=xd&#47;2&#46;0; <br> println&#40;&quot;double y=x&#47;2 &#58; &quot;+&#40;millis&#40;&#41;&#45;t0&#41;+&quot;ms&quot;&#41;; <br> &nbsp;<br> &#47;&#47; double multiply <br> t0=millis&#40;&#41;; <br> for&#40;int i=0; i&lt;iter; i++&#41; yd=xd*0&#46;5; <br> println&#40;&quot;double y=x*0&#46;5 &#58; &quot;+&#40;millis&#40;&#41;&#45;t0&#41;+&quot;ms&quot;&#41;; <br> &nbsp;<br> &#47;&#47; double multiply <br> t0=millis&#40;&#41;; <br> for&#40;int i=0; i&lt;iter; i++&#41; yd=xd+2; <br> println&#40;&quot;double y=x+2 &#58; &quot;+&#40;millis&#40;&#41;&#45;t0&#41;+&quot;ms&quot;&#41;; <br> &nbsp;<br> &#47;&#47; float division <br> t0=millis&#40;&#41;; <br> for&#40;int i=0; i&lt;iter; i++&#41; y=x&#47;2; <br> println&#40;&quot;float y=x&#47;2 &#58; &quot;+&#40;millis&#40;&#41;&#45;t0&#41;+&quot;ms&quot;&#41;; <br> &nbsp;<br> &#47;&#47; float multiply <br> t0=millis&#40;&#41;; <br> for&#40;int i=0; i&lt;iter; i++&#41; y=x*0&#46;5f; <br> println&#40;&quot;float y=x*0&#46;5 &#58; &quot;+&#40;millis&#40;&#41;&#45;t0&#41;+&quot;ms&quot;&#41;; <br> &nbsp;<br> &#47;&#47; float addition <br> t0=millis&#40;&#41;; <br> for&#40;int i=0; i&lt;iter; i++&#41; y=x+2; <br> println&#40;&quot;float y=x+2 &#58; &quot;+&#40;millis&#40;&#41;&#45;t0&#41;+&quot;ms&quot;&#41;; <br> &nbsp;<br> &#47;&#47; int division <br> t0=millis&#40;&#41;; <br> for&#40;int i=0; i&lt;iter; i++&#41; yi=xi&#47;2; <br> println&#40;&quot;int y=x&#47;2 &#58; &quot;+&#40;millis&#40;&#41;&#45;t0&#41;+&quot;ms&quot;&#41;; <br> &nbsp;<br> &#47;&#47; int multiply <br> t0=millis&#40;&#41;; <br> for&#40;int i=0; i&lt;iter; i++&#41; yi=xi*2; <br> println&#40;&quot;int y=x*2 &#58; &quot;+&#40;millis&#40;&#41;&#45;t0&#41;+&quot;ms&quot;&#41;; <br> &nbsp;<br> &#47;&#47; int addition <br> t0=millis&#40;&#41;; <br> for&#40;int i=0; i&lt;iter; i++&#41; yi=xi+2; <br> println&#40;&quot;int y=x+2 &#58; &quot;+&#40;millis&#40;&#41;&#45;t0&#41;+&quot;ms&quot;&#41;; <br> &nbsp;<br> &#47;&#47; int bitshift right <br> t0=millis&#40;&#41;; <br> for&#40;int i=0; i&lt;iter; i++&#41; yi=xi&gt;&gt;1; <br> println&#40;&quot;int y=x&gt;&gt;1 &#58; &quot;+&#40;millis&#40;&#41;&#45;t0&#41;+&quot;ms&quot;&#41;; <br> &nbsp;<br> &#47;&#47; int bitshift left <br> t0=millis&#40;&#41;; <br> for&#40;int i=0; i&lt;iter; i++&#41; yi=xi&lt;&lt;1; <br> println&#40;&quot;int y=x&lt;&lt;1 &#58; &quot;+&#40;millis&#40;&#41;&#45;t0&#41;+&quot;ms&quot;&#41;; </font></td></tr></table></td></tr></table> <br> &nbsp;<br> the results on my machine are: <br> &nbsp;<br> double y=x/2 : 2073ms <br> double y=x*0.5 : 210ms <br> double y=x+2 : 351ms <br> float y=x/2 : 1211ms <br> float y=x*0.5 : 211ms <br> float y=x+2 : 200ms <br> int y=x/2 : 310ms <br> int y=x*2 : 171ms <br> int y=x+2 : 150ms <br> int y=x&gt;&gt;1 : 170ms <br> int y=x&lt;&lt;1 : 170ms <br> &nbsp;<br> even though the difference between float and int multiplication seems small, also remember that an animation running at 30 fps only has about 33 milliseconds to prepare and render a frame, but it also has to share this time with other processes running... with interactive projects, writing non-optimized code can, in extreme cases, spoil an entire concept/idea if the response from the programme is too sluggish for the user to accept (not even talking about enjoying!). so even though the above points seem less essential knowledge &amp; very geeky, i always consider them as very important for my own work. <br> &nbsp;<br> ..and i shall stop myself from typing even more at this point... <img border=0 src="public_html/YaBBImages/wink.gif"> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr"><a href="http://toxi.co.uk/" target="_blank">http://toxi.co.uk/</a>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="6"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>mflux</b><br><BR><a href="aim:goim?screenname=fluxhavoc&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="fluxhavoc" border="0"></a>
+     <a href="http://www.design.ucla.edu/~mflux" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: problem modifying arrays</b><BR>
+                &#171; <B>Reply #6 on:</B> Nov 6<sup>th</sup>, 2003, 11:39pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Thanks Toxi! That is very helpful to know. I've been wanting to ask how fast and well Processing handles floats vs ints. My highschool programs were written using doubles and the programs were horrendously slow. I've learned since to use ints however, because Java is very draconian about variable conversion, it becomes very tedious to convert ints into floats every other command I write. &nbsp;<br> &nbsp;<br> Does converting floats to ints take a lot of time? Often times I find that I need my ints to become floats temporarily for a calculation, but I'm afraid to cast my ints as floats because I'm assuming that that operation takes some time, and the amount of converting I'm using is so much that I might as well just use floats to begin with! <br> &nbsp;<br> Should I not worry about variable casting and just use ints in as many places as I can spare? 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_Programs_action_display_num_1067898264.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option selected value="?board=Programs">=> Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_Programs_action_display_num_1068161559.html">Previous topic</a> | <a href="board_Programs_action_display_num_1068049491.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

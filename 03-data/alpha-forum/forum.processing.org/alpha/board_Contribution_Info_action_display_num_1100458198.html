@@ -1,0 +1,1055 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - map an image to a mesh</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Contribution_Info_action_display_num_1100458198.html#Examples" class="nav">Topics & Contributions
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Contribution_Info.html" class="nav">Information Visualization</a> </b>(Moderators: forkinsocket, REAS)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    map an image to a mesh</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_Contribution_Info_action_display_num_1099659058.html">Previous topic</a> | <a href="board_Contribution_Info_action_display_num_1100270422.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/thread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: map an image to a mesh</b> &nbsp;(Read 2802 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>_C</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>map an image to a mesh</b><BR>
+                &#171; <B> on:</B> Nov 14<sup>th</sup>, 2004, 7:49pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            hi everybody, <br> &nbsp;<br> i want to map an image onto a polygon mesh <br> while creating the mesh following a [][] <br> pointarray. has someone done that so far? <br> &nbsp;<br> this would help me a lot further! &nbsp;<br> thanks for any hints <br> &nbsp;<br> c 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>fjen</b><br><BR>
+     <a href="http://www.florianjenett.de/p55/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: map an image to a mesh</b><BR>
+                &#171; <B>Reply #1 on:</B> Nov 14<sup>th</sup>, 2004, 9:41pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            this should get you started: <br> &nbsp;<br> <a href="http://processing.org/discourse/yabb/board_Proce55ing_Software_action_display_num_1079193026.html" target="_blank">http://processing.org/discourse/yabb/board_Proce55ing_Software__action_display_num_1079193026.html</a> <br> &nbsp;<br> /F 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>_C</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: map an image to a mesh</b><BR>
+                &#171; <B>Reply #2 on:</B> Nov 14<sup>th</sup>, 2004, 11:34pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            hi fjen, <br> &nbsp;<br> thank you, i knew this one, nevertheless it remains <br> hard to imagine what the u, v thing does. &nbsp;<br> &nbsp;<br> it works to map an image onto a mesh, problems remai- <br> ning are: how to get the positions of an images` points with certain colors into an [][]array, not &nbsp;<br> using a Vector for that since it is hard to handle &nbsp;<br> with the iteration things. &nbsp;<br> &nbsp;<br> bye <br> c 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>fjen</b><br><BR>
+     <a href="http://www.florianjenett.de/p55/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: map an image to a mesh</b><BR>
+                &#171; <B>Reply #3 on:</B> Nov 15<sup>th</sup>, 2004, 1:29am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            think of them as being x and y coordinates in the texture-2d-space. so every point in your mesh represents/holds one point in the texture. <br> &nbsp;<br> how exactly is the data arranged in you [][]array? <br> &nbsp;<br> /F 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>_C</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: map an image to a mesh</b><BR>
+                &#171; <B>Reply #4 on:</B> Nov 15<sup>th</sup>, 2004, 11:59am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            so, what i exactly wanted to do is: <br> reading an transparent image, and put every position <br> in the image with an alpha higher than zero into <br> an array. the problem is: how can i get the positions <br> into a [][]array? &nbsp;<br> &nbsp;<br> ido: for(...img.width;i++) { <br> &nbsp; for(...img.height; j++) { &nbsp;<br> &nbsp; &nbsp; if(alpha(pixels[j][i])&gt;0) { <br> &nbsp; &nbsp; &nbsp;//and then i need j, i in an [][] &nbsp; &nbsp; <br> &nbsp; &nbsp; } <br> &nbsp; &nbsp;} <br> &nbsp; } <br> pixels beeing an array with the pixels, i only &nbsp;<br> want to have the indices. strange thing. &nbsp; <br> c <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="5"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>fjen</b><br><BR>
+     <a href="http://www.florianjenett.de/p55/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: map an image to a mesh</b><BR>
+                &#171; <B>Reply #5 on:</B> Nov 15<sup>th</sup>, 2004, 5:42pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            i don't seem to get the big picture. <br> &nbsp;<br> why is it you need the [][] to hold the same indices as in pixels? this is just more or less duplicating pixels[][] in the end ... because if you'd have alpha==0 at j = 10 and i =100 then the_array[][] would be of size 10*100. get it? <br> to read this value you'd have to run thru the_array[][] the same way as you do right now with pixels[][], so in the end you could just run thru pixels itself and test for alpha==0 again. <br> &nbsp;<br> maybe you could give a little more insight of what you are trying to do? some code maybe? <br> &nbsp;<br> i just read your original post, and i think you're just on the wrong way in creating these points(array) (from the image ?) ... using a [][] array for a mesh makes great sense if all the rows are of same length, but that's not what you are gonna end up with doing it the way you've tried. <br> &nbsp;<br> /F 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="6"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>_C</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: map an image to a mesh</b><BR>
+                &#171; <B>Reply #6 on:</B> Nov 15<sup>th</sup>, 2004, 7:56pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            hi fjen, <br> &nbsp;<br> you are right, this doesnt really make sense. &nbsp;<br> the point was just thut later on, i maybe wanted <br> to change the z values of the points i got out &nbsp;<br> of the picture, besides, it was the aim to have <br> an array with 'non alpha coordinates', so that &nbsp;<br> i could later on draw the image with what i want, <br> eg boxes, rects and so on. &nbsp;<br> &nbsp;<br> so, if i wanted to create the array, i would do it <br> like this <br> &nbsp;<br> &nbsp;for(int i=0; i&lt;pixels.length; i++) { <br> &nbsp; &nbsp;for(int j&lt;pixels.width; j++) { <br> &nbsp; &nbsp; &nbsp;if(alpha(pixels[j][i]&gt;0) { <br> &nbsp; &nbsp;newarray[j][i] = j*i; &nbsp;<br> &nbsp; <br> &nbsp;} <br> &nbsp; &nbsp; } <br> &nbsp; } &nbsp;<br> &nbsp;<br> ? &nbsp;<br> &nbsp;<br> &nbsp;<br> heres how i did it: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> int imgwidth, imgheight; <br> int res=30; <br> float d=1; <br> float zValues&#91;&#93;&#91;&#93;; <br> BImage img; <br> float rtx, rtz; <br> int imgArray&#91;&#93;&#91;&#93;; <br> int t, tt; <br> float noiseScale, noiseScale2; <br> color strokeColors&#91;&#93;&#91;&#93;; <br> &nbsp;<br> &nbsp;<br> void setup&#40;&#41; { <br> &nbsp;<br> &nbsp; img=loadImage&#40;&quot;9045welt_outlined&#46;gif&quot;&#41;; imageMode&#40;CENTER_DIAMETER&#41;; <br> &nbsp; &nbsp; <br> &nbsp;<br> &nbsp; imgArray = new int&#91;img&#46;height&#93;&#91;img&#46;width&#93;; <br> &nbsp; for&#40;int i=0; i&lt;img&#46;width; i++&#41; { <br> &nbsp; &nbsp; for&#40;int j=0; j&lt;img&#46;height; j++&#41; { <br> &nbsp;imgArray&#91;j&#93;&#91;i&#93; = img&#46;pixels&#91;j*img&#46;height+i&#93;; <br> &nbsp;<br> &nbsp; &nbsp; } <br> &nbsp; } <br> &nbsp;<br> &nbsp; imgwidth = &nbsp;img&#46;width; <br> &nbsp; imgheight= &nbsp;img&#46;height; <br> &nbsp;<br> &nbsp; zValues = new float&#91;imgheight&#93;&#91;imgwidth&#93;; <br> &nbsp; for&#40;int i=0; i&lt;zValues&#46;length; i++&#41; { <br> &nbsp; &nbsp; for&#40;int j=0; j&lt;zValues&#91;0&#93;&#46;length; j++&#41; { <br> &nbsp;noiseScale+=0&#46;0015; noiseScale2+=0&#46;003; <br> &nbsp;zValues&#91;i&#93;&#91;j&#93; = noise&#40;noiseScale, noiseScale2&#41;*50 &nbsp;;&#47;&#47;noise&#40;noiseScale, noiseScale2&#41;; <br> &nbsp;<br> &nbsp; &nbsp; } <br> &nbsp; } <br> &nbsp; &nbsp;<br> &nbsp; zValues&#91;10*res&#93;&#91;15*res&#93; = 200; <br> &nbsp; zValues&#91;16*res&#93;&#91;15*res&#93; = &#45;200; <br> &nbsp; &nbsp;<br> &nbsp; strokeColors = new color&#91;imgheight&#93;&#91;imgwidth&#93;; <br> &nbsp; &nbsp;getStrokeColor&#40;&#41;; <br> &nbsp; size&#40;1024, 768&#41;; <br> &nbsp; background&#40;150&#41;; <br> &nbsp; &nbsp;<br> } <br> &nbsp;<br> void rotation&#40;&#41; { <br> &nbsp; rtx+=&#40;&#40;mouseY&#45;height&#47;2&#41;*0&#46;5&#45;rtx&#41;*0&#46;001; <br> &nbsp; rtz+=&#40;&#40;mouseX&#45;width&#47;2&#41;*0&#46;5&#45;rtz&#41;*0&#46;001; <br> &nbsp; rotateX&#40;rtx&#41;; rotateZ&#40;rtz&#41;; <br> &nbsp;<br> } <br> &nbsp;<br> void loop&#40;&#41; { <br> &nbsp; clear&#40;&#41;; &nbsp;<br> &nbsp; mesh&#40;&#41;; <br> &nbsp;<br> &nbsp;<br> } <br> &nbsp;<br> &nbsp;<br> void mesh&#40;&#41; { <br> &nbsp;<br> &nbsp; push&#40;&#41;; <br> &nbsp; translate&#40;width&#47;2, height&#47;2, 0&#41;; <br> &nbsp; scale&#40;0&#46;8&#41;; <br> &nbsp; rotation&#40;&#41;; <br> &nbsp; &nbsp;<br> &nbsp; for&#40;int i=0; i&lt;imgwidth&#45;res; i+=res&#41; { <br> &nbsp;<br> &nbsp; &nbsp; beginShape&#40;TRIANGLE_STRIP&#41;; <br> &nbsp;<br> &nbsp; &nbsp; for&#40;int j=0; j&lt;imgheight; j+=res&#41; { <br> &nbsp;<br> &nbsp;t = int&#40;zValues&#91;j&#93;&#91;i&#93; * d&#41;; <br> &nbsp;tt = int&#40;zValues&#91;j&#93;&#91;i+res&#93; * d&#41;; <br> &nbsp;<br> &nbsp; <br> &nbsp;stroke&#40;255,255,255,12&#41;; <br> &nbsp; <br> &nbsp; &nbsp;<br> &nbsp;texture&#40;img&#41;; <br> &nbsp; <br> &nbsp;vertex&#40;i&#45;imgwidth&#47;2, &nbsp;j&#45;imgheight&#47;2,t,i,j&#41;; <br> &nbsp;vertex&#40;i+res&#45;imgwidth&#47;2, &nbsp;j&#45;imgheight&#47;2, tt, i+res, j&#41;; <br> &nbsp;<br> &nbsp; &nbsp; } <br> &nbsp;<br> &nbsp; &nbsp; endShape&#40;&#41;; <br> &nbsp; } <br> &nbsp; pop&#40;&#41;; <br> &nbsp; <br> } <br> &nbsp;<br> void getStrokeColor&#40;&#41; { <br> &nbsp; &nbsp;for&#40;int i=0; i&lt;img&#46;width&#45;res; i++&#41; { <br> &nbsp; &nbsp; for&#40;int j=0; j&lt;img&#46;height&#45;res; j++&#41; { <br> &nbsp;if&#40;alpha&#40;imgArray&#91;j&#93;&#91;i&#93;&#41;&gt;0&#41; { <br> &nbsp; strokeColors&#91;j&#93;&#91;i&#93; = color&#40;100,100,100&#41;; <br> &nbsp; &nbsp;<br> &nbsp;} <br> &nbsp;else strokeColors&#91;j&#93;&#91;i&#93; = color&#40;255,255,255,0&#41;; <br> &nbsp; <br> &nbsp; &nbsp; &nbsp;} <br> &nbsp; &nbsp;} &nbsp;<br> } <br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="7"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>fjen</b><br><BR>
+     <a href="http://www.florianjenett.de/p55/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: map an image to a mesh</b><BR>
+                &#171; <B>Reply #7 on:</B> Nov 15<sup>th</sup>, 2004, 9:36pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            what i'd do is: <br> create a simple class to hold you coordinates &amp; alpha: <br> &nbsp;<br> class Point3D <br> { <br> &nbsp; float x, y, z, u, v; <br> &nbsp; int alpha; <br> &nbsp; Point3D( float x, float y, float z, float u, float v, int alpha) <br> &nbsp; { <br> &nbsp; &nbsp; this.x = x; this.y = y; .... <br> &nbsp; } <br> } <br> &nbsp;<br> create an array to store the points: <br> &nbsp;<br> int wres = img.width/res; <br> int hres = img.height/res; <br> &nbsp;<br> Point3D points = new Point3D[wres*hres]; <br> for (int wx=0; wx &lt;wres; wx++) <br> { <br> &nbsp; for (int hy=0; hy &lt;hres; hy++) <br> &nbsp; { <br> &nbsp; &nbsp; // calculate x, y, noise and u, v here ... <br> &nbsp; &nbsp;int a = alpha( img.pixels[wx*res + (hy*res) * img.width] ); <br> &nbsp; &nbsp; points[wx+hy*wres] = new Point3D(wx, hy, your_noise, u, v, a); <br> } <br> } <br> &nbsp;<br> now you don't have to recalculate eveything in the loop .. <br> &nbsp;<br> to create/draw your mesh simply use somehting like: <br>  vertex(points[0].x, points[0].y, points[0].z, points[0].u, points[0].v); <br> &nbsp;<br> i have not tested the code ... just for illustration. <br> &nbsp;<br> /F 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="8"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>_C</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: map an image to a mesh</b><BR>
+                &#171; <B>Reply #8 on:</B> Nov 16<sup>th</sup>, 2004, 1:58am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            thank you! that was fine. didnt try the code, <br> but i will when i can keep my eyes opened again <img border=0 src="public_html/YaBBImages/wink.gif"> <br> &nbsp;<br> c 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="9"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>_C</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: map an image to a mesh</b><BR>
+                &#171; <B>Reply #9 on:</B> Nov 16<sup>th</sup>, 2004, 2:02am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            ..the reason why i tried to store it in a matrix <br> like [][] is that later on, i may would have to &nbsp;<br> define exact positions on a mesh, and it was easy <br> for me to imagine where the points were when i can <br> imagine them at a specific point on the matrix, for <br> your consideration. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="10"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>fjen</b><br><BR>
+     <a href="http://www.florianjenett.de/p55/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: map an image to a mesh</b><BR>
+                &#171; <B>Reply #10 on:</B> Nov 16<sup>th</sup>, 2004, 3:18am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            you still can store the points3d in your 2d-array. multi-dimensional arrays can be pretty not-fun ... but in your case it's gonna be static(*) i think ... <br> &nbsp;<br> so as a little guten-morgen-gutsele: <br> &nbsp;<br> Point3D[][] points = new Point3D[wres][hres]; <br> for (int wx=0; wx &lt;wres; wx++) &nbsp;<br> { &nbsp;<br>   for (int hy=0; hy &lt;hres; hy++) &nbsp;<br>   { &nbsp;<br>     // calculate x, y, noise and u, v here ... &nbsp;<br>    int a = alpha( img.pixels[wx*res + (hy*res) * img.width] ); &nbsp;<br>     points[wx][hx] = new Point3D(wx, hy, your_noise, u, v, a); &nbsp;<br> } &nbsp;<br> } <br> &nbsp;<br> sleep well, <br> /F <br> &nbsp;<br> (*) static not in a java sense ... not to be resized later i ment. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Nov 16<sup>th</sup>, 2004, 3:19am by fjen</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="11"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>_C</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: map an image to a mesh</b><BR>
+                &#171; <B>Reply #11 on:</B> Nov 16<sup>th</sup>, 2004, 8:45pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            thats great. but could you explain what you meant &nbsp; <br> with 'guten-morgen-gutsele'? 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="12"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>fjen</b><br><BR>
+     <a href="http://www.florianjenett.de/p55/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: map an image to a mesh</b><BR>
+                &#171; <B>Reply #12 on:</B> Nov 16<sup>th</sup>, 2004, 10:04pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            good-morning-cookie ... thought you were from germany because the image you used in your code was called welt-something ... /F 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Nov 16<sup>th</sup>, 2004, 10:04pm by fjen</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="13"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>_C</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: map an image to a mesh</b><BR>
+                &#171; <B>Reply #13 on:</B> Nov 17<sup>th</sup>, 2004, 2:59pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            ahh, that feeds the dog in me <img border=0 src="public_html/YaBBImages/wink.gif"> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="14"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>fjen</b><br><BR>
+     <a href="http://www.florianjenett.de/p55/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: map an image to a mesh</b><BR>
+                &#171; <B>Reply #14 on:</B> Nov 17<sup>th</sup>, 2004, 5:49pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            tips &amp; treats that is ... 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_Contribution_Info_action_display_num_1100458198.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option value="?board=Programs">&nbsp; - Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option selected value="?board=Contribution_Info">=> Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_Contribution_Info_action_display_num_1099659058.html">Previous topic</a> | <a href="board_Contribution_Info_action_display_num_1100270422.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

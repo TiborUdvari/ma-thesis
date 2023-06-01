@@ -1,0 +1,1055 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - Help: Springs, instability, and explosions!</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Programs_action_display_num_1108777382_start_.html#help" class="nav">Programming Questions & Help
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Programs.html" class="nav">Programs</a> </b>(Moderators: fry, REAS)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    Help: Springs, instability, and explosions!</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_Programs_action_display_num_1109985049.html">Previous topic</a> | <a href="board_Programs_action_display_num_1109923272.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;<a href="board_Programs_action_display_num_1108777382_start_15.html">2</a>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/hotthread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: Help: Springs, instability, and explosions!</b> &nbsp;(Read 2157 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>mflux</b><br><BR><a href="aim:goim?screenname=fluxhavoc&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="fluxhavoc" border="0"></a>
+     <a href="http://www.design.ucla.edu/~mflux" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Help: Springs, instability, and explosions!</b><BR>
+                &#171; <B> on:</B> Feb 19<sup>th</sup>, 2005, 2:43am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I'm working on this little app to improve my spring lattice code and I've hit a bit of a snag: <br> &nbsp;<br> <a href="http://users.design.ucla.edu/~mflux/p5/springbody/applet/" target="_blank">http://users.design.ucla.edu/~mflux/p5/springbody/applet/</a> <br> &nbsp;<br> Keep clicking the same location. Masses will start appearing and connect themselves, until all of a sudden they turn unstable and fly apart completely. Anyone have experiences with springs and know why this is happening? &nbsp;<br> &nbsp;<br> In my springs.pde there is a line I commented out to constrain the spring force. The instability still occurs even when this line is in, but after many more springs are added. &nbsp;<br> &nbsp;<br> The number of springs it takes to explode also seems to be related to the tension force applied to it. The greater the tension K, the easier for it to explode. &nbsp;<br> &nbsp;<br> Anyone know why this is happening? Is it just a law of nature or something? Flux is totally confused. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Quasimondo</b><br><BR>
+             <a href="http://incubator.quasimondo.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Help: Springs, instability, and explosions!</b><BR>
+                &#171; <B>Reply #1 on:</B> Feb 20<sup>th</sup>, 2005, 5:26pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            This is the typical numerical instability that shows up when you are using the classic Euler method to calculate you timesteps. Most people use it even without knowing its name because it's the easiest to implement. But there are other methods, one that you might have heard of is Runge-Kutta or RK4. <br> &nbsp;<br> The problem is that I haven't yet used the latter either so I cannot explain it any more detailed, but google will help you here definitely. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">Mario Klingemann | <a href="http://quasimondo.com" target="_blank">Quasimondo</a> | <a href="http://incubator.quasimondo.com" target="_blank">Incubator</a> | <a href="http://codeazur.com" target="_blank">côdeazur</a>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>mflux</b><br><BR><a href="aim:goim?screenname=fluxhavoc&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="fluxhavoc" border="0"></a>
+     <a href="http://www.design.ucla.edu/~mflux" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Help: Springs, instability, and explosions!</b><BR>
+                &#171; <B>Reply #2 on:</B> Feb 20<sup>th</sup>, 2005, 10:12pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Thanks Quasi! <br> You're right I didn't even know it was called the Euler. I just assumed that's the way you calculate a spring, but taking the position of a mass, taking another mass, and moving it towards the other mass at a certain percentage. <br> &nbsp;<br> &nbsp;<br> I did some googling and uh. Holy crap. I'm hitting myself for not having taken physics OR calculus in college or in highschool. I don't understand any of it.. <br> &nbsp;<br> <a href="http://en.wikipedia.org/wiki/Runge-Kutta" target="_blank">http://en.wikipedia.org/wiki/Runge-Kutta</a> <br> &nbsp;<br> <a href="http://www.myphysicslab.com/runge_kutta.html" target="_blank">http://www.myphysicslab.com/runge_kutta.html</a> <br> &nbsp;<br> Anyone have any experience with this? ... or care to explain it in laymans? <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Quasimondo</b><br><BR>
+             <a href="http://incubator.quasimondo.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Help: Springs, instability, and explosions!</b><BR>
+                &#171; <B>Reply #3 on:</B> Feb 20<sup>th</sup>, 2005, 10:52pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I especially like the sentence in the wiki: <br> &nbsp;<br> &quot;The fourth-order formulation (&quot;RK4&quot;) is the most commonly used, since it provides substantial accuracy without excessive complexity.&quot; <br> &nbsp;<br> Yeah you bet - not a trace of excessive complexity here... <br> &nbsp;<br> Okay I guess that I get at least a little bit of what it says. The essence of it is that you slice your timestep into 4 pieces and then take the average of those 4, but weight the middle ones twice as the begining and the end. Probably this sentence will reserve me a special place in the torture chamber of the mathematics' hell. <br> &nbsp;<br> But I'm pretty sure that there is some ready-to-copy code for this somewhere on the internet. <br> &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">Mario Klingemann | <a href="http://quasimondo.com" target="_blank">Quasimondo</a> | <a href="http://incubator.quasimondo.com" target="_blank">Incubator</a> | <a href="http://codeazur.com" target="_blank">côdeazur</a>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Quasimondo</b><br><BR>
+             <a href="http://incubator.quasimondo.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Help: Springs, instability, and explosions!</b><BR>
+                &#171; <B>Reply #4 on:</B> Feb 20<sup>th</sup>, 2005, 10:59pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Here is a link that has a physics demo which uses Runge-Kutta. There is also Java source code (with comments): &nbsp;<br> &nbsp;<br> <a href="http://drewk.net/projects/ipendulum/ipendulum.html" target="_blank">http://drewk.net/projects/ipendulum/ipendulum.html</a> <br> &nbsp;<br> Hmmm.. Maybe I finally start to understand this, too. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">Mario Klingemann | <a href="http://quasimondo.com" target="_blank">Quasimondo</a> | <a href="http://incubator.quasimondo.com" target="_blank">Incubator</a> | <a href="http://codeazur.com" target="_blank">côdeazur</a>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="5"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>mflux</b><br><BR><a href="aim:goim?screenname=fluxhavoc&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="fluxhavoc" border="0"></a>
+     <a href="http://www.design.ucla.edu/~mflux" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Help: Springs, instability, and explosions!</b><BR>
+                &#171; <B>Reply #5 on:</B> Feb 21<sup>st</sup>, 2005, 12:04am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I still don't get it. Maybe my mind is still operating on high school physics. I've been reading up and catching up on what &quot;derivatives&quot; and &quot;differential equations&quot; are, but to me these abstract concepts feel like they belong in a whole other paradigm away from objects in motion, objects colliding, and objects doing things. <br> &nbsp;<br> Looking at: <a href="http://drewk.net/projects/ipendulum/ipendulum.html" target="_blank">http://drewk.net/projects/ipendulum/ipendulum.html</a> <br> &nbsp;<br> I would never &quot;solve&quot; for the motion of a pendulum in its entirety, something real physicists would probably want to do. I would simply tell the pendulum to add vector forces downwards (gravity) and then add vector force of its constraint (towards whatever it's tied to). Stepping through the program simply causes the pendulum to swing, and I don't write -any- physical formulas, not even F=MA. The positions of the pendulum would already be data inside variables, so theres never a reason for me to solve for them through elaborate equations. <br> &nbsp;<br> Perhaps I've been getting too far by learning too little? I feel completely lost in the realm of physics calculus. <br> &nbsp;<br> In regards to solving for an average of the positions over several time steps, how would this, in any concievable way, allow an overload of springs to become stable? If it's just that, I already have many ideas of how to implement that using my own current paradigm, but I'm not sure how that would change anything... <br> &nbsp;<br> Thanks again Quasi! <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Feb 21<sup>st</sup>, 2005, 12:20am by mflux</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="6"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>skloopy</b><br><BR>
+     <a href="http://elfman.vendetta.com/ryan" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Help: Springs, instability, and explosions!</b><BR>
+                &#171; <B>Reply #6 on:</B> Feb 21<sup>st</sup>, 2005, 7:19am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            hi mflux. you might be doing this already, but i usually multiply the particle velocities by about 0.8 every frame. You could turn down the spring force too, and that'd help, But damping with the multiply lets you use higher spring forces, so things dont happen so slowly. The bad thing is that the more damping, the more it's gonna look like balls rolling in sand, or bullets in honey. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="7"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>mflux</b><br><BR><a href="aim:goim?screenname=fluxhavoc&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="fluxhavoc" border="0"></a>
+     <a href="http://www.design.ucla.edu/~mflux" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Help: Springs, instability, and explosions!</b><BR>
+                &#171; <B>Reply #7 on:</B> Feb 21<sup>st</sup>, 2005, 11:22am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Hi Skloopy <br> &nbsp;<br> I'm already damping my velocities down with a frictional force, a la <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> &nbsp; void doFriction&#40;&#41; <br> &nbsp; { <br> &nbsp; &nbsp; velocity&#46;m*=FRICTION_FORCE; <br> &#47;&#47; &nbsp; &nbsp;velocity&#46;m=constrain&#40;velocity&#46;m,&#45;20,20&#41;; <br> &nbsp; } <br> &nbsp;<br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> Where the friction is 0.8 It works to some degree, but it also influences the motion of things. The final project that I'm using these springs with is to simulate the motion of underwater, so the whole &quot;bulelts in honey&quot; look is to my advantage anyways. <br> &nbsp;<br> I can't set the friction any higher or else things won't look like they have inertia. Any lower, and things start to explode too quickly... 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="8"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>v3ga</b><br><BR>
+             <a href="http://v3ga.net" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Help: Springs, instability, and explosions!</b><BR>
+                &#171; <B>Reply #8 on:</B> Feb 21<sup>st</sup>, 2005, 12:12pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Hello mflux, <br> &nbsp;maybe you could also look at Verlet integration which is another way to integrate. It is known to be a stable method, and deals perfectly with constraints. There's a nice tutorial at <a href="http://www.gamasutra.com/resource_guide/20030121/jacobson_pfv.htm" target="_blank">http://www.gamasutra.com/resource_guide/20030121/jacobson_pfv.htm</a> &nbsp; . I used this method in an applet, you could take a look at <a href="http://v3ga.net/show.php?id=1&type=0" target="_blank">http://v3ga.net/show.php?id=1&amp;type=0</a> . <br> Back to Euler integration, two methods exist : explicit integration and implicit integration. I dont remember well the details but basically explicit method is known to make the system gain energy whereas implicit is known to make the system loose energy, preventing it from explosing. &nbsp;It's something like , supposing we're at (t+dt) , and having Forces(t+dt): &nbsp; <br> &nbsp;- Explicit : &nbsp;<br> v(t+dt) = v(t) + a(t+dt).dt <br> x(t+dt) = x(t) + v(t+dt).dt <br> &nbsp;<br> &nbsp;- Implicit : &nbsp;<br> save v(t); <br> v(t+dt) = v(t) + a(t+dt).dt ; &nbsp;<br> x(t+dt) = x(t) + v(t).dt <br> &nbsp;<br> Hope it makes sense and helps! <br> &nbsp;<br> Julien <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Feb 21<sup>st</sup>, 2005, 12:15pm by v3ga</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr"><a href="http://v3ga.net" target="_blank">http://v3ga.net</a><br>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="9"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>mflux</b><br><BR><a href="aim:goim?screenname=fluxhavoc&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="fluxhavoc" border="0"></a>
+     <a href="http://www.design.ucla.edu/~mflux" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Help: Springs, instability, and explosions!</b><BR>
+                &#171; <B>Reply #9 on:</B> Feb 21<sup>st</sup>, 2005, 11:56pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Hey v3ga <br> &nbsp;<br> I read through as much about Verlet intergration as I could. From what I understand it uses the difference between the current position of a mass and the previous position of the mass to derive the velocity vector, as opposed to using the velocity vector directly. Am I wrong? <br> &nbsp;<br> I tried implementing this and realized that, in effect, I'm already doing something extremely similar. <br> &nbsp;<br> &nbsp;<br> Here's an excerpt from update() of my Mass class (comments added for your reading): <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> &nbsp; void update&#40;&#41; <br> &nbsp; { <br> &nbsp;   oldP=new position&#40;p&#41;; &#47;&#47;Verlet intergration, saving the old position <br> &nbsp;<br> &nbsp;<br> &nbsp;   if&#40;velocity&#46;m&lt;&#46;01&#41; <br> &nbsp;     velocity&#46;m=0; &#47;&#47;My attempt to remove errors <br> &nbsp;<br> &nbsp;<br> &nbsp;   doFriction&#40;&#41;;   <br> &nbsp;   if&#40;useGravity&#41; <br> &nbsp;     doGravity&#40;&#41;;   <br> &nbsp;   doVelocity&#40;&#41;;     <br> &nbsp;   doBorders&#40;&#41;;       <br> &nbsp;<br> &nbsp;   if&#40;velocity&#46;m&lt;&#46;01&#41; <br> &nbsp;      velocity&#46;m=0; &#47;&#47;My attempt to remove errors <br> &nbsp;<br> &nbsp;<br> &nbsp;   velocity=new vector&#40;oldP,p&#41;; &#47;&#47;Verlet intergration, deriving velocity <br> &nbsp;<br> &nbsp;   velocity&#46;m*=&#46;9;  &#47;&#47;damping to &#40;hopefully&#41; make system lose energy <br> &nbsp; }   <br> &nbsp;<br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> &nbsp;<br> &nbsp;<br> Here is an excerpt from update() of my Lattice class, which handles all the point masses: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> &nbsp; void update&#40;&#41; <br> &nbsp; { <br> &nbsp;   doConnectedSprings&#40;&#41;;  &#47;&#47;accumulates forces &#40;see below&#41; <br> &nbsp;<br> &nbsp;   for&#40;int i=0;i&lt;nodes&#46;length;i++&#41; <br> &nbsp;   { <br> &nbsp;           nodes&#91;i&#93;&#46;update&#40;&#41;; &#47;&#47;update from above <br> &nbsp;   } <br> &nbsp; } <br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> &nbsp;<br> &nbsp;<br> Here is doConnectedSprings() from Lattice: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> &nbsp; void doConnectedSprings&#40;&#41; <br> &nbsp; { <br> &nbsp;   for&#40;int i=0;i&lt;amount;i++&#41; <br> &nbsp;   { <br> &nbsp;     if&#40;nodes&#91;i&#93;&#46;c&#46;output&#46;length&#33;=0&#41; <br> &nbsp;     { <br> &nbsp;       for&#40;int s=0;s&lt;nodes&#91;i&#93;&#46;c&#46;output&#46;length;s++&#41; <br> &nbsp;       {         <br> &nbsp;<br> &nbsp;         mass otherNode=nodes&#91;nodes&#91;i&#93;&#46;c&#46;output&#91;s&#93;&#93;; &#47;&#47;this refers to the node connected to node&#91;i&#93; <br> &nbsp;<br> &nbsp;         float distance=dist&#40;nodes&#91;i&#93;&#46;p,otherNode&#46;p&#41;;       <br> &nbsp;<br> &nbsp;<br> &nbsp;         vector f=getSpringForceVerlet&#40;nodes&#91;i&#93;&#46;p,otherNode&#46;p,nodes&#91;i&#93;&#46;c&#46;distanceOut&#91;s&#93;,tension&#41;; &#47;&#47;see below <br> &nbsp;<br> &nbsp;<br> &nbsp;         float forceMag=f&#46;m; <br> &nbsp;         forceMag=f&#46;m*&#46;25; &#47;&#47;damping the force &#40;again&#33;&#41; <br> &nbsp;         float angle=f&#46;a; &nbsp;<br> &nbsp;          <br> &nbsp;         nodes&#91;i&#93;&#46;velocity=nodes&#91;i&#93;&#46;velocity&#46;add&#40;f&#46;a,forceMag&#41;; &#47;&#47;this is acceleration, by adding the force onto the velocity <br> &nbsp;<br> &nbsp;<br> &nbsp;         otherNode&#46;velocity=otherNode&#46;velocity&#46;add&#40;f&#46;a,forceMag*&#45;1&#41;; &#47;&#47;do the same in opposite direction <br> &nbsp;          <br> &nbsp;<br> &nbsp;            <br> &nbsp;       }     &nbsp;<br> &nbsp;     } <br> &nbsp;   }     <br> &nbsp; } <br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> &nbsp;<br> Finally, the last piece of the puzzle.. two flavors of getSpringForce. One is found looking up info about Verlet intergration that I just wrote and tested (it's almost identical, just not in implementation): <br> &nbsp;<br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> vector getSpringForce&#40;position from,position to,float desiredLength,float constant&#41; <br> { <br> &nbsp; vector force=new vector&#40;from,to&#41;; <br> &nbsp;  <br> &nbsp; if&#40;dist&#40;from,to&#41;&gt;&#46;5&#41; <br> &nbsp; { <br> &nbsp;   vector deltaLength=new vector&#40;force&#41;; <br> &nbsp;<br> &nbsp;   position targetPos=new position&#40;to&#46;displace&#40;getHeading&#40;to,from&#41;,desiredLength&#41;&#41;; &#47;&#47;where the point &#45;wants&#45; to be <br> &nbsp;<br> &nbsp;   deltaLength=new vector&#40;from,targetPos&#41;; &#47;&#47;this is the spring force at tension 1&#46;0 <br> &nbsp;<br> &nbsp;   force=new vector&#40;deltaLength&#41;; <br> &nbsp;   force&#46;m*=constant; &#47;&#47;reduce the magnitude <br> &nbsp; } <br> &nbsp; return force; <br> } <br> &nbsp;<br> &nbsp;<br> &#47;&#47;This version taken from a website about Verlet intergration <br> vector getSpringForceVerlet&#40;position from,position to,float desiredLength,float constant&#41; <br> { <br> &nbsp;<br> &nbsp; float dx=to&#46;x&#45;from&#46;x; <br> &nbsp; float dy=to&#46;y&#45;from&#46;y; <br> &nbsp; float d1=sqrt&#40;dx*dx+dy*dy&#41;; <br> &nbsp; float d2=constant*&#40;d1&#45;desiredLength&#41;&#47;d1; <br> &nbsp; dx=dx*d2; <br> &nbsp; dy=dy*d2; <br> &nbsp;  <br> &nbsp; position newFrom=new position&#40;from&#46;x+dx,from&#46;y+dy&#41;; <br> &nbsp;  <br> &nbsp; vector force=new vector&#40;from,newFrom&#41;; <br> &nbsp;  <br> &nbsp; return force; <br> } <br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> The two do -basically- the same thing. They also both explode in your face. The thing is, I can't figure out where energy is introduced into the system, if at all. Once there are x number of nodes connected, numbers begin to bounce up inexplicably. From what I've read, this happens often in Euler integration. Is what I'm doing even considered Euler integration? &nbsp;<br> &nbsp;<br> It's important that my springs don't explode, because I'm doing a more-or-less A-Life project using these springs. I don't wish to evolve exploding creatures or creatures who exploit any faults in my springs engine. <br> &nbsp;<br> &nbsp;<br> &nbsp;<br> &nbsp;<br> I don't quite understand your explanation of implicit versus explicit. Care to elaborate? <br> &nbsp;<br> Finally, v3ga, I can't seem to look at your source for your SodaTest app. I don't think it's linked right, or it may no longer exist. Care to share? &nbsp;Thanks for your help! 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Feb 22<sup>nd</sup>, 2005, 12:14am by mflux</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="10"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>mflux</b><br><BR><a href="aim:goim?screenname=fluxhavoc&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="fluxhavoc" border="0"></a>
+     <a href="http://www.design.ucla.edu/~mflux" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Help: Springs, instability, and explosions!</b><BR>
+                &#171; <B>Reply #10 on:</B> Feb 22<sup>nd</sup>, 2005, 12:55am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            To help others and myself, here's an explanation of Euler, improved Euler, and Runge-Kutta: <br> &nbsp;<br> <a href="http://goanna.cs.rmit.edu.au/~crpearce/CLS/Ass1HTML/report.html" target="_blank">http://goanna.cs.rmit.edu.au/~crpearce/CLS/Ass1HTML/report.html</a> <br> &nbsp;<br> &quot;1. Euler <br> &nbsp;<br> Euler's method uses the gradient of the current position to estimate the position for the next step. As the gradient is calculated at only one point there is a bias towards this point. As approximations are based on previous approximations, the estimated solution gradually worsens as errors continually grow. &nbsp;<br> &nbsp;<br> The Initial Value Problem (IVP) is when the gradient (in our case, velocity) is not dependant on the independant variable (in our case, time). &nbsp;<br> &nbsp;<br> Both Euler and Improved Euler integration methods solves the Initial Value Problem (IVP) by estimating an initial position in the following manner: x(t0) = x0 where x is position (y-axis) and t is time (x-axis). &nbsp;<br> &nbsp;<br> 2. Improved Euler <br> &nbsp;<br> The Improved Euler's method extends Euler's method by taking an average of two gradients, resulting in closer extrapolations. As two points of references are used instead of one, there is less bias to a particular reference. Errors are generally either negative or positive and tend to cancel each other out. This reduces the effect of gradual deteriation due to error accumulation. &nbsp;<br> &nbsp;<br> As discussed, both Euler and Improved Euler (a second order Runge-Kutta) numerical methods use linear extrapolation to perform the integration. A better method is Runge-Kutta which uses polynomial extrapolation. &nbsp;<br> &nbsp;<br> 3. Runge-Kutta <br> &nbsp;<br> The Runge-Kutta numerical method estimates a new position by using a polynomial to fit the graph function. Our assignment uses a fourth order Runge-Kutta method, evaludating the function at four different points. Gradients are calculated at each point and a weighted average is used to estimate the new position. &nbsp;<br> &nbsp;<br> This is the most accurate of the three method described here, as you will see with the graphs further on. &quot; 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="11"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>skloopy</b><br><BR>
+     <a href="http://elfman.vendetta.com/ryan" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Help: Springs, instability, and explosions!</b><BR>
+                &#171; <B>Reply #11 on:</B> Feb 22<sup>nd</sup>, 2005, 8:15am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            It seems like what you want to do shouldn't be this complicated. Are you calculating the spring forces with angle and magnitude? It might be simpler to just use x and y velocity. I'm not sure if it's as accurate, but this is how i've been doing it. <br> &nbsp;<br> It might not help you any, but I stripped down the code I usually use for springs and made this little demo. It's still euler (i think) so it can explode, but it's no problem if you keep the forces under control and use the damping (friction). <br> <a href="http://elfman.vendetta.com/ryan/p5/simplesprings" target="_blank">http://elfman.vendetta.com/ryan/p5/simplesprings</a> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="12"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>v3ga</b><br><BR>
+             <a href="http://v3ga.net" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Help: Springs, instability, and explosions!</b><BR>
+                &#171; <B>Reply #12 on:</B> Feb 22<sup>nd</sup>, 2005, 1:26pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Yes, verlet integration is about taking current position and old position for an approximation of velocity. I didn't fully read your implementation, but as Skloopy pointed it out, it seems to be quite 'complicated' for what you want to achieve. Sorry for the source code missing, it appears that I didn't even have it on my HD <img border=0 src="public_html/YaBBImages/sad.gif"> Anyway, you could take a look at <a href="http://v3ga.net/show.php?id=3&type=0" target="_blank">http://v3ga.net/show.php?id=3&amp;type=0</a> ( class VerletPhysicsEngine ). The verlet integration is basically an iterative method, in a sense that the engine tries to satisfy each constraint at the same time while slowly converging to a solution. &nbsp;<br> Concerning explicit vs implicit, I didn't remember well the details ( I gave you raw stuff as I remembered it ) but here's a link that can enlighten you &nbsp;<a href="http://www-2.cs.cmu.edu/~baraff/sigcourse/slidese.pdf" target="_blank">http://www-2.cs.cmu.edu/~baraff/sigcourse/slidese.pdf</a> . More generally, all papers by Baraff &amp; Witkin are good to read when you start to play with physics. <br> Cheers 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Feb 22<sup>nd</sup>, 2005, 1:27pm by v3ga</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr"><a href="http://v3ga.net" target="_blank">http://v3ga.net</a><br>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="13"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>marcello</b><br><BR>
+             <a href="http://www.sodaplaycentral.com/features/sw3d2/index.html" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Help: Springs, instability, and explosions!</b><BR>
+                &#171; <B>Reply #13 on:</B> Feb 22<sup>nd</sup>, 2005, 3:14pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Hi, <br> i'm working to a similar project since a couple of years. I'm working to a 3d version of sodaplay and i'm doing this using processing. The applet it is definitively ready in its game functionality (contruction-interaction) and now i'm working to allow users to save and load their own models in my web space. I'm doing this using a php script between the applet and the database. It is a bit difficult for me since i'm learning php just in these days, but i've already solved the main difficulties. <br> &nbsp;<br> Time ago i wrote a long paper about sodaconstructor where i also taked about runge-kutta methods. You'll find it at this url: <br> <a href="http://www.sodaplaycentral.com/features/paper.php" target="_blank">http://www.sodaplaycentral.com/features/paper.php</a> <br> &nbsp;<br> If you want to see an old (april 2004) preview of my applet, you'll find it clicking my home address. That is an old non-interactive version. Now it is possible also to construct models and to interact with them. In few time i'll release the final version. I used an adaptive stepsize runge-kutta alghoritm and the result is a really very stable simulation. <br> &nbsp;<br> Best Regards, <br> Marcello 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Feb 22<sup>nd</sup>, 2005, 3:16pm by marcello</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="14"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>mflux</b><br><BR><a href="aim:goim?screenname=fluxhavoc&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="fluxhavoc" border="0"></a>
+     <a href="http://www.design.ucla.edu/~mflux" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Help: Springs, instability, and explosions!</b><BR>
+                &#171; <B>Reply #14 on:</B> Feb 24<sup>th</sup>, 2005, 12:26am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Hey guys thanks for all your help! <br> &nbsp;<br> I'm going to lay off on the springs code for a week (suggested by Casey... lol) and work on the rest of my project before coming back and fixing it. Next week I'll do a super simple implementation of Runge-Kutta and see if it works, and possibly a new thread. <br> &nbsp;<br> Thanks again! 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;<a href="board_Programs_action_display_num_1108777382_start_15.html">2</a>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_Programs_action_display_num_1108777382_start_.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option selected value="?board=Programs">=> Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_Programs_action_display_num_1109985049.html">Previous topic</a> | <a href="board_Programs_action_display_num_1109923272.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

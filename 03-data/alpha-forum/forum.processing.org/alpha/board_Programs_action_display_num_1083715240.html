@@ -1,0 +1,770 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - TextField and TextArea</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Programs_action_display_num_1083715240.html#help" class="nav">Programming Questions & Help
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Programs.html" class="nav">Programs</a> </b>(Moderators: fry, REAS)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    TextField and TextArea</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_Programs_action_display_num_1111079126.html">Previous topic</a> | <a href="board_Programs_action_display_num_1110322603.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/thread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: TextField and TextArea</b> &nbsp;(Read 7317 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>michael05</b><br><BR>
+     <a href="http://www.m05.de" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>TextField and TextArea</b><BR>
+                &#171; <B> on:</B> May 5<sup>th</sup>, 2004, 2:00am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            hi <br> &nbsp;<br> i try to add AWT textAreas and textFields to processing. it works very easy. but i did not find a chance to arrange them on the screen. they just pop centered in the middle of the screen. <br> &nbsp;<br> there are some hints in the documentation but non of them works in this context. <br> &nbsp;<br> <a href="http://java.sun.com/j2se/1.4.2/docs/api/java/awt/TextField.html" target="_blank">http://java.sun.com/j2se/1.4.2/docs/api/java/awt/TextField.html</a> <br> <a href="http://java.sun.com/j2se/1.4.2/docs/api/java/awt/TextArea.html" target="_blank">http://java.sun.com/j2se/1.4.2/docs/api/java/awt/TextArea.html</a> <br> &nbsp;<br> and here is the code: <br> &nbsp;<br> // <br> TextField inputLine = new TextField(&quot;inputLine&quot;, 15); <br> TextArea inputArea = new TextArea(&quot;inputArea&quot;, 5, 20); <br> &nbsp;<br> void setup() { <br> &nbsp; size(640, 480); <br> &nbsp;<br> &nbsp; //setBounds(0,0,100,100); <br> &nbsp; add(inputLine); <br> &nbsp; add(inputArea); <br> } <br> &nbsp;<br> void mousePressed() <br> { <br> &nbsp; String iLine = inputLine.getText(); <br> &nbsp; String iArea = inputArea.getText(); <br> &nbsp; println(&quot;inputLine: &quot; + iLine); <br> &nbsp; println(&quot;inputArea: &quot; + iArea); <br> } 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">°°°°°°°°°°°°°°°°°°°°<br><a href="http://www.m05.de" target="_blank">http://www.m05.de</a><br>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Vair</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: TextField and TextArea</b><BR>
+                &#171; <B>Reply #1 on:</B> Nov 18<sup>th</sup>, 2004, 2:13pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I know this post is several months old and you've probably either solved or long since given up on this method but reading this post set me off trying to figure it out. I was half successful. <br> &nbsp;<br> The answer is to use a LayoutManager - <a href="http://java.sun.com/developer/technicalArticles/GUI/AWTLayoutMgr/" target="_blank">http://java.sun.com/developer/technicalArticles/GUI/AWTLayoutMgr/</a> <br> &nbsp;<br> The BorderLayout manager almost works but (at least in my copy of processing) elements get pushed out of the bottom of the window and being unable to control their height meant that I coudn't get it to work satisfactorily. <br> &nbsp;<br> LayoutManagers are a hideously complicated way to lay out elements but you are supposed to be able to create a container, set its LayoutManager to null and then use absolute positioning. Losing relative positioning isn't much of a big deal when you're working with a non-resizable window anyway. Only, it didn't work either. The only way I could get it to work (after several hours) was to make to use a dummy container (you'll see what I mean when you look at the code). I have absolutely no idea why it works - or why it doesn't work without the dummy. <br> &nbsp;<br> Hopefully someone with a good grasp of these things will be able to say why, and how to do it the right way. <br> &nbsp;<br> I haven't yet figured out how to get events out these text fields so if anyone has any clues about that... let me know. <br> &nbsp;<br> Here's the code - it has two fields, one for typed input and one for imaginary output. <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">void setup&#40;&#41;{ <br> &nbsp; size&#40;640,480&#41;; <br> &nbsp; &nbsp;<br> &nbsp; Panel dummyPanel = new Panel&#40;&#41;; &#47;&#47; voodoo <br> &nbsp; Panel outputPanel = new Panel&#40;&#41;; &#47;&#47; holder for output display <br> &nbsp; Panel inputPanel = new Panel&#40;&#41;; &#47;&#47; holder for input field <br> &nbsp; &nbsp;<br> &nbsp; &#47;&#47; give all the containers a layout <br> &nbsp; setLayout&#40;new BorderLayout&#40;&#41;&#41;; &#47;&#47; main container &#40;window&#63;&#41; <br> &nbsp; outputPanel&#46;setLayout&#40;new BorderLayout&#40;&#41;&#41;; <br> &nbsp; inputPanel&#46;setLayout&#40;new BorderLayout&#40;&#41;&#41;; <br> &nbsp; &nbsp;<br> &nbsp; &#47;&#47; add the containers to the main container <br> &nbsp; add&#40;outputPanel&#41;; <br> &nbsp; add&#40;inputPanel&#41;; <br> &nbsp; &nbsp;<br> &nbsp; int borderSize = 10; &#47;&#47; for calculating size of fields <br> &nbsp; int inputHeight = 20; &#47;&#47; height of input field <br> &nbsp; &nbsp;<br> &nbsp; &#47;&#47; Now we can set the bounds of the text fields &#47;&#47; left, top, width, height <br> &nbsp; outputPanel&#46;setBounds&#40;borderSize,borderSize,width&#45;borderSize*2,height&#45;&#40;i nputHeight+borderSize*3&#41;&#41;; <br> &nbsp; inputPanel&#46;setBounds&#40;borderSize,height&#45;borderSize&#45;inputHeight,width&#45;bord erSize*2,inputHeight&#41;; <br> &nbsp; &nbsp;<br> &nbsp; &#47;&#47; Don't know why this works but it does&#46; <br> &nbsp; &#47;&#47; The dummy is held by the main container and doesn't contain anything <br> &nbsp; &#47;&#47; yet without it, the input field inexplicably expands to contain the output field <br> &nbsp; &#47;&#47; &#40;try commenting it out&#41;&#46; <br> &nbsp; &#47;&#47; It also needs to be placed in the center&#46; <br> &nbsp; dummyPanel&#46;setBackground&#40;new Color&#40;51,102,153&#41;&#41;; <br> &nbsp; add&#40;dummyPanel, BorderLayout&#46;CENTER&#41;; <br> &nbsp; &nbsp;<br> &nbsp; &#47;&#47; make the text boxes <br> &nbsp; TextArea output = new TextArea&#40;&quot;output&quot;&#41;; <br> &nbsp; TextField input = new TextField&#40;&quot;input&quot;&#41;; <br> &nbsp; &nbsp;<br> &nbsp; &#47;&#47; make output read only and color it back to white <br> &nbsp; output&#46;setEditable&#40;false&#41;; <br> &nbsp; output&#46;setBackground&#40;Color&#46;white&#41;; <br> &nbsp; &nbsp;<br> &nbsp; &#47;&#47; add text boxes to their containers <br> &nbsp; outputPanel&#46;add&#40;output&#41;; <br> &nbsp; inputPanel&#46;add&#40;input&#41;; <br> } </font></td></tr></table></td></tr></table> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Vair</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: TextField and TextArea</b><BR>
+                &#171; <B>Reply #2 on:</B> Nov 19<sup>th</sup>, 2004, 2:43am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Figured out the getting data from the input field bit - very easy. <br> &nbsp;<br> (After moving the input and output declarations outside of setup()) <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> &nbsp;<br> public boolean action&#40;Event e, Object arg&#41; { <br> &nbsp; Object target = e&#46;target; <br> &nbsp;<br> &nbsp; if &#40;target == input&#41;{ <br> &nbsp; &nbsp; output&#46;setText&#40;output&#46;getText&#40;&#41; + &quot;&#92;n&quot; + &#40;String&#41;arg&#41;; <br> &nbsp; &nbsp; input&#46;setText&#40;&quot;&quot;&#41;; <br> &nbsp; &nbsp; return true; <br> &nbsp; } <br> &nbsp; return false; <br> } </font></td></tr></table></td></tr></table> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>cello</b><br><BR><a href="aim:goim?screenname=marcello3d&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="marcello3d" border="0"></a>
+     <a href="http://marcello.cellosoft.com/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: TextField and TextArea</b><BR>
+                &#171; <B>Reply #3 on:</B> Nov 19<sup>th</sup>, 2004, 6:21am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Keep in mind that's using the deprecated java <i>1.0</i> event system... and that's somewhat discouraged (really should avoid it if you can). <br> &nbsp;<br> Granted, the &quot;proper&quot; way to do it is probably over most processing users' heads. &nbsp;Essentially you need to make an ActionListener class (or possibly even a TextListener class in this case, if you want to do more advanced stuff), define the <a href="http://java.sun.com/j2se/1.5.0/docs/api/java/awt/event/package-summary.html" target="_blank">appropriate functions</a>, and then do input.addTextListener(yourclass), or whatever. <br> &nbsp;<br> Hah, again, that's probably really confusing to anyone not familiar with Java interfaces and stuff. <br> &nbsp;<br> Marcello 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Vair</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: TextField and TextArea</b><BR>
+                &#171; <B>Reply #4 on:</B> Nov 19<sup>th</sup>, 2004, 7:34am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Well I'll give it a shot. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="5"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Vair</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: TextField and TextArea</b><BR>
+                &#171; <B>Reply #5 on:</B> Nov 19<sup>th</sup>, 2004, 8:01am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Got it: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> &nbsp; &#46;&#46;&#46; <br> &nbsp; input&#46;addActionListener&#40;new MyActionListener&#40;&#41;&#41;; <br> } <br> &nbsp;<br> class MyActionListener implements ActionListener{ <br> &nbsp; public void actionPerformed&#40;ActionEvent e&#41; { <br> &nbsp; &nbsp;output&#46;append&#40;input&#46;getText&#40;&#41; + &quot;&#92;n&quot;&#41;; <br> &nbsp; &nbsp;input&#46;setText&#40;&quot;&quot;&#41;; <br> &nbsp; &nbsp; } <br> } </font></td></tr></table></td></tr></table> <br> &nbsp;<br> Should I be worried by the fact that the AWT documentation says not to use AWT? 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="6"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>cello</b><br><BR><a href="aim:goim?screenname=marcello3d&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="marcello3d" border="0"></a>
+     <a href="http://marcello.cellosoft.com/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: TextField and TextArea</b><BR>
+                &#171; <B>Reply #6 on:</B> Nov 19<sup>th</sup>, 2004, 5:17pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Not really, considering the alternatives are: <br> a) use Swing, which is only available on Java 1.2 and later, basically making it useless for applets you want to run everywhere. &nbsp;Plus Swing is kinda chunky and only really recommended for full blown applications. <br> b) use another gui set, such as SWT, which requires native code to be installed in the user's computer. &nbsp;It's fine if you're doing a standalone program, but again, useless for applets <br> c) write your own gui widget(s). &nbsp;which is not actually *that* difficult, though an advanced text widget will take some work to get right. &nbsp;To do this you would write a class that extends from java.awt.Component, &nbsp; implements mouse/keyboard input, and uses paint(Graphics g) to display itself. &nbsp;<a href="http://cellosoft.com/sketchstudio/luitest.html" target="_blank">example of custom widgets in an applet</a> <br> &nbsp;<br> The reason they don't recommend AWT widgets such as TextField/TextArea is because they use native &quot;heavyweight&quot; components which are not guaranteed to look the same on every operating system. &nbsp;There are also problems with mixing heavyweight and lightweight components (swing and other java.awt.Component based custom guis are lightweight). <br> &nbsp;<br> But as you can see, there's not much choice. &nbsp;Ideally one would write their own widget, but for a textfield, handling stuff like caret and selections is a pain. &nbsp;Plus you won't be able to access the clipboard to allow users to copy/paste from the textarea (not sure how much of a problem that is, but worth noting). <br> &nbsp;<br> Marcello 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="7"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>arielm</b><br><BR>
+     <a href="http://www.chronotext.org" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: TextField and TextArea</b><BR>
+                &#171; <B>Reply #7 on:</B> Nov 19<sup>th</sup>, 2004, 5:55pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            very nice set of custom widgets cello! <br> &nbsp;<br> i'm also designing <a href="http://www.chronotext.org/bits/022/index.htm" target="_blank">custom widgets</a> (when i have lots of free-time): i think that beyond solving compatibility and uniformity issues it's also an excellent way to explore new directions... 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">Ariel Malka | <a href="http://www.chronotext.org" target="_blank">www.chronotext.org</a>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="8"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Vair</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: TextField and TextArea</b><BR>
+                &#171; <B>Reply #8 on:</B> Nov 20<sup>th</sup>, 2004, 7:44am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Very nice 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="9"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Sjeiti</b><br><BR>
+     <a href="http://www.sjeiti.com/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: TextField and TextArea</b><BR>
+                &#171; <B>Reply #9 on:</B> Mar 17<sup>th</sup>, 2005, 10:11am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I've been fiddling around with that panel-script above and I think I found out what it was with that weird dummy panel. It's not the dummy panel, what you need an overal setLayout (the one after the loop). <br> &nbsp;<br> Paste this  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">void setup&#40;&#41;{ <br> &nbsp; size&#40;640,480&#41;; <br> &nbsp; line&#40;0,0,width,height&#41;; <br> &nbsp; &nbsp;<br> &nbsp; int iMrg = 30; <br> &nbsp; int iHgt = 20; <br> &nbsp; for &#40;int i=0;i&lt;5;i++&#41; { <br> &nbsp; &nbsp; Panel inputPanel = new Panel&#40;&#41;; <br> &nbsp; &nbsp; inputPanel&#46;setLayout&#40;new BorderLayout&#40;&#41;&#41;; <br> &nbsp; &nbsp; add&#40;inputPanel&#41;; <br> &nbsp; &nbsp; inputPanel&#46;setBounds&#40;iMrg,iMrg+iHgt*i, 150,iHgt&#41;; <br> &nbsp; &nbsp; TextField input = new TextField&#40;&quot;jaja &quot;+i&#41;; <br> &nbsp; &nbsp; inputPanel&#46;add&#40;input&#41;; <br> &nbsp; } <br> &nbsp; setLayout&#40;new BorderLayout&#40;&#41;&#41;; <br> } <br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> grtz 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr"><a href="http://www.sjeiti.com/" target="_blank">http://www.sjeiti.com/</a>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_Programs_action_display_num_1083715240.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option selected value="?board=Programs">=> Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_Programs_action_display_num_1111079126.html">Previous topic</a> | <a href="board_Programs_action_display_num_1110322603.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

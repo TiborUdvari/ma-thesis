@@ -1,0 +1,713 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - Applet freezing problem: any clues?</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Programs_action_display_num_1065027598.html#help" class="nav">Programming Questions & Help
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Programs.html" class="nav">Programs</a> </b>(Moderators: fry, REAS)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    Applet freezing problem: any clues?</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_Programs_action_display_num_1066080998.html">Previous topic</a> | <a href="board_Programs_action_display_num_1065730047.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/thread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: Applet freezing problem: any clues?</b> &nbsp;(Read 978 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>ed</b><br><BR>
+             <a href="http://www.soda.co.uk/members/ed.htm" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Applet freezing problem: any clues?</b><BR>
+                &#171; <B> on:</B> Oct 1<sup>st</sup>, 2003, 9:59am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            My advance apologies for a very unfocused problem here. I've a P5 project that's prone to suddenly and inexplicably freeze while running [both in Sun &amp; Microsoft VM as far as I can tell]. I can detect no correlation between interaction/rendering events and freezing [it will happily freeze spontaneosly even if I leave it running without interaction for several minutes]. By freezing I mean all animation/interaction ceases, however the frozen image survives intact when obscured/revealed by other windows, so it wouldn't appear to be a total death of the applet. Naturally I've had my java console up with maximum debug feedback but I get not so much as a sniff of an exception. I've hunted for possible infinite loops I could be falling into, but besides not finding any the fact that the CPU usage drops from 90% to 0 the instant it freezes would seem to suggest that it's not an infinite loop of mine. <br> &nbsp;<br> So, hey ho, I thought I'd share my problem incase it's a processing problem that other folks know and love already. Some manner of thread deadlocking would seem a likely culprit? It might be that my frames are very computationally expensive as they're doing lots and lots of comparisons between byte arrays to simulate springy collisions between convex polygons. Could this be causing some kind of deadlock between the rendering and event threads [which I was suprised to discover appear to be independant of each other in processing, that's an race condition accident waiting to happen that is!] I've had the problem from versions 58 through 65 (was keeping quiet in the hope that it would cure itself with the next release!). The problematic program in question is at... <br> &nbsp;<br> <a href="http://www.soda.co.uk/moovl/" target="_blank">http://www.soda.co.uk/moovl/</a> <br> &nbsp;<br> It's a program that adds very naive physics to drawings in realtime. Even if there's no solution on offer you might enjoy playing with Moovl until it freezes anyway! Have some fun drawing poeple and things and bouncing them into each other [I was particularly suprised to discover that you draw a bottle and fill it with drops of ink, hoorah- collision-detection-tastic!]. <br> &nbsp;<br> Sorry to ramble, I'm all debugged out on this one! <br> &nbsp;<br> cheers, <br> &nbsp;<br> Ed. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>elout</b><br><BR><a href="https://forum.processing.org/alpha/board_Programs_action_icqpager_UIN_1274737.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=1274737&img=5" alt="1274737" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=1274737" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="1274737" BORDER=0></a>
+     <a href="http://www.xs4all.nl/~elout/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Applet freezing problem: any clues?</b><BR>
+                &#171; <B>Reply #1 on:</B> Oct 1<sup>st</sup>, 2003, 10:33am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I played with it for 7+ minutes and no freezing.. can you give a specific time, when this freezing thing happens on your machine? <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>ed</b><br><BR>
+             <a href="http://www.soda.co.uk/members/ed.htm" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Applet freezing problem: any clues?</b><BR>
+                &#171; <B>Reply #2 on:</B> Oct 1<sup>st</sup>, 2003, 11:16am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            <B>on Oct 1<sup>st</sup>, 2003, 10:33am, <a href="board_Programs_action_display_num_1065027598.html#1">elout  wrote</a>:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td width="100%"><table cellpadding="2" cellspacing="0" class="quote" width="100%"><tr><td width="100%"><font face="Arial,Helvetica" class="quote" size="1">I played with it for 7+ minutes and no freezing.. can you give a specific time, when this freezing thing happens on your machine <br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> well I guess that's good news! Alas I've as yet failed to indentify a pattern to the freezing; sometimes it will run merrily for 10 minutes or more, other times it will freeze within a minute or so. With symtoms like that I'd suspect a memory leak [well, as close as one can get in java], but I don't see any evidence of memory being consumed over time when I use the task manager or use the java console to dump memory usage intermitantly. grrrumph. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>arielm</b><br><BR>
+     <a href="http://www.chronotext.org" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Applet freezing problem: any clues?</b><BR>
+                &#171; <B>Reply #3 on:</B> Oct 1<sup>st</sup>, 2003, 12:48pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            very nice stuff! <br> &nbsp;<br> played with it a bit, but couldn't get it stuck... <br> &nbsp;<br> &nbsp;<br> something that could help to identify the source of the problem (i.e. bagel or java): <br> &nbsp;<br> with a version prior to 060, you could try to include in your code something like: <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">void keyPressed&#40;&#41; <br> { <br> &nbsp; System&#46;out&#46;println&#40;&quot;foo&quot;&#41;; <br> } <br>  </font></td></tr></table></td></tr></table> <br> prior to 060, this code should be executed in another thread, so, supposing that you're stuck in the main applet's thread, this one should still be alive and send something to the java console... <br> &nbsp;<br> if it's not working, it's likely that it's a java problem, i guess... <br> &nbsp;<br> (but if it does work, then it will definitely be possible to go further and isolate the problem!) <br> &nbsp;<br> hth 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">Ariel Malka | <a href="http://www.chronotext.org" target="_blank">www.chronotext.org</a>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>fry</b><br><i></i><BR><BR>
+     <a href="http://acg.media.mit.edu/people/fry/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Applet freezing problem: any clues?</b><BR>
+                &#171; <B>Reply #4 on:</B> Oct 1<sup>st</sup>, 2003, 1:33pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            are you using a dual processor machine where you're seeing the freezes? 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="5"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>ed</b><br><BR>
+             <a href="http://www.soda.co.uk/members/ed.htm" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Applet freezing problem: any clues?</b><BR>
+                &#171; <B>Reply #5 on:</B> Oct 2<sup>nd</sup>, 2003, 10:05am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            <B>on Oct 1<sup>st</sup>, 2003, 1:33pm, <a href="board_Programs_action_display_num_1065027598.html#4">fry  wrote</a>:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td width="100%"><table cellpadding="2" cellspacing="0" class="quote" width="100%"><tr><td width="100%"><font face="Arial,Helvetica" class="quote" size="1">are you using a dual processor machine where you're seeing the freezes </font></td></tr></table></td></tr></table> <br> &nbsp;<br> humm, not unless the test computers have got another processor that they've been keeping secret from me. In the olden days of programming in c++ Id've had a debugger to hand to suspend excecution and step into the code; any top tips on tools/techniques to monitor what the java VM is doing more closely I can't remember the last time the Codewarrior debugger worked for java <img border=0 src="public_html/YaBBImages/undecided.gif"> . 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="6"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>ed</b><br><BR>
+             <a href="http://www.soda.co.uk/members/ed.htm" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>errors in event threads? what's going on up there?</b><BR>
+                &#171; <B>Reply #6 on:</B> Oct 5<sup>th</sup>, 2003, 6:42pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            so, I'm still banging my head against this darn freezing bug. My current hunch is that I might have been thrown off the scent by some error handling behaviour that I don't understand in P5. Here's a booby trapped program to try and isolate my confusion... <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">void setup&#40;&#41; &nbsp;<br> { <br> &nbsp;<br> } <br> &nbsp;<br> void loop&#40;&#41; &nbsp;<br> { &nbsp;<br> &nbsp; &nbsp;<br> } <br> &nbsp;<br> void mousePressed&#40;&#41; { <br> &nbsp; println&#40;&quot;entering mousePressed&quot;&#41;; <br> &nbsp; String s=null; <br> &nbsp; println&#40;&quot;I'm going to throw a NullPointerException if I try to reference &quot;+s&#46;length&#40;&#41;&#41;; <br> &nbsp; println&#40;&quot;exiting mousePressed&quot;&#41;; <br> } <br> &nbsp;<br> void mouseMoved&#40;&#41; { <br> &nbsp; println&#40;&quot;entering mouseMoved&quot;&#41;; <br> &nbsp; String s=null; <br> &nbsp; println&#40;&quot;I'm going to throw a NullPointerException if I try to reference &quot;+s&#46;length&#40;&#41;&#41;; <br> &nbsp; println&#40;&quot;exiting mouseMoved&quot;&#41;; <br> } </font></td></tr></table></td></tr></table> <br> &nbsp;<br> If you run it in the P5 [I'm in rev 65 these days] environment upon moving the mouse over the applet one will see &quot;entering mouseMoved&quot; followed by the expected NullPointer Exception splurging out onto the console. After that exception has been thrown mouse movement has no further effect. However for mouse presses you see &quot;entering mousePressed&quot; followed by the exception every time you press the mouse, not just the first time. I don't undersand why an exception in mouseMoved prevents all subsequent mouseMoved's whereas mousePressed survives to throw another error each time. <br> &nbsp;<br> What strikes me as even stranger and a possible cause of my woes is that when the sketch is exported and run in a browser [IE+Sun VM 1.4.2_01] I get the same behaviour for the mouse presses [&quot;entering mousePressed&quot; followed by the beloved NullPointerException]. However for the mouse move I only get &quot;entering mouseMoved&quot; echoed once to the console, and no evidence of the NullPointerException apart from the fact that mouseMoved doesn't work from then on. <br> &nbsp;<br> So now I'm wondering if my program is just throwing some exception or other in a place where this strange absense of error feedback applies? What's going on with event threads and is there some error trapping that's stopping normal exception throwing and reporting above my code in the BApplet? Is mouseMoved a special case in this respect or is it more widespread? Am I imagining all this? <br> &nbsp;<br> Yours, dribbling in debugging delirium, Ed. &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="7"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>fry</b><br><i></i><BR><BR>
+     <a href="http://acg.media.mit.edu/people/fry/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Applet freezing problem: any clues?</b><BR>
+                &#171; <B>Reply #7 on:</B> Oct 6<sup>th</sup>, 2003, 5:54pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            there's a bug with recent releases of the environment that a runtime exception, like the NullPointerException can cause a lockup of the environment, though i don't think it'll affect exported applets. for instance, the code: <br> &nbsp;<br> int a = 5/0; <br> &nbsp;<br> will compile, but freeze the environment (watch out!) this is something that will be fixed in 66 (this week). i don't think this affects exported applets though, so that shouldn't affect your situation (except to throw you off the scent by giving you the lockup when doing a println with that 'null' String). &nbsp;<br> &nbsp;<br> mousePressed/mouseMoved may also be bad for debugging, since they're tied to the applet thread, and are queued to only be called at the end of loop() (as of rev 60, iirc). if you overload &quot;public void mousePressed(MouseEvent e)&quot; you can get better (asynchronous) results, if those are needed. but be sure to call &quot;super.mousePressed(e);&quot; at the beginning so that mouseX and mouseY properly update (though this will also call the other mousePressed() with no args.. fyi). <br> &nbsp;<br> as for printing things that are null.. that seems to be a problem with newer JVMs. i've seen it mostly in 1.4 and higher, where printing a null object to the console (in any java app, not restricted to p5) will cause things to lock up. not sure what the problem is there, but it seems to be a jvm annoyance. <br> &nbsp;<br> regarding your problem with only the &quot;entering..&quot; line showing up (not the line with the null string prined) in the browser, i'm guessing that's weirdness with the i/o. the exception, and the buffering involved with println() will be somewhat inconsistent. that is, the NullPointerException will happen, but the flush() on the OutputStream used by the console may or may not happen prior to things actually locking up, so you might not get to see the additional line of text. ah, it's lovely, no? part of the beauty of that comes from the fact that the java console for the plugin is itself written in java, compounding the inconsistency. the genius of it all! <br> &nbsp;<br> so in the end, the things you cite are all independent problems, but i'm guessing that none of them are your root problem with your applet. unless, of course, you're doing a println() on something that's null, which would do that lockup. &nbsp;<br> &nbsp;<br> as for other methods to debug.. if you run your applet as an application (see threads elsewhere on the board) you can interrupt the app using ctrl-\ or something like that (a google check should turn up the proper sequence) to get a dump of the threads that are running, and their current state, so you can see if it's a deadlock. i haven't had *lots* of lock with this method, but it's there. actually, maybe you can even do this inside p5, though you'll hose things prolly. <br> &nbsp;<br> i wonder if borland's optimizeit would have a way to debug this.. they've got a free download, and it may be good at tracking the behavior of the threads. in the past though, i've always just had more luck using the println() and hunting/pecking around for things that might cause trouble. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="8"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>ed</b><br><BR>
+             <a href="http://www.soda.co.uk/members/ed.htm" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Applet freezing problem: any clues?</b><BR>
+                &#171; <B>Reply #8 on:</B> Oct 14<sup>th</sup>, 2003, 7:02pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            just a quick update lest this thread should lead others astray. I *think* I tracked my bug down to a rather boring array out of bounds exception that was only occuring during an unlikely floating point rounding condition, hence it's unpredictable rarity. I was seeing this array exception when running within the P5 environment, but was getting not a sniff of an exception on the console in either the sun or microsoft VM's. [I have a habit of exporting and running within the browser if I want to play for any length of time, hence I was led astray by the apparent absence of an exception]. <br> &nbsp;<br> Hey ho, and onto the next bug[s] <img border=0 src="public_html/YaBBImages/smiley.gif"> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_Programs_action_display_num_1065027598.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option selected value="?board=Programs">=> Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_Programs_action_display_num_1066080998.html">Previous topic</a> | <a href="board_Programs_action_display_num_1065730047.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

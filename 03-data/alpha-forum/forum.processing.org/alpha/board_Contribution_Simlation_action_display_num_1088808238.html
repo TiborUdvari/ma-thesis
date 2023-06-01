@@ -1,0 +1,884 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - Seamless looping noise? (for terrain)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Contribution_Simlation_action_display_num_1088808238.html#Examples" class="nav">Topics & Contributions
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Contribution_Simlation.html" class="nav">Simulation, Artificial Life</a> </b>(Moderator: REAS)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    Seamless looping noise? (for terrain)</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_Contribution_Simlation_action_display_num_1090994654.html">Previous topic</a> | <a href="board_Contribution_Simlation_action_display_num_1078114794.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/thread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: Seamless looping noise? (for terrain)</b> &nbsp;(Read 2195 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>rrrufusss</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Seamless looping noise? (for terrain)</b><BR>
+                &#171; <B> on:</B> Jul 3<sup>rd</sup>, 2004, 12:43am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Hello, <br> &nbsp;<br> I am trying to come up with a way of getting the noise function to wrap seamlessly. &nbsp;I'm working on a random terrain generation tool, so it's important that the resulting image is seamless (horezontally, at least) since it will be wrapped around a sphere. <br> &nbsp;<br> I've noticed that at certain scales, there is a definate repetition in the noise function, but for each 'loop' horezontally, there is a slight shift vertically. &nbsp;So, it *almost* lines up, but not quite. <br> &nbsp;<br> Try this out and you'll see what I mean: <br> &nbsp;<br> &nbsp;<br> void setup() <br> { <br> &nbsp; size(500,500); <br> &nbsp; &nbsp;<br> &nbsp; int x = 0; <br> &nbsp; int y = 0; <br> &nbsp; &nbsp;<br> &nbsp; float noise_scale = 0.2; <br> &nbsp; &nbsp;<br> &nbsp; for(x = 0; x &lt; width; x++) <br> &nbsp; { <br> &nbsp; &nbsp; for(y = 0; y &lt; height; y++) <br> &nbsp; &nbsp; { <br> &nbsp;stroke(noise(x * noise_scale, y * noise_scale) * 255); <br> &nbsp;point(x,y); <br> &nbsp; &nbsp; } <br> &nbsp; } <br> } <br> &nbsp;<br> } <br> &nbsp;<br> &nbsp;<br> So, has anyone else run into this and found a solution? &nbsp;I tried just making a copy of the noise and flipping it horezontally. &nbsp;That works but it's really easy to see that it's just the same pattern reversed which doesn't look very good. <br> &nbsp;<br> any ideas? <br> &nbsp;<br> thanks! <br> -rrrufusss 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>skloopy</b><br><BR>
+     <a href="http://elfman.vendetta.com/ryan" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Seamless looping noise? (for terrain)</b><BR>
+                &#171; <B>Reply #1 on:</B> Jul 3<sup>rd</sup>, 2004, 10:03am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Umm.. <br> &nbsp;<br> I think theoretically you could take the average of 4 flipped noises. The 4 noises would be like this <br> &nbsp;<br> * not flipped <br> * flipped horzontal <br> * flipped vertical <br> * flipped both <br> &nbsp;<br> Fi you average them I think it'd give you a seamless texture. I haven't tried it though. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Sjeiti</b><br><BR>
+     <a href="http://www.sjeiti.com/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Seamless looping noise? (for terrain)</b><BR>
+                &#171; <B>Reply #2 on:</B> Jul 5<sup>th</sup>, 2004, 9:29am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            what if you use a sine to fade in the last part of the map with the first part of the map (total length of the map has to be a bit bigger than the final map you use on the sphere) 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr"><a href="http://www.sjeiti.com/" target="_blank">http://www.sjeiti.com/</a>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>narain</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Seamless looping noise? (for terrain)</b><BR>
+                &#171; <B>Reply #3 on:</B> Jul 5<sup>th</sup>, 2004, 6:23pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            That's the idea I was thinking of too, though I figured that ideally, you could fade all the way across the sphere... <br> &nbsp;<br> In pseudocode, with x as the longitude in degrees: <br> noise1 = noise(x); <br> noise2 = noise(x - 360'); <br> noise_final = fade_somehow(noise1, noise2, x/360'); <br> &nbsp;<br> At 0', noise_final = noise1 = noise(0'). <br> At 360', noise_final = noise2 = noise(360'-360') = noise(0'). <br> ...And it all fits together, no seams. <br> &nbsp;<br> (fade_somehow should blend between noise1 and noise2. You can use linear interpolation (search for 'lerp' on this forum), or a cosine like Sjeiti said for a smoother effect.) <br> &nbsp;<br> One problem with this is that the blending will reduce the strength of the noise when x is somewhere in the middle. You could always try boosting it artificially depending on the position... 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>rrrufusss</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Seamless looping noise? (for terrain)</b><BR>
+                &#171; <B>Reply #4 on:</B> Jul 7<sup>th</sup>, 2004, 11:58pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Thanks for the suggestions! <br> &nbsp;<br> I tried them out, and unfortunately the symetry in the result is still easy to spot. &nbsp;Check out <a href="http://www.optocentric.com/p/seamlessnoise/" target="_blank">http://www.optocentric.com/p/seamlessnoise/</a> and you can see it for yourself. <br> &nbsp;<br> I'll keep poking around with it and post if I come up with something. <br> &nbsp;<br> -rrrufusss 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="5"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>narain</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Seamless looping noise? (for terrain)</b><BR>
+                &#171; <B>Reply #5 on:</B> Jul 8<sup>th</sup>, 2004, 5:27am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Hmm... Looks to me like you're doing what scloopy suggested. I think that will be perfectly symmetrical, no way around it. What Sjeiti and I suggested shouldn't be, though. <br> Your source code link isn't working... Please upload your pde file. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="6"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>rrrufusss</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Seamless looping noise? (for terrain)</b><BR>
+                &#171; <B>Reply #6 on:</B> Jul 8<sup>th</sup>, 2004, 6:34pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I fixed the code link (for some reason my hosting company has issues with the .pde file extension.. I had to rename it..) <br> &nbsp;<br> I don't know if fading between flipped copies of the noise will be much better. &nbsp;I haven't tried it in processing, but I simulated the result in photoshop: <br> &nbsp;<br> <a href="http://www.optocentric.com/p/seamlessnoise/fade_test.jpg" target="_blank">http://www.optocentric.com/p/seamlessnoise/fade_test.jpg</a> <br> &nbsp;<br> I just took a screen dump of the normal noise, then made two layers in photoshop. &nbsp;I flipped one of them horezontally, then faded it to transparency from left to right. <br> &nbsp;<br> -rrrufusss 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="7"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>narain</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Seamless looping noise? (for terrain)</b><BR>
+                &#171; <B>Reply #7 on:</B> Jul 9<sup>th</sup>, 2004, 5:55am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Uh... no, that's not what I meant. <br> Don't flip the texture... Flip == symmetry == bad. In this case, at least =) <br> &nbsp;<br> The idea is to use a texture slightly longer than required and fade the beginning with the end. <br> Imagine taking your texture and wrapping it around a cylinder. If it's exactly the right length, it'll stop where it started with an ugly seam. Instead, make the texture slightly longer, and let the extra length overlap the beginning. Then all you have to do is fade between the extra and the original over the length of the length of the overlap... Voila, no more seam! <br> &nbsp;<br> That's Sjeiti idea... <br> My modification was just to take a texture so long that the flap wraps right around the cylinder again once, and fade it all over. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="8"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>skloopy</b><br><BR>
+     <a href="http://elfman.vendetta.com/ryan" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Seamless looping noise? (for terrain)</b><BR>
+                &#171; <B>Reply #8 on:</B> Jul 9<sup>th</sup>, 2004, 8:21am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I think maybe this'll help you out. I googled for tiling noise and this is what i found. It looks like you need to call the noise function 4 times though. <br> &nbsp;<br> <a href="http://www.robo-murito.net/code/perlin-noise-math-faq.html#tile" target="_blank">http://www.robo-murito.net/code/perlin-noise-math-faq.html#tile</a> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="9"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>skloopy</b><br><BR>
+     <a href="http://elfman.vendetta.com/ryan" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Seamless looping noise? (for terrain)</b><BR>
+                &#171; <B>Reply #9 on:</B> Jul 9<sup>th</sup>, 2004, 9:03am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            oh oops.. i just tried it <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">float nscale = 0&#46;05; <br> &nbsp;<br> void setup&#40;&#41; <br> { <br> &nbsp; size&#40;300,200&#41;; <br> } <br> &nbsp;<br> void loop&#40;&#41; <br> { <br> &nbsp; float level; <br> &nbsp; for&#40;int i=0; i &lt; pixels&#46;length; i++&#41; { <br> &nbsp; &nbsp; level = tilingNoise&#40;&#40;i%width&#41;*nscale,&#40;i&#47;width&#41;*nscale,mouseY*nscale, width*nscale, height*nscale&#41; * 255; <br> &nbsp; &nbsp; pixels&#91;i&#93; = color&#40;level,level,level&#41;; <br> &nbsp; } <br> } <br> &nbsp;<br> float tilingNoise&#40;float x, float y, float z, float w, float h&#41; <br> { <br> &nbsp; return &#40; <br> &nbsp; noise&#40;x, y, z&#41; * &#40;w &#45; x&#41; * &#40;h &#45; y&#41; + &nbsp;<br> &nbsp; noise&#40;x &#45; w, y, z&#41; * x * &#40;h &#45; y&#41; + &nbsp;<br> &nbsp; noise&#40;x &#45; w, y &#45; h, z&#41; * x * y + &nbsp;<br> &nbsp; noise&#40;x, y &#45; h, z&#41; * &#40;w &#45; x&#41; * y <br> &nbsp; &#41; &#47; &#40;w*h&#41;; <br> } </font></td></tr></table></td></tr></table> <br> it looks like it's basically what i was saying to do back up there, because it still looks symmetrical. Oh well. <br> &nbsp;<br> Sorry Oops I was hoping that'd be the magic answer you're after <img border=0 src="public_html/YaBBImages/tongue.gif"> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="10"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Sjeiti</b><br><BR>
+     <a href="http://www.sjeiti.com/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Seamless looping noise? (for terrain)</b><BR>
+                &#171; <B>Reply #10 on:</B> Jul 9<sup>th</sup>, 2004, 11:46am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Ok.. I thought it'd be good practice to have a go at this because I never worked with those one dimensional pixel arrays before (only two)... <br> &nbsp;<br> Here's sort of what I meant, only the overlap is linear instead of sinal (you can always throw in a sine around fPrt)... <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> float fScl; <br> int iMrg, iWdt, iHgt; <br> BImage eImg, eFin; <br> &nbsp;<br> void setup&#40;&#41; { <br> &nbsp; iMrg = 50; <br> &nbsp; iWdt = 200; <br> &nbsp; iHgt = 100; <br> &nbsp; fScl = 0&#46;02; <br> &nbsp; size&#40;600,400&#41;; <br> &nbsp; noiseDetail&#40;4,&#46;5&#41;; <br> &nbsp; eImg = new BImage&#40;iWdt+iMrg,iHgt+iMrg&#41;; <br> &nbsp; eFin = new BImage&#40;iWdt,iHgt&#41;; <br> } <br> &nbsp; <br> void loop&#40;&#41; &nbsp;{ <br> &nbsp; background&#40;200&#41;; <br> &nbsp; for &#40;int i=0; i&lt;eImg&#46;pixels&#46;length; i++&#41; { <br> &nbsp; &nbsp; int iXps = i % eImg&#46;width; <br> &nbsp; &nbsp; int iYps = i &#47; eImg&#46;width; <br> &nbsp; &nbsp; float fNse = noise&#40; iXps*fScl, iYps*fScl, millis&#40;&#41;*&#46;01*fScl &#41;; <br> &nbsp; &nbsp; eImg&#46;pixels&#91;i&#93; = color&#40;fNse*255,fNse*255,fNse*255&#41;; <br> &nbsp; } <br> &nbsp; &#47;&#47; horizontal seam &#47;&#47; <br> &nbsp; for &#40;int i=0; i&lt;&#40;iWdt+iMrg&#41;*iMrg; i++&#41; { <br> &nbsp; color cImg = eImg&#46;pixels&#91;i&#93;; <br> &nbsp; color cHsm = eImg&#46;pixels&#91;i + &#40;iWdt+iMrg&#41;*iHgt&#93;; <br> &nbsp; float fPrt = &#40;i&#47;float&#40;iWdt+iMrg&#41;&#41;&#47;iMrg; <br> &nbsp; float fRed = fPrt*red&#40;cImg&#41; + &#40;1&#45;fPrt&#41;*red&#40;cHsm&#41;; <br> &nbsp; float fGrn = fPrt*green&#40;cImg&#41; + &#40;1&#45;fPrt&#41;*green&#40;cHsm&#41;; <br> &nbsp; float fBlu = fPrt*blue&#40;cImg&#41; + &#40;1&#45;fPrt&#41;*blue&#40;cHsm&#41;; <br> &nbsp; eImg&#46;pixels&#91;i&#93; = color&#40;fRed,fGrn,fBlu&#41;; <br> &nbsp; } <br> &nbsp; &#47;&#47; vertical seam &#47;&#47; <br> &nbsp; for &#40;int i=0; i&lt;&#40;iHgt+iMrg&#41;*iMrg; i++&#41; { <br> &nbsp; int iXps = i%iMrg; <br> &nbsp; int iYps = i&#47;iMrg; <br> &nbsp; color cImg = eImg&#46;pixels&#91;i + iYps*iWdt&#93;; <br> &nbsp; &#47;&#47;eImg&#46;pixels&#91;i + iYps*iWdt&#93; = color&#40;0,0,0&#41;; <br> &nbsp; color cHsm = eImg&#46;pixels&#91;i + iYps*iWdt + iWdt&#93;; <br> &nbsp; &#47;&#47;eImg&#46;pixels&#91;i + iYps*iWdt + iWdt&#93; = color&#40;255,255,255&#41;; <br> &nbsp; float fPrt = float&#40;iXps&#41;&#47;iMrg; <br> &nbsp; float fRed = fPrt*red&#40;cImg&#41; + &#40;1&#45;fPrt&#41;*red&#40;cHsm&#41;; <br> &nbsp; float fGrn = fPrt*green&#40;cImg&#41; + &#40;1&#45;fPrt&#41;*green&#40;cHsm&#41;; <br> &nbsp; float fBlu = fPrt*blue&#40;cImg&#41; + &#40;1&#45;fPrt&#41;*blue&#40;cHsm&#41;; <br> &nbsp; eImg&#46;pixels&#91;i + iYps*iWdt&#93; = color&#40;fRed,fGrn,fBlu&#41;; <br> &nbsp; } <br> &nbsp; &#47;&#47; <br> &nbsp; eFin&#46;replicate&#40;eImg, 0,0,iWdt,iHgt, 0,0,iWdt,iHgt&#41;; <br> &nbsp; &#47;&#47; <br> &nbsp; image&#40;eFin, 10, 10&#41;; <br> &nbsp; image&#40;eFin, 10, 10+iHgt&#41;; <br> &nbsp; image&#40;eFin, 10+iWdt, 10&#41;; <br> &nbsp; image&#40;eFin, 10+iWdt, 10+iHgt&#41;; <br> &nbsp; &#47;&#47; <br> &nbsp; image&#40;eImg, 10, 20+iHgt*2&#41;; <br> &nbsp; &#47;&#47; <br> &nbsp; stroke&#40;255,255,255,128&#41;; <br> &nbsp; noFill&#40;&#41;; <br> &nbsp; rect&#40;10, 10, iWdt,iHgt&#41;; <br> } <br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> grtz... <br> &nbsp;<br> ...Sjeiti 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr"><a href="http://www.sjeiti.com/" target="_blank">http://www.sjeiti.com/</a>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="11"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>narain</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Seamless looping noise? (for terrain)</b><BR>
+                &#171; <B>Reply #11 on:</B> Jul 11<sup>th</sup>, 2004, 7:18am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Well, turns out the problem with symmetry is Processing's fault! <br> &nbsp;<br> Apparently noise() at negative x,y is simply flipped about zero... So Sjeiti's &quot;oops&quot; post turns out the same as just flipping the texture. <br> &nbsp;<br> Avoid going to negative values, though, and we can put the magic back: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">float ns = 0&#46;02; <br> float t = 0; <br> &nbsp;<br> void setup &#40;&#41; { <br> &nbsp; size&#40;320,320&#41;; <br> &nbsp; framerate&#40;16&#41;; <br> } <br> &nbsp;<br> void loop &#40;&#41; { <br> &nbsp; int w = mouseX + 1; <br> &nbsp; int h = mouseY + 1; <br> &nbsp; color&#91;&#93; tile = makeTile&#40;w,h&#41;; <br> &nbsp; for &#40;int x = 0; x &lt; width; x++&#41; { <br> &nbsp; &nbsp; for &#40;int y = 0; y &lt; height; y++&#41; { <br> &nbsp;int x_ = x % w; <br> &nbsp;int y_ = y % h; <br> &nbsp;pixels&#91;x + y*width&#93; = tile&#91;x_ + y_*w&#93;; <br> &nbsp; &nbsp; } <br> &nbsp; } <br> &nbsp; t += &#40;float&#41; 1&#47;16; <br> } <br> &nbsp;<br> color&#91;&#93; makeTile &#40;int w, int h&#41; { <br> &nbsp; color&#91;&#93; tile = new color&#91;w*h&#93;; <br> &nbsp; for &#40;int x = 0; x &lt; w; x++&#41; { <br> &nbsp; &nbsp; for &#40;int y = 0; y &lt; h; y++&#41; { <br> &nbsp;float u = &#40;float&#41; x &#47; w; <br> &nbsp;float v = &#40;float&#41; y &#47; h; <br> &nbsp;float noise00 = noise&#40;x*ns, y*ns, t&#41;; <br> &nbsp;float noise01 = noise&#40;x*ns, &#40;y+h&#41;*ns, t&#41;; <br> &nbsp;float noise10 = noise&#40;&#40;x+w&#41;*ns, y*ns, t&#41;; <br> &nbsp;float noise11 = noise&#40;&#40;x+w&#41;*ns, &#40;y+h&#41;*ns, t&#41;; <br> &nbsp;float noise = u*v*noise00 + u*&#40;1&#45;v&#41;*noise01 + &#40;1&#45;u&#41;*v*noise10 + &#40;1&#45;u&#41;*&#40;1&#45;v&#41;*noise11; <br> &nbsp;int value = &#40;int&#41; &#40;255 * noise&#41;; <br> &nbsp;tile&#91;x + y*w&#93; = color&#40;value,value,value&#41;; <br> &nbsp; &nbsp; } <br> &nbsp; } <br> &nbsp; return tile; <br> } <br>  </font></td></tr></table></td></tr></table> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_Contribution_Simlation_action_display_num_1088808238.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option value="?board=Programs">&nbsp; - Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option selected value="?board=Contribution_Simlation">=> Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_Contribution_Simlation_action_display_num_1090994654.html">Previous topic</a> | <a href="board_Contribution_Simlation_action_display_num_1078114794.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

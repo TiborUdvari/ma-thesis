@@ -1,0 +1,998 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - Processing &lt;-&gt; PHP &lt;-&gt; MySQL</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Integrate_action_display_num_1106908696.html#help" class="nav">Programming Questions & Help
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Integrate.html" class="nav">Integration</a> </b>(Moderators: fry, REAS)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    Processing &lt;-&gt; PHP &lt;-&gt; MySQL</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_Integrate_action_display_num_1113460378.html">Previous topic</a> | <a href="board_Integrate_action_display_num_1112706275.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/thread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: Processing &lt;-&gt; PHP &lt;-&gt; MySQL</b> &nbsp;(Read 10957 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>marcello</b><br><BR>
+             <a href="http://www.sodaplaycentral.com/features/sw3d2/index.html" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Processing &lt;-&gt; PHP &lt;-&gt; MySQL</b><BR>
+                &#171; <B> on:</B> Jan 28<sup>th</sup>, 2005, 11:38am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Hi, <br> is it possible for an applet built with processing to communicate (in both ways) with a PHP script that manages a database MySQL? <br> &nbsp;<br> I'm using a free web space that supports PHP and MySQL and i would like to learn how an applet built with processing could load and save text files from/to this web space. <br> &nbsp;<br> does anybody know some code that i could study. <br> &nbsp;<br> Thanks in advance, <br> Marcello 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Jan 28<sup>th</sup>, 2005, 11:39am by marcello</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>eskimoblood</b><br><BR><a href="board_Integrate_action_icqpager_UIN_222550793.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=222550793&img=5" alt="222550793" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=222550793" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="222550793" BORDER=0></a>
+     <a href="http://www.eskimoblood.de" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Processing &lt;-&gt; PHP &lt;-&gt; MySQL</b><BR>
+                &#171; <B>Reply #1 on:</B> Jan 28<sup>th</sup>, 2005, 1:11pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Hi I wrote a mapviewer for the umnmapserver. For the communication between the mapserver cgi and my applet I use a invisible frame with a formular. The formular was filled out and send by the apllet. I use the netscape.javascript Object to do this. The response from the cgi was the a site with a javascript which was start by the onload event. This script send some variables to a function in my applet. &nbsp;<br> Here are some piece of my code <br> &nbsp;<br> Fill out the formular: <br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> JSObject parent, doc, form, frame, form_mode, form_imgbox, form_imgxy, form_zoom, form_layer; <br> &nbsp;<br> &#47;&#47; get the javascript objects <br> &nbsp; &nbsp; parent=&#40;JSObject&#41; jsWin&#46;getMember&#40;&quot;parent&quot;&#41;; <br> &nbsp; &nbsp; frame=&#40;JSObject&#41; parent&#46;getMember&#40;&quot;formframe&quot;&#41;; <br> &nbsp; &nbsp; doc=&#40;JSObject&#41; frame&#46;getMember&#40;&quot;document&quot;&#41;; <br> &nbsp; &nbsp; form=&#40;JSObject&#41; doc&#46;getMember&#40;&quot;formular&quot;&#41;; <br> &nbsp;<br> &nbsp; &nbsp; form_mode=&#40;JSObject&#41; form&#46;getMember&#40;&quot;mode&quot;&#41;; <br> &nbsp; &nbsp; form_imgbox=&#40;JSObject&#41; form&#46;getMember&#40;&quot;imgbox&quot;&#41;; <br> &nbsp; &nbsp; form_imgxy=&#40;JSObject&#41; form&#46;getMember&#40;&quot;imgxy&quot;&#41;; <br> &nbsp; &nbsp; form_zoom=&#40;JSObject&#41; form&#46;getMember&#40;&quot;zoom&quot;&#41;; <br> &nbsp; &nbsp; form_layer=&#40;JSObject&#41; form&#46;getMember&#40;&quot;layers&quot;&#41;; <br> &nbsp;<br> &#47;&#47;set the values of the formular <br> &nbsp; &nbsp; theJS&#46;form&#46;setMember&#40;&quot;target&quot;,&quot;queryframe&quot;&#41;; <br> &nbsp; &nbsp; theJS&#46;form_mode&#46;setMember&#40;&quot;value&quot;,&quot;query&quot;&#41;; <br> &nbsp; &nbsp; theJS&#46;form_imgxy&#46;setMember&#40;&quot;value&quot;,p&#41;; <br> &nbsp; &nbsp; theJS&#46;form_layer&#46;setMember&#40;&quot;value&quot;,&quot;kleks_f kleks_p kleks_l&quot;&#41;; <br> &nbsp; &nbsp; theJS&#46;form_zoom&#46;setMember&#40;&quot;name&quot;,&quot;&quot;&#41;; <br> &nbsp; &nbsp; theJS&#46;form_imgbox&#46;setMember&#40;&quot;name&quot;,&quot;&quot;&#41;; <br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> Javascript to call a function in my applet <br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> &nbsp; &nbsp;function sendToApplet&#40;&#41; { <br> &nbsp; &nbsp; var Id = &quot;&#91;ID&#93;&quot;; <br> &nbsp; &nbsp; var Typ = &quot;&#91;TYP&#93;&quot;; <br> &nbsp; &nbsp; var Name = &quot;&#91;NAME&#93;&quot;; <br> &nbsp; &nbsp; var Schutz = &quot;&#91;SCHUTZ&#93;&quot;; <br> &nbsp; &nbsp; var Zustand = &quot;&#91;ZUSTAND&#93;&quot;; <br> &nbsp; &nbsp; var Entstehung = &quot;&#91;ENTSTEHUNG&#93;&quot;; <br> &nbsp; &nbsp; var Untergang = &quot;&#91;UNTERGANG&#93;&quot;; <br> &nbsp; &nbsp; var Text = &quot;&#91;TEXT&#93;&quot;; <br> &nbsp; &nbsp; var HTML = &quot;&#91;HTML&#93;&quot;; <br> &nbsp; &nbsp; try{ <br> &#47;&#47; check if the applet is loaded cause otherwise the script will crash &nbsp; &nbsp; &nbsp;if&#40;parent&#46;viewframe&#46;document&#46;viewer&#46;getQueryData&#40;Id, Typ, Name, Schutz, Zustand, Entstehung, Untergang, Text,HTML&#41;&#41; throw &quot;on&quot;; <br> &nbsp; &nbsp; } <br> &nbsp; &nbsp; catch &#40;e&#41;{ <br> &nbsp; &nbsp; &nbsp;if&#40;e&#33;=&quot;on&quot;&#41; setTimeout&#40;&quot;sendToApplet&#40;&#41;;&quot;,500&#41;; <br> &nbsp; &nbsp; } <br> &nbsp; &nbsp;} <br>  </font></td></tr></table></td></tr></table> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>fjen</b><br><BR>
+     <a href="http://www.florianjenett.de/p55/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Processing &lt;-&gt; PHP &lt;-&gt; MySQL</b><BR>
+                &#171; <B>Reply #2 on:</B> Jan 28<sup>th</sup>, 2005, 4:38pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            hi marcello, <br> &nbsp;<br> i have something <a href="http://www.florianjenett.de/p55/socket_image/">here</a> which might help you. i made this to read-write image data from processing to the server. check out the sendImage() function in the pde which uses POST to send the data to the script thru a http-socket. <br> &nbsp;<br> /F 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Jan 28<sup>th</sup>, 2005, 4:38pm by fjen</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>marcello</b><br><BR>
+             <a href="http://www.sodaplaycentral.com/features/sw3d2/index.html" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Processing &lt;-&gt; PHP &lt;-&gt; MySQL</b><BR>
+                &#171; <B>Reply #3 on:</B> Jan 28<sup>th</sup>, 2005, 5:50pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Thank you very mutch guys, <br> &nbsp;<br> I'll start to study your codes. If I'll have some problem I'll tell you here <img border=0 src="public_html/YaBBImages/smiley.gif"> <br> &nbsp;<br> Best Regards, <br> Marcello 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>cello</b><br><BR><a href="aim:goim?screenname=marcello3d&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="marcello3d" border="0"></a>
+     <a href="http://marcello.cellosoft.com/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Processing &lt;-&gt; PHP &lt;-&gt; MySQL</b><BR>
+                &#171; <B>Reply #4 on:</B> Jan 28<sup>th</sup>, 2005, 6:18pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            <B>on Jan 28<sup>th</sup>, 2005, 4:38pm, <a href="board_Integrate_action_display_num_1106908696.html#2">fjen  wrote</a>:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td width="100%"><table cellpadding="2" cellspacing="0" class="quote" width="100%"><tr><td width="100%"><font face="Arial,Helvetica" class="quote" size="1">hi marcello, <br> &nbsp;<br> i have something <a href="http://www.florianjenett.de/p55/socket_image/">here</a> which might help you. i made this to read-write image data from processing to the server. check out the sendImage() function in the pde which uses POST to send the data to the script thru a http-socket. <br> &nbsp;<br> /F </font></td></tr></table></td></tr></table> <br> &nbsp;<br> Is there a particular reason you send the image as ascii and not binary &nbsp;(Or even encode it as a jpg/png on the client-side to save bandwidth/speed up the transfer.) &nbsp;I only mention this because I've do it on 2draw for people submitting their drawings. <br> &nbsp;<br> But in any case for Marcello's purposes with text files, fjen's approach is better than using javascript. &nbsp;More compatible and more direct. &nbsp; <br> &nbsp;<br> To summarize what fjen is doing, essentially you want to open your own HTTP connection and send in the data that way (if you're sending small data, it's probably easiest to use GET and include all the data in the URL, that way you don't need to build a custom http request), then for retrieving data, Processing already has a few functions for getting data from a URL. <br> &nbsp;<br> Marcello 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="5"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>fjen</b><br><BR>
+     <a href="http://www.florianjenett.de/p55/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Processing &lt;-&gt; PHP &lt;-&gt; MySQL</b><BR>
+                &#171; <B>Reply #5 on:</B> Jan 28<sup>th</sup>, 2005, 9:30pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            yeah, the code is a little dated. sorry i wasn't aware of that. later i did just what you do on 2draw. <br> &nbsp;<br> anyway, sending images was not the question and you explained well what i wanted to show ... <br> &nbsp;<br> applet: <br> - open socket <br> - send data <br> - wait for answer (? &quot;ok&quot;) <br> &nbsp;<br> php: <br> - open file (or mysql-connection) <br> - write to file (...) <br> - close file <br> - echo &quot;ok&quot; <br> &nbsp;<br> so the important part would be: <br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> String sendData &#40;String data&#41; <br> &nbsp;{ <br> &nbsp; Socket echoSocket = null; <br> &nbsp; PrintWriter out = null; <br> &nbsp; BufferedReader in = null; <br> &nbsp;<br> &nbsp; String server = &quot;tente&#45;argent&#46;local&quot;; &#47;&#47; some&#46;server&#46;com &#47;&#47; needs to be the same server the applet is running on &#47;&#47; <br> &nbsp; &#47;&#47;status&#40;&quot;Server &#40;&quot;+server+&quot;&#41;&quot;&#41;; <br> &nbsp; String script = &quot;&#47;PHP&#47;JPEGStreamPHP&#46;php&quot;; &#47;&#47; &#47;path&#47;to&#47;script &#47;&#47; <br> &nbsp;<br> &nbsp; try { <br> &nbsp; &nbsp;echoSocket = new Socket&#40; server, 80 &#41;; &#47;&#47; http connection to server &#47;&#47; <br> &nbsp; &nbsp;out = new PrintWriter&#40;echoSocket&#46;getOutputStream&#40;&#41;, true&#41;; <br> &nbsp; &nbsp;in &nbsp;= new BufferedReader&#40;new InputStreamReader&#40; echoSocket&#46;getInputStream&#40;&#41;&#41;&#41;; <br> &nbsp;<br> &nbsp; } catch &#40;UnknownHostException e&#41; { <br> &nbsp; &nbsp;println&#40;&quot;Don't know about host&#58; &quot; + server&#41;; <br> &nbsp;<br> &nbsp; } catch &#40;IOException e&#41; { <br> &nbsp; &nbsp;println&#40;&quot;Couldn't get I&#47;O for the connection to&#58; &quot; + server&#41;; <br> &nbsp; } <br> &nbsp;<br> &nbsp; &#47;&#47; prepare for talkin &#46;&#46;&#46; &#47;&#47; <br> &nbsp; String server_response; <br> &nbsp; String poststring = &quot;data=&quot;+URLEncoder&#46;encode&#40;data&#41;; <br> &nbsp;<br> &nbsp; &#47;&#47; string to send &#47;&#47; <br> &nbsp; String send_string = &quot;&#92;r&#92;nPOST &quot; + script + &quot; HTTP&#47;1&#46;1&#92;r&#92;n&quot; + <br> &nbsp; &nbsp;&quot;Host&#58; &quot; + server + &quot;&#92;r&#92;n&quot; + <br> &nbsp; &nbsp;&quot;Content&#45;type&#58; application&#47;x&#45;www&#45;form&#45;urlencoded&#92;r&#92;n&quot; + <br> &nbsp; &nbsp;&quot;Content&#45;length&#58; &quot; + &#40;new Integer&#40;poststring&#46;length&#40;&#41;&#41;&#46;toString&#40;&#41;&#41; + &quot;&#92;r&#92;n&quot; + <br> &nbsp; &nbsp;&quot;Connection&#58; close&#92;r&#92;n&#92;r&#92;n&quot; + <br> &nbsp; poststring + &quot;&#92;r&#92;n&#92;r&#92;n&quot;; <br> &nbsp;<br> &nbsp; &#47;&#47; send &#47;&#47; <br> &nbsp; out&#46;println&#40;send_string&#41;; <br> &nbsp; &nbsp;<br> &nbsp; &#47;&#47; receive &#47;&#47; <br> &nbsp; String filename = &quot;&#45;1&quot;; <br> &nbsp; try { <br> &nbsp; &nbsp;while &#40;&#40;server_response = in&#46;readLine&#40;&#41;&#41; &#33;= null&#41; &nbsp;<br> &nbsp; &nbsp;{ <br> &nbsp; &nbsp; &#47;&#47;println&#40; server + &quot;&#58; &quot; + server_response &#41;; <br> &nbsp; &nbsp; if &#40;server_response&#46;indexOf&#40;&quot;ok&quot;&#41; &#33;= &#45;1&#41; { <br> &nbsp; &nbsp; &nbsp;filename = server_response; <br> &nbsp; &nbsp; } <br> &nbsp; &nbsp;} <br> &nbsp;<br> &nbsp; out&#46;close&#40;&#41;; <br> &nbsp; in&#46;close&#40;&#41;; <br> &nbsp; echoSocket&#46;close&#40;&#41;; <br> &nbsp;<br> &nbsp; } catch &#40;Exception e&#41; { <br> &nbsp; &nbsp;println&#40;&quot;Error reading server response&#46;&quot;&#41;; <br> &nbsp; &nbsp;e&#46;printStackTrace&#40;&#41;; <br> &nbsp; } <br> &nbsp; &nbsp;<br> &nbsp; return filename; <br> &nbsp;} <br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> /F 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="6"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Euskadi</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Processing &lt;-&gt; PHP &lt;-&gt; MySQL</b><BR>
+                &#171; <B>Reply #6 on:</B> Jan 29<sup>th</sup>, 2005, 4:15am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Yep, there's a few ways to do this. <br> &nbsp;<br> I'm working on a simulator that stores some data about the simulation for retrieval later. <br> &nbsp;<br> 1) Create a php page to receive requests and respond with a very basic page with the data you want. <br> &nbsp;<br> Here's a sample of a function that hits a php page and gets some info based on the session ID. (somebody help me, how do I make the &quot;code&quot; code? <br> &nbsp;<br> String captureID(){ <br> &nbsp;String getID = &quot;http://&quot; + strURL + &quot;/simulate/getcaptureid.php?sid=&quot; + sessID; <br> &nbsp;String c = &quot;-1&quot;; <br> &nbsp;try{ <br> &nbsp; &nbsp;String html[] = loadStrings(getID); <br> &nbsp; &nbsp;for(int i =0; i &lt; html.length; i++){ <br> &nbsp; &nbsp;if(html[i].length() !=0){ <br> &nbsp; &nbsp;c = html[i]; <br> &nbsp; &nbsp;} <br> &nbsp; &nbsp;} <br> &nbsp;} &nbsp;catch (Exception e) { <br> &nbsp; &nbsp;c = &quot;-1&quot;; <br> &nbsp;} <br> &nbsp;return c; <br> } <br> &nbsp;<br> 2) Create something to send info to your database. You can use the same method as in 1) above. Or, like the previous message you can use the post method. Using &quot;post&quot; is nice because you can send a LOT of info that way. If you use the send method, putting the info in your url you are limited to 2000 characters or something. <br> &nbsp;<br> This is post, large amounts of data: <br> &nbsp;<br> void postNewItem (String S) { <br> &nbsp;try { <br> &nbsp; &nbsp;URL &nbsp; &nbsp; &nbsp;url; <br> &nbsp; &nbsp;URLConnection urlConn; <br> &nbsp; &nbsp;DataOutputStream &nbsp; dos; <br> &nbsp; &nbsp;DataInputStream &nbsp; &nbsp;dis; <br> &nbsp;<br> &nbsp; &nbsp;url = new URL(&quot;http://&quot; + strURL + &quot;/simulate/statscapture.php&quot;); <br> &nbsp; &nbsp;urlConn = url.openConnection(); <br> &nbsp; &nbsp;urlConn.setDoInput(true); <br> &nbsp; &nbsp;urlConn.setDoOutput(true); <br> &nbsp; &nbsp;urlConn.setUseCaches(false); <br> &nbsp; &nbsp;urlConn.setRequestProperty (&quot;Content-Type&quot;, &quot;application/x-www-form-urlencoded&quot;); <br> &nbsp;<br> &nbsp; &nbsp;dos = new DataOutputStream (urlConn.getOutputStream()); <br> &nbsp;<br> &nbsp; &nbsp;String message=S; <br> &nbsp; &nbsp;dos.writeBytes(message); <br> &nbsp; &nbsp;dos.flush(); <br> &nbsp; &nbsp;dos.close(); <br> &nbsp;<br> &nbsp; &nbsp;// the server responds by saying <br> &nbsp; &nbsp;// &quot;SUCCESS&quot; or &quot;FAILURE&quot; <br> &nbsp;<br> &nbsp; &nbsp;//todo next 3 undo <br> &nbsp; &nbsp;dis = new DataInputStream(urlConn.getInputStream()); <br> &nbsp; &nbsp;String s =&quot;&quot;; // = dis.readLine(); <br> &nbsp; &nbsp;dis.close(); <br> &nbsp;<br> &nbsp; &nbsp;if (s.equals(&quot;SUCCESS&quot;)) { <br> &nbsp; &nbsp; &nbsp;; &nbsp; } else { <br> &nbsp; &nbsp; &nbsp;; <br> &nbsp; &nbsp;} <br> &nbsp;<br> &nbsp;} // end of &quot;try&quot; <br> &nbsp;<br> &nbsp;catch (MalformedURLException mue) { <br> &nbsp; &nbsp;; &nbsp;<br> &nbsp;} <br> &nbsp;catch (IOException ioe) { <br> &nbsp; &nbsp;; &nbsp;<br> &nbsp;} <br> &nbsp;<br> } &nbsp;// end of postNewItem() method <br> &nbsp;<br> &nbsp;<br> What I left out on this was the php page to receive the communication from either the post or send method and write to or query mysql... but there is lots out there on that topic. <br> &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="7"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>fjen</b><br><BR>
+     <a href="http://www.florianjenett.de/p55/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Processing &lt;-&gt; PHP &lt;-&gt; MySQL</b><BR>
+                &#171; <B>Reply #7 on:</B> Jan 29<sup>th</sup>, 2005, 5:41am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            how to make the &quot;code&quot; code (like that): <br> &nbsp;<br> without spaces after &quot;[ &quot; and before &quot; ]&quot;: <br> &nbsp;<br> [ code ] ... [ /code ] <br> [ link=URL ] ... [ /link ] <br> where URL is something like http://www... <br> [ b ] ... [ /b ] <br> [ i ] ... [ /i ] <br> [ quote author=... link=yabbURL ] ... [ /quote ] <br> where yabbURL is everything after the ... <br> &nbsp;<br> i think there are some more ... <br> /F 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="8"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>marcello</b><br><BR>
+             <a href="http://www.sodaplaycentral.com/features/sw3d2/index.html" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Processing &lt;-&gt; PHP &lt;-&gt; MySQL</b><BR>
+                &#171; <B>Reply #8 on:</B> Mar 6<sup>th</sup>, 2005, 6:54pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Thank you all for your answers. I'm learning a lot from you. Unfortunately i was very busy lately with my job so i hadn'd so much time to test all your suggestions. <br> &nbsp;<br> I had success in implementing the Euskadi's method n.1. I saw a similar thing in lifevslife's source code. <br> &nbsp;<br> Now i would like to learn the fjen's method/Euskadi's method n.2. This method is a little bit difficult than previous. In the first i simply used the p5 loadStrings function. With the second i'll have to learn a bit of official java. I'll have also to study the fjen's php code. <br> &nbsp;<br> &nbsp;<br> Thank you all again, <br> Marcello <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Mar 6<sup>th</sup>, 2005, 7:42pm by marcello</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="9"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>seltar</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Processing &lt;-&gt; PHP &lt;-&gt; MySQL</b><BR>
+                &#171; <B>Reply #9 on:</B> Mar 7<sup>th</sup>, 2005, 1:08am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Dynamic function that POSTS multiple data to a dynamic php-script, and writes info to textfile <br> &nbsp;<br> <a href="http://wliia.org/projects/postit/" target="_blank">http://wliia.org/projects/postit/</a> <br> &nbsp;<br> think source code speaks for itself, and if it doesn't just drop me a line.. <br> &nbsp;<br> -seltar 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="10"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>marcello</b><br><BR>
+             <a href="http://www.sodaplaycentral.com/features/sw3d2/index.html" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Processing &lt;-&gt; PHP &lt;-&gt; MySQL</b><BR>
+                &#171; <B>Reply #10 on:</B> Mar 7<sup>th</sup>, 2005, 11:03am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Thank you seltar, <br> this is also a very useful example. <br> &nbsp;<br> Thanks to you all, i think that a lot of people will be now able to save and load data in a web account in a very simple way. <br> &nbsp;<br> Best Regards, <br> Marcello 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="11"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>klaus_topmueller</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Processing &lt;-&gt; PHP &lt;-&gt; MySQL</b><BR>
+                &#171; <B>Reply #11 on:</B> Mar 7<sup>th</sup>, 2005, 3:54pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Thanks seltar, <br> &nbsp;<br> but does anybody know how to upload the displayed image as binary-jpeg to the server? <br> &nbsp;<br> florian sends it as pixel-string - <br> Query-String: pixels=ffffffcccccc999999ff00aac7a49c ...&quot; &nbsp;via <a href="http://www.florianjenett.de/p55/socket_image/socket_image.pde" target="_blank">http://www.florianjenett.de/p55/socket_image/socket_image.pde</a> <br> &nbsp;<br> this generates too much ascii-data for me - my picture-size is (800x600px). <br> &nbsp;<br> -klaus <br> &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="12"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>marcello</b><br><BR>
+             <a href="http://www.sodaplaycentral.com/features/sw3d2/index.html" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Processing &lt;-&gt; PHP &lt;-&gt; MySQL</b><BR>
+                &#171; <B>Reply #12 on:</B> Apr 6<sup>th</sup>, 2005, 4:58pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Hi all, &nbsp;<br> i've implemented the function that Euskadi ans seltar posted above time ago. With that function i was able to send text files to a php script wich receives these files by means of the command $_POST. <br> &nbsp;<br> Now i'm having some trouble with different versions of java. <br> &nbsp;<br> I have a PC with Windows ME installed. I'm also using IE 5.5. <br> &nbsp;<br> 1. if i use the default Microsoft Java Virtual Machine the above function works very well. I tried that function in two ways having success in both cases: before i used the server apache + php installed on my pc, and then i tried the same thing directly on a web space with php. All works well. <br> 2. The problem arises when i use the sun jvm 1.4.2. In this case i don't get any result: it seems that the php script doesn't receive any data. This happens either with the server on my pc and the server on a web space. I have the same problem when i run the above function inside the processing developement environment. &nbsp;<br> &nbsp;<br> Now i'm asking what the problem could be. I looked at the java 1.4 documentation in order to see if someone of the methods in that function are deprecated, but it isn't so. Maybe the problem is in Windows ME or in the browser, but these are just conjectures. <br> &nbsp;<br> Has anybody some idea where the problem could be <br> &nbsp;<br> Thanks in advance, <br> Marcello <br> &nbsp;<br> P.S. just to add the link to a related topic: <br> <a href="http://processing.org/discourse/yabb/board_Integrate_action_display_num_1090838754.html" target="_blank">http://processing.org/discourse/yabb/board_Integrate_action_dis_play_num_1090838754.html</a> <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Apr 13<sup>th</sup>, 2005, 3:39pm by marcello</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="13"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>marcello</b><br><BR>
+             <a href="http://www.sodaplaycentral.com/features/sw3d2/index.html" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Processing &lt;-&gt; PHP &lt;-&gt; MySQL</b><BR>
+                &#171; <B>Reply #13 on:</B> Apr 13<sup>th</sup>, 2005, 7:44pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            OK! I found the problem. <br> &nbsp;<br> I wrote the above function without the following portion of code: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> &nbsp; &nbsp;DataInputStream &nbsp; &nbsp;dis; &nbsp;<br> &nbsp; &nbsp;&#46;&#46;&#46; <br> &nbsp; &nbsp;&#46;&#46;&#46; <br> &nbsp; &nbsp;&#46;&#46;&#46; <br> &nbsp; &nbsp;dis = new DataInputStream&#40;urlConn&#46;getInputStream&#40;&#41;&#41;; <br> &nbsp; &nbsp;String s = dis&#46;readLine&#40;&#41;; &nbsp;<br> &nbsp; &nbsp;dis&#46;close&#40;&#41;; &nbsp;<br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> since i believed that it was not necessary. <br> &nbsp;<br> This was the error. In another previous thread (i just added the link in my previous post) i found the following link that Euskadi posted: <br> &nbsp;<br> <a href="http://www.devdaily.com/java/edu/pj/pj010023/index.shtml" target="_blank">http://www.devdaily.com/java/edu/pj/pj010023/index.shtml</a> <br> &nbsp;<br> where it is clearly explained that: <br> &nbsp;<br>  <B>Quote:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td width="100%"><table cellpadding="2" cellspacing="0" class="quote" width="100%"><tr><td width="100%"><font face="Arial,Helvetica" class="quote" size="1">Notice that it's also <b>necessary</b> (and desirable) to read a response from the web server. </font></td></tr></table></td></tr></table> <br> &nbsp;<br> I added that portion of code and now the function works well also with sun jvm 1.4.2 <br> &nbsp;<br> Marcello 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_Integrate_action_display_num_1106908696.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option value="?board=Programs">&nbsp; - Programs</option>
+<option selected value="?board=Integrate">=> Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_Integrate_action_display_num_1113460378.html">Previous topic</a> | <a href="board_Integrate_action_display_num_1112706275.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

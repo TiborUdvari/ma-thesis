@@ -1,0 +1,884 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - a terribly inefficient drawing</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Contributions_Beyond_action_display_num_1049331822.html#Examples" class="nav">Topics & Contributions
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Contributions_Beyond.html" class="nav">Beyond Categories</a> </b>(Moderator: REAS)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    a terribly inefficient drawing</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_Contributions_Beyond_action_display_num_1050875737.html">Previous topic</a> | <a href="board_Contributions_Beyond_action_display_num_1048072461.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/thread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: a terribly inefficient drawing</b> &nbsp;(Read 1122 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Allen Goodman</b><br>Guest
+            <BR><img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>a terribly inefficient drawing</b><BR>
+                &#171; <B> on:</B> Apr 3<sup>rd</sup>, 2003, 2:03am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+  
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I have no clue what I'm doing - but I love it <br> &nbsp;<br> // sketch - 03.02.2003 - 001 <br> // allen goodman (allen@fksche.com) <br> &nbsp;<br> // a terribly inefficient drawing <br> &nbsp;<br> background(100); <br> stroke(200); <br> &nbsp;<br> rect(10, 0, 30, 30); <br> rect(20, 0, 30, 30); <br> rect(30, 0, 30, 30); <br> rect(40, 0, 30, 30); <br> &nbsp;<br> stroke(25); <br> &nbsp;<br> rect(50, 0, 30, 30); <br> rect(60, 0, 30, 30); <br> rect(70, 0, 30, 30); <br> rect(80, 0, 30, 30); <br> rect(90, 0, 30, 30); <br> &nbsp;<br> stroke(50); <br> &nbsp;<br> rect(100, 0, 30, 30); <br> rect(10, 0, 30, 10); <br> rect(20, 0, 40, 20); <br> rect(30, 0, 30, 30); <br> &nbsp;<br> stroke(25); <br> &nbsp;<br> rect(40, 0, 40, 40); <br> rect(50, 0, 30, 50); <br> rect(60, 0, 40, 60); <br> rect(70, 0, 30, 70); <br> rect(80, 0, 40, 80); <br> rect(90, 0, 30, 90); <br> &nbsp;<br> stroke(100); <br> &nbsp;<br> rect(100, 0, 40, 100); <br> rect(10, 10, 90, 10); <br> rect(20, 20, 90, 20); <br> rect(30, 30, 90, 30); <br> rect(40, 40, 90, 40); <br> rect(50, 50, 90, 50); <br> rect(60, 60, 90, 60); <br> rect(70, 70, 90, 70); <br> rect(80, 80, 90, 80); <br> rect(90, 90, 90, 90); <br> &nbsp;<br> stroke(150); <br> &nbsp;<br> rect(100, 100, 90, 100); <br> rect(10, 10, 80, 10); <br> rect(20, 20, 70, 20); <br> rect(30, 30, 60, 30); <br> rect(40, 40, 50, 40); <br> rect(50, 50, 40, 50); <br> rect(60, 60, 30, 60); <br> rect(70, 70, 20, 70); <br> rect(80, 80, 10, 80); <br> rect(10, 10, 80, 10); <br> rect(20, 20, 70, 20); <br> rect(30, 30, 60, 30); <br> rect(40, 40, 50, 40); <br> rect(50, 50, 40, 50); <br> rect(60, 60, 30, 60); <br> rect(60, 60, 20, 70); <br> rect(70, 70, 10, 80); <br> &nbsp;<br> rect(0, 10, 90, 10); <br> rect(0, 20, 90, 20); <br> rect(0, 30, 90, 30); <br> rect(0, 40, 90, 40); <br> rect(0, 50, 90, 50); <br> rect(0, 60, 90, 60); <br> rect(0, 70, 90, 70); <br> rect(0, 80, 90, 80); 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Allen Goodman</b><br>Guest
+            <BR><img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: a terribly inefficient drawing</b><BR>
+                &#171; <B>Reply #1 on:</B> Apr 3<sup>rd</sup>, 2003, 2:39am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+  
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Hm, a tad more efficient (50% smaller in fact), but its still not very pretty. &nbsp;<br> &nbsp;<br> I hope no one minds that I posted this, Im just a new user looking for tips. <br> &nbsp;<br> // sketch - 03.02.2003 - 002 <br> // allen goodman (allen@fksche.com) <br> &nbsp;<br> // a terribly inefficient drawing (part 2) <br> &nbsp;<br> stroke(200); <br> &nbsp;<br> rect(0, 0, 10, 10); <br> rect(10, 0, 10, 10); <br> rect(20, 0, 10, 10); <br> rect(30, 0, 10, 10); <br> rect(40, 0, 10, 10); <br> rect(50, 0, 10, 10); <br> rect(60, 0, 10, 10); <br> rect(70, 0, 10, 10); <br> rect(80, 0, 10, 10); <br> rect(90, 0, 10, 10); <br> &nbsp;<br> rect(90, 10, 10, 10); <br> rect(90, 20, 10, 10); <br> rect(90, 30, 10, 10); <br> rect(90, 40, 10, 10); <br> rect(90, 50, 10, 10); <br> rect(90, 60, 10, 10); <br> rect(90, 70, 10, 10); <br> rect(90, 80, 10, 10); <br> rect(90, 90, 10, 10); <br> rect(90, 100, 10, 10); <br> &nbsp;<br> rect(0, 10, 90, 10); <br> rect(0, 20, 90, 10); <br> rect(0, 30, 90, 10); <br> rect(0, 40, 90, 10); <br> rect(0, 50, 90, 10); <br> rect(0, 60, 90, 10); <br> rect(0, 70, 90, 10); <br> rect(0, 80, 90, 20); 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Martin</b><br><BR><a href="board_Contributions_Beyond_action_icqpager_UIN_122417302.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=122417302&img=5" alt="122417302" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=122417302" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="122417302" BORDER=0></a><a href="http://edit.yahoo.com/config/send_webmesg.target=martingomez_lists" target="_blank"><img src="public_html/YaBBImages/yim.gif" alt="martingomez_lists" border="0"></a><img SRC="http://opi.yahoo.com/online?u=martingomez_lists&m=g&t=0" BORDER=0 alt=""><a href="aim:goim?screenname=mg1ph&message=Hi.+Are+you+there"><img src="public_html/YaBBImages/aim.gif" alt="mg1ph" border="0"></a>
+             <a href="http://decode.ateneo.edu/martin/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: a terribly inefficient drawing</b><BR>
+                &#171; <B>Reply #2 on:</B> Apr 3<sup>rd</sup>, 2003, 3:01am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            moments of genius come when you don't seem to know what you're doing. ... your work is very pretty. <img border=0 src="public_html/YaBBImages/smiley.gif"> <br> &nbsp;<br> hope this helps. <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">&#47;&#47; sketch &#45; 03&#46;02&#46;2003 &#45; 002 &nbsp;<br> &#47;&#47; allen goodman &#40;allen@fksche&#46;com&#41; &nbsp;<br> &nbsp; &nbsp;<br> &#47;&#47; a terribly inefficient drawing &#40;part 2&#41; &nbsp;<br> &nbsp;<br> &#47;&#47; modified by martin &#45; 04&#46;03&#46;2003 <br> &nbsp;<br> size&#40;200,200&#41;; &#47;&#47; define canvas size <br> background&#40;255&#41;; &#47;&#47; paper is 255&#47;255 gray <br> stroke&#40;200&#41;; &nbsp;&#47;&#47; pen is 200&#47;255 gray <br> &nbsp;<br> scale&#40;2&#46;0&#41;; &#47;&#47; magnify everything x2 <br> &nbsp;<br> for&#40;int i = 0; i &lt;= 90; i+=10&#41; <br> &#47;&#47; repeat from i = 0 to i = 90, with i <br> &#47;&#47; incrementing by 10 for each step <br> { <br> &nbsp; rect&#40;i, 0, 10, 10&#41;; &#47;&#47; draw the first rect series <br> &nbsp; rect&#40;90, i+10, 10, 10&#41;; &#47;&#47; draw the second rect series <br> &nbsp; if&#40;i&lt;80&#41; rect&#40;0,i+10,90,10&#41;; <br> &nbsp; &#47;&#47; we don't want to reach 90 <br> &nbsp; &#47;&#47; and we don't want to do another loop <br> &nbsp; &#47;&#47; removing the if&#40;i&lt;80&#41; statment will <br> &nbsp; &#47;&#47; also render the same thing &#58;&#41; <br> } </font></td></tr></table></td></tr></table> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>REAS</b><br><i></i><BR><BR>
+     <a href="http://reas.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: a terribly inefficient drawing</b><BR>
+                &#171; <B>Reply #3 on:</B> Apr 3<sup>rd</sup>, 2003, 6:44pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            &quot;efficiency&quot; is a matter of perception. writing programs line by line rather than in loops makes them run no slower and can give us an easier appreciation of the program's scope. &nbsp;<img border=0 src="public_html/YaBBImages/smiley.gif"> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Allen</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: a terribly inefficient drawing</b><BR>
+                &#171; <B>Reply #4 on:</B> Apr 3<sup>rd</sup>, 2003, 8:21pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+             <B>Quote:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td width="100%"><table cellpadding="2" cellspacing="0" class="quote" width="100%"><tr><td width="100%"><font face="Arial,Helvetica" class="quote" size="1"> <br> moments of genius come when you don't seem to know what you're doing. ... your work is very pretty.   <br> &nbsp; <br> hope this helps. &nbsp;<br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> Thank you Martin! This is exactly the kind of help that I needed <br> &nbsp;<br> Though I'm a tad confused by this line: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">if&#40;i&lt;80&#41; rect&#40;0,i+10,90,10&#41;; </font></td></tr></table></td></tr></table> <br> &nbsp;<br> Could you explain it in a little more detail? <br> &nbsp;<br>  <B>Quote:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td width="100%"><table cellpadding="2" cellspacing="0" class="quote" width="100%"><tr><td width="100%"><font face="Arial,Helvetica" class="quote" size="1">&quot;efficiency&quot; is a matter of perception. writing programs line by line rather than in loops makes them run no slower and can give us an easier appreciation of the program's scope. </font></td></tr></table></td></tr></table> <br> &nbsp;<br> Thank you for the kind words! <br> &nbsp;<br> ... <br> &nbsp;<br> I wrote my first 'loop' (I think that's what it's called, I even understand it). <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">&#47;&#47; sketch &#45; 04&#46;03&#46;2003 &#45; 004   <br> &#47;&#47; allen goodman &#40;allen@fksche&#46;com&#41;   <br> &nbsp;  &nbsp;<br> &#47;&#47; a terribly inefficient drawing &#40;part 4&#41;   <br> &nbsp; <br> &#47;&#47; modified by martin &#45; 04&#46;03&#46;2003 &nbsp;<br> &nbsp; <br> size&#40;200,200&#41;; &#47;&#47; define canvas size &nbsp;<br> background&#40;255&#41;; &#47;&#47; paper is 255&#47;255 gray &nbsp;<br> stroke&#40;200&#41;;  &#47;&#47; pen is 200&#47;255 gray &nbsp;<br> &nbsp; <br> scale&#40;2&#46;0&#41;; &#47;&#47; magnify everything x2 &nbsp;<br> &nbsp; <br> for&#40;int i = 0; i &lt;= 90; i+=10&#41; &nbsp;<br> &#47;&#47; repeat from i = 0 to i = 90, with i &nbsp;<br> &#47;&#47; incrementing by 10 for each step &nbsp;<br> { &nbsp;<br> &nbsp; rect&#40;i, 0, 10, 10&#41;; &#47;&#47; draw the first rect series &nbsp;<br> &nbsp; rect&#40;90, i+10, 10, 10&#41;; &#47;&#47; draw the second rect series &nbsp;<br> &nbsp; if&#40;i&lt;80&#41; rect&#40;0,i+10,90,10&#41;; &nbsp;<br> &nbsp; &#47;&#47; we don't want to reach 90 &nbsp;<br> &nbsp; &#47;&#47; and we don't want to do another loop &nbsp;<br> &nbsp; &#47;&#47; removing the if&#40;i&lt;80&#41; statment will &nbsp;<br> &nbsp; &#47;&#47; also render the same thing &#58;&#41; &nbsp;<br> } <br> stroke&#40;225&#41;; &nbsp;<br> for&#40;int x = 0; x &lt;= 90; x+=5&#41; &nbsp;<br> { &nbsp;<br> &nbsp; line&#40;10, 10, x, 90&#41;; &#47;&#47; draw the first line series &nbsp;<br> } </font></td></tr></table></td></tr></table> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Apr 3<sup>rd</sup>, 2003, 8:22pm by Allen</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="5"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Martin</b><br><BR><a href="board_Contributions_Beyond_action_icqpager_UIN_122417302.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=122417302&img=5" alt="122417302" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=122417302" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="122417302" BORDER=0></a><a href="http://edit.yahoo.com/config/send_webmesg.target=martingomez_lists" target="_blank"><img src="public_html/YaBBImages/yim.gif" alt="martingomez_lists" border="0"></a><img SRC="http://opi.yahoo.com/online?u=martingomez_lists&m=g&t=0" BORDER=0 alt=""><a href="aim:goim?screenname=mg1ph&message=Hi.+Are+you+there"><img src="public_html/YaBBImages/aim.gif" alt="mg1ph" border="0"></a>
+             <a href="http://decode.ateneo.edu/martin/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: a terribly inefficient drawing</b><BR>
+                &#171; <B>Reply #5 on:</B> Apr 4<sup>th</sup>, 2003, 9:21am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            <b>casey,</b> humanizing programming? <img border=0 src="public_html/YaBBImages/smiley.gif"> i guess it can be brought up here that it's easier for the human eye to read three lines of code (let's say a for loop with one statement inside) rather than let's say 100 lines of code. therefore, this puts the statement &quot;easier appreciation of the program's scope&quot; into jeopardy. however, it is very true that doing it line by line would help us appreciate the hard work required if we were to do this in the physical realm (i.e. carving it on bamboo with a small knife). <img border=0 src="public_html/YaBBImages/wink.gif"> <br> &nbsp;<br> &nbsp;<br> &nbsp;<br> <b>hi allen,</b> <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">if&#40;i&lt;80&#41; rect&#40;0,i+10,90,10&#41;; </font></td></tr></table></td></tr></table> <br> is actually a shortcut for <br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">if&#40;i&lt;80&#41; <br> { <br> &nbsp; rect&#40;0,i+10,90,10&#41;; <br> } </font></td></tr></table></td></tr></table> <br> &nbsp;<br> the braces aren't required if you only have a single statement for the condition. <br> &nbsp;<br> the whole code block can be read as: if i is less than 80, perform rect(0,i+10,90,10), or anything inside the braces. if not, then do not do anything. sometimes, using a single character logical operator ( &lt; or &gt; ) causes confusion. therefore, using ==, &gt;= or &lt;= like what you did in your loop is good. something that's easy to spot and imagine right away. <br> &nbsp;<br> now that i mentioned it, i just saw a typo on my part for the code. ... i didn't see that the last value for the last line is a 20. i thought it's a 10. here's the modified code. <img border=0 src="public_html/YaBBImages/smiley.gif"> <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">&#47;&#47; sketch &#45; 04&#46;03&#46;2003 &#45; 004 &nbsp; &nbsp;<br> &#47;&#47; allen goodman &#40;allen@fksche&#46;com&#41; &nbsp; &nbsp;<br> &nbsp; &nbsp; &nbsp;<br> &#47;&#47; a terribly inefficient drawing &#40;part 4&#41; &nbsp; &nbsp;<br> &nbsp; &nbsp;<br> &#47;&#47; modified by martin &#45; 04&#46;04&#46;2003 &nbsp; <br> &nbsp; &nbsp;<br> size&#40;200,200&#41;; &#47;&#47; define canvas size &nbsp; <br> background&#40;255&#41;; &#47;&#47; paper is 255&#47;255 gray &nbsp; <br> stroke&#40;200&#41;; &nbsp;&#47;&#47; pen is 200&#47;255 gray &nbsp; <br> &nbsp; &nbsp;<br> scale&#40;2&#46;0&#41;; &#47;&#47; magnify everything x2 &nbsp; <br> &nbsp; &nbsp;<br> for&#40;int i = 0; i &lt;= 90; i+=10&#41; &nbsp; <br> &#47;&#47; repeat from i = 0 to i = 90, with i &nbsp; <br> &#47;&#47; incrementing by 10 for each step &nbsp; <br> { &nbsp; <br> &nbsp; rect&#40;i, 0, 10, 10&#41;; &#47;&#47; draw the first rect series &nbsp; <br> &nbsp; rect&#40;90, i+10, 10, 10&#41;; &#47;&#47; draw the second rect series &nbsp; <br> &nbsp; if&#40;i&lt;=60&#41; rect&#40;0,i+10,90,10&#41;; &nbsp; <br> &nbsp; &#47;&#47; we don't want to reach 90 &nbsp; <br> &nbsp; &#47;&#47; and we don't want to do another loop &nbsp; <br> &nbsp; &#47;&#47; removing the if&#40;i&lt;80&#41; statment will &nbsp; <br> &nbsp; &#47;&#47; also render the same thing &#58;&#41; &nbsp; <br> &nbsp; if&#40;i==80&#41; rect&#40;0,i,90,20&#41;; &nbsp;&#47;&#47; for the last line <br> } &nbsp;<br> stroke&#40;225&#41;; &nbsp; <br> for&#40;int x = 0; x &lt;= 90; x+=5&#41; &nbsp; <br> { &nbsp; <br> &nbsp; line&#40;10, 10, x, 90&#41;; &#47;&#47; draw the first line series &nbsp; <br> } </font></td></tr></table></td></tr></table> <br> &nbsp;<br> and a slight modification to illustrate how conditions can affect the code's output... <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">&#47;&#47; sketch &#45; 04&#46;03&#46;2003 &#45; 004 &nbsp; &nbsp;<br> &#47;&#47; allen goodman &#40;allen@fksche&#46;com&#41; &nbsp; &nbsp;<br> &nbsp; &nbsp; &nbsp;<br> &#47;&#47; a terribly inefficient drawing &#40;part 4&#41; &nbsp; &nbsp;<br> &nbsp; &nbsp;<br> &#47;&#47; modified by martin &#45; 04&#46;04&#46;2003 &nbsp; <br> &nbsp; &nbsp;<br> size&#40;200,200&#41;; &#47;&#47; define canvas size &nbsp; <br> background&#40;255&#41;; &#47;&#47; paper is 255&#47;255 gray &nbsp; <br> stroke&#40;200&#41;; &nbsp;&#47;&#47; pen is 200&#47;255 gray &nbsp; <br> &nbsp; &nbsp;<br> scale&#40;2&#46;0&#41;; &#47;&#47; magnify everything x2 &nbsp; <br> &nbsp; &nbsp;<br> for&#40;int i = 0; i &lt;= 90; i+=10&#41; &nbsp; <br> &#47;&#47; repeat from i = 0 to i = 90, with i &nbsp; <br> &#47;&#47; incrementing by 10 for each step &nbsp; <br> { &nbsp; <br> &nbsp; rect&#40;i, 0, 10, 10&#41;; &#47;&#47; draw the first rect series &nbsp; <br> &nbsp; rect&#40;90, i+10, 10, 10&#41;; &#47;&#47; draw the second rect series &nbsp; <br> &nbsp; if&#40;i&lt;=60&#41; rect&#40;0,i+10,90,10&#41;; &nbsp; <br> &nbsp; &#47;&#47; we don't want to reach 90 &nbsp; <br> &nbsp; &#47;&#47; and we don't want to do another loop &nbsp; <br> &nbsp; &#47;&#47; removing the if&#40;i&lt;80&#41; statment will &nbsp; <br> &nbsp; &#47;&#47; also render the same thing &#58;&#41; &nbsp; <br> &nbsp; if&#40;i==80&#41; rect&#40;0,i,90,20&#41;; &nbsp;&#47;&#47; for the last line <br> } &nbsp;<br> &#47;&#47; stroke&#40;225&#41;; &nbsp; &#47;&#47; we'll use this inside the loop <br> for&#40;int x = 0; x &lt;= 90; x+=5&#41; &nbsp; <br> { &nbsp; <br> &nbsp; if&#40; x % 2 == 0 &#41; &#47;&#47; if x is even; % means modulo division <br> &nbsp; { <br> &nbsp; &nbsp; stroke&#40;225&#41;; <br> &nbsp; &nbsp; line&#40;10, 10, x, 90&#41;; &#47;&#47; draw the first line series <br> &nbsp; &nbsp; &#47;&#47; add more statements here as wanted <br> &nbsp; } <br> &nbsp; else &#47;&#47; if not; if x is odd <br> &nbsp; { <br> &nbsp; &nbsp; stroke&#40;200&#41;; <br> &nbsp; &nbsp; line&#40;80, 10, x, 90&#41;; &#47;&#47; draw the second line series <br> &nbsp; &nbsp; &#47;&#47; add more statements here as wanted <br> &nbsp; } <br> &nbsp; &#47;&#47; line&#40;10, 10, x, 90&#41;; &#47;&#47; draw the first line series &nbsp; <br> &nbsp; &#47;&#47; we placed this on top <br> } </font></td></tr></table></td></tr></table> <br> &nbsp;<br> looking forward to see more of your drawings. <img border=0 src="public_html/YaBBImages/wink.gif"> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="6"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Allen</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: a terribly inefficient drawing</b><BR>
+                &#171; <B>Reply #6 on:</B> Apr 9<sup>th</sup>, 2003, 4:33am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Martin, it takes me a while to comprehend your code - but it's much appreciated. Thanks again! <br> &nbsp;<br> Here is a drawing from the P5 sketchbook I have been keeping for the last week or so ... <br> &nbsp;<br> <img src="http://www.fksche.com/img/04_08_2003-p5-drawing.gif" alt="" border="0"> <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> &#47;&#47; p5 sketchbook <br> &#47;&#47; <br> &#47;&#47; 04&#46;08&#46;2003 <br> &#47;&#47; allen goodman &#40;allen@fksche&#46;com&#41; <br> &nbsp;<br> size&#40;200,200&#41;; <br> background&#40;255&#41;; <br> &nbsp;<br> scale&#40;2&#46;0&#41;; <br> &nbsp;<br> stroke&#40;160&#41;; <br> for&#40;int x = 1; x &lt;= 23; x+=2&#41; <br> { <br> &nbsp; line&#40;0,0,x,100&#41;; &nbsp;<br> } <br> &nbsp;<br> stroke&#40;170&#41;; <br> for&#40;int x = 25; x &lt;= 49; x+=2&#41; <br> { <br> &nbsp; line&#40;0,0,x,100&#41;; &nbsp;<br> } <br> &nbsp;<br> stroke&#40;180&#41;; <br> for&#40;int x = 51; x &lt;= 73; x+=2&#41; <br> { <br> &nbsp; line&#40;0,0,x,100&#41;; &nbsp;<br> } <br> &nbsp;<br> stroke&#40;190&#41;; <br> for&#40;int x = 75; x &lt;= 99; x+=2&#41; <br> { <br> &nbsp; line&#40;0,0,x,100&#41;; &nbsp;<br> } <br> &nbsp;<br> stroke&#40;200&#41;; <br> for&#40;int x = 75; x &lt;= 99; x+=2&#41; <br> { <br> &nbsp; line&#40;0,0,100,x&#41;; &nbsp;<br> } <br> &nbsp;<br> stroke&#40;210&#41;; <br> for&#40;int x = 51; x &lt;= 73; x+=2&#41; <br> { <br> &nbsp; line&#40;0,0,100,x&#41;; &nbsp;<br> } <br> &nbsp;<br> stroke&#40;220&#41;; <br> for&#40;int x = 25; x &lt;= 49; x+=2&#41; <br> { <br> &nbsp; line&#40;0,0,100,x&#41;; &nbsp;<br> } <br> &nbsp;<br> stroke&#40;230&#41;; <br> for&#40;int x = 1; x &lt;= 23; x+=2&#41; <br> { <br> &nbsp; line&#40;0,0,100,x&#41;; &nbsp;<br> } <br>  </font></td></tr></table></td></tr></table> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Apr 9<sup>th</sup>, 2003, 7:58am by Allen</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="7"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Martin</b><br><BR><a href="board_Contributions_Beyond_action_icqpager_UIN_122417302.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=122417302&img=5" alt="122417302" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=122417302" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="122417302" BORDER=0></a><a href="http://edit.yahoo.com/config/send_webmesg.target=martingomez_lists" target="_blank"><img src="public_html/YaBBImages/yim.gif" alt="martingomez_lists" border="0"></a><img SRC="http://opi.yahoo.com/online?u=martingomez_lists&m=g&t=0" BORDER=0 alt=""><a href="aim:goim?screenname=mg1ph&message=Hi.+Are+you+there"><img src="public_html/YaBBImages/aim.gif" alt="mg1ph" border="0"></a>
+             <a href="http://decode.ateneo.edu/martin/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: a terribly inefficient drawing</b><BR>
+                &#171; <B>Reply #7 on:</B> Apr 9<sup>th</sup>, 2003, 5:49pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            slowly but surely allen. <img border=0 src="public_html/YaBBImages/smiley.gif"> am glad to see your progress. <br> &nbsp;<br> a very beautiful piece i should say. ... it reminds of the study of concentrics by professor maeda. hmm... try this as an exercise: try to get the origin to the center of the canvas. that way, you'll have a radiating effect from the center with the appropriate gradation. <img border=0 src="public_html/YaBBImages/smiley.gif"> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="8"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Allen</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: a terribly inefficient drawing</b><BR>
+                &#171; <B>Reply #8 on:</B> Apr 9<sup>th</sup>, 2003, 11:23pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Thanks for the encouragement; I think it turned out well (besides the top right obviously). <br> &nbsp;<br> Have another challenge for me? : ) <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">&#47;&#47; p5 sketchbook <br> &#47;&#47; <br> &#47;&#47; 04&#46;09&#46;2003 <br> &#47;&#47; allen goodman &#40;allen@fksche&#46;com&#41; <br> &nbsp;<br> size&#40;200,200&#41;; <br> background&#40;255&#41;; <br> &nbsp;<br> scale&#40;2&#46;0&#41;; <br> &nbsp;<br> &#47;&#47; right <br> &nbsp;<br> { <br> &nbsp; stroke&#40;219&#41;; <br> &nbsp; for&#40;int x = 1; x &lt;= 23; x+=2&#41; <br> &nbsp;   { <br> &nbsp;   line&#40;100,x,50,50&#41;; <br> &nbsp;   } <br> &nbsp;    <br> &nbsp; stroke&#40;217&#41;; <br> &nbsp; for&#40;int x = 25; x &lt;= 49; x+=2&#41; <br> &nbsp;   { <br> &nbsp;   line&#40;100,x,50,50&#41;; <br> &nbsp;   } <br> &nbsp;    <br> &nbsp; stroke&#40;215&#41;; <br> &nbsp; for&#40;int x = 51; x &lt;= 73; x+=2&#41; <br> &nbsp;   { <br> &nbsp;   line&#40;100,x,50,50&#41;; <br> &nbsp;   } <br> &nbsp;    <br> &nbsp; stroke&#40;213&#41;; <br> &nbsp; for&#40;int x = 75; x &lt;= 99; x+=2&#41; <br> &nbsp;   { <br> &nbsp;   line&#40;100,x,50,50&#41;; <br> &nbsp;   } <br> } <br> &nbsp;<br> &#47;&#47; bottom <br> &nbsp;<br> { <br> &nbsp; stroke&#40;205&#41;; <br> &nbsp; for&#40;int x = 1; x &lt;= 23; x+=2&#41; <br> &nbsp;   { <br> &nbsp;   line&#40;x,100,50,50&#41;; <br> &nbsp;   } <br> &nbsp;    <br> &nbsp; stroke&#40;207&#41;; <br> &nbsp; for&#40;int x = 25; x &lt;= 49; x+=2&#41; <br> &nbsp;   { <br> &nbsp;   line&#40;x,100,50,50&#41;; <br> &nbsp;   } <br> &nbsp;    <br> &nbsp; stroke&#40;209&#41;; <br> &nbsp; for&#40;int x = 51; x &lt;= 73; x+=2&#41; <br> &nbsp;   { <br> &nbsp;   line&#40;x,100,50,50&#41;; <br> &nbsp;   } <br> &nbsp;    <br> &nbsp; stroke&#40;211&#41;; <br> &nbsp; for&#40;int x = 75; x &lt;= 99; x+=2&#41; <br> &nbsp;   { <br> &nbsp;   line&#40;x,100,50,50&#41;; <br> &nbsp;   } <br> } <br> &nbsp;<br> &#47;&#47; left <br> &nbsp;<br> { <br> &nbsp; stroke&#40;197&#41;; <br> &nbsp; for&#40;int x = 1; x &lt;= 23; x+=2&#41; <br> &nbsp;   { <br> &nbsp;   line&#40;50,50,0,x&#41;; <br> &nbsp;   } <br> &nbsp;    <br> &nbsp; stroke&#40;199&#41;; <br> &nbsp; for&#40;int x = 25; x &lt;= 49; x+=2&#41; <br> &nbsp;   { <br> &nbsp;   line&#40;50,50,0,x&#41;; <br> &nbsp;   } <br> &nbsp;    <br> &nbsp; stroke&#40;201&#41;; <br> &nbsp; for&#40;int x = 51; x &lt;= 73; x+=2&#41; <br> &nbsp;   { <br> &nbsp;   line&#40;50,50,0,x&#41;; <br> &nbsp;   } <br> &nbsp;    <br> &nbsp; stroke&#40;203&#41;; <br> &nbsp; for&#40;int x = 75; x &lt;= 99; x+=2&#41; <br> &nbsp;   { <br> &nbsp;   line&#40;50,50,0,x&#41;; <br> &nbsp;   } <br> } <br> &nbsp;<br> &#47;&#47; top <br> &nbsp;<br> { <br> &nbsp; stroke&#40;195&#41;; <br> &nbsp; for&#40;int x = 1; x &lt;= 23; x+=2&#41; <br> &nbsp;   { <br> &nbsp;   line&#40;50,50,x,0&#41;; <br> &nbsp;   } <br> &nbsp;    <br> &nbsp; stroke&#40;193&#41;; <br> &nbsp; for&#40;int x = 25; x &lt;= 49; x+=2&#41; <br> &nbsp;   { <br> &nbsp;   line&#40;50,50,x,0&#41;; <br> &nbsp;   } <br> &nbsp;    <br> &nbsp; stroke&#40;191&#41;; <br> &nbsp; for&#40;int x = 51; x &lt;= 73; x+=2&#41; <br> &nbsp;   { <br> &nbsp;   line&#40;50,50,x,0&#41;; <br> &nbsp;   } <br> &nbsp;    <br> &nbsp; stroke&#40;189&#41;; <br> &nbsp; for&#40;int x = 75; x &lt;= 99; x+=2&#41; <br> &nbsp;   { <br> &nbsp;   line&#40;50,50,x,0&#41;; <br> &nbsp;   } <br> } </font></td></tr></table></td></tr></table> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Apr 9<sup>th</sup>, 2003, 11:26pm by Allen</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="9"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Allen</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: a terribly inefficient drawing</b><BR>
+                &#171; <B>Reply #9 on:</B> Apr 9<sup>th</sup>, 2003, 11:33pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Oh, and I just checked out the Concentrics page at madeastudio.com, he never ceases to amaze me ... great stuff. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Apr 9<sup>th</sup>, 2003, 11:34pm by Allen</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="10"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Martin</b><br><BR><a href="board_Contributions_Beyond_action_icqpager_UIN_122417302.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=122417302&img=5" alt="122417302" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=122417302" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="122417302" BORDER=0></a><a href="http://edit.yahoo.com/config/send_webmesg.target=martingomez_lists" target="_blank"><img src="public_html/YaBBImages/yim.gif" alt="martingomez_lists" border="0"></a><img SRC="http://opi.yahoo.com/online?u=martingomez_lists&m=g&t=0" BORDER=0 alt=""><a href="aim:goim?screenname=mg1ph&message=Hi.+Are+you+there"><img src="public_html/YaBBImages/aim.gif" alt="mg1ph" border="0"></a>
+             <a href="http://decode.ateneo.edu/martin/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: a terribly inefficient drawing</b><BR>
+                &#171; <B>Reply #10 on:</B> Apr 10<sup>th</sup>, 2003, 5:18am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            sorry, my bad. 'concentrics' should be 'space density'. ... i just realized that he had a different use of the word concentric and that he had another title for the pieces. sorry again. these are the pieces that i was originally referring to: <a href="http://www.cristinerose.com/maeda/maeda002.jpg" target="_blank">http://www.cristinerose.com/maeda/maeda002.jpg</a> and  <a href="http://www.cristinerose.com/maeda/maeda004.jpg" target="_blank">http://www.cristinerose.com/maeda/maeda004.jpg</a> <br> &nbsp;<br> re: your composition, ah yes, good good, now move beyond the 101 number constraint and create something. <img border=0 src="public_html/YaBBImages/wink.gif"> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Apr 10<sup>th</sup>, 2003, 5:21am by Martin</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="11"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>benelek</b><br><BR><a href="board_Contributions_Beyond_action_icqpager_UIN_3516098.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=3516098&img=5" alt="3516098" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=3516098" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="3516098" BORDER=0></a>
+             <a href="http://www.benelek.cjb.net" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: a terribly inefficient drawing</b><BR>
+                &#171; <B>Reply #11 on:</B> Apr 12<sup>th</sup>, 2003, 3:15am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            je-sus! that man knows his geometry <img border=0 src="public_html/YaBBImages/smiley.gif"> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_Contributions_Beyond_action_display_num_1049331822.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option value="?board=Programs">&nbsp; - Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option selected value="?board=Contributions_Beyond">=> Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_Contributions_Beyond_action_display_num_1050875737.html">Previous topic</a> | <a href="board_Contributions_Beyond_action_display_num_1048072461.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

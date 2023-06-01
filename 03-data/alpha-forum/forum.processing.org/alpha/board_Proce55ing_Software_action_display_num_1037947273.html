@@ -1,0 +1,542 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - Serial I/O</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Proce55ing_Software_action_display_num_1037947273.html#Suggestions" class="nav">Suggestions
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Proce55ing_Software.html" class="nav">Software Suggestions</a> </b>(Moderator: fry)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    Serial I/O</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_Proce55ing_Software_action_display_num_1061387118.html">Previous topic</a> | <a href="board_Proce55ing_Software_action_display_num_1061442686.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/thread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: Serial I/O</b> &nbsp;(Read 502 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>spacegirl</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Serial I/O</b><BR>
+                &#171; <B> on:</B> Nov 22<sup>nd</sup>, 2002, 7:41am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            At the risk of sounding greedy, is there any way to enable two serial streams simultaneously, say, off of both com1 and com2? <br> &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>fry</b><br><i></i><BR><BR>
+     <a href="http://acg.media.mit.edu/people/fry/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Serial I/O</b><BR>
+                &#171; <B>Reply #1 on:</B> Nov 25<sup>th</sup>, 2002, 4:20am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            wuall, not with beginSerial() and the rest. you can use any javax.comm code you'd like, because it's built in and you can count on it being there. <br> &nbsp;<br> this is a specific part of our approach with the api used in p5.. that you get the basics very simply (one serial port, mouse coordinates, mouse down, etc), and for those who want more control (many serial ports, info on whether the alt key was pressed while mouse down) then you have easy access to the 'full' version, in this case being the use of javax.comm. &nbsp;<br> &nbsp;<br> for what it's worth, i've written a p5 app that uses two serial ports (and no beginSerial()) with no trouble and it works nicely. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>fry</b><br><i></i><BR><BR>
+     <a href="http://acg.media.mit.edu/people/fry/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Serial I/O</b><BR>
+                &#171; <B>Reply #2 on:</B> Nov 25<sup>th</sup>, 2002, 4:26am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            here's the code for the dual serial port thing. this is 3x as much as you need to get the stuff running, but you might be able to figure out what parts to remove (i.e. you don't need all those notifyXxxx things, and only care about DATA_EVENTs..) <br> &nbsp;<br> the program is used to sniff communication on a serial line--it reads from COM1, and echoes it to COM2; meanwhile doing the same in the other direction. the log of the communication is written to a file. &nbsp;<br> &nbsp;<br> (you might post your simpler example if you get it to work for your own use) <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">SerialPort port1; <br> InputStream input1; <br> OutputStream output1; <br> &nbsp;<br> SerialPort port2; <br> InputStream input2; <br> OutputStream output2; <br> &nbsp;<br> PrintWriter writer; <br> &nbsp;<br> &nbsp;<br> void setup&#40;&#41; { <br> &nbsp; String request1 = &quot;COM1&quot;; <br> &nbsp; String request2 = &quot;COM2&quot;; <br> &nbsp; int rate = 19200; <br> &nbsp;<br> &nbsp; Enumeration portList = CommPortIdentifier&#46;getPortIdentifiers&#40;&#41;; <br> &nbsp; while &#40;portList&#46;hasMoreElements&#40;&#41;&#41; { <br> &nbsp;   CommPortIdentifier portId = &nbsp;<br> &nbsp;     &#40;CommPortIdentifier&#41; portList&#46;nextElement&#40;&#41;; <br> &nbsp;<br> &nbsp;   if &#40;portId&#46;getPortType&#40;&#41; == CommPortIdentifier&#46;PORT_SERIAL&#41; { <br> &nbsp;     if &#40;portId&#46;getName&#40;&#41;&#46;equals&#40;request1&#41;&#41; { <br> &nbsp;     try { <br> &nbsp;       port1 = &#40;SerialPort&#41;portId&#46;open&#40;&quot;cereal killer 1&quot;, 2000&#41;; <br> &nbsp;       input1 = port1&#46;getInputStream&#40;&#41;; <br> &nbsp;       output1 = port1&#46;getOutputStream&#40;&#41;; <br> &nbsp;       port1&#46;setSerialPortParams&#40;rate, <br> &nbsp;                           SerialPort&#46;DATABITS_8, <br> &nbsp;                           SerialPort&#46;STOPBITS_1_5, <br> &nbsp;                           SerialPort&#46;PARITY_NONE&#41;; <br> &nbsp;       port1&#46;addEventListener&#40;this&#41;; <br> &nbsp;       port1&#46;notifyOnDataAvailable&#40;true&#41;; <br> &nbsp;<br> &nbsp;       port1&#46;notifyOnBreakInterrupt&#40;true&#41;; <br> &nbsp;       port1&#46;notifyOnCarrierDetect&#40;true&#41;; <br> &nbsp;       port1&#46;notifyOnCTS&#40;true&#41;; <br> &nbsp;       port1&#46;notifyOnDSR&#40;true&#41;; <br> &nbsp;       port1&#46;notifyOnFramingError&#40;true&#41;; <br> &nbsp;       &#47;&#47;port1&#46;notifyOnOutputEmpty&#40;true&#41;; <br> &nbsp;       port1&#46;notifyOnOverrunError&#40;true&#41;; <br> &nbsp;       port1&#46;notifyOnParityError&#40;true&#41;; <br> &nbsp;       port1&#46;notifyOnRingIndicator&#40;true&#41;; <br> &nbsp;<br> &nbsp;     } catch &#40;Exception e&#41; { <br> &nbsp;       System&#46;err&#46;println&#40;&quot;error opening port 1&quot;&#41;; <br> &nbsp;       e&#46;printStackTrace&#40;&#41;; <br> &nbsp;       &#47;&#47;System&#46;exit&#40;1&#41;; <br> &nbsp;     } <br> &nbsp;     } else if &#40;portId&#46;getName&#40;&#41;&#46;equals&#40;request2&#41;&#41; { <br> &nbsp;     try { <br> &nbsp;       port2 = &#40;SerialPort&#41;portId&#46;open&#40;&quot;cereal killer 2&quot;, 2000&#41;; <br> &nbsp;       input2 = port2&#46;getInputStream&#40;&#41;; <br> &nbsp;       output2 = port2&#46;getOutputStream&#40;&#41;; <br> &nbsp;       port2&#46;setSerialPortParams&#40;rate, <br> &nbsp;                           SerialPort&#46;DATABITS_8, <br> &nbsp;                           SerialPort&#46;STOPBITS_1_5, <br> &nbsp;                           SerialPort&#46;PARITY_NONE&#41;; <br> &nbsp;       port2&#46;addEventListener&#40;this&#41;; <br> &nbsp;       port2&#46;notifyOnDataAvailable&#40;true&#41;; <br> &nbsp;<br> &nbsp;       port2&#46;notifyOnBreakInterrupt&#40;true&#41;; <br> &nbsp;       port2&#46;notifyOnCarrierDetect&#40;true&#41;; <br> &nbsp;       port2&#46;notifyOnCTS&#40;true&#41;; <br> &nbsp;       port2&#46;notifyOnDSR&#40;true&#41;; <br> &nbsp;       port2&#46;notifyOnFramingError&#40;true&#41;; <br> &nbsp;       &#47;&#47;port2&#46;notifyOnOutputEmpty&#40;true&#41;; <br> &nbsp;       port2&#46;notifyOnOverrunError&#40;true&#41;; <br> &nbsp;       port2&#46;notifyOnParityError&#40;true&#41;; <br> &nbsp;       port2&#46;notifyOnRingIndicator&#40;true&#41;; <br> &nbsp;<br> &nbsp;     } catch &#40;Exception e&#41; { <br> &nbsp;       System&#46;err&#46;println&#40;&quot;error opening port 2&quot;&#41;; <br> &nbsp;       e&#46;printStackTrace&#40;&#41;; <br> &nbsp;       &#47;&#47;System&#46;exit&#40;1&#41;; <br> &nbsp;     } <br> &nbsp;     } <br> &nbsp;   } <br> &nbsp; } <br> &nbsp; if &#40;&#40;port1 == null&#41; &#124;&#124; &#40;port2 == null&#41;&#41; { <br> &nbsp;   System&#46;err&#46;println&#40;&quot;could not find the two requested ports&quot;&#41;; <br> &nbsp; } <br> &nbsp;<br> &nbsp; try { <br> &nbsp;   writer = new PrintWriter&#40;new OutputStreamWriter&#40;new BufferedOutputStream&#40;new FileOutputStream&#40;&quot;passthrough&#46;txt&quot;&#41;&#41;&#41;&#41;; <br> &nbsp; } catch &#40;IOException e&#41; { <br> &nbsp;   e&#46;printStackTrace&#40;&#41;; <br> &nbsp; } <br> } <br> &nbsp;<br> &nbsp;<br> public void serialEvent&#40;SerialPortEvent event&#41; { <br> &nbsp; if &#40;event&#46;getEventType&#40;&#41; == SerialPortEvent&#46;DATA_AVAILABLE&#41; { <br> &nbsp;<br> &nbsp;   if &#40;&#40;SerialPort&#41;event&#46;getSource&#40;&#41; == port1&#41; { <br> &nbsp;     process&#40;input1, output2, true&#41;; <br> &nbsp;<br> &nbsp;   } else { <br> &nbsp;     process&#40;input2, output1, false&#41;; <br> &nbsp;   } <br> &nbsp;<br> &nbsp; } else { <br> &nbsp;   String direction = &#40;&#40;&#40;SerialPort&#41;event&#46;getSource&#40;&#41; == port1&#41; &#63; &nbsp;<br> &nbsp;                 &quot;&#45;&#45;&gt; &quot; &#58; &quot;&lt;&#45;&#45; &quot;&#41;; <br> &nbsp;<br> &nbsp;   String eventstr = null; <br> &nbsp;   switch &#40;event&#46;getEventType&#40;&#41;&#41; { <br> &nbsp;   case SerialPortEvent&#46;CTS&#58; eventstr = &quot;CTS&quot;; break; <br> &nbsp;   case SerialPortEvent&#46;DSR&#58; eventstr = &quot;DSR&quot;; break; <br> &nbsp;   case SerialPortEvent&#46;RI&#58;  eventstr = &quot;RI&quot;;  break; <br> &nbsp;   case SerialPortEvent&#46;CD&#58;  eventstr = &quot;CD&quot;;  break; <br> &nbsp;   case SerialPortEvent&#46;OE&#58;  eventstr = &quot;OE&quot;;  break; <br> &nbsp;   case SerialPortEvent&#46;PE&#58;  eventstr = &quot;PE&quot;;  break; <br> &nbsp;   case SerialPortEvent&#46;FE&#58;  eventstr = &quot;FE&quot;;  break; <br> &nbsp;   case SerialPortEvent&#46;BI&#58;  eventstr = &quot;BI&quot;;  break; <br> &nbsp;   default&#58; eventstr = &quot;unknown &quot; + event&#46;getEventType&#40;&#41;; break; <br> &nbsp;   } <br> &nbsp;   System&#46;out&#46;println&#40;direction + &quot; &quot; + eventstr&#41;; <br> &nbsp;<br> &nbsp;   writer&#46;print&#40;direction + &quot; &quot; + eventstr + &quot;&#92;n&#92;n&quot;&#41;; <br> &nbsp; } <br> } <br> &nbsp;<br> &nbsp;<br> static byte buffer&#91;&#93; = new byte&#91;32768&#93;; <br> &nbsp;<br> public void process&#40;InputStream input, OutputStream output, boolean one&#41; { <br> &nbsp; try { <br> &nbsp;   int count = input&#46;available&#40;&#41;; <br> &nbsp;   if &#40;count &gt; buffer&#46;length&#41; buffer = new byte&#91;count*2&#93;; <br> &nbsp;<br> &nbsp;   int stamp = millis&#40;&#41;; <br> &nbsp;   String line1 = &#40;one &#63; &quot;&#45;&#45;&gt; &quot; &#58; &quot;&lt;&#45;&#45; &quot;&#41; + <br> &nbsp;     count + &quot; byte&quot; + &#40;&#40;count &#33;= 1&#41; &#63; &quot;s&quot; &#58; &quot;&quot;&#41;; <br> &nbsp;   System&#46;out&#46;println&#40;line1&#41;; <br> &nbsp;   writer&#46;print&#40;line1 + &quot;&#92;n&quot;&#41;; <br> &nbsp;<br> &nbsp;   int sofar = 0; <br> &nbsp;   while &#40;sofar &lt; count&#41; { <br> &nbsp;     sofar += input&#46;read&#40;buffer, sofar, count &#45; sofar&#41;; <br> &nbsp;   } <br> &nbsp;   output&#46;write&#40;buffer, 0, count&#41;; <br> &nbsp;   output&#46;flush&#40;&#41;; <br> &nbsp;<br> &nbsp;   String line2 = formatChunk&#40;buffer, 0, count, 0&#41;; <br> &nbsp;   System&#46;out&#46;println&#40;line2&#41;; <br> &nbsp;   writer&#46;print&#40;line2 + &quot;&#92;n&quot;&#41;; <br> &nbsp;   writer&#46;flush&#40;&#41;; <br> &nbsp;<br> &nbsp; } catch &#40;IOException e&#41; { <br> &nbsp;   e&#46;printStackTrace&#40;&#41;; <br> &nbsp; } <br> } </font></td></tr></table></td></tr></table> <br> &nbsp;<br> &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Nov 25<sup>th</sup>, 2002, 4:27am by fry</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>fry</b><br><i></i><BR><BR>
+     <a href="http://acg.media.mit.edu/people/fry/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Serial I/O</b><BR>
+                &#171; <B>Reply #3 on:</B> Nov 25<sup>th</sup>, 2002, 4:27am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            the last part of the code (was too long for a single message) <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">&#47;&#47; &#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46;&#46; <br> &nbsp;<br> &nbsp;<br> static final byte hexBytes&#91;&#93; = { <br> &nbsp; &#40;byte&#41; '0', &#40;byte&#41; '1', &#40;byte&#41; '2', &#40;byte&#41; '3', &nbsp;<br> &nbsp; &#40;byte&#41; '4', &#40;byte&#41; '5', &#40;byte&#41; '6', &#40;byte&#41; '7', <br> &nbsp; &#40;byte&#41; '8', &#40;byte&#41; '9', &#40;byte&#41; 'A', &#40;byte&#41; 'B', &nbsp;<br> &nbsp; &#40;byte&#41; 'C', &#40;byte&#41; 'D', &#40;byte&#41; 'E', &#40;byte&#41; 'F' &nbsp;<br> }; <br> &nbsp;<br> static final byte HEX_UNPRINTABLE = &#40;byte&#41; '&#46;'; <br> static final int HEX_LINE_LENGTH = 16*2 + 16&#47;2 + 16 + 1; <br> static final int HEX_CHUNK_LENGTH = HEX_LINE_LENGTH + 10; <br> private static byte tempLine&#91;&#93;; <br> private static String whiteSpace; <br> &nbsp;<br> &nbsp;<br> static { <br> &nbsp; tempLine = new byte&#91;HEX_LINE_LENGTH+1&#93;; <br> &nbsp; for &#40;int i = 0; i &lt; HEX_LINE_LENGTH; i++&#41; { <br> &nbsp; &nbsp; tempLine&#91;i&#93; = &#40;byte&#41; ' '; <br> &nbsp; } <br> &nbsp; tempLine&#91;HEX_LINE_LENGTH&#93; = &#40;byte&#41; '&#92;n'; <br> &nbsp; whiteSpace = &quot; &nbsp; &quot;; <br> } <br> &nbsp;<br> &nbsp;<br> public static String formatChunk&#40;byte source&#91;&#93;, &nbsp;<br> &nbsp; &nbsp; &nbsp;int offset, int length, int linenum&#41; { <br> &nbsp; StringBuffer buffer = new StringBuffer&#40;length * 4&#41;; <br> &nbsp; int count = 16; <br> &nbsp;<br> &nbsp; try { <br> &nbsp; &nbsp; for &#40;int i = 0; i &lt; length; i += 16&#41; { <br> &nbsp;if &#40;length &#45; i &lt; 16&#41; { <br> &nbsp;count = length &#45; i; <br> &nbsp;} <br> &nbsp;buffer&#46;append&#40;formatLine&#40;source, offset + i, count&#41;&#41;; <br> &nbsp;linenum += 16; <br> &nbsp; &nbsp; } <br> &nbsp; } catch &#40;IOException e&#41; { <br> &nbsp; &nbsp; System&#46;err&#46;println&#40;&quot;i&#47;o error&#58; &quot; + e&#41;; <br> &nbsp; } <br> &nbsp; return buffer&#46;toString&#40;&#41;; <br> } <br> &nbsp;<br> &nbsp;<br> private static String formatLine&#40;byte source&#91;&#93;, <br> &nbsp; &nbsp; &nbsp;int offset, int charCount&#41; <br> &nbsp; throws IOException <br> { <br> &nbsp; &#47;&#47; have to clear out if the whole line won't be over&#45;written <br> &nbsp; if &#40;charCount &lt; 16&#41; { <br> &nbsp; &nbsp; for &#40;int i = 0; i &lt; HEX_LINE_LENGTH; i++&#41; { <br> &nbsp;tempLine&#91;i&#93; = &#40;byte&#41; ' '; <br> &nbsp; &nbsp; } <br> &nbsp; } <br> &nbsp; int left = 0; <br> &nbsp; int right = 16*2 + 16&#47;2 + 1; <br> &nbsp;<br> &nbsp; for &#40;int i = 0; i &lt; charCount; i++&#41; { <br> &nbsp; &nbsp; int c = source&#91;i + offset&#93; &amp; 0xff; <br> &nbsp; &nbsp; tempLine&#91;left+0&#93; = hexBytes&#91;c &#47; 16&#93;; <br> &nbsp; &nbsp; tempLine&#91;left+1&#93; = hexBytes&#91;c % 16&#93;; <br> &nbsp; &nbsp; left += 2 + &#40;i % 2&#41;; <br> &nbsp; &nbsp; if &#40;&#40;c &gt;= 32&#41; &amp;&amp; &#40;c &lt;= 126&#41;&#41; <br> &nbsp;tempLine&#91;right++&#93; = &#40;byte&#41; c; <br> &nbsp; &nbsp; else <br> &nbsp;tempLine&#91;right++&#93; = HEX_UNPRINTABLE; <br> &nbsp; } <br> &nbsp; return new String&#40;tempLine&#41;; <br> } <br>  </font></td></tr></table></td></tr></table> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>tigoe</b><br>Guest
+            <BR><img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Serial I/O</b><BR>
+                &#171; <B>Reply #4 on:</B> Aug 21<sup>st</sup>, 2003, 10:26pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+  
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            First off: <br> &nbsp;<br> Congratulations, Ben, on getting serial working on the mac with the latest version of rxtx, and thank you! <br> &nbsp;<br> second: &nbsp;<br> I love the simple serial implementation. One of the best I've seen because it is so simple. <br> &nbsp;<br> Third: &nbsp;<br> It could be a bit more complex, and still be great, I think. &nbsp; <br> &nbsp;<br> First, implement serialBuffer(). Make it return the whole serial buffer as a char array. &nbsp;Let the user dump it into another array if they want to, e.g. <br> myArray[] = char; <br> .. <br> on serialEvent() { <br> &nbsp; &nbsp;myArray = serialBuffer(); <br> } <br> &nbsp;<br> Second, let the end user peek at the serial buffer's length. &nbsp;Something like this: <br> &nbsp;<br> on serialEvent() { <br> &nbsp; &nbsp;if (serialBuffer.length() &gt; 5) { <br> &nbsp; &nbsp;// parse the array <br> &nbsp; &nbsp;myArray = serialBuffer(); <br> &nbsp; &nbsp;} <br> } <br> &nbsp;<br> The reason for the peek is that it makes it possible to see if you've got a full sentence of serial data (like, perhaps if you're parsing serial GPS data, just as a hypothetical example) and want to know that it's all there and intact before you parse. &nbsp; <br> &nbsp;<br> Currently, a multiple-byte string coming in doesn't work, because each new byte wipes out the byte before it. I tried a simple call and response example: have P5 send a signal character, and have a microcontroller send a 5-byte string in response. &nbsp;The first 4 bytes sent get thrown out, and only the fifth makes it through. &nbsp;Unless I'm doing something wrong, in which case, someone please correct me! <br> &nbsp;<br> &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="5"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>tigoe</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Serial I/O</b><BR>
+                &#171; <B>Reply #5 on:</B> Aug 21<sup>st</sup>, 2003, 10:36pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Augh! &nbsp;I spoke too soon! &nbsp;Glen just posted a beautiful GPS serial example, which I now have to try. <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_Proce55ing_Software_action_display_num_1037947273.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option value="?board=Programs">&nbsp; - Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option selected value="?board=Proce55ing_Software">=> Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_Proce55ing_Software_action_display_num_1061387118.html">Previous topic</a> | <a href="board_Proce55ing_Software_action_display_num_1061442686.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

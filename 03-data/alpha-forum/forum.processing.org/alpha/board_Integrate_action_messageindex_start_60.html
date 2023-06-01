@@ -1,0 +1,429 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - Integration</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td><font class="nav"><b>
+    <IMG SRC="public_html/YaBBImages/open.gif" BORDER=0>&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <IMG SRC="public_html/YaBBImages/tline.gif" BORDER=0><IMG SRC="public_html/YaBBImages/open.gif" BORDER=0>&nbsp;&nbsp;
+    <a href="board_Integrate_action_messageindex_start_60.html#help" class="nav">Programming Questions & Help
+</a><br>
+    <IMG SRC="public_html/YaBBImages/tline2.gif" BORDER=0><IMG SRC="public_html/YaBBImages/open.gif" BORDER=0>&nbsp;&nbsp;
+    Integration</b> (Moderators: fry, REAS)</font></td>
+  </tr>
+</table>
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" border="0" cellspacing="0" width="100%">
+          <tr>
+            <td width="100%">Processing and other systems (Java, PHP, MAX, MySQL, etc) </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <a href="board_Integrate_action_messageindex_start_0.html">1</a>&nbsp;<a href="board_Integrate_action_messageindex_start_20.html">2</a>&nbsp;<a href="board_Integrate_action_messageindex_start_40.html">3</a>&nbsp;<B>4</B>&nbsp;<a href="board_Integrate_action_messageindex_start_80.html">5</a>&nbsp;</td>
+	    <td class="catbg" bgcolor="#B0B07E" align=right nowrap>
+
+	    <!-- <a href="board_Integrate_action_post_title_Start_new_topic.html"><img src="public_html/YaBBImages/new_thread.gif" alt="Start new topic" border="0"> <font size="1" class="imgcatbg">Start new topic</font></a>&nbsp;-->
+	    
+	    </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td class="titlebg" bgcolor="#999966" width="10%" colspan="2">&nbsp;</td>
+        <td class="titlebg" bgcolor="#999966" width="48%"><font class="text1" color="#FFFFFF"><b>Subject</b></font></td>
+        <td class="titlebg" bgcolor="#999966" width="14%" align="center"><font class="text1" color="#FFFFFF"><b>Started by</b></font></td>
+        <td class="titlebg" bgcolor="#999966" width="4%" align="center"><font class="text1" color="#FFFFFF"><b>Replies</b></font></td>
+        <td class="titlebg" bgcolor="#999966" width="4%" align="center"><font class="text1" color="#FFFFFF"><b>Views</b></font></td>
+        <td class="titlebg" bgcolor="#999966" width="27%"><font class="text1" color="#FFFFFF"><b>Last post</b></font></td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Integrate_action_display_num_1092252422.html"><b>OSC between browser windows</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">bdimit</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">0</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">773</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Aug 11<sup>th</sup>, 2004, 9:27pm<br>by bdimit</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Integrate_action_display_num_1091828290.html"><b>Using p5 in standalone app</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">pbarry</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">4</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">1505</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Aug 9<sup>th</sup>, 2004, 1:26am<br>by pbarry</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Integrate_action_display_num_1090361168.html"><b>pass variables via command line</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">sspboyd</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">6</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">1844</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Jul 24<sup>th</sup>, 2004, 2:53pm<br>by fry</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Integrate_action_display_num_1087385832.html"><b>applet vs object</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">eskimoblood</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">6</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">2926</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Jun 29<sup>th</sup>, 2004, 10:08pm<br>by amoeba</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Integrate_action_display_num_1087297231.html"><b>Java applet to Flash</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">neave</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">2</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">1862</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Jun 16<sup>th</sup>, 2004, 11:23am<br>by neave</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Integrate_action_display_num_1087030302.html"><b>JBuilder - rookie question </b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">SJL</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">4</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">1186</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Jun 13<sup>th</sup>, 2004, 12:08pm<br>by arielm</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Integrate_action_display_num_1087060395.html"><b>understanding Java's regex implementation</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">kevinP</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">2</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">750</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Jun 12<sup>th</sup>, 2004, 10:35pm<br>by kevinP</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Integrate_action_display_num_1085597070.html"><b>Sockets Networking </b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">kevin</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">2</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">673</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Jun 3<sup>rd</sup>, 2004, 10:49am<br>by JohnG</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Integrate_action_display_num_1086217469.html"><b>google it: proce55ing and google</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">mad merv (mm)</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">0</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">597</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Jun 3<sup>rd</sup>, 2004, 1:04am<br>by mad merv (mm)</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Integrate_action_display_num_1086019448.html"><b>importing path-data / vector-data</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">c</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">0</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">432</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">May 31<sup>st</sup>, 2004, 6:04pm<br>by c</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Integrate_action_display_num_1085597344.html"><b>Integrating P55 with Flash and/or Director</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">Exint</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">5</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">889</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">May 26<sup>th</sup>, 2004, 9:03pm<br>by Ale_k</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Integrate_action_display_num_1085597775.html"><b>print to EPS</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">Aaron Wilson</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">7</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">1098</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Mar 10<sup>th</sup>, 2004, 8:23pm<br>by amoeba</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Integrate_action_display_num_1085597726.html"><b>JFrames and Processing</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">fphunct</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">2</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">918</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Apr 7<sup>th</sup>, 2004, 7:39pm<br>by fphunct</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/hotthread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Integrate_action_display_num_1085597691.html"><b>how to import &quot;netscape.javascript&quot; within p5</b></a> <BR>&#171; Pages <a href="board_Integrate_action_display_num_1085597691.html">1</a>
+<a href="board_Integrate_action_display_num_1085597691_start_15.html">2</a> &#187;</td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">arielm</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">16</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">5969</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Apr 14<sup>th</sup>, 2004, 12:19am<br>by fry</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Integrate_action_display_num_1085597591.html"><b>putting an applet into flash</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">kfrick</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">3</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">1181</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Apr 14<sup>th</sup>, 2004, 12:39pm<br>by ASCII33</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Integrate_action_display_num_1085597528.html"><b>Interpretting Serial Input (reverse engineering)</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">kevin</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">4</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">820</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Mar 17<sup>th</sup>, 2004, 1:55pm<br>by kevin</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Integrate_action_display_num_1085597482.html"><b>USGS Images in Processing</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">rgovostes</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">7</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">852</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Feb 17<sup>th</sup>, 2004, 10:41pm<br>by mKoser</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Integrate_action_display_num_1085597426.html"><b>trigger P5 from patching</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">nay</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">6</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">2133</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Feb 10<sup>th</sup>, 2004, 7:21pm<br>by pyson</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Integrate_action_display_num_1085597387.html"><b>xml parsing help &#124; tech-note-to-be</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">pollux</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">4</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">804</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Jan 15<sup>th</sup>, 2004, 2:13am<br>by REAS</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Integrate_action_display_num_1085597266.html"><b>PDA</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">ibec</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">0</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">626</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Sep 16<sup>th</sup>, 2003, 2:49pm<br>by ibec</td>
+      </tr>
+
+    </table>
+    </td>
+  </tr>
+</table>
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <a href="board_Integrate_action_messageindex_start_0.html">1</a>&nbsp;<a href="board_Integrate_action_messageindex_start_20.html">2</a>&nbsp;<a href="board_Integrate_action_messageindex_start_40.html">3</a>&nbsp;<B>4</B>&nbsp;<a href="board_Integrate_action_messageindex_start_80.html">5</a>&nbsp;</td>
+	    <td class="catbg" bgcolor="#B0B07E" align=right nowrap>
+
+	    <!-- <a href="board_Integrate_action_post_title_Start_new_topic.html"><img src="public_html/YaBBImages/new_thread.gif" alt="Start new topic" border="0"> <font size="1" class="imgcatbg">Start new topic</font></a>&nbsp;-->
+	    </td>
+	  </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table cellpadding=0 cellspacing=0 width="100%">
+  <tr>
+	<td align="left" valign="middle">
+	<img src="public_html/YaBBImages/thread.gif"> Normal Topic<BR>
+	<img src="public_html/YaBBImages/hotthread.gif"> Hot Topic (More than 15 Replies)<BR>
+	<img src="public_html/YaBBImages/veryhotthread.gif"> Very Hot Topic (More than 25 Replies)
+	</td><td align="left" valign="middle">
+	<img src="public_html/YaBBImages/locked.gif"> Locked Topic<BR>
+	<img src="public_html/YaBBImages/sticky.gif"> Sticky Topic<BR>
+	<img src="public_html/YaBBImages/stickylock.gif"> Sticky Locked Topic
+	</td>
+	<td align="right" valign="middle">
+<form method="post" action="board_Integrate_action_messageindex_start_60.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option value="?board=Programs">&nbsp; - Programs</option>
+<option selected value="?board=Integrate">=> Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

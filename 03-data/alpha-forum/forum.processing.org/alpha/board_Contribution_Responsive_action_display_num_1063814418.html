@@ -1,0 +1,485 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - Asteroids</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Contribution_Responsive_action_display_num_1063814418.html#Examples" class="nav">Topics & Contributions
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Contribution_Responsive.html" class="nav">Responsive Form, Games</a> </b>(Moderator: REAS)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    Asteroids</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_Contribution_Responsive_action_display_num_1063814449.html">Previous topic</a> | <a href="board_Contribution_Responsive_action_display_num_1063091603.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/thread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: Asteroids</b> &nbsp;(Read 2527 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>REAS</b><br><i></i><BR><BR>
+     <a href="http://reas.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Asteroids</b><BR>
+                &#171; <B> on:</B> Aug 8<sup>th</sup>, 2002, 3:48am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Here is the very beginning of mouse-based version of Asteroids/Space Wars. It shows a good use for atan2(). Anyone care to continue? &nbsp;<br> &nbsp;<br> // Proto-Asteroids <br> // by REAS <br> &nbsp;<br> float a; &nbsp; &nbsp; &nbsp;// The angle of the ship <br> float xpos, ypos; &nbsp;// The position of the ship <br> &nbsp;<br> void setup() { <br> &nbsp; size(200, 200); &nbsp;// Set the size to 200x200 pixels <br> &nbsp; background(0); &nbsp; // Set the background to black <br> &nbsp; noFill(); &nbsp; // Turn off fill <br> &nbsp; stroke(255); &nbsp; &nbsp; // Set the stroke color to white <br> } <br> &nbsp;<br> void loop() { <br> &nbsp; // Set the position of the ship <br> &nbsp; xpos += 0.4; <br> &nbsp; ypos += 0.2; <br> &nbsp;<br> &nbsp; // If the ship moves off the screen, put it back on <br> &nbsp; if (xpos &gt; width) { xpos = 0; } <br> &nbsp; if (xpos &lt; 0) { xpos = width; } <br> &nbsp; if (ypos &gt; height) { ypos = 0; } <br> &nbsp; if (ypos &lt; 0) { ypos = height; } &nbsp;<br> &nbsp;<br> &nbsp; // Position the ship &nbsp;<br> &nbsp; translate(xpos, ypos); <br> &nbsp;<br> &nbsp; // Calculate and set the angle of the ship <br> &nbsp; a = atan2(mouseY-ypos, mouseX-xpos); <br> &nbsp; rotate(a); <br> &nbsp;<br> &nbsp; // Draw the ship <br> &nbsp; triangle(-15, 10, 15, 0, -15, -10); <br> } <br> &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>nashdj</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Asteroids</b><BR>
+                &#171; <B>Reply #1 on:</B> Aug 8<sup>th</sup>, 2002, 1:04pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            added some basic acceleration <br> made wrap relative to speed <br> &nbsp;<br> // Proto-Asteroids 0.1 ? <br> // Original by REAS &nbsp;<br> // acceleration by nashdj <br> &nbsp; <br> float a; // The angle of the ship &nbsp;<br> float xpos, ypos; &nbsp;// The position of the ship &nbsp;<br> &nbsp;<br> long time; <br> float vx, vy; // velocity of the ship <br> float acceleration = 200; // speed of acceleration <br> &nbsp; <br> void setup() &nbsp;<br> { &nbsp;<br> &nbsp; size(200, 200); &nbsp;// Set the size to 200x200 pixels &nbsp;<br> &nbsp; background(0); &nbsp; // Set the background to black &nbsp;<br> &nbsp; noFill(); &nbsp; // Turn off fill &nbsp;<br> &nbsp; stroke(255); &nbsp; &nbsp; // Set the stroke color to white &nbsp;<br> } &nbsp;<br> &nbsp; <br> void loop() &nbsp;<br> { &nbsp;<br> &nbsp; // find out how much time has passed <br> &nbsp; float dt = (millis() - time)/1000.0; <br> &nbsp; time = millis(); <br> &nbsp;<br> &nbsp; // accelerate the ship <br> &nbsp; if (mousePressed) <br> &nbsp; { <br> &nbsp; &nbsp; vx += cos(a) * acceleration * dt; <br> &nbsp; &nbsp; vy += sin(a) * acceleration * dt; <br> &nbsp; } <br> &nbsp;<br> &nbsp; // Set the position of the ship &nbsp;<br> &nbsp; xpos += vx * dt; &nbsp;<br> &nbsp; ypos += vy * dt; <br> &nbsp; <br> &nbsp; // If the ship moves off the screen, put it back on <br> &nbsp; if (xpos &gt; width) xpos = xpos % width; <br> &nbsp; if (xpos &lt; 0) xpos += width; <br> &nbsp; if (ypos &gt; height)ypos = ypos % height; <br> &nbsp; if (ypos &lt; 0) ypos += height; <br> &nbsp; <br> &nbsp; // Position the ship &nbsp; <br> &nbsp; translate(xpos, ypos); &nbsp;<br> &nbsp; <br> &nbsp; // Calculate and set the angle of the ship &nbsp;<br> &nbsp; a = atan2(mouseY-ypos, mouseX-xpos); &nbsp;<br> &nbsp; rotate(a); &nbsp;<br> &nbsp; <br> &nbsp; // Draw the ship &nbsp;<br> &nbsp; triangle(-15, 10, 15, 0, -15, -10); &nbsp;<br> } &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>REAS</b><br><i></i><BR><BR>
+     <a href="http://reas.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Asteroids</b><BR>
+                &#171; <B>Reply #2 on:</B> Aug 13<sup>th</sup>, 2002, 1:17am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            // Proto-Asteroids 0.2 <br> // Started by REAS &nbsp; <br> // Acceleration by nashdj <br> // Firing, deceleration by REAS <br> &nbsp;<br> // Mouse-based Asteroids, navigate by pressing the mouse <br> // Fire with the 'space bar'. <br> &nbsp;<br> long time; <br> float dt; <br> &nbsp;<br> float a; // The angle of the ship &nbsp; <br> float xpos, ypos; &nbsp;// The position of the ship &nbsp; <br> float vx, vy; // Velocity of the ship &nbsp;<br> float vmax = 300; // The maximum velocity <br> float acceleration = 200; // Speed of acceleration &nbsp;<br> float deceleration = 40.0; // Speed of deceleration <br> &nbsp;<br> int tfire = 10; // Total number of fires <br> float[] firex = new float[tfire]; // X locations of fire <br> float[] firey = new float[tfire]; // Y locations of fire <br> float[] firea = new float[tfire]; // The angle of each fire's direction <br> float vfire; // Velocity of the fire <br> int nfire = 0; // Numbers of fires fired <br> int slength = 15; // Length of ship <br> int sheight = 10; // Height of ship <br> int scrook = 7; &nbsp;// Crook of ship <br> &nbsp; &nbsp;<br> void setup() &nbsp; <br> { &nbsp; <br> &nbsp; size(200, 200); &nbsp;// Set the size to 200x200 pixels &nbsp; <br> &nbsp; background(0); &nbsp; // Set the background to black &nbsp; <br> &nbsp; noFill(); &nbsp; // Turn off fill &nbsp; <br> &nbsp; stroke(255); &nbsp; &nbsp; // Set the stroke color to white &nbsp; <br> &nbsp; xpos = width/2; &nbsp;// Place in center of the screen <br> &nbsp; ypos = height/2; <br> } &nbsp; <br> &nbsp; &nbsp;<br> void loop() &nbsp; <br> { &nbsp; <br> &nbsp; // Find out how much time has passed &nbsp;<br> &nbsp; dt = (millis() - time)/1000.0; &nbsp;<br> &nbsp; time = millis(); &nbsp;<br> &nbsp; &nbsp;<br> &nbsp; push(); <br> &nbsp; updateShip(); <br> &nbsp; drawShip(); <br> &nbsp; pop(); <br> &nbsp;<br> &nbsp; updateAndDrawFire(); <br> } &nbsp; <br> &nbsp;<br> void updateShip() &nbsp;<br> { <br> &nbsp;<br> &nbsp; // Accelerate the ship if mouse is pressed <br> &nbsp; // and it has not yet reached terminal velocity <br> &nbsp; // Decelerate the ship if the mouse is not pressed <br> &nbsp; if (mousePressed) { <br> &nbsp; &nbsp; if(abs(vx)+abs(vy) &lt; vmax) { &nbsp;<br> &nbsp;vx += cos(a) * acceleration * dt; &nbsp;<br> &nbsp;vy += sin(a) * acceleration * dt; <br> &nbsp; &nbsp; } <br> &nbsp; } else { <br> &nbsp; &nbsp; if(abs(vx) &gt; .01) { vx = vx - vx/deceleration; } <br> &nbsp; &nbsp; if(abs(vy) &gt; .01) { vy = vy - vy/deceleration; } <br> &nbsp; } <br> &nbsp; <br> &nbsp; // Set the position of the ship &nbsp; <br> &nbsp; xpos += vx * dt; &nbsp; <br> &nbsp; ypos += vy * dt; &nbsp;<br> &nbsp; <br> &nbsp; // If the ship moves off the screen, put i back on &nbsp;<br> &nbsp; if (xpos &gt; width+slength) xpos = -slength; &nbsp; &nbsp;<br> &nbsp; if (xpos &lt; 0-slength) xpos += width + slength; &nbsp;<br> &nbsp; if (ypos &gt; height+slength)ypos = -slength; &nbsp;<br> &nbsp; if (ypos &lt; 0-slength) ypos += height + slength; &nbsp;<br> &nbsp; // Position the ship &nbsp; &nbsp;<br> &nbsp; translate(xpos, ypos); &nbsp; <br> &nbsp; <br> &nbsp; // Calculte and set the angle of the ship &nbsp; <br> &nbsp; a = atan2(mouseY-ypos, mouseX-xpos); &nbsp; <br> &nbsp; rotate(a); &nbsp;<br> } <br> &nbsp;<br> void updateAndDrawFire() &nbsp;<br> { <br> &nbsp; for(int i=0; i&lt;tfire; i++) { <br> &nbsp; &nbsp; // Update based on angle and current position <br> &nbsp; &nbsp; firex[i] += cos(firea[i]) * 2; <br> &nbsp; &nbsp; firey[i] += sin(firea[i]) * 2; <br> &nbsp; &nbsp; // Draw &nbsp;<br> &nbsp; &nbsp; stroke(255); <br> &nbsp; &nbsp; point(firex[i], firey[i]); <br> &nbsp; } <br> } <br> &nbsp;<br> &nbsp;<br> // keyPressed() is called automatically by Proce55ing <br> // whenever a key is pressed <br> &nbsp;<br> void keyPressed() &nbsp;<br> { <br> &nbsp; // If 'space bar' is pressed update the fire (laser) <br> &nbsp; if (key == ' ') { <br> &nbsp; &nbsp; firea[nfire] = a; <br> &nbsp; &nbsp; firex[nfire] = xpos + cos(a)*slength; <br> &nbsp; &nbsp; firey[nfire] = ypos + sin(a)*slength; <br> &nbsp; &nbsp; nfire += 1; <br> &nbsp; &nbsp; if (nfire &gt;= tfire) { nfire = 0; } <br> &nbsp; &nbsp; println(nfire); <br> &nbsp; } <br> } <br> &nbsp;<br> &nbsp;<br> // Draw the ship &nbsp;<br> &nbsp;<br> void drawShip() &nbsp;<br> { <br> &nbsp; // Gray body <br> &nbsp; stroke(102); <br> &nbsp; beginShape(LINE_LOOP); <br> &nbsp; vertex(-slength, sheight); <br> &nbsp; vertex(slength, 0); <br> &nbsp; vertex(-slength,-sheight); <br> &nbsp; vertex(-scrook, 0); <br> &nbsp; endShape(); <br> &nbsp; &nbsp;<br> &nbsp; // White points simulating vector display <br> &nbsp; stroke(255); <br> &nbsp; beginShape(POINTS); <br> &nbsp; vertex(-slength, sheight); <br> &nbsp; vertex(slength, 0); <br> &nbsp; vertex(-slength,-sheight); <br> &nbsp; vertex(-scrook, 0); <br> &nbsp; endShape(); <br> } 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>anurag</b><br><BR>
+             <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Asteroids</b><BR>
+                &#171; <B>Reply #3 on:</B> Dec 16<sup>th</sup>, 2002, 12:16am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            hi guys just tried to add a sample of the first asteroid which can be broken into two.. i am just a beginner in proce55ing so hope you dont mind..! sorry had to delete all the messages as it wouldnt post coz of length. &nbsp;<br> // Proto-Asteroids 0.2 &nbsp;<br> // Started by REAS &nbsp; &nbsp;<br> // Acceleration by nashdj &nbsp;<br> // Firing, deceleration by REAS &nbsp;<br> // anurag tried to add a sample of one asteroid which can be broken into two <br> &nbsp;<br> long time; int col;int gepx;int gepxx; <br> int gepxy;float dt;int astno=1; <br> int asa1=int(random(1,89)); &nbsp;<br> int asa2=int(random(1,89)); &nbsp;<br> int asa3=int(random(1,89)); &nbsp;<br> float asx1=100;float asx2;float asx3;float asy1=100; <br> float asy2;float asy3;float asl1=40;float asb1=40; &nbsp;<br> float a;float xpos, ypos;float vx, vy; <br> float vmax = 300; int tfire = 10; &nbsp;<br> float acceleration = 200;float deceleration = 40.0; &nbsp;<br> &nbsp;<br> float[] firex = new float[tfire]; // X locations of fire &nbsp;<br> float[] firey = new float[tfire]; // Y locations of fire &nbsp;<br> float[] firea = new float[tfire]; // The angle of each fire's direction &nbsp;<br> float vfire; &nbsp;<br> int nfire = 0; int slength = 15; // Length of ship &nbsp;<br> int sheight = 10;int scrook = 7; &nbsp; <br> void setup() &nbsp; &nbsp;<br> { &nbsp; &nbsp;<br> &nbsp; size(500, 500);background(0);noFill(); &nbsp; &nbsp;<br> &nbsp; stroke(255);xpos = width/2;ypos = height/2; &nbsp;<br> } &nbsp; &nbsp;<br> &nbsp; &nbsp; <br> void loop() &nbsp; &nbsp;<br> { &nbsp; &nbsp;<br> &nbsp; dt = (millis() - time)/1000.0; &nbsp; <br> &nbsp; time = millis();push();updateShip();drawShip(); &nbsp;<br> &nbsp; pop();asteroid();updateAndDrawFire(); &nbsp;<br> } &nbsp; &nbsp;<br> &nbsp; <br> void updateShip() &nbsp; <br> { &nbsp;<br> &nbsp; if (mousePressed) { &nbsp;<br> &nbsp; &nbsp; if(abs(vx)+abs(vy) &lt; vmax) { &nbsp; <br> &nbsp;vx += cos(a) * acceleration * dt; &nbsp; <br> &nbsp;vy += sin(a) * acceleration * dt; &nbsp;<br> &nbsp; &nbsp; } &nbsp;<br> &nbsp; } else { &nbsp;<br> &nbsp; &nbsp; if(abs(vx) &gt; .01) { vx = vx - vx/deceleration; } &nbsp;<br> &nbsp; &nbsp; if(abs(vy) &gt; .01) { vy = vy - vy/deceleration; } &nbsp;<br> &nbsp; } &nbsp;<br> &nbsp; xpos += vx * dt;ypos += vy * dt; &nbsp; <br> &nbsp; if (xpos &gt; width+slength) xpos = -slength; &nbsp; &nbsp; <br> &nbsp; if (xpos &lt; 0-slength) xpos += width + slength; &nbsp; <br> &nbsp; if (ypos &gt; height+slength)ypos = -slength; &nbsp; <br> &nbsp; if (ypos &lt; 0-slength) ypos += height + slength; &nbsp; <br> &nbsp; translate(xpos, ypos); &nbsp; &nbsp;<br> &nbsp; a = atan2(mouseY-ypos, mouseX-xpos); &nbsp; &nbsp;<br> &nbsp; rotate(a); &nbsp; <br> } &nbsp;<br> &nbsp; <br> void updateAndDrawFire() &nbsp; <br> { &nbsp;<br> &nbsp;<br> &nbsp; int col=color(0,100,100); <br> &nbsp; for(int i=0; i&lt;tfire; i++) { &nbsp;<br> &nbsp; firex[i] += cos(firea[i]) * 10; <br> &nbsp; firey[i] += sin(firea[i]) * 10; &nbsp;<br> &nbsp; &nbsp; stroke(255);point(firex[i], firey[i]); &nbsp;<br> &nbsp; &nbsp; int gepxx=int(firex[i]);//changes floats of shots into int for getpixel command <br> &nbsp; &nbsp; int gepxy=int(firey[i]); <br> &nbsp;if (gepxy&gt;0 &amp;&amp; gepxy&lt;height &amp;&amp; gepxx&gt;0 &amp;&amp; gepxx&lt;width) <br> &nbsp; &nbsp; { <br> &nbsp; &nbsp; int gepx=getPixel(gepxx+1,gepxy+1); //gets the colour of the pixel next to the shot. <br> &nbsp; &nbsp; if (gepx==col)// checks if the shots fired passes over a blue surface <br> &nbsp; &nbsp; { <br> &nbsp; &nbsp; astno=2;//breaks the asteroid into two <br> &nbsp; &nbsp; println(astno); <br> &nbsp; &nbsp;} <br> &nbsp; &nbsp; } <br> &nbsp; } &nbsp;<br> } &nbsp;<br> &nbsp; &nbsp;<br> void keyPressed() &nbsp; <br> { &nbsp;<br> &nbsp; &nbsp;if (key == ' ') { &nbsp;<br> &nbsp; &nbsp; firea[nfire] = a; <br> &nbsp; &nbsp; firex[nfire] = xpos + cos(a)*slength; &nbsp;<br> &nbsp; &nbsp; firey[nfire] = ypos + sin(a)*slength; &nbsp;<br> &nbsp; &nbsp; nfire += 1; &nbsp;<br> &nbsp; &nbsp; if (nfire &gt;= tfire) { nfire = 0; } &nbsp;<br> &nbsp; &nbsp; println(nfire); &nbsp;<br> &nbsp; } &nbsp;<br> } &nbsp;<br> &nbsp; &nbsp;<br> &nbsp;<br> void drawShip() &nbsp; <br> { &nbsp;<br> &nbsp; stroke(102); beginShape(LINE_LOOP); &nbsp;<br> &nbsp; vertex(-slength, sheight);vertex(slength, 0); &nbsp;<br> &nbsp; vertex(-slength,-sheight);vertex(-scrook, 0); &nbsp;<br> &nbsp;endShape();stroke(255); &nbsp;<br> &nbsp; beginShape(POINTS);vertex(-slength, sheight); &nbsp;<br> &nbsp; vertex(slength, 0);vertex(-slength,-sheight); &nbsp;<br> &nbsp; vertex(-scrook, 0); endShape(); &nbsp;<br> } &nbsp;<br> void asteroid()//astroids <br> &nbsp;{ <br> &nbsp; int col=color(0,100,100);fill(col); <br> &nbsp;if (astno==1)//for a single asteroid <br> &nbsp; { <br> &nbsp; ellipse(asx1,asy1,asl1,asb1); <br> &nbsp; &nbsp;asx1 -= cos(asa1)*2;asy1 -= sin(asa1)*2; <br> &nbsp; &nbsp;asx2 = asx1;asy2 = asy1;asx3 = asx1;asy3 = asy1; <br> &nbsp; &nbsp;if (asx1&gt;height+asl1){asx1=0-asl1;} <br> &nbsp; if (asy1&gt;width+asb1){asy1=0-asb1;} <br> &nbsp; if (asx1&lt;0-asl1){asx1=height+asl1;} <br> &nbsp; &nbsp;if (asy1&lt;0-asb1){asy1=width+asb1;} <br> &nbsp; } <br> &nbsp; if (astno==2)//for two asteroids <br> &nbsp; { <br> &nbsp; &nbsp;ellipse(asx2,asy2,asl1/2,asb1/2); <br> &nbsp; &nbsp;asx2 -= cos(asa1+40)*3; &nbsp;<br> &nbsp; &nbsp;asy2 -= sin(asa1+40)*3; <br> &nbsp; ellipse(asx3,asy3,asl1/2,asb1/2); <br> &nbsp; asx3 -= cos(asa1-40)*3; &nbsp;<br> &nbsp; &nbsp;asy3 -= sin(asa1-40)*2; <br> &nbsp; &nbsp;if (asx2&gt;height+asl1/2){asx2=0-asl1/2;} <br> &nbsp; &nbsp;if (asy2&gt;width+asb1/2) {asy2=0-asb1/2;} <br> &nbsp; &nbsp;if (asx2&lt;0-asl1/2) {asx2=height+asl1/2;} <br> &nbsp; &nbsp;if (asy2&lt;0-asb1/2) {asy2=width+asb1/2;} <br> &nbsp; &nbsp;if (asx3&gt;height+asl1/2){asx3=0-asl1/2;} <br> &nbsp; &nbsp;if (asy3&gt;width+asb1/2) {asy3=0-asb1/2;} <br> &nbsp; &nbsp;if (asx3&lt;0-asl1/2) {asx3=height+asl1/2;} <br> &nbsp; &nbsp;if (asy3&lt;0-asb1/2) {asy3=width+asb1/2;} <br> &nbsp; } <br> &nbsp;} <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>anurag</b><br><BR>
+             <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Asteroids</b><BR>
+                &#171; <B>Reply #4 on:</B> Dec 16<sup>th</sup>, 2002, 5:57pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            hi guys just tried to add the ship destruction when you touch the asteroid. works fine but for only one error which i couldnt understand(arrayoutofbound)error when you move the ship out of the y axis. please tell the solution. run it and youl see <br> &nbsp;<br> // Proto-Asteroids 0.2 &nbsp;<br> // Started by REAS &nbsp; &nbsp;<br> // Acceleration by nashdj &nbsp;<br> // Firing, deceleration by REAS &nbsp;<br> // just tried to add a sample of one asteroid and the destruction of the ship, Anurag. <br> // Mouse-based Asteroids, navigate by pressing the mouse &nbsp;<br> // Fire with the 'space bar'. &nbsp;<br> // fire asteriods and avoid them to avoid destruction. <br> int life=1;long time;int cola;int cols;int gepx;int gepxx; <br> int gepxy;int xposint;int yposint;float dt;int astno=1; <br> int asa1=int(random(1,89)); <br> int asa2=int(random(1,89)); &nbsp;<br> int asa3=int(random(1,89));float asx1=100; <br> float asx2;float asx3;float asy1=100;float asy2;float asy3; <br> float asl1=40;float asb1=40; float a; float xpos, ypos; &nbsp; <br> float vx, vy;float vmax = 300;float acceleration = 200; &nbsp;<br> float deceleration = 40.0;int tfire = 10; &nbsp;<br> float[] firex = new float[tfire]; &nbsp;<br> float[] firey = new float[tfire]; &nbsp;<br> float[] firea = new float[tfire]; &nbsp;<br> float vfire;int nfire = 0; int slength = 15; int sheight = 10; &nbsp;<br> int scrook = 7; &nbsp; <br> void setup(){ &nbsp;<br> size(500, 500); background(0); noFill(); <br> stroke(255); xpos = width/2; ypos = height/2; &nbsp;<br> cola=color(0,100,100); cols=color(100,0,100);} &nbsp; &nbsp;<br> void loop(){ &nbsp; &nbsp;<br> &nbsp; dt = (millis() - time)/1000.0; time = millis(); &nbsp; <br> &nbsp; &nbsp;if (life==1){ <br> &nbsp; push(); updateShip(); drawShip(); pop(); asteroid(); <br> &nbsp; updateAndDrawFire(); shipdest(); } <br> &nbsp; if (life==2){asteroid();}} &nbsp; &nbsp;<br> void updateShip(){ &nbsp; <br> &nbsp; if (mousePressed) { &nbsp;<br> &nbsp; &nbsp; if(abs(vx)+abs(vy) &lt; vmax) { &nbsp; <br> &nbsp;vx += cos(a) * acceleration * dt; &nbsp; <br> &nbsp;vy += sin(a) * acceleration * dt; } <br> &nbsp; } else { &nbsp;<br> &nbsp; &nbsp; if(abs(vx) &gt; .01) { vx = vx - vx/deceleration; } &nbsp;<br> &nbsp; &nbsp; if(abs(vy) &gt; .01) { vy = vy - vy/deceleration; } &nbsp;<br> &nbsp; } &nbsp;<br> &nbsp; xpos += vx * dt;ypos += vy * dt; xposint=int(xpos); &nbsp;<br> &nbsp; yposint=int(ypos); &nbsp; <br> &nbsp; if (xpos &gt; width+slength) xpos = -slength; &nbsp; &nbsp; <br> &nbsp; if (xpos &lt; 0-slength) xpos += width + slength; &nbsp; <br> &nbsp; if (ypos &gt; height+slength)ypos = -slength; &nbsp; <br> &nbsp; if (ypos &lt; 0-slength) ypos += height + slength; &nbsp; <br> &nbsp; translate(xpos, ypos); &nbsp; &nbsp;<br> &nbsp; a = atan2(mouseY-ypos, mouseX-xpos); &nbsp; &nbsp;<br> &nbsp; rotate(a); &nbsp;} <br> void updateAndDrawFire() &nbsp;{ <br> &nbsp; &nbsp;for(int i=0; i&lt;tfire; i++) { &nbsp;<br> &nbsp; &nbsp;firex[i] += cos(firea[i]) * 10; &nbsp;<br> &nbsp; &nbsp;firey[i] += sin(firea[i]) * 10; <br> &nbsp; &nbsp;stroke(255);point(firex[i], firey[i]); <br> &nbsp; &nbsp;int gepxx=int(firex[i]); <br> &nbsp; &nbsp;int gepxy=int(firey[i]); <br> &nbsp; &nbsp;if (gepxy&gt;0 &amp;&amp; gepxy&lt;height &amp;&amp; gepxx&gt;0 &amp;&amp; gepxx&lt;width){ <br> &nbsp; &nbsp; int gepx=getPixel(gepxx+1,gepxy+1); //colour of pixel next to bullet <br> &nbsp; if (gepx==cola)// checks if the shots fired passes over a blue surface <br> &nbsp; &nbsp;{ astno=2;//breaks the asteroid into two <br> &nbsp; &nbsp;println(astno); } <br> &nbsp; &nbsp; }}} &nbsp;<br> void keyPressed(){ &nbsp;<br> &nbsp; if (key == ' ') { &nbsp;<br> &nbsp; &nbsp; firea[nfire] = a; firex[nfire] = xpos + cos(a)*slength; &nbsp;<br> &nbsp; &nbsp; firey[nfire] = ypos + sin(a)*slength; nfire += 1; &nbsp;<br> &nbsp; &nbsp; if (nfire &gt;= tfire) { nfire = 0; } &nbsp;<br> &nbsp; &nbsp; println(nfire); &nbsp;<br> &nbsp; }} &nbsp;<br> void drawShip(){ &nbsp;<br> &nbsp; fill(cols); stroke(244); beginShape(POLYGON); &nbsp;<br> &nbsp; vertex(-slength, sheight); vertex(slength, 0); &nbsp;<br> &nbsp; vertex(-slength,-sheight); vertex(-scrook, 0); &nbsp;<br> &nbsp;endShape(); beginShape(POINTS); &nbsp;<br> &nbsp; vertex(-slength, sheight); vertex(slength, 0); &nbsp;<br> &nbsp; vertex(-slength,-sheight); vertex(-scrook, 0); &nbsp;<br> &nbsp; endShape();} &nbsp;<br> void asteroid(){ <br> &nbsp;fill(cola);stroke(255); <br> &nbsp; if (astno==1){ <br> &nbsp; ellipse(asx1,asy1,asl1,asb1); <br> &nbsp; &nbsp;asx1 -= cos(asa1)*2; asy1 -= sin(asa1)*2; <br> &nbsp; asx2 = asx1; asy2 = asy1; <br> &nbsp; asx3 = asx1; asy3 = asy1; <br> &nbsp; if (asx1&gt;height+asl1){asx1=0-asl1;} <br> &nbsp; if (asy1&gt;width+asb1){asy1=0-asb1;} <br> &nbsp; &nbsp;if (asx1&lt;0-asl1){asx1=height+asl1;} <br> &nbsp; &nbsp;if (asy1&lt;0-asb1){asy1=width+asb1;} <br> &nbsp; } <br> &nbsp; if (astno==2){ <br> &nbsp; &nbsp;ellipse(asx2,asy2,asl1/2,asb1/2); <br> &nbsp; &nbsp;asx2 -= cos(asa1+40)*3; asy2 -= sin(asa1+40)*3; <br> &nbsp; &nbsp;ellipse(asx3,asy3,asl1/2,asb1/2); <br> &nbsp; asx3 -= cos(asa1-40)*3; asy3 -= sin(asa1-40)*2; <br> &nbsp; &nbsp;if (asx2&gt;height+asl1/2) {asx2=0-asl1/2;} <br> &nbsp; &nbsp;if (asy2&gt;width+asb1/2){asy2=0-asb1/2;} <br> &nbsp; &nbsp;if (asx2&lt;0-asl1/2){ asx2=height+asl1/2;} <br> &nbsp; &nbsp;if (asy2&lt;0-asb1/2){asy2=width+asb1/2;} <br> &nbsp; &nbsp;if (asx3&gt;height+asl1/2){ asx3=0-asl1/2;} <br> &nbsp; &nbsp;if (asy3&gt;width+asb1/2){asy3=0-asb1/2;} <br> &nbsp; if (asx3&lt;0-asl1/2){asx3=height+asl1/2;} <br> &nbsp; &nbsp;if (asy3&lt;0-asb1/2){asy3=width+asb1/2;} <br> &nbsp; }} <br> &nbsp;void shipdest(){ <br> &nbsp;for (int sl=yposint-15;sl&lt;yposint+15;++sl) { <br> &nbsp;for (int sh=xposint-15;sh&lt;xposint+15;++sh) { <br> &nbsp; if (getPixel(sh,sl)==cols) &nbsp; { <br> &nbsp; if (getPixel(sh+1,sl)==-1 &#124;&#124; getPixel(sh-1,sl)==-1 &#124;&#124;getPixel(sh,sl+1)==-1 &#124;&#124; getPixel(sh,sl-1)==-1){ <br> &nbsp; &nbsp;println(&quot;boom&quot;);life=2; <br> &nbsp; &nbsp;for(int di=1; di&lt;40; ++di){ <br> &nbsp; &nbsp;stroke(244);fill(255,0,0); beginShape(POLYGON); <br> &nbsp; vertex(xposint-20, yposint); vertex(xposint-10, yposint); <br> &nbsp; vertex(xposint-2, yposint-9); vertex(xposint+3, yposint+3); <br> &nbsp; vertex(xposint+15, yposint-4); vertex(xposint+6, yposint+9); <br> &nbsp; vertex(xposint+13, yposint+14); vertex(xposint+3, yposint+7); <br> &nbsp; vertex(xposint-17, yposint+14); vertex(xposint-8, yposint+7); <br> &nbsp; endShape();} <br> &nbsp; &nbsp;}}}}} 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_Contribution_Responsive_action_display_num_1063814418.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option value="?board=Programs">&nbsp; - Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option selected value="?board=Contribution_Responsive">=> Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_Contribution_Responsive_action_display_num_1063814449.html">Previous topic</a> | <a href="board_Contribution_Responsive_action_display_num_1063091603.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

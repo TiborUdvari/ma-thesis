@@ -1,0 +1,485 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - Image Morphing</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Contribution_Info_action_display_num_1091834841.html#Examples" class="nav">Topics & Contributions
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Contribution_Info.html" class="nav">Information Visualization</a> </b>(Moderators: forkinsocket, REAS)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    Image Morphing</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_Contribution_Info_action_display_num_1087217608.html">Previous topic</a> | <a href="board_Contribution_Info_action_display_num_1087675923.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/thread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: Image Morphing</b> &nbsp;(Read 6805 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>winston_smith</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Image Morphing</b><BR>
+                &#171; <B> on:</B> Aug 7<sup>th</sup>, 2004, 1:27am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            After a fairly extensive search, I have yet to find any significant examples of image morphing in java/p5. &nbsp;<br> &nbsp;<br> The laundry list of issues: <br> 1) I need a way to accurately find facial features w/edge detection. I'm using the JMyron motion tracking library (<a href="http://webcamxtra.sourceforge.net/" target="_blank">http://webcamxtra.sourceforge.net/</a>) to do this. Should I use something else? Simpler edge detection (like Reas' highpass filter example) and a custom method for identifying facial features, perhaps? <br> &nbsp;<br> By 'hijacking' single frames from the webcam, and telling the JMyron object to return an array of points describing the bounding boxes for each object, I hope to be able to retrieve boxes for only the eyes, nose, and mouth using some sort of template... &nbsp;by doing this, I should get bounding box points that correlate to each other accross two different facial images. &nbsp;<br> &nbsp;<br> With these points, I need to 2) warp the second image such that each point is mapped to its corresponding point in the first image (actually, I may have to warp both images such that the bounding box areas are sort of averaged together to avoid excess distortion). &nbsp;<br> &nbsp;<br> For this I am completely ignorant of any appropriate methods... I've seen plenty of mathematical examples that are over my head. Looking around for available image processing libraries yielded the javax.media.jai package (<a href="http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/javax/media/jai/package-summary.html" target="_blank">http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/ja vax/media/jai/package-summary.html</a>), but I'm unsure of how exactly to use it correctly (or how to use it inside processing). <br> &nbsp;<br> Once the features have been detected and the images warped to match each other, I need to 3) blend them together correctly. I don't know if this is a stupid question or not, but what would be the best method for compositing the two images? Just a 50% blend? After a few iterations of this, information from the first pictures gets wiped out where there's too much white/black and I'm unsure if it really matters or not... (oh yeah, images are to be kept black and white). <br> &nbsp;<br> &lt;whew&gt; <br> &nbsp;<br> In the end, the sketch should allow the user to take a self-portrait from the webcam, automatically find his/her facial features, match them to those of a referential blend (master) image, warp/composite the images, then finally store the result to the master image. With each user submission, the resulting composite human will evolve... <br> &nbsp;<br> If anyone knows of any good resources/examples for any of the above, I'd be stoked to know about them. This is a research project associated with one of my instructors long-term collaborative projects, and I'd REALLY like to do a good job (explicit credit for anyone who has useful code suggestions!). <br> &nbsp;<br> Cheers for reading this entire post! <br> winston 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>v3ga</b><br><BR>
+             <a href="http://v3ga.net" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Image Morphing</b><BR>
+                &#171; <B>Reply #1 on:</B> Aug 7<sup>th</sup>, 2004, 1:49am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Hello, <br> &nbsp;concerning 1), you can take a look at <a href="http://processing.org/discourse/yabb/board_VideoCamera_action_display_num_1088589126.html" target="_blank">http://processing.org/discourse/yabb/board_VideoCamera_action_d_isplay_num_1088589126.html</a> , I've posted an example of edge detection. May be it could help you. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr"><a href="http://v3ga.net" target="_blank">http://v3ga.net</a><br>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>winston_smith</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Image Morphing</b><BR>
+                &#171; <B>Reply #2 on:</B> Aug 7<sup>th</sup>, 2004, 2:43am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+             Snippets of code (you will need the JMyron package, linked above)... <br> &nbsp;<br> Created my own BlendImage class as follows. This class represents the final composite image and provides its own methods for adding new images to it. I realize this is rather unnecessary, but hey, it's working alright thus far (I fear change). In time, this whole thing will be reorganized for efficiency and such.... <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> class BlendImage { <br> &nbsp; &nbsp;<br> &nbsp; public BImage img; <br> &nbsp; &nbsp;<br> &nbsp; public BlendImage&#40;&#41; { img = new BImage&#40;&#41;; } <br> &nbsp; public BlendImage&#40;BImage img&#41; { this&#46;img = img; } <br> &nbsp; &nbsp;<br> &nbsp; void add&#40; BImage nextImage &#41; { <br> &nbsp; &nbsp; &#47;&#47; blend the warped image into the internal 'blend image' &#40;img&#41;&#46; <br> &nbsp; &nbsp; img = blend&#40; warp&#40; nextImage &#41; &#41;; <br> &nbsp; } <br> &nbsp; &nbsp;<br> &nbsp; &#47;&#47; warp 'next_points' to match 'my_points' <br> &nbsp; BImage warp&#40; BImage nextImage &#41; { <br> &nbsp; &nbsp; BImage warpImage = new BImage&#40;nextImage&#46;width, nextImage&#46;height&#41;; <br> &nbsp; &nbsp; &#47;* Warping method&#63;&#63; *&#47; <br> &nbsp; &nbsp; &#47;&#47; call find_features on img and nextImage to calculate grid warping&#46;&#46;&#46; <br> &nbsp; &nbsp; &#47;&#47; affect nextImage from results &#40;using JAI library&#63;&#41; <br> &nbsp; &nbsp; return nextImage; &#47;&#47; return warpImage; <br> &nbsp; } &nbsp;<br> &nbsp; &nbsp;<br> &nbsp; &nbsp;<br> &nbsp; BImage blend&#40; BImage nextImage &#41; { <br> &nbsp; &nbsp; BImage temp = new BImage&#40;nextImage&#46;width, nextImage&#46;height&#41;; <br> &nbsp; &nbsp; for &#40; int i = 0; i &lt; nextImage&#46;pixels&#46;length; i++ &#41; { <br> &nbsp;<br> &nbsp;float h = &#46;5 * &#40; &nbsp;hue&#40;img&#46;pixels&#91;i&#93;&#41; + hue&#40;nextImage&#46;pixels&#91;i&#93;&#41;&#41;, <br> &nbsp; &nbsp; s = &#46;5 * &#40;saturation&#40;img&#46;pixels&#91;i&#93;&#41; + saturation&#40;nextImage&#46;pixels&#91;i&#93;&#41;&#41;, &nbsp;<br> &nbsp; &nbsp; b = &#46;5 * &#40;brightness&#40;img&#46;pixels&#91;i&#93;&#41; + brightness&#40;nextImage&#46;pixels&#91;i&#93;&#41;&#41;; <br> &nbsp;<br> &nbsp;temp&#46;pixels&#91;i&#93; = color&#40;h,s,b&#41;; &nbsp;<br> &nbsp; &nbsp; } <br> &nbsp; &nbsp; return temp; <br> &nbsp; } <br> &nbsp; &nbsp;<br> &nbsp; &#47;&#47; return bounding box points for facial features &nbsp;<br> &nbsp; int&#91;&#93;&#91;&#93; find_features&#40; BImage b &#41; { <br> &nbsp; &nbsp; JMyron m = new JMyron&#40;&#41;; <br> &nbsp; &nbsp; m&#46;start&#40;b&#46;width, b&#46;height&#41;; <br> &nbsp; &nbsp; &#47;&#47; hijack the library for use on image 'b' <br> &nbsp; &nbsp; m&#46;hijack&#40; b&#46;width, b&#46;height, b&#46;pixels &#41;; &nbsp;<br> &nbsp; &nbsp; m&#46;findGlobs&#40;1&#41;; &#47;&#47; detect edges &#40;globs&#41; <br> &nbsp; &nbsp; &#47;&#47; track the color black, with threshold of 128 <br> &nbsp; &nbsp; m&#46;trackColor&#40; 0, 0, 0, 128 &#41;; <br> &nbsp; &nbsp; &#47;&#47; return array of rect coordinates for each glob <br> &nbsp; &nbsp; &#47;&#47; format&#58; features&#91;glob number&#93;&#91;4&#93; &nbsp;<br> &nbsp; &nbsp; &#47;&#47; &#45;&gt; &#91;glob num&#93; { x, y, width, height } <br> &nbsp; &nbsp; int&#91;&#93;&#91;&#93; features = m&#46;globBoxes&#40;&#41;; &nbsp; <br> &nbsp; &nbsp; m&#46;stop&#40;&#41;; <br> &nbsp; &nbsp; return features; &nbsp; &nbsp; <br> &nbsp; } &nbsp;<br> } <br>  </font></td></tr></table></td></tr></table> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>winston_smith</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Image Morphing</b><BR>
+                &#171; <B>Reply #3 on:</B> Aug 7<sup>th</sup>, 2004, 2:48am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            <B>on Aug 7<sup>th</sup>, 2004, 1:49am, <a href="board_Contribution_Info_action_display_num_1091834841.html#1">v3ga  wrote</a>:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td width="100%"><table cellpadding="2" cellspacing="0" class="quote" width="100%"><tr><td width="100%"><font face="Arial,Helvetica" class="quote" size="1">Hello, <br> &nbsp;concerning 1), you can take a look at <a href="http://processing.org/discourse/yabb/board_VideoCamera_action_display_num_1088589126.html" target="_blank">http://processing.org/discourse/yabb/board_VideoCamera_action_d_isplay_num_1088589126.html</a> , I've posted an example of edge detection. May be it could help you. </font></td></tr></table></td></tr></table> <br> &nbsp;<br> Excellent. JMyron is proving difficult to use properly... this could definitely be useful. thanks <img border=0 src="public_html/YaBBImages/smiley.gif"> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>winston_smith</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Image Morphing</b><BR>
+                &#171; <B>Reply #4 on:</B> Aug 21<sup>st</sup>, 2004, 6:05am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            OK, for anyone who gives a damn, here's an interesting lil problem: <br> &nbsp;<br> Basically, I need to be able to take just one frame from video and somehow &quot;normalize&quot; the light in it (for lack of a more correct word). Uneven lighting screws up the edge/blob detection. Is there any way to somehow adjust individual brightness per pixel to make too-dark pixels lighter and too-light pixels darker such that the final image has an even distribution of light/dark? <br> &nbsp;<br> -winston 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_Contribution_Info_action_display_num_1091834841.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option value="?board=Programs">&nbsp; - Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option selected value="?board=Contribution_Info">=> Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_Contribution_Info_action_display_num_1087217608.html">Previous topic</a> | <a href="board_Contribution_Info_action_display_num_1087675923.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

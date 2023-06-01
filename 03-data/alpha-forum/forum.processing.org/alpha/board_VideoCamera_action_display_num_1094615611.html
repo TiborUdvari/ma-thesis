@@ -1,0 +1,599 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - motion detection w/o JMyron?</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_VideoCamera_action_display_num_1094615611.html#Examples" class="nav">Topics & Contributions
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_VideoCamera.html" class="nav">Video, Camera</a> </b>(Moderator: REAS)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    motion detection w/o JMyron?</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_VideoCamera_action_display_num_1087225818.html">Previous topic</a> | <a href="board_VideoCamera_action_display_num_1092851243.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/thread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: motion detection w/o JMyron?</b> &nbsp;(Read 5309 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>sspboyd</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>motion detection w/o JMyron?</b><BR>
+                &#171; <B> on:</B> Sep 8<sup>th</sup>, 2004, 5:53am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I am trying to test a method doing motion detection without using JMyron. JMyron is overkill for some of the projects I am working on. <br> &nbsp;<br> I am having trouble making it work. I am attempting to compare the current frame of video with the previous frame in a grid like fashion. So far this program reports that there are no differences whatsoever between the current frame and previous frames. <br> &nbsp;<br> I am not sure where this is going off the rails. Any help is much appreciated. <br> Thanks, <br> steve <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">float sensitivity; &#47;&#47; sensitivity is a percentage of pixels changed <br> boolean newFrame; &#47;&#47; switch var for determining when a new frame is received <br> BImage currFrame, prevFrame; &#47;&#47; vars for holding the current and previous frames <br> BImage currSubSection, prevSubSection; &#47;&#47; vars for holding subsections being tested for motion <br> void setup&#40;&#41;{ <br> &nbsp; size&#40;320,240&#41;; <br> &nbsp; sensitivity=0&#46;01; <br> &nbsp; newFrame=false; <br> &nbsp; currSubSection=prevSubSection=new BImage&#40;width&#47;40,height&#47;30&#41;; <br> &nbsp; stroke&#40;200&#41;; <br> &nbsp; noFill&#40;&#41;; <br> &nbsp; beginVideo&#40;320,240,30&#41;; <br> } <br> &nbsp;<br> public void videoEvent&#40;&#41;{ <br> &nbsp; newFrame=true; <br> } <br> &nbsp;<br> void loop&#40;&#41;{ <br> &nbsp; if&#40;newFrame&#41;{ <br> &nbsp; &nbsp; newFrame=false; <br> &nbsp; &nbsp; if&#40;currFrame==null&#41;{ <br> &nbsp;currFrame=prevFrame=new BImage&#40;width,height&#41;; &#47;&#47; initalize these vars on the first run through <br> &nbsp;currFrame=prevFrame=video; &#47;&#47; set them both to the video source &nbsp;<br> &nbsp; &nbsp; }else{ <br> &nbsp;prevFrame=currFrame; &#47;&#47;update prev frame &nbsp;<br> &nbsp;currFrame=video; &nbsp;&#47;&#47; &nbsp;update current frame <br> &nbsp;int mc=0; &#47;&#47; testing counter var to keep track of number of grid sections that have motion <br> &nbsp;image&#40;currFrame,0,0&#41;; &#47;&#47; update display with current frame <br> &nbsp;for&#40;int y=0; y&lt;40; y++&#41;{ &#47;&#47; start looping through the video in a 40x30 grid <br> &nbsp; &nbsp;for&#40;int x=0; x&lt;30; x++&#41;{ <br> &nbsp; &nbsp; &nbsp;int cxLoc=x*&#40;width&#47;40&#41;; &#47;&#47; x position on grid <br> &nbsp; &nbsp; &nbsp;int cyLoc=y*&#40;height&#47;30&#41;; &#47;&#47; y position on grid <br> &nbsp; &nbsp; &nbsp;currSubSection&#46;replicate&#40;currFrame, <br> &nbsp; &nbsp; &nbsp;cxLoc,cyLoc,cxLoc+40,cyLoc+30, <br> &nbsp; &nbsp; &nbsp;0,0,40,30&#41;; <br> &nbsp; &nbsp; &nbsp;prevSubSection&#46;replicate&#40;prevFrame, <br> &nbsp; &nbsp; &nbsp;cxLoc,cyLoc,cxLoc+40,cyLoc+30, <br> &nbsp; &nbsp; &nbsp;0,0,40,30&#41;; <br> &#47;&#47;test for motion <br> &nbsp; &nbsp; &nbsp;if&#40;motionTest&#40;currSubSection, prevSubSection&#41;==true&#41;{ <br> &nbsp; rect&#40;cxLoc,cyLoc,40,30&#41;; &#47;&#47;draw rect to indicate motion <br> &nbsp; mc++; &#47;&#47; update motion counter <br> &nbsp; println&#40;&quot;motion is detected&#58; &quot;+mc&#41;; &#47;&#47; more testing stuff <br> &nbsp; &nbsp; &nbsp;} <br> &nbsp; &nbsp;} <br> &nbsp;} <br> &nbsp; &nbsp; } <br> &nbsp; } <br> } <br> &nbsp;<br> boolean motionTest&#40;BImage _prev, BImage _curr&#41;{ <br> &nbsp; BImage prev=_prev; BImage curr=_curr; <br> &nbsp; int diffCount=0; &#47;&#47; counter for number of difference <br> &nbsp; int numPixels=curr&#46;pixels&#46;length; &#47;&#47; reads number of pixels in images <br> &nbsp; for &#40;int i=0; i&lt;numPixels;i++&#41;{ <br> &nbsp; &nbsp; if&#40;curr&#46;pixels&#91;i&#93;&#33;=prev&#46;pixels&#91;i&#93;&#41;{ &#47;&#47; test for difference &#40; is this the best way of doing this&#63; &#41; <br> &nbsp;diffCount++; &#47;&#47; if different, increment counter <br> &nbsp; &nbsp; } <br> &nbsp; } <br> &nbsp; &#47;&#47; println&#40;diffCount&#41;; <br> &nbsp; if&#40;diffCount&gt;sensitivity*numPixels&#41;{ &#47;&#47; test to see if number of difference is 'significant' <br> &nbsp; &nbsp; return true; <br> &nbsp; }else{ <br> &nbsp; &nbsp; return false; <br> &nbsp; } <br> } </font></td></tr></table></td></tr></table> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">gmail.com w/ sspboyd username
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>fjen</b><br><BR>
+     <a href="http://www.florianjenett.de/p55/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: motion detection w/o JMyron?</b><BR>
+                &#171; <B>Reply #1 on:</B> Sep 8<sup>th</sup>, 2004, 5:04pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            hmm. to my understanding the problem resides here: <br> &nbsp;<br> &nbsp;prevFrame=currFrame; //update prev frame &nbsp; <br> &nbsp;currFrame=video; &nbsp;// &nbsp;update current frame &nbsp;<br> &nbsp;<br> you are not copying pixels here but are setting a reference .. means, prevFrame points to currFrame which is then set to point to video. so in the end prevFrame points to video as well ... clear? <br> &nbsp;<br> you should rather copy the pixel-arrays System.arraycopy(): <br> <a href="http://java.sun.com/j2se/1.4.2/docs/api/java/lang/System.html" target="_blank">http://java.sun.com/j2se/1.4.2/docs/api/java/lang/System.html</a> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>sspboyd</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: motion detection w/o JMyron?</b><BR>
+                &#171; <B>Reply #2 on:</B> Sep 8<sup>th</sup>, 2004, 6:12pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            i have replaced those two lines with the following code: <br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">System&#46;arraycopy&#40;currFrame&#46;pixels,0, <br> &nbsp; &nbsp;prevFrame&#46;pixels,0,prevFrame&#46;pixels&#46;length&#41;; &#47;&#47;update prev frame &nbsp;<br> System&#46;arraycopy&#40;video&#46;pixels,0, <br> &nbsp; &nbsp;currFrame&#46;pixels,0,currFrame&#46;pixels&#46;length&#41;; &#47;&#47;update curr frame </font></td></tr></table></td></tr></table> <br> &nbsp;<br> I am implementing this correctly? I am still getting the same result (no detection). 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">gmail.com w/ sspboyd username
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>lars</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: motion detection w/o JMyron?</b><BR>
+                &#171; <B>Reply #3 on:</B> Sep 8<sup>th</sup>, 2004, 8:14pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I did a test for detecting motion comparing each frame to the previous - here is my code <br> &nbsp;<br> &nbsp;<br> // pixelChange <br> // by lars &lt;<a href="http://www.larsjessen.dk&gt;" target="_blank">http://www.larsjessen.dk&gt;</a> <br> &nbsp;<br> // Detects change in brightness from frame to frame <br> &nbsp;<br> // Created 1 Sep 2004 <br> &nbsp;<br> int xpos = 0; <br> int ypos = 0; <br> int captureWidth = 80; <br> int captureHeight = 60; <br> int[] pixelArray; <br> Rectangle rectArray[]; <br> boolean newFrame = false; <br> int motionCounter; <br> &nbsp;<br> void setup() <br> { <br> &nbsp; size(800, 600); <br> &nbsp; // Begin capturing video at 40 by 30 pixels at a 30 <br> &nbsp; beginVideo(captureWidth, captureHeight, 20); <br> &nbsp; pixelArray = new int[captureWidth*captureHeight]; <br> &nbsp; framerate(20); <br> &nbsp; &nbsp;<br> } <br> &nbsp;<br> void videoEvent() <br> { <br> &nbsp; newFrame = true; <br> } <br> &nbsp;<br> void loop() <br> { <br> &nbsp; if(newFrame) { <br> &nbsp;<br> &nbsp; &nbsp; int index = 0; <br> &nbsp; &nbsp; for(int i=0; i&lt;captureHeight; i++) { <br> &nbsp;for(int ii=0; ii&lt;captureWidth; ii++) { <br> &nbsp; &nbsp; <br> &nbsp; &nbsp;color c; <br> &nbsp; &nbsp;int newPixel; <br> &nbsp; &nbsp;newPixel = (int) brightness(video.pixels[index]); <br> &nbsp; &nbsp;if(abs(newPixel-pixelArray[index]) &gt; 50) { <br> &nbsp; &nbsp; &nbsp;c = color(255,255,255); <br> &nbsp; &nbsp; &nbsp;motionCounter = motionCounter + 1; <br> &nbsp; &nbsp;} else { <br> &nbsp; &nbsp; &nbsp;c = color(0,0,0); <br> &nbsp; &nbsp;} <br> &nbsp; &nbsp;pixelArray[index] = newPixel; <br> &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp;noStroke(); <br> &nbsp; &nbsp;fill(c); <br> &nbsp; &nbsp;triangle(10*ii,10*i,10*ii+10,10*i,10*ii+5,10*i+10); <br> &nbsp; &nbsp;index++; <br> &nbsp;} <br> &nbsp; &nbsp; } <br> &nbsp; &nbsp; println(&quot;motion: &quot; + motionCounter); <br> &nbsp; &nbsp; motionCounter = 0; <br> &nbsp; &nbsp; newFrame = false; <br> &nbsp; } <br> } 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>lars</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: motion detection w/o JMyron?</b><BR>
+                &#171; <B>Reply #4 on:</B> Sep 8<sup>th</sup>, 2004, 8:23pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I did another type of motion tracking as well where I compare the current frames to a reference frame - you have to press the mouse to capture a reference image. Hope this helps <br> /lars <br> &nbsp;<br> // pixelCompare <br> // by lars &lt;<a href="http://www.larsjessen.dk&gt;" target="_blank">http://www.larsjessen.dk&gt;</a> <br> &nbsp;<br> // Compares the frame captures from the camera to a reference image. For a new reference image press the mouse <br> &nbsp;<br> // Created 1 Sep 2004 <br> &nbsp;<br> int xpos = 0; <br> int ypos = 0; <br> int captureWidth = 80; <br> int captureHeight = 60; <br> color[] pixelArray; <br> boolean newFrame = false; <br> int motionCounter = 0; <br> &nbsp;<br> void setup() <br> { <br> &nbsp; size(800, 600); <br> &nbsp; beginVideo(captureWidth, captureHeight, 20); <br> &nbsp; pixelArray = new int[captureWidth*captureHeight]; <br> &nbsp; framerate(20); <br> &nbsp; for(int i=0; i&lt;(captureWidth*captureHeight); i++) { <br> &nbsp; &nbsp; pixelArray[i] = video.pixels[i]; <br> &nbsp; } <br> } <br> &nbsp;<br> void videoEvent() <br> { <br> &nbsp; newFrame = true; <br> } <br> &nbsp;<br> void loop() <br> { <br> &nbsp; if(newFrame) { <br> &nbsp; &nbsp; int index = 0; <br> &nbsp; &nbsp; for(int i=0; i&lt;captureHeight; i++) { <br> &nbsp;for(int ii=0; ii&lt;captureWidth; ii++) { <br> &nbsp; &nbsp; <br> &nbsp; &nbsp;color c; <br> &nbsp; &nbsp;int pixelCompare; <br> &nbsp; &nbsp; <br> &nbsp; &nbsp;pixelCompare = (int) ( abs( red(pixelArray[index]) - red(video.pixels[index])) + abs( green(pixelArray[index]) - green(video.pixels[index])) + abs( blue(pixelArray[index]) - blue(video.pixels[index])) ); <br> &nbsp; &nbsp;if(pixelCompare &gt; 50) { <br> &nbsp; &nbsp; &nbsp;motionCounter = motionCounter + 1; <br> &nbsp; &nbsp; &nbsp;c = color(255,255,255); <br> &nbsp; &nbsp;} else { <br> &nbsp; &nbsp; &nbsp;c = color(0,0,0); <br> &nbsp; &nbsp;} <br> &nbsp;<br> &nbsp; &nbsp;noStroke(); <br> &nbsp; &nbsp;fill(c); <br> &nbsp; &nbsp;triangle(10*ii,10*i,10*ii+10,10*i,10*ii+5,10*i+10); <br> &nbsp; &nbsp;index++; <br> &nbsp;} <br> &nbsp; &nbsp; } <br> &nbsp; &nbsp; println(&quot;motion: &quot; + motionCounter); <br> &nbsp; &nbsp; motionCounter = 0; <br> &nbsp; &nbsp; newFrame = false; <br> &nbsp; } &nbsp;<br> &nbsp;<br> } <br> &nbsp;<br> void mousePressed() { <br> &nbsp; for(int i=0; i&lt;(captureWidth*captureHeight); i++) { <br> &nbsp; &nbsp; pixelArray[i] = video.pixels[i]; <br> &nbsp; } <br> } <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="5"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>fjen</b><br><BR>
+     <a href="http://www.florianjenett.de/p55/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: motion detection w/o JMyron?</b><BR>
+                &#171; <B>Reply #5 on:</B> Sep 9<sup>th</sup>, 2004, 12:00am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            venner, jep syntax seems right. <br> but you still have some of these double initiations in there: <br> &nbsp;<br> currSubSection=prevSubSection=new BImage(width/40,height/30); <br> &nbsp;<br> this line reads: create instance of BImage(size) and put it in prevSubSection _and_ currSubSection ... see? <br> &nbsp;<br> currFrame=prevFrame=new BImage(width,height); <br> currFrame=prevFrame=video; <br> &nbsp;<br> here is an example of what's happening: <br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">BImage t1, t2; <br> boolean flip; <br> &nbsp;<br> void setup&#40;&#41; <br> { <br> &nbsp; size&#40;200,300&#41;; <br> &nbsp; &nbsp;<br> &nbsp; &#47;&#47; set true to see difference &#47;&#47; <br> &nbsp; if &#40;false&#41; { <br> &nbsp; &nbsp; &#47;&#47; seperate instances of BImage &#47;&#47; <br> &nbsp; &nbsp; t1 = new BImage&#40;width, height&#41;; <br> &nbsp; &nbsp; t2 = new BImage&#40;width, height&#41;; <br> &nbsp; } else { <br> &nbsp; &nbsp; &#47;&#47; same instance in both variables &#47;&#47; <br> &nbsp; &nbsp; t1 = t2 = new BImage&#40;width, height&#41;; <br> &nbsp; } <br> &nbsp; &nbsp;<br> &nbsp; BGraphics bb = new BGraphics&#40;width, height&#41;; <br> &nbsp; bb&#46;line&#40;0,0,width,height&#41;; <br> &nbsp; System&#46;arraycopy&#40;bb&#46;pixels,0,t1&#46;pixels,0,t1&#46;pixels&#46;length&#41;; <br> &nbsp; bb&#46;background&#40;128&#41;; <br> &nbsp; bb&#46;line&#40;0,height,width,0&#41;; <br> &nbsp; System&#46;arraycopy&#40;bb&#46;pixels,0,t2&#46;pixels,0,t2&#46;pixels&#46;length&#41;; <br> } <br> &nbsp;<br> void loop&#40;&#41; <br> { <br> &nbsp; if &#40;flip&#41; <br> &nbsp; &nbsp; image&#40;t1,0,0&#41;; <br> &nbsp; else <br> &nbsp; &nbsp; image&#40;t2,0,0&#41;; <br> &nbsp; flip = &#33;flip; <br> &nbsp; delay&#40;300&#41;; <br> } <br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> hope this helps ... best /F 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="6"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>sspboyd</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: motion detection w/o JMyron?</b><BR>
+                &#171; <B>Reply #6 on:</B> Sep 10<sup>th</sup>, 2004, 7:37pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            thanks very much for the help lars and fjen. <br> &nbsp;<br> I've got it working the way I want. Here's the code I am using. <br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">float sensitivity; &#47;&#47; sensitivity is a percentage of pixels changed <br> boolean newFrame; &#47;&#47; switch var for determining when a new frame is received <br> color&#91;&#93; prevFrame; &#47;&#47; vars for holding the current and previous frames <br> &nbsp;<br> void setup&#40;&#41;{ <br> &nbsp; &nbsp;size&#40;320,240&#41;; <br> &nbsp; &nbsp;sensitivity=0&#46;24; <br> &nbsp; &nbsp;newFrame=false; <br> &nbsp; &nbsp;stroke&#40;240&#41;; <br> &nbsp; &nbsp;noFill&#40;&#41;;; <br> &nbsp; &nbsp;prevFrame=new color&#91;320*240&#93;; <br> &nbsp; &nbsp;beginVideo&#40;320,240,30&#41;; <br> &nbsp; &nbsp;framerate&#40;30&#41;; <br> } <br> &nbsp;<br> public void videoEvent&#40;&#41;{ <br> &nbsp; &nbsp;newFrame=true; <br> } <br> &nbsp;<br> void loop&#40;&#41;{ <br> &nbsp; &nbsp;if&#40;newFrame&#41;{ <br> &nbsp; &nbsp; &nbsp;newFrame=false; <br> &nbsp; &nbsp; &nbsp;image&#40;video,0,0&#41;; &#47;&#47; update display with current frame <br> &nbsp; &nbsp; &nbsp;for&#40;int y=0; y&lt;30&#45;1; y++&#41;{ &#47;&#47; loop through video in 40x30 grid <br> &nbsp; for&#40;int x=0; x&lt;40&#45;1; x++&#41;{ <br> &nbsp; &nbsp; &#47;&#47; println&#40;mtc++&#41;; <br> &nbsp; &nbsp; int cxLoc=x*&#40;320&#47;40&#41;; &#47;&#47; x position on grid <br> &nbsp; &nbsp; int cyLoc=y*&#40;240&#47;30&#41;; &#47;&#47; y position on grid <br> &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; if&#40;motionTest&#40;cxLoc,cyLoc,width&#47;40,width&#47;30&#41;==true&#41;{ <br> &nbsp; &nbsp; &nbsp; rect&#40;cxLoc+4,cyLoc+4,&#40;width&#47;40&#41;&#45;2,&#40;width&#47;30&#41;&#45;2&#41;; &#47;&#47;indicate motion <br> &nbsp; &nbsp; } <br> &nbsp; } <br> &nbsp; &nbsp; &nbsp;} <br> &nbsp; &nbsp;} <br> } <br> &nbsp;<br> boolean motionTest&#40;int srcX,int srcY,int tw, int th&#41;{ <br> &nbsp; &nbsp;int dc=0; &#47;&#47; counter to track number of differences <br> &nbsp; &nbsp;color newPixel; &nbsp;<br> &nbsp; &nbsp;for&#40;int y=0;y&lt;th;y++&#41;{ <br> &nbsp; &nbsp; &nbsp;for&#40;int x=0;x&lt;tw;x++&#41;{ <br> &nbsp; int srcPos=&#40;&#40;srcY+y&#41;*width&#41;+&#40;srcX+x&#41;; <br> &nbsp; newPixel = video&#46;pixels&#91;srcPos&#93;; <br> &nbsp; &nbsp;if&#40;abs&#40;red&#40;newPixel&#41;&#45;red&#40;prevFrame&#91;srcPos&#93;&#41;&#41;&gt;25&#41; dc++; <br> &nbsp; prevFrame&#91;srcPos&#93;=newPixel; &#47;&#47; update prevFrame w&#47; current pixel clr <br> &nbsp; &nbsp; &nbsp;} <br> &nbsp; &nbsp;} <br> &nbsp; &nbsp;&#47;&#47; test to see if number of difference is 'significant' <br> &nbsp; &nbsp;if&#40;dc&gt;&#40;sensitivity*&#40;tw*th&#41;&#41;&#41;{ &nbsp;<br> &nbsp; &nbsp; &nbsp;return true; <br> &nbsp; &nbsp;}else{ <br> &nbsp; &nbsp; &nbsp;return false; <br> &nbsp; &nbsp;} <br> } </font></td></tr></table></td></tr></table> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">gmail.com w/ sspboyd username
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_VideoCamera_action_display_num_1094615611.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option value="?board=Programs">&nbsp; - Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option selected value="?board=VideoCamera">=> Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_VideoCamera_action_display_num_1087225818.html">Previous topic</a> | <a href="board_VideoCamera_action_display_num_1092851243.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

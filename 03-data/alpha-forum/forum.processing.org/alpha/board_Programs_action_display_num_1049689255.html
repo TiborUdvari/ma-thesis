@@ -1,0 +1,656 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - PuSHpopTransform</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Programs_action_display_num_1049689255.html#help" class="nav">Programming Questions & Help
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Programs.html" class="nav">Programs</a> </b>(Moderators: fry, REAS)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    PuSHpopTransform</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_Programs_action_display_num_1052856807.html">Previous topic</a> | <a href="board_Programs_action_display_num_1051486163.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/thread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: PuSHpopTransform</b> &nbsp;(Read 428 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>skloopy</b><br><BR>
+     <a href="http://elfman.vendetta.com/ryan" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>PuSHpopTransform</b><BR>
+                &#171; <B> on:</B> Apr 7<sup>th</sup>, 2003, 6:20am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Hi thanks for the help on the other questions. Here's another :^P. This works fine until i uncomment the push() pop() and transform() commands in the smile() method. <br> &nbsp;<br> It seems like as soon as i start using one of those it messes up the beginShape(XXX) type commands from then on. Any ideas?? <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">int frame; <br> float prmouseX, prmouseY; <br> &nbsp;<br> FlowDistort fd; <br> &nbsp;<br> color cColor; <br> &nbsp;<br> void setup&#40;&#41; { <br> &nbsp; size&#40;300, 250&#41;; <br> &nbsp; &nbsp;<br> &nbsp; fd = new FlowDistort&#40;width, height, 6, 6&#41;; <br> &nbsp; cColor = color&#40;255,0,0&#41;; <br> &nbsp; &nbsp;<br> &nbsp; prmouseX = mouseX; <br> &nbsp; prmouseY = mouseY; <br> &nbsp; &nbsp;<br> &nbsp; noBackground&#40;&#41;; <br> &nbsp; hint&#40;SMOOTH_IMAGES&#41;; <br> &nbsp; ellipseMode&#40;CENTER_DIAMETER&#41;; <br> } <br> &nbsp;<br> void loop&#40;&#41; { <br> &nbsp; cColor = color&#40;red&#40;cColor&#41;+random&#40;&#45;50,50&#41;, &nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp;green&#40;cColor&#41;+random&#40;&#45;50,50&#41;, &nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp;blue&#40;cColor&#41;+random&#40;&#45;50,50&#41;&#41;; <br> &nbsp; fill&#40;cColor&#41;; <br> &nbsp; stroke&#40;cColor&#41;; <br> &nbsp; &nbsp;<br> &nbsp; smooth&#40;&#41;; <br> &nbsp; strokeWidth&#40;5&#41;; <br> &nbsp; line&#40;mouseX,mouseY,prmouseX,prmouseY&#41;; <br> &nbsp; strokeWidth&#40;1&#41;; <br> &nbsp; noStroke&#40;&#41;; <br> &nbsp; ellipse&#40;mouseX, mouseY, 10,10&#41;; <br> &nbsp; ellipse&#40;prmouseX, prmouseY, 10,10&#41;; <br> &nbsp; noSmooth&#40;&#41;; <br> &nbsp; &nbsp;<br> &nbsp; prmouseX = mouseX; <br> &nbsp; prmouseY = mouseY; <br> &nbsp; &nbsp;<br> &nbsp; &#47;&#47;if &#40;&#40;int&#41;random&#40;10&#41; == 0&#41; { <br> &nbsp; &nbsp; noFill&#40;&#41;; <br> &nbsp; &nbsp; stroke&#40;255,0,0&#41;; <br> &nbsp; &nbsp; &#47;&#47;strokeWidth&#40;2&#41;; <br> &nbsp; &nbsp; &#47;&#47;smooth&#40;&#41;; <br> &nbsp; &nbsp; smile&#40;random&#40;width&#41;, random&#40;height&#41;, random&#40;TWO_PI&#41;&#41;; <br> &nbsp; &nbsp; &#47;&#47;noSmooth&#40;&#41;; <br> &nbsp; &nbsp; &#47;&#47;strokeWidth&#40;1&#41;; <br> &nbsp; &#47;&#47;} <br> &nbsp; &nbsp;<br> &nbsp; noStroke&#40;&#41;; <br> &nbsp; fill&#40;255,255,255,200&#41;; <br> &nbsp; fd&#46;update&#40;pixels&#41;; <br> &nbsp; fd&#46;concentrate&#40;mouseX, mouseY, &#46;5f&#41;; <br> &nbsp; fd&#46;avgVec&#40;&#41;; <br> &nbsp; fd&#46;avgVec&#40;&#41;; <br> &nbsp; fd&#46;avgVec&#40;&#41;; <br> &nbsp; fd&#46;avgVec&#40;&#41;; <br> &nbsp; fd&#46;avgVec&#40;&#41;; <br> &nbsp; fd&#46;draw&#40;&#41;; <br> &nbsp; &nbsp;<br> &nbsp; stroke&#40;255,0,0&#41;; <br> &nbsp; &#47;&#47;fd&#46;drawVec&#40;&#41;; <br> &nbsp; &#47;&#47;fill&#40;255,255,255,50&#41;; <br> &nbsp; &#47;&#47;image&#40;fd&#46;in, 0,0&#41;; <br> &nbsp; &nbsp;<br> &nbsp; frame++; <br> } <br> &nbsp;<br> void smile&#40;float x, float y, float r&#41; <br> { <br> &nbsp; &#47;&#47;push&#40;&#41;; &nbsp; &nbsp; &#47;&#47; Uncomment <br> &nbsp; &#47;&#47;translate&#40;x,y&#41;; &nbsp;&#47;&#47; Uncomment <br> &nbsp; &#47;&#47;rotate&#40;r&#41;; &nbsp;&#47;&#47; Uncomment <br> &nbsp; &nbsp;<br> &nbsp; &#47;&#47; Face <br> &nbsp; beginShape&#40;LINE_LOOP&#41;; <br> &nbsp; for&#40;int i=0; i&lt;24; i++&#41; { <br> &nbsp; &nbsp; push&#40;&#41;; <br> &nbsp; &nbsp; rotateY&#40;&#40;TWO_PI &#47; 24&#41; * i&#41;; <br> &nbsp; &nbsp; vertex&#40;objectX&#40;50,0,0&#41;,objectY&#40;50,0,0&#41;&#41;; <br> &nbsp; &nbsp; pop&#40;&#41;; <br> &nbsp; } <br> &nbsp; endShape&#40;&#41;; <br> &nbsp;<br> &nbsp; &#47;&#47; Normal Eyes <br> &nbsp; line&#40;&#45;20,&#45;25,&#45;20,&#45;5&#41;; <br> &nbsp; line&#40;20,&#45;25,20,&#45;5&#41;; <br> &nbsp;<br> &nbsp; &#47;&#47; Mouth <br> &nbsp; bezier&#40;&#45;35,5,&#45;30,45,30,45,35,5&#41;; <br> &nbsp; &nbsp;<br> &nbsp; &#47;&#47;pop&#40;&#41;; &nbsp;&#47;&#47; Uncomment <br> } <br> &nbsp;<br> &#47;&#47; <br> &#47;&#47; Class FlowDistort <br> &#47;&#47; <br> class FlowDistort <br> { <br> &nbsp; int width, height, nU, nV; <br> &nbsp; float uWidth, vHeight; <br> &nbsp; float vX&#91;&#93;, vY&#91;&#93;; &#47;&#47; Flow X and Y Vectors <br> &nbsp; int nVecs; <br> &nbsp; &nbsp;<br> &nbsp; BImage in; <br> &nbsp; &nbsp;<br> &nbsp; FlowDistort&#40;int w, int h, int nU, int nV&#41; { <br> &nbsp; &nbsp; width = w; height = h; <br> &nbsp; &nbsp; this&#46;nU = nU; this&#46;nV = nV; <br> &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; nVecs = nU * nV; <br> &nbsp; &nbsp; vX = new int&#91;nVecs&#93;; <br> &nbsp; &nbsp; vY = new int&#91;nVecs&#93;; <br> &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; uWidth = &#40;float&#41;w &#47; &#40;nU&#45;1&#41;; <br> &nbsp; &nbsp; vHeight = &#40;float&#41;h &#47; &#40;nV&#45;1&#41;; <br> &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; in = new BImage&#40;new int&#91;width*height&#93;, width, height, RGB&#41;; <br> &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; &#47;*for&#40;int i=0; i &lt; nVecs; i++&#41; { <br> &nbsp;vX&#91;i&#93; = random&#40;&#45;2,2&#41;; <br> &nbsp;vY&#91;i&#93; = random&#40;&#45;2,2&#41;; <br> &nbsp; &nbsp; }*&#47; <br> &nbsp; } <br> &nbsp; &nbsp;<br> &nbsp; void update&#40;color pix&#91;&#93;&#41; { <br> &nbsp; &nbsp; System&#46;arraycopy&#40;pix,0,in&#46;pixels,0,width*height&#41;; <br> &nbsp; } <br> &nbsp; &nbsp;<br> &nbsp; void draw&#40;&#41; { <br> &nbsp; &nbsp; int nVMinusOne = nV &#45; 1; <br> &nbsp; &nbsp; int vIndex; <br> &nbsp; &nbsp; float xBase, yBase; <br> &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; for&#40;int j=0; j &lt; nVMinusOne; j++&#41; { <br> &nbsp;beginShape&#40;QUAD_STRIP&#41;; <br> &nbsp;textureImage&#40;in&#41;; <br> &nbsp;for&#40;int i=0; i &lt; nU; i++&#41; { <br> &nbsp; &nbsp;vIndex = j * nU + i; <br> &nbsp; &nbsp;xBase = uWidth * i; <br> &nbsp; &nbsp;yBase = vHeight * j; <br> &nbsp; &nbsp;if &#40;i % 2 == 0&#41; { <br> &nbsp; &nbsp; &nbsp;vertexTexture&#40;xBase, yBase&#41;; <br> &nbsp; &nbsp; &nbsp;vertex&#40;xBase + vX&#91;vIndex&#93;, yBase + vY&#91;vIndex&#93;&#41;; <br> &nbsp; &nbsp; &nbsp;vertexTexture&#40;xBase, yBase + vHeight&#41;; <br> &nbsp; &nbsp; &nbsp;vertex&#40;xBase + vX&#91;vIndex + nU&#93;, yBase + vHeight + vY&#91;vIndex + nU&#93;&#41;; <br> &nbsp; &nbsp;} else { <br> &nbsp; &nbsp; &nbsp;vertexTexture&#40;xBase, yBase + vHeight&#41;; <br> &nbsp; &nbsp; &nbsp;vertex&#40;xBase + vX&#91;vIndex + nU&#93;, yBase + vHeight + vY&#91;vIndex + nU&#93;&#41;; <br> &nbsp; &nbsp; &nbsp;vertexTexture&#40;xBase, yBase&#41;; <br> &nbsp; &nbsp; &nbsp;vertex&#40;xBase + vX&#91;vIndex&#93;, yBase + vY&#91;vIndex&#93;&#41;; <br> &nbsp; &nbsp;} <br> &nbsp;} <br> &nbsp;endShape&#40;&#41;; <br> &nbsp; &nbsp; } <br> &nbsp; } <br> &nbsp; &nbsp;<br> &nbsp; void drawVec&#40;&#41; { <br> &nbsp; &nbsp; int vIndex; <br> &nbsp; &nbsp; for&#40;int j=0; j &lt; nV; j++&#41; { <br> &nbsp;for&#40;int i=0; i &lt; nU; i++&#41; { <br> &nbsp; &nbsp;vIndex = j * nU + i; <br> &nbsp; &nbsp;line&#40;uWidth * i, vHeight * j, uWidth * i + vX&#91;vIndex&#93;, vHeight * j + vY&#91;vIndex&#93;&#41;; <br> &nbsp;} <br> &nbsp; &nbsp; } <br> &nbsp; } <br> &nbsp; &nbsp;<br> &nbsp; void avgVec&#40;&#41; { <br> &nbsp; &nbsp; int vIndex; <br> &nbsp; &nbsp; float xSum, ySum; <br> &nbsp; &nbsp; for&#40;int j=0; j &lt; nV; j++&#41; { <br> &nbsp;for&#40;int i=0; i &lt; nU; i++&#41; { <br> &nbsp; &nbsp;vIndex = j * nU + i; <br> &nbsp; &nbsp;xSum = vX&#91;vIndex&#93;; ySum = vY&#91;vIndex&#93;; <br> &nbsp; &nbsp; <br> &nbsp; &nbsp;if &#40;i &#33;= 0&#41; { <br> &nbsp; &nbsp; &nbsp;xSum += vX&#91;vIndex&#45;1&#93;; <br> &nbsp; &nbsp; &nbsp;ySum += vY&#91;vIndex&#45;1&#93;; <br> &nbsp; &nbsp;} <br> &nbsp; &nbsp;if &#40;i &#33;= nU&#45;1&#41; { <br> &nbsp; &nbsp; &nbsp;xSum += vX&#91;vIndex+1&#93;; <br> &nbsp; &nbsp; &nbsp;ySum += vY&#91;vIndex+1&#93;; <br> &nbsp; &nbsp;} <br> &nbsp; &nbsp;if &#40;j &#33;= 0&#41; { <br> &nbsp; &nbsp; &nbsp;xSum += vX&#91;vIndex&#45;nU&#93;; <br> &nbsp; &nbsp; &nbsp;ySum += vY&#91;vIndex&#45;nU&#93;; <br> &nbsp; &nbsp;} <br> &nbsp; &nbsp;if &#40;j &#33;= nV&#45;1&#41; { <br> &nbsp; &nbsp; &nbsp;xSum += vX&#91;vIndex+nU&#93;; <br> &nbsp; &nbsp; &nbsp;ySum += vY&#91;vIndex+nU&#93;; <br> &nbsp; &nbsp;} <br> &nbsp; &nbsp; <br> &nbsp; &nbsp;vX&#91;vIndex&#93; = xSum &#47; 5&#46;0f; <br> &nbsp; &nbsp;vY&#91;vIndex&#93; = ySum &#47; 5&#46;0f; <br> &nbsp;} <br> &nbsp; &nbsp; } <br> &nbsp; } <br> &nbsp; &nbsp;<br> &nbsp; void concentrate&#40;float x, float y, float strength&#41; { <br> &nbsp; &nbsp; int vIndex; <br> &nbsp; &nbsp; for&#40;int j=0; j &lt; nV; j++&#41; { <br> &nbsp;for&#40;int i=0; i &lt; nU; i++&#41; { <br> &nbsp; &nbsp;vIndex = j * nU + i; <br> &nbsp; &nbsp;vX&#91;vIndex&#93; = &#40;i*uWidth &#45; x&#41; * strength; <br> &nbsp; &nbsp;vY&#91;vIndex&#93; = &#40;j*vHeight &#45; y&#41; * strength; <br> &nbsp;} <br> &nbsp; &nbsp; } <br> &nbsp; } <br> } </font></td></tr></table></td></tr></table> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Martin</b><br><BR><a href="board_Programs_action_icqpager_UIN_122417302.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=122417302&img=5" alt="122417302" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=122417302" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="122417302" BORDER=0></a><a href="http://edit.yahoo.com/config/send_webmesg.target=martingomez_lists" target="_blank"><img src="public_html/YaBBImages/yim.gif" alt="martingomez_lists" border="0"></a><img SRC="http://opi.yahoo.com/online?u=martingomez_lists&m=g&t=0" BORDER=0 alt=""><a href="aim:goim?screenname=mg1ph&message=Hi.+Are+you+there"><img src="public_html/YaBBImages/aim.gif" alt="mg1ph" border="0"></a>
+             <a href="http://decode.ateneo.edu/martin/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: PuSHpopTransform</b><BR>
+                &#171; <B>Reply #1 on:</B> Apr 7<sup>th</sup>, 2003, 7:39am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            what version of p5 are u using? can't seem to run it on 0052 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>skloopy</b><br><BR>
+     <a href="http://elfman.vendetta.com/ryan" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: PuSHpopTransform</b><BR>
+                &#171; <B>Reply #2 on:</B> Apr 7<sup>th</sup>, 2003, 9:14am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I'm using 52. That's strange. I was going to post it on my site so you could take a look, but it errors as an applet. <br> &nbsp;<br> See if it works of your computer: <br> <a href="http://elfman.vendetta.com/ryan/flowtest/" target="_blank">http://elfman.vendetta.com/ryan/flowtest/</a> <br> &nbsp;<br> The code is here: <br> <a href="http://elfman.vendetta.com/ryan/flowtest/flowImage.pde" target="_blank">http://elfman.vendetta.com/ryan/flowtest/flowImage.pde</a> <br> &nbsp;<br> Maybe there was a problem with the code I posted, so maybe this code will work. I'm Using p52 on OS9 just so you know. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>skloopy</b><br><BR>
+     <a href="http://elfman.vendetta.com/ryan" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: PuSHpopTransform</b><BR>
+                &#171; <B>Reply #3 on:</B> Apr 7<sup>th</sup>, 2003, 9:49am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Okay I made a change to the applet so is should work now. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>benelek</b><br><BR><a href="board_Programs_action_icqpager_UIN_3516098.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=3516098&img=5" alt="3516098" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=3516098" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="3516098" BORDER=0></a>
+             <a href="http://www.benelek.cjb.net" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: PuSHpopTransform</b><BR>
+                &#171; <B>Reply #4 on:</B> Apr 8<sup>th</sup>, 2003, 12:18am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            whoa... 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="5"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>skloopy</b><br><BR>
+     <a href="http://elfman.vendetta.com/ryan" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: PuSHpopTransform</b><BR>
+                &#171; <B>Reply #5 on:</B> Apr 17<sup>th</sup>, 2003, 11:04am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Hmm I tried this problem in p54 with the same result. I'm running into this problem with switching 2d/3d coorinate systems in other places (I think that's what it is) so it'd be really helpful if someone knew what's doing this.. I can simplify the code if this is too much to look at. <br> &nbsp;<br> thank u 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="6"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>fry</b><br><i></i><BR><BR>
+     <a href="http://acg.media.mit.edu/people/fry/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: PuSHpopTransform</b><BR>
+                &#171; <B>Reply #6 on:</B> May 1<sup>st</sup>, 2003, 4:47pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            yeah, if you can get it down to a shorter example, that would help (at least for me). &nbsp;<br> &nbsp;<br> i think there are two things that could be happening. first would be that you're just getting unexpected results from lack of familiarity with the transforms; the other would be that the graphics engine is messing with you. &nbsp;<br> &nbsp;<br> another thing to do would be to add a line saying &quot;g.dimensions = 3&quot; to see if that makes the weirdness show up (try both with/without those parts commented out) that will turn off the optimizations that are sometimes used internally if things aren't fully 3D. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="7"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>skloopy</b><br><BR>
+     <a href="http://elfman.vendetta.com/ryan" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: PuSHpopTransform</b><BR>
+                &#171; <B>Reply #7 on:</B> May 3<sup>rd</sup>, 2003, 8:22pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Here's a simpler version. I just figured it out. In the first example it was because I was using rotateY() instead of rotate() and it was somehow getting carried over despite the pop() call. <br> &nbsp;<br> This works for just drawing the smile. I've just been rotating and using objectX and Y to make the circle (It was supposed to be deformable) but maybe there is a better way? <br> &nbsp;<br> Anyways, it's another broblem you can chalk up to good ol' user error! <br> &nbsp;<br> ryan <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">void setup&#40;&#41; { <br> &nbsp; size&#40;200, 200&#41;; <br> &nbsp; ellipseMode&#40;CENTER_DIAMETER&#41;; <br> } <br> &nbsp;<br> void loop&#40;&#41; { <br> &nbsp; noFill&#40;&#41;; <br> &nbsp; smile&#40;mouseX, mouseY, 0&#41;; <br> } <br> &nbsp;<br> void smile&#40;float x, float y, float r&#41; <br> { <br> &nbsp; push&#40;&#41;; &nbsp; &nbsp; &#47;&#47; Uncomment <br> &nbsp; translate&#40;x,y&#41;; &nbsp;&#47;&#47; Uncomment <br> &nbsp; rotate&#40;r&#41;; &nbsp;&#47;&#47; Uncomment <br> &nbsp;<br> &nbsp; &#47;&#47; Face <br> &nbsp; beginShape&#40;LINE_LOOP&#41;; <br> &nbsp; push&#40;&#41;; <br> &nbsp; for&#40;int i=0; i&lt;24; i++&#41; { <br> &nbsp; &nbsp; rotate&#40;TWO_PI &#47; 24&#41;; <br> &nbsp; &nbsp; vertex&#40;objectX&#40;50,0,0&#41;&#45;x,objectY&#40;50,0,0&#41;&#45;y&#41;; <br> &nbsp; } <br> &nbsp; pop&#40;&#41;; <br> &nbsp; endShape&#40;&#41;; <br> &nbsp;<br> &nbsp; &#47;&#47; Normal Eyes <br> &nbsp; line&#40;&#45;20,&#45;25,&#45;20,&#45;5&#41;; <br> &nbsp; line&#40;20,&#45;25,20,&#45;5&#41;; <br> &nbsp;<br> &nbsp; &#47;&#47; Mouth <br> &nbsp; bezier&#40;&#45;35,5,&#45;30,45,30,45,35,5&#41;; <br> &nbsp;<br> &nbsp; pop&#40;&#41;; &nbsp;&#47;&#47; Uncomment <br> } </font></td></tr></table></td></tr></table> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_Programs_action_display_num_1049689255.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option selected value="?board=Programs">=> Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_Programs_action_display_num_1052856807.html">Previous topic</a> | <a href="board_Programs_action_display_num_1051486163.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

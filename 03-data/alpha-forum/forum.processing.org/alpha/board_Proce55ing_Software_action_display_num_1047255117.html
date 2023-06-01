@@ -1,0 +1,941 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - questions about objects, classes, OOP</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Proce55ing_Software_action_display_num_1047255117.html#Suggestions" class="nav">Suggestions
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Proce55ing_Software.html" class="nav">Software Suggestions</a> </b>(Moderator: fry)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    questions about objects, classes, OOP</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_Proce55ing_Software_action_display_num_1047338570.html">Previous topic</a> | <a href="board_Proce55ing_Software_action_display_num_1045677760.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/thread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: questions about objects, classes, OOP</b> &nbsp;(Read 671 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>adrien</b><br><BR>
+     <a href="http://www.boring.ch" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>questions about objects, classes, OOP</b><BR>
+                &#171; <B> on:</B> Mar 6<sup>th</sup>, 2003, 10:40pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            <pre> <br> // &nbsp;a very basic Object script <br> &nbsp;<br> // &nbsp;can it be any shorter? <br> // &nbsp;adrien@boring.ch <br> &nbsp;<br> // &nbsp;sections and lines numbered for later refernce in comments. <br> &nbsp;<br> &nbsp; // 1 <br> myBallClass foo = new myBallClass(4, 8, 16); <br> myBallClass bar = new myBallClass(8, 16, 32); <br> myBallClass bla = new myBallClass(16, 32, 64); <br> &nbsp;<br> &nbsp;<br> &nbsp; // 2 <br> void setup() <br> { <br> &nbsp; size(100, 100); <br> } <br> &nbsp;<br> &nbsp; // 3 <br> void loop() <br> { <br> &nbsp; foo.drawBall(); &nbsp;// 3.1 <br> &nbsp; bar.drawBall(); <br> &nbsp; bla.drawBall(); <br> } <br> &nbsp;<br> &nbsp; // 4 <br> class myBallClass &nbsp;// 4.0.0 <br> { <br> &nbsp; int theBallX; &nbsp; &nbsp;// 4.0.1 <br> &nbsp; float theBallY; <br> &nbsp; float theBallDiam; <br> &nbsp;<br> &nbsp; &nbsp; // 4.1 <br> &nbsp; myBallClass(int ballX, int ballY, int ballDiam) { &nbsp;//4.1.0 <br> &nbsp; &nbsp; theBallX = ballX; &nbsp;// 4.1.1 <br> &nbsp; &nbsp; theBallY = ballY; <br> &nbsp; &nbsp; theBallDiam = ballDiam; <br> &nbsp; } <br> &nbsp;<br> &nbsp; &nbsp; // 4.2 <br> &nbsp; void drawBall() { &nbsp;//4.2.0 <br> &nbsp; &nbsp; ellipse(theBallX, theBallY, theBallDiam, theBallDiam); &nbsp;//4.2.1 <br> &nbsp; } <br> &nbsp; &nbsp;<br> } <br> &nbsp;<br> &nbsp;<br> /* <br> &nbsp;So I really want to understand OOP in P5. <br> &nbsp; <br> &nbsp;especially section 4.1 <br> &nbsp;<br> &nbsp;My background is in ActionScript (AS) with Flash, which is heavily <br> &nbsp;object oriented no matter what you do, although I still tend to shy <br> &nbsp;away from 'real' OOP in AS (like making classes and stuff), as I still <br> &nbsp;am not confortable using OOP there, although it all makes sense, it <br> &nbsp;still doesn't all make sense ... in that weird OOP way. <br> &nbsp;<br> &nbsp;And I really want my students to undertstand OOP in P5, which is <br> &nbsp;why I'm asking for feedback here to make sure I'm telling them the <br> &nbsp;good info and not my own shaky 'understanding' <br> &nbsp;<br> &nbsp;<br> 1 Creating instances of an object. Clear enough. But why do I repeat the &nbsp;<br> &nbsp;class name twice (once before the instance name, once after the 'new')? <br> &nbsp;Is it like declaring a data type for a variable? If so, why isn't it &nbsp;<br> &nbsp;an 'instance' data type? Or a void? <br> &nbsp;<br> &nbsp;<br> 2 no questions. <br> &nbsp;<br> &nbsp;<br> 3 Calling the drawBall method of the instances. <br> &nbsp;<br> &nbsp;digression(){ <br> &nbsp; In the example on the P5 web site, this function is called just <br> &nbsp; 'draw()', but this turns out to be a mysterious third structure section <br> &nbsp; like setup() and loop(), and so I was cautious about using and identifier <br> &nbsp; which might be 'reserved'. should I be? <br> &nbsp;<br> &nbsp; Is there a way that objects can take care of doing this themselves? <br> &nbsp; Could an object have it's own internal 'void loop()' function that will &nbsp;<br> &nbsp; take care of drawing itself, or somehow respond to the main 'void loop()' &nbsp;<br> &nbsp; like a MovieClip in AS can have an onClipEvent(enterFrame) handler? <br> &nbsp;<br> &nbsp; subDigression(){ <br> &nbsp; &nbsp;Why doesn't P5 have handlers?; <br> &nbsp; } <br> &nbsp;} <br> &nbsp; <br> &nbsp;<br> 4 here's where I get unclear <br> &nbsp;<br> 4.0.0 making a class, OK <br> &nbsp;<br> 4.0.1 the variables for the class. OK. My ball as an X and Y and a diameter. <br> &nbsp;<br> &nbsp;<br> 4.1 WTF? what does this block of code do? why do I have an extra <br> &nbsp;set of variables? I don't understand. To me it seems like my object <br> &nbsp;could function without it, but that's not the case. This is the part <br> &nbsp;which really bothers me, and I really need to understand what this <br> &nbsp;does and why. Scream(), Shout(), Curse()! <br> &nbsp;<br> 4.2 Yeah, OK, a ball has methods, and drawing itself is one of them. <br> &nbsp;<br> &nbsp;If I want the ball to move, I might make an updatePosition() method, <br> &nbsp;and then place the a call to the updatePosition() method and drawBall() <br> &nbsp;method in a general doTheBallThing() method which is called in void loop(). <br> &nbsp;<br> &nbsp;See the digression in my comments on section 3. <br> &nbsp;<br> &nbsp;<br> thanks for reading. &nbsp;*/ <br> </pre> <br> &nbsp;<br> I'm posting this here in 'syntax' rather than in 'programs' because this program is just an example to illustrate my questions... 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Mar 6<sup>th</sup>, 2003, 10:46pm by adrien</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">Signature: Signatures are displayed at the bottom of each post...
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>adrien</b><br><BR>
+     <a href="http://www.boring.ch" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>handlers</b><BR>
+                &#171; <B>Reply #1 on:</B> Mar 6<sup>th</sup>, 2003, 10:42pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            my bad, P5 does have handlers, like for the keyboard and mouse. duh. sorry. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">Signature: Signatures are displayed at the bottom of each post...
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>adrien</b><br><BR>
+     <a href="http://www.boring.ch" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: questions about objects, classes, OOP</b><BR>
+                &#171; <B>Reply #2 on:</B> Mar 8<sup>th</sup>, 2003, 3:40pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            OK, i'll enlarge my question: <br> &nbsp;<br> Would it be useful for beginners to have a really easy class creation system? <br> &nbsp;<br> would it technically be possible in P5? <br> &nbsp;<br> an example code: <br> &nbsp;<br> &nbsp;<br> <pre> <br> void setup() <br> { <br> &nbsp;object fooBar = new baHumbug(4, 8, 16); <br> } <br> &nbsp;<br> &nbsp;<br> void loop() <br> { <br> &nbsp;//standard... <br> } <br> &nbsp;<br> &nbsp;<br> class baHumbug(int bla, float bork, int asdf){ <br> &nbsp;<br> &nbsp;void setup(){ <br> &nbsp; //code which executes at the 'birth' of an object <br> &nbsp;} <br> &nbsp; <br> &nbsp;void loop(){ <br> &nbsp; //code which executes all the time like the main loop(); <br> &nbsp; doHumbug(); <br> &nbsp;} <br> &nbsp;<br> &nbsp; void doHumbug() { <br> &nbsp; &nbsp;rect(bla, bork, asdf, asdf); <br> &nbsp; &nbsp;bla += 1; <br> &nbsp; } <br> } <br> </pre> <br> &nbsp;<br> &nbsp;<br> so, the main program has three sections, setup(), loop(), and a class. <br> &nbsp;<br> the main setup() and loop() are, of course, identical to what we know already. <br> &nbsp;<br> in the main setup(), i have created an instance of my byHumbug object. note that the syntax is <br> &nbsp;<br> <pre>object instancename = new classname(parameters)</pre> <br> &nbsp;<br> or this could also look like: <br> &nbsp;<br> <pre>instancename = new classname(parameters)</pre> <br> or <br> <pre>object instancename = classname(parameters)</pre> <br> &nbsp;<br> &nbsp;<br> &nbsp;<br> in the class section, the declaration is followed by parenthesis, which declare the variables that this class will have. <br> &nbsp;<br> then, inside the class, it has a similar structure to a standard proce55ing program, with it's own setup() and loop(), as well as any other functions. <br> &nbsp;<br> advantages: well, it will be 10000000% easier to explain this to my students that what I have in the previous comment!!! <br> &nbsp;<br> it's quick and dirty and easy. a lot less code, less chance of errors, easier to debug, etc. <br> My students have enough trouble making sure all the semicolons and parentheses are correct in a 20 line program; making an object from memory will be impossible for them in the semester, as it is now. <br> &nbsp;<br> like many things in proce55ing, there is a simple way to do it, and there is a 'standard' java way of doing it, where the simply way can be used by beginners and non beginners who just want to make something fast, and geeks can always use the 'hard' way. <br> &nbsp;<br> just a thought. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">Signature: Signatures are displayed at the bottom of each post...
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Martin</b><br><BR><a href="board_Proce55ing_Software_action_icqpager_UIN_122417302.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=122417302&img=5" alt="122417302" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=122417302" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="122417302" BORDER=0></a><a href="http://edit.yahoo.com/config/send_webmesg.target=martingomez_lists" target="_blank"><img src="public_html/YaBBImages/yim.gif" alt="martingomez_lists" border="0"></a><img SRC="http://opi.yahoo.com/online?u=martingomez_lists&m=g&t=0" BORDER=0 alt=""><a href="aim:goim?screenname=mg1ph&message=Hi.+Are+you+there"><img src="public_html/YaBBImages/aim.gif" alt="mg1ph" border="0"></a>
+             <a href="http://decode.ateneo.edu/martin/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: questions about objects, classes, OOP</b><BR>
+                &#171; <B>Reply #3 on:</B> Mar 8<sup>th</sup>, 2003, 7:09pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            hi, re: your third post, you don't need setup() and loop() inside your user-defined object class. <img border=0 src="public_html/YaBBImages/smiley.gif"> you can refer to <a href="http://www.proce55ing.net/reference/data.html#Object" target="_blank">http://www.proce55ing.net/reference/data.html#Object</a> ... &nbsp;<br> &nbsp;<br> ... i mean, you can perhaps do another thing than call a setup() and a loop() inside that class. i'm not even sure if loop() will work. <br> &nbsp;<br> hmm... class Something() ... are actually inner classes. would it help you if you just made separate files such that they may visually see each class object? 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Mar 8<sup>th</sup>, 2003, 7:15pm by Martin</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Martin</b><br><BR><a href="board_Proce55ing_Software_action_icqpager_UIN_122417302.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=122417302&img=5" alt="122417302" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=122417302" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="122417302" BORDER=0></a><a href="http://edit.yahoo.com/config/send_webmesg.target=martingomez_lists" target="_blank"><img src="public_html/YaBBImages/yim.gif" alt="martingomez_lists" border="0"></a><img SRC="http://opi.yahoo.com/online?u=martingomez_lists&m=g&t=0" BORDER=0 alt=""><a href="aim:goim?screenname=mg1ph&message=Hi.+Are+you+there"><img src="public_html/YaBBImages/aim.gif" alt="mg1ph" border="0"></a>
+             <a href="http://decode.ateneo.edu/martin/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: questions about objects, classes, OOP</b><BR>
+                &#171; <B>Reply #4 on:</B> Mar 8<sup>th</sup>, 2003, 7:30pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            We have some nice slides to introduce OOP. You might want to use them. <br> &nbsp;<br> <a href="http://aegis.ateneo.net/cs21a/Objects.ppt" target="_blank">http://aegis.ateneo.net/cs21a/Objects.ppt</a> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="5"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Mike Davis</b><br><BR>
+     <a href="http://www.lightcycle.org" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: questions about objects, classes, OOP</b><BR>
+                &#171; <B>Reply #5 on:</B> Mar 8<sup>th</sup>, 2003, 9:40pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            1 <br> (See 4.1) <br> &nbsp;<br> 3 <br> There shouldn't be any problems using draw(), and I haven't had any. <br> &nbsp;<br> 4.1 <br> This is called the &quot;constructor&quot; of your class. &nbsp;It's the function that creates an instance of your object. &nbsp;This is the function you're calling in that second use of the class name in Q1. &nbsp;In your example code, you're using a constructor that accepts some arguments so that the instance can be initialized with some values. &nbsp;You can even have multiple constructors, if they accept differant arguments (this is true for any function). &nbsp;If you don't define a constructor for your class, the compiler automatically adds one during compilation that does nothing but create an instance. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="6"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>benelek</b><br><BR><a href="board_Proce55ing_Software_action_icqpager_UIN_3516098.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=3516098&img=5" alt="3516098" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=3516098" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="3516098" BORDER=0></a>
+             <a href="http://www.benelek.cjb.net" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: questions about objects, classes, OOP</b><BR>
+                &#171; <B>Reply #6 on:</B> Mar 9<sup>th</sup>, 2003, 12:42am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            <B>on Mar 8<sup>th</sup>, 2003, 3:40pm, <a href="board_Syntax_action_display_num_1046986819.html#2">adrien  wrote</a>:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td width="100%"><table cellpadding="2" cellspacing="0" class="quote" width="100%"><tr><td width="100%"><font face="Arial,Helvetica" class="quote" size="1">class baHumbug(int bla, float bork, int asdf){ <br> &nbsp;<br> &nbsp;     void setup(){ <br> &nbsp;           //code which executes at the 'birth' of an object <br> &nbsp;     } <br> &nbsp;      <br> &nbsp;     void loop(){ <br> &nbsp;           //code which executes all the time like the main loop(); <br> &nbsp;           doHumbug(); <br> &nbsp;     } <br> &nbsp;<br> &nbsp;      void doHumbug() { <br> &nbsp;            rect(bla, bork, asdf, asdf); <br> &nbsp;            bla += 1; <br> &nbsp;      } <br> } </font></td></tr></table></td></tr></table> <br> there's no problem with creating functions called loop(), etc for each of ur objects, but those functions will have nothing to do with the global methods of the same name. <br> &nbsp;<br> the problem (conceptually) with having sub-implementations of the loop() and/or setup() from within the class, lies in the area of threading... <br> &nbsp;<br> ie, if u have more than one of these objects running loop() at the same time, then how will you be telling java what order to do all the loop in which object should be treated first at each turn of the loop() <br> &nbsp;<br> for instance... <br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> &nbsp;<br> baHumbug moo1 = new baHumbug&#40;bla, bork, asdf&#41;; <br> baHumbug moo2 = new baHumbug&#40;bla, bork, asdf&#41;; <br> &nbsp;<br> &#47;&#47;now the program runs, and both objects are trying to run their individual loop&#40;&#41;&#46; which one goes first&#63; <br> &nbsp;<br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> -bnlk <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="7"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>adrien</b><br><BR>
+     <a href="http://www.boring.ch" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: questions about objects, classes, OOP</b><BR>
+                &#171; <B>Reply #7 on:</B> Mar 9<sup>th</sup>, 2003, 2:14pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            <B>on Mar 9<sup>th</sup>, 2003, 12:42am, <a href="board_Syntax_action_display_num_1046986819.html#6">benelek  wrote</a>:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td width="100%"><table cellpadding="2" cellspacing="0" class="quote" width="100%"><tr><td width="100%"><font face="Arial,Helvetica" class="quote" size="1"> <br> there's no problem with creating functions called loop(), etc for each of ur objects, but those functions will have nothing to do with the global methods of the same name. <br> &nbsp;<br> the problem (conceptually) with having sub-implementations of the loop() and/or setup() from within the class, lies in the area of threading... <br> &nbsp;<br> ie, if u have more than one of these objects running loop() at the same time, then how will you be telling java what order to do all the loop in which object should be treated first at each turn of the loop() <br> &nbsp;<br> for instance... <br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> &nbsp;<br> baHumbug moo1 = new baHumbug&#40;bla, bork, asdf&#41;; <br> baHumbug moo2 = new baHumbug&#40;bla, bork, asdf&#41;; <br> &nbsp;<br> &#47;&#47;now the program runs, and both objects are trying to run their individual loop&#40;&#41;&#46; which one goes first&#63; <br> &nbsp;<br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> -bnlk <br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> yeah, threading would logically have to be addressed. <br> &nbsp;<br> in ActionScript (not that P5 should be AS, but just to show an example) a Movie Clip, which is pretty much an object as one would think of it in OOP, can have it's own onClipEvent(load) and onCLipEvent(enterFrame) handerls. The (load) event is when the MC first 'appears' in animation, and the (entreFrame) happens at the interval of the main 'clock' of the animation. <br> &nbsp;<br> It works, somehow. Ask Gary Grossman! Actually, I think I might research the quesion, now that you bring it up, i never gave it much thought (ah, the disadvantage of having everything taken care of for you!) &nbsp;<br> &nbsp;<br> In any case, I think threading issues can be solved somehow, and (at least for my students) it might be worth the while to have a 'simple' object system in P5. <br> &nbsp;<br> I'm starting to get a better grasp of the structure of an object in P5, thanks for your help, all. <br> &nbsp;<br> I'm wondering what Fry and Reas (and the other folks working on P5) think of my proposal for a simple OOP in P5. just to be precise: <br> &nbsp;<br> <i>1. simplified and thin syntax for creating objects <br> &nbsp;<br> 2. objects (can) have an internal setup() and loop() do do their thing witout having to be told to by the main loop()</i> <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">Signature: Signatures are displayed at the bottom of each post...
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="8"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>fry</b><br><i></i><BR><BR>
+     <a href="http://acg.media.mit.edu/people/fry/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: questions about objects, classes, OOP</b><BR>
+                &#171; <B>Reply #8 on:</B> Mar 10<sup>th</sup>, 2003, 1:10am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            it's possible to make threaded objects by having your class implement &quot;Runnable&quot;, meaning that it has a method called run() inside, which is run as a thread. (this is just regular java syntax) <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">class LittleThing implements Runnable { <br> &nbsp; Thread thread; <br> &nbsp;<br> &nbsp; public LittleThing&#40;&#41; { <br> &nbsp; &nbsp; thread = new Thread&#40;this&#41;; <br> &nbsp; &nbsp; thread&#46;start&#40;&#41;; <br> &nbsp; } <br> &nbsp;<br> &nbsp; public void run&#40;&#41; { <br> &nbsp; &nbsp; while &#40;Thread&#46;currentThread&#40;&#41; == thread&#41; { <br> &nbsp; &#47;&#47; call loop&#40;&#41; here, or do something <br> &nbsp;<br> &nbsp; try { &nbsp;<br> &nbsp; &nbsp; Thread&#46;sleep&#40;100&#41;; &nbsp;<br> &nbsp; } catch &#40;InterruptedException e&#41; { } <br> &nbsp; &nbsp; } <br> &nbsp; } <br> } </font></td></tr></table></td></tr></table> <br> alternatively, you could just have loop() cycle throuhg each of your child objects and call their loop() method.. this would keep all the objects sync'ed with one another, since as separate threads with their own loop(), there's no guarantee that they'll stay sync'ed without lots of extra code. <br> &nbsp;<br> it's sort of an interesting idea, that if you want other threaded objects maybe that needs to be simpler (the code above is a little too java-oriented). though it gets weird if you say 'loop()' is magically called in subclasses (and who knows what order it happens in) but then draw() doesn't.. or setup() doesn't.. could get messy. <br> &nbsp;<br> i wonder if a better idea would be a simple built-in helper class for threaded things.. BLoopy, errr not. this would make it simpler without a language hack. <br> &nbsp;<br> (moving thread to suggestions as per adrien's request) 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="9"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>_martin</b><br>Guest
+            <BR><img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: questions about objects, classes, OOP</b><BR>
+                &#171; <B>Reply #9 on:</B> Mar 10<sup>th</sup>, 2003, 2:51am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+  
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            have a multithreading example here... <a href="http://studio.instituteofmedia.com/experiments/multithread/" target="_blank">http://studio.instituteofmedia.com/experiments/multithread/</a> ... perhaps this is one of its ramifications. <img border=0 src="public_html/YaBBImages/wink.gif"> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="10"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>adrien</b><br><BR>
+     <a href="http://www.boring.ch" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: questions about objects, classes, OOP</b><BR>
+                &#171; <B>Reply #10 on:</B> Mar 10<sup>th</sup>, 2003, 12:34pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            well, like I said, my main concern is that there is a system for using OOP type structures <i>in the most simple, straghtforward, compact but clear, and efficient way posible.</i> <br> &nbsp;<br> if a object can have it's own internal animation code, without having to make a call to the object from the main loop() block, it will make it that much more easier for a beginner to get it to work, one less hook to tie in with other code, and thus less complication, less bugs, and easier 'understanding' of the code. <br> &nbsp;<br> also, a 'simplified' structure of the object system (basically dropping the object's internal constructor function), would help a lot for a beginner. <br> &nbsp;<br> fry/reas/others: is it possibe? it is 'not a pain in the ass' enough to be a possibility? <br> &nbsp;<br> (sorry to be a bug about it, but don't want the suggestion to be about multithreading technology, just about simplicity in objects... <br> The best thing <i>for my students</i> is when things are as simple as possible, and they can start working with a 'tool' as quickly as possible to integrate it into their bag of tricks, with a minimum of overhead of bla bla bla on my part. Of course, later, they will want to move on to more advanced methods, but it works better once they have already done it a simple way. so far, P5 has pretty much done this for them.) <br> &nbsp;<br> &nbsp;<br> coming back to mike davis's comment <br>  <B>Quote:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td width="100%"><table cellpadding="2" cellspacing="0" class="quote" width="100%"><tr><td width="100%"><font face="Arial,Helvetica" class="quote" size="1"> <br> 4.1 <br> This is called the &quot;constructor&quot; of your class. &nbsp;It's the function that creates an instance of your object. &nbsp;This is the function you're calling in that second use of the class name in Q1. &nbsp;In your example code, you're using a constructor that accepts some arguments so that the instance can be initialized with some values. &nbsp;You can even have multiple constructors, if they accept differant arguments (this is true for any function). &nbsp;If you don't define a constructor for your class, the compiler automatically adds one during compilation that does nothing but create an instance. </font></td></tr></table></td></tr></table> <br> &nbsp;<br> what would this look like in P5? I have tried to write the object without this, but it doesn't parse. is there alredy a simpler structure for creting an object then the one I had in the first post? 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">Signature: Signatures are displayed at the bottom of each post...
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="11"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>REAS</b><br><BR>
+     <a href="http://reas.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: questions about objects, classes, OOP</b><BR>
+                &#171; <B>Reply #11 on:</B> Mar 10<sup>th</sup>, 2003, 2:58pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            you don't need a contructor. example: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> Module mod1; &nbsp;<br> &nbsp;<br> void setup&#40;&#41; { &nbsp;<br> &nbsp; size&#40;200, 200&#41;; &nbsp;<br> &nbsp; mod1 = new Module&#40;&#41;; &nbsp; <br> } &nbsp;<br> &nbsp; <br> void loop&#40;&#41; { &nbsp;<br> &nbsp; mod1&#46;update&#40;&#41;; &nbsp;<br> &nbsp; mod1&#46;display&#40;&#41;; &nbsp;<br> } &nbsp;<br> &nbsp; <br> class Module { &nbsp;<br> &nbsp; float angle = 0&#46;0; <br> &nbsp;<br> &nbsp; void update&#40;&#41; { &nbsp;<br> &nbsp; &nbsp; angle += 0&#46;01; <br> &nbsp; } &nbsp;<br> &nbsp;<br> &nbsp; void display&#40;&#41; { &nbsp;<br> &nbsp; &nbsp; translate&#40;100, 100&#41;; <br> &nbsp; &nbsp; rotate&#40;angle&#41;; <br> &nbsp; &nbsp; rect&#40;&#45;60, &#45;60, 120, 120&#41;; &nbsp;<br> &nbsp; } &nbsp;<br> } &nbsp;<br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> Regarding each object having its own thread, my own opinion (at the moment) is that it's more clear to call all methods for classes within loop. Students know what loop is and how it works. I think it's an easy mental model to think of the loop as the controller which tells each object when to update, draw, etc. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="12"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>adrien</b><br><BR>
+     <a href="http://www.boring.ch" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: questions about objects, classes, OOP</b><BR>
+                &#171; <B>Reply #12 on:</B> Mar 10<sup>th</sup>, 2003, 10:23pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            <B>on Mar 10<sup>th</sup>, 2003, 2:58pm, <a href="board_Proce55ing_Software_action_display_num_1047255117.html#11">REAS  wrote</a>:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td width="100%"><table cellpadding="2" cellspacing="0" class="quote" width="100%"><tr><td width="100%"><font face="Arial,Helvetica" class="quote" size="1">you don't need a contructor. example: ...  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> cool. that's what I was looking for. <br> &nbsp;<br> and if I need to pass it on a bunch of variables to get a red 20 pixel circle rather than just a generic circle, I will need to have a constructor function. OK. i can explain that! <img border=0 src="public_html/YaBBImages/smiley.gif"> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">Signature: Signatures are displayed at the bottom of each post...
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_Proce55ing_Software_action_display_num_1047255117.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option value="?board=Programs">&nbsp; - Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option selected value="?board=Proce55ing_Software">=> Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_Proce55ing_Software_action_display_num_1047338570.html">Previous topic</a> | <a href="board_Proce55ing_Software_action_display_num_1045677760.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

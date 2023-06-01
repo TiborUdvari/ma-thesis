@@ -1,0 +1,428 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - Sound</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td><font class="nav"><b>
+    <IMG SRC="public_html/YaBBImages/open.gif" BORDER=0>&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <IMG SRC="public_html/YaBBImages/tline.gif" BORDER=0><IMG SRC="public_html/YaBBImages/open.gif" BORDER=0>&nbsp;&nbsp;
+    <a href="board_Contributions_Audiovisual_action_messageindex_start_20.html#Examples" class="nav">Topics & Contributions
+</a><br>
+    <IMG SRC="public_html/YaBBImages/tline2.gif" BORDER=0><IMG SRC="public_html/YaBBImages/open.gif" BORDER=0>&nbsp;&nbsp;
+    Sound</b> (Moderators: pitaru, REAS)</font></td>
+  </tr>
+</table>
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" border="0" cellspacing="0" width="100%">
+          <tr>
+            <td width="100%">Audio playback, synthesis, and analysis, Sonia Library</td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <a href="board_Contributions_Audiovisual_action_messageindex_start_.html">1</a>&nbsp;<B>2</B>&nbsp;<a href="board_Contributions_Audiovisual_action_messageindex_start_40.html">3</a>&nbsp;<a href="board_Contributions_Audiovisual_action_messageindex_start_60.html">4</a>&nbsp;&nbsp;...&nbsp;&nbsp;<a href="board_Contributions_Audiovisual_action_messageindex_start_100.html">6</a></td>
+	    <td class="catbg" bgcolor="#B0B07E" align=right nowrap>
+
+	    <!-- <a href="board_Contributions_Audiovisual_action_post_title_Start_new_topic.html"><img src="public_html/YaBBImages/new_thread.gif" alt="Start new topic" border="0"> <font size="1" class="imgcatbg">Start new topic</font></a>&nbsp;-->
+	    
+	    </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td class="titlebg" bgcolor="#999966" width="10%" colspan="2">&nbsp;</td>
+        <td class="titlebg" bgcolor="#999966" width="48%"><font class="text1" color="#FFFFFF"><b>Subject</b></font></td>
+        <td class="titlebg" bgcolor="#999966" width="14%" align="center"><font class="text1" color="#FFFFFF"><b>Started by</b></font></td>
+        <td class="titlebg" bgcolor="#999966" width="4%" align="center"><font class="text1" color="#FFFFFF"><b>Replies</b></font></td>
+        <td class="titlebg" bgcolor="#999966" width="4%" align="center"><font class="text1" color="#FFFFFF"><b>Views</b></font></td>
+        <td class="titlebg" bgcolor="#999966" width="27%"><font class="text1" color="#FFFFFF"><b>Last post</b></font></td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Contributions_Audiovisual_action_display_num_1070380623.html"><b>Can't get Sonia/.JSyn to work in OS X</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">leahdix</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">2</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">1215</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Dec 19<sup>th</sup>, 2004, 10:07pm<br>by artkast</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Contributions_Audiovisual_action_display_num_1100305118.html"><b>sonia input from a firewire m-audio device</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">mattgilbert</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">5</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">1268</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Dec 19<sup>th</sup>, 2004, 9:55pm<br>by artkast</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Contributions_Audiovisual_action_display_num_1102962339.html"><b>Sonia to draw lines + smooth() = problem</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">splendid_zerb</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">0</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">493</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Dec 13<sup>th</sup>, 2004, 7:25pm<br>by splendid_zerb</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Contributions_Audiovisual_action_display_num_1089504616.html"><b>connectLiveInput()</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">mattgilbert</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">3</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">638</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Dec 10<sup>th</sup>, 2004, 3:10pm<br>by eggert</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Contributions_Audiovisual_action_display_num_1102686820.html"><b>getSpectrum.. only for liveInput() ?</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">eggert</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">1</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">419</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Dec 10<sup>th</sup>, 2004, 2:58pm<br>by eggert</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Contributions_Audiovisual_action_display_num_1101986827.html"><b>Analyzing MIDI files</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">eggert</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">1</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">608</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Dec 4<sup>th</sup>, 2004, 7:33am<br>by gll</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Contributions_Audiovisual_action_display_num_1102137991.html"><b>About the spectrum analyzer (Sonia library)</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">eggert</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">1</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">1623</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Dec 3<sup>rd</sup>, 2004, 11:28pm<br>by toxi</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Contributions_Audiovisual_action_display_num_1101980384.html"><b>sonia synthesizer</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">in_tenssi</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">0</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">516</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Dec 2<sup>nd</sup>, 2004, 10:39am<br>by in_tenssi</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Contributions_Audiovisual_action_display_num_1101406486.html"><b>MIDI+Synthesis --( JMusic and JSyn )--</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">gll</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">3</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">807</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Dec 1<sup>st</sup>, 2004, 10:43pm<br>by gll</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Contributions_Audiovisual_action_display_num_1101514839.html"><b>Sonia reference fixup</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">pitaru</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">0</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">387</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Nov 27<sup>th</sup>, 2004, 1:20am<br>by pitaru</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Contributions_Audiovisual_action_display_num_1100518560.html"><b>play wav files with Liveoutput</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">MrHunt</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">1</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">444</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Nov 27<sup>th</sup>, 2004, 12:57am<br>by pitaru</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Contributions_Audiovisual_action_display_num_1100541311.html"><b>sonia and jsyn</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">Vair</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">1</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">631</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Nov 27<sup>th</sup>, 2004, 12:49am<br>by pitaru</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Contributions_Audiovisual_action_display_num_1101281526.html"><b>MIDI fun</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">Vair</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">0</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">510</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Nov 24<sup>th</sup>, 2004, 8:32am<br>by Vair</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Contributions_Audiovisual_action_display_num_1090564943.html"><b>Can't load custom .wav as a sample</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">Jake</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">12</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">853</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Nov 24<sup>th</sup>, 2004, 1:44am<br>by mkff</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Contributions_Audiovisual_action_display_num_1101046071.html"><b>wavs,fullscreen and threads</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">MrHunt</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">0</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">767</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Nov 21<sup>st</sup>, 2004, 3:07pm<br>by MrHunt</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Contributions_Audiovisual_action_display_num_1100484293.html"><b>Sonia samples (.wav) in executable jar</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">ereytorr</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">3</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">792</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Nov 19<sup>th</sup>, 2004, 9:05pm<br>by ereytorr</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Contributions_Audiovisual_action_display_num_1100298740.html"><b>timing problem</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">MrHunt</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">4</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">436</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Nov 13<sup>th</sup>, 2004, 6:27pm<br>by fjen</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Contributions_Audiovisual_action_display_num_1097278889.html"><b>nice simple sonia code</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">bsr</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">6</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">737</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Nov 12<sup>th</sup>, 2004, 4:40pm<br>by kiwu</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Contributions_Audiovisual_action_display_num_1100209700.html"><b>synthesizing semitones</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">Vair</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">1</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">385</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Nov 12<sup>th</sup>, 2004, 4:33am<br>by Vair</td>
+      </tr>
+
+      <tr>
+        <td class="windowbg2" valign="middle" align="center" width="6%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/thread.gif"></td>
+        <td class="windowbg2" valign="middle" align="center" width="4%" bgcolor="#FFFFFF"><img src="public_html/YaBBImages/xx.gif" alt="" border="0" align=middle></td>
+        <td class="windowbg" valign="middle" width="48%" bgcolor="#D7D7AF"> <a href="board_Contributions_Audiovisual_action_display_num_1100005000.html"><b>sonia and video at the same time</b></a> </td>
+        <td class="windowbg2" valign="middle" align="center" width="14%" bgcolor="#FFFFFF">MrHunt</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">2</td>
+        <td class="windowbg" valign="middle" width="4%" align="center" bgcolor="#D7D7AF">717</td>
+        <td class="windowbg2" valign="middle" width="27%" bgcolor="#FFFFFF">Nov 9<sup>th</sup>, 2004, 10:41pm<br>by MrHunt</td>
+      </tr>
+
+    </table>
+    </td>
+  </tr>
+</table>
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <a href="board_Contributions_Audiovisual_action_messageindex_start_.html">1</a>&nbsp;<B>2</B>&nbsp;<a href="board_Contributions_Audiovisual_action_messageindex_start_40.html">3</a>&nbsp;<a href="board_Contributions_Audiovisual_action_messageindex_start_60.html">4</a>&nbsp;&nbsp;...&nbsp;&nbsp;<a href="board_Contributions_Audiovisual_action_messageindex_start_100.html">6</a></td>
+	    <td class="catbg" bgcolor="#B0B07E" align=right nowrap>
+
+	    <!-- <a href="board_Contributions_Audiovisual_action_post_title_Start_new_topic.html"><img src="public_html/YaBBImages/new_thread.gif" alt="Start new topic" border="0"> <font size="1" class="imgcatbg">Start new topic</font></a>&nbsp;-->
+	    </td>
+	  </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table cellpadding=0 cellspacing=0 width="100%">
+  <tr>
+	<td align="left" valign="middle">
+	<img src="public_html/YaBBImages/thread.gif"> Normal Topic<BR>
+	<img src="public_html/YaBBImages/hotthread.gif"> Hot Topic (More than 15 Replies)<BR>
+	<img src="public_html/YaBBImages/veryhotthread.gif"> Very Hot Topic (More than 25 Replies)
+	</td><td align="left" valign="middle">
+	<img src="public_html/YaBBImages/locked.gif"> Locked Topic<BR>
+	<img src="public_html/YaBBImages/sticky.gif"> Sticky Topic<BR>
+	<img src="public_html/YaBBImages/stickylock.gif"> Sticky Locked Topic
+	</td>
+	<td align="right" valign="middle">
+<form method="post" action="board_Contributions_Audiovisual_action_messageindex_start_20.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option value="?board=Programs">&nbsp; - Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option selected value="?board=Contributions_Audiovisual">=> Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

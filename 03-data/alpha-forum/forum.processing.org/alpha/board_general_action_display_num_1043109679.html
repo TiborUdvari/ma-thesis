@@ -1,0 +1,770 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - real time packet sniffing</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_general_action_display_num_1043109679.html#Discuss" class="nav">Discussion
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_general.html" class="nav">General Processing Discussion</a> </b>(Moderators: fry, REAS)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    real time packet sniffing</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_general_action_display_num_1112256157.html">Previous topic</a> | <a href="board_general_action_display_num_1111096751.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/thread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: real time packet sniffing</b> &nbsp;(Read 5598 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>grumo</b><br><BR><a href="board_general_action_icqpager_UIN_6293173.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=6293173&img=5" alt="6293173" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=6293173" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="6293173" BORDER=0></a>
+     <a href="http://www.gramagrass.org/grumo/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>real time packet sniffing</b><BR>
+                &#171; <B> on:</B> Jan 21<sup>st</sup>, 2003, 1:41am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            i wonder if is possible to do IP packet sniffing in proce55ing -or java. i want to do an IP packet real time graphical representation -maybe with some kind of little automatas-. how can i read this stream? any ideas for reading any feed of actual internet/network data -at real time-?   <br> &nbsp; <br> best regards, &nbsp;<br> &nbsp; <br> /David &nbsp;<br> <a href="http://www.gramagrass.org/grumo/" target="_blank">http://www.gramagrass.org/grumo/</a> <br> &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Sep 13<sup>th</sup>, 2003, 1:30am by grumo</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Martin</b><br><BR><a href="board_general_action_icqpager_UIN_122417302.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=122417302&img=5" alt="122417302" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=122417302" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="122417302" BORDER=0></a><a href="http://edit.yahoo.com/config/send_webmesg.target=martingomez_lists" target="_blank"><img src="public_html/YaBBImages/yim.gif" alt="martingomez_lists" border="0"></a><img SRC="http://opi.yahoo.com/online?u=martingomez_lists&m=g&t=0" BORDER=0 alt=""><a href="aim:goim?screenname=mg1ph&message=Hi.+Are+you+there"><img src="public_html/YaBBImages/aim.gif" alt="mg1ph" border="0"></a>
+             <a href="http://decode.ateneo.edu/martin/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: real time packet sniffing</b><BR>
+                &#171; <B>Reply #1 on:</B> Jan 21<sup>st</sup>, 2003, 1:40pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            you can do this. i'm doing something right now that  integrates proce55ing and carnivore. just seem to be tremendously busy to publish anything as of now. <img border=0 src="public_html/YaBBImages/smiley.gif"> <br> &nbsp;<br> as for java, you can do a lot of things with the java.net package (<a href="http://java.sun.com/j2se/1.4.1/docs/api/java/net/package-summary.html" target="_blank">http://java.sun.com/j2se/1.4.1/docs/api/java/net/package-summary.html</a>) <br> &nbsp;<br> here are some resources to get you started: <br> <a href="http://www.ececs.uc.edu/~mjovanov/Research/gnutella.html" target="_blank">http://www.ececs.uc.edu/~mjovanov/Research/gnutella.html</a> <br> <a href="http://www.informatik.fh-trier.de/~oechsle/visusniff/download/VisualSnifferDenmark.pdf" target="_blank">http://www.informatik.fh-trier.de/~oechsle/visusniff/download/VisualSnif ferDenmark.pdf</a> <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Jan 21<sup>st</sup>, 2003, 1:44pm by Martin</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Martin</b><br><BR><a href="board_general_action_icqpager_UIN_122417302.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=122417302&img=5" alt="122417302" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=122417302" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="122417302" BORDER=0></a><a href="http://edit.yahoo.com/config/send_webmesg.target=martingomez_lists" target="_blank"><img src="public_html/YaBBImages/yim.gif" alt="martingomez_lists" border="0"></a><img SRC="http://opi.yahoo.com/online?u=martingomez_lists&m=g&t=0" BORDER=0 alt=""><a href="aim:goim?screenname=mg1ph&message=Hi.+Are+you+there"><img src="public_html/YaBBImages/aim.gif" alt="mg1ph" border="0"></a>
+             <a href="http://decode.ateneo.edu/martin/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: real time packet sniffing</b><BR>
+                &#171; <B>Reply #2 on:</B> Jan 22<sup>nd</sup>, 2003, 1:45pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            carnivore has three things to make it run: winpcap, carnivorepe, and a client. carnivore relies heavily on winpcap (<a href="http://winpcap.polito.it/" target="_blank">http://winpcap.polito.it/</a>). winpcap is the one that does the dump magic. <br> &nbsp;<br> should you want more info about packet sniffing, <a href="http://www.robertgraham.com/pubs/sniffing-faq.html" target="_blank">http://www.robertgraham.com/pubs/sniffing-faq.html</a> provides good information. <br> &nbsp;<br> side note: reading the contents of the packets is another story. this is a crime as people have the right to privacy. <img border=0 src="public_html/YaBBImages/smiley.gif"> <br> &nbsp;<br> --- <br> addenum: this is from alex, the creator of carnivore... <br>  <B>Quote:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td width="100%"><table cellpadding="2" cellspacing="0" class="quote" width="100%"><tr><td width="100%"><font face="Arial,Helvetica" class="quote" size="1">Yes, the first Carnivore prototype was just a Perl wrapper for tcpdump. &nbsp;<br> the newer CarnivorePE relies on the basic packet-sniffing functionality &nbsp;<br> provided by the winpcap and libpcap libraries (most if not all sniffers &nbsp;<br> like tcpdump use these same libraries). so in that sense the back-end &nbsp;<br> functionality of CarnivorePE is just like tcpdump. but then we have &nbsp;<br> coupled it with a server which can stream the captured packets out to &nbsp;<br> multiple recipients. here is a list of all the features of CarnivorePE: <br> &nbsp;<br> + artist-made diagnosic clients <br> + remote access <br> + full subject targetting <br> + full data targetting <br> + volume buffering <br> + transport protocol filtering <br> + open source software license <br> &nbsp;<br> in addition the new version 1.4 will have improved adaptor support (for &nbsp;<br> wi-fi) and will run as a native GUI application in mac OSX and Windows. <br> &nbsp;<br> if you want more info, the whole history of Carnivore is at &nbsp;<br> <a href="http://rhizome.org/carnivore/How_We_Made_Our_Own_Carnivore.txt" target="_blank">http://rhizome.org/carnivore/How_We_Made_Our_Own_Carnivore.txt</a> </font></td></tr></table></td></tr></table> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Jan 22<sup>nd</sup>, 2003, 5:05pm by Martin</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Martin</b><br><BR><a href="board_general_action_icqpager_UIN_122417302.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=122417302&img=5" alt="122417302" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=122417302" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="122417302" BORDER=0></a><a href="http://edit.yahoo.com/config/send_webmesg.target=martingomez_lists" target="_blank"><img src="public_html/YaBBImages/yim.gif" alt="martingomez_lists" border="0"></a><img SRC="http://opi.yahoo.com/online?u=martingomez_lists&m=g&t=0" BORDER=0 alt=""><a href="aim:goim?screenname=mg1ph&message=Hi.+Are+you+there"><img src="public_html/YaBBImages/aim.gif" alt="mg1ph" border="0"></a>
+             <a href="http://decode.ateneo.edu/martin/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: real time packet sniffing</b><BR>
+                &#171; <B>Reply #3 on:</B> Jan 22<sup>nd</sup>, 2003, 5:20pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            dnt really want to turn this into a carnivore forum but i felt that this is a pretty good reply... <br> &nbsp;<br> from john, a carnivore dev team member <br>  <B>Quote:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td width="100%"><table cellpadding="2" cellspacing="0" class="quote" width="100%"><tr><td width="100%"><font face="Arial,Helvetica" class="quote" size="1">in a sense, to any given technologist of an arbitrary expertise level, <br> any &quot;lesser&quot; technology can appear to be a whole lot of nothing, but <br> making the access to a datastream simpler, enabling a wider public to <br> use data, is never &quot;a whole lot of nothing.&quot; <br> &nbsp;<br> carnivore, in terms of the underlying tech, is not terribly impressive. <br> but that is not what good art makes. what makes carnivore interesting is <br> that it is greater than the sum of its parts. its an organic and <br> open-ended collaboration, working around a particularly salient theme, <br> with a particularly strong public relations campaign behind it. &nbsp;not <br> only does carnivore enable easy access to a tcp sniff, it aggresively <br> promotes those artist who contribute clients, so it's a social as well <br> as a technological enablement. i like this. &nbsp;<br> &nbsp;<br> though my contribution to rsg involved some initial carnivorePE code <br> (mostly getting alex up and running with VB), i have yet to make a <br> client. the only &quot;problem&quot; i see with carnivore as an artwork is how one <br> creates something that addresses the underlying context in a meaningful <br> way. if the context is not directly addressed, the underlying datastream <br> might as well be, as christiane paul put it so succinctly, &quot;my <br> grandmother's recipe book.&quot; i'm a little more lenient than that, feeling <br> that the simple knowledge of where the data is coming from adds to the <br> experience of a visualization -- surveillance data simply *is* more <br> interesting than chocolate chip cookies. none the less, i do feel that <br> for carnivore to achieve its potential, artists need to make clients <br> that directly deal with security/surveillance/privacy issues. that the <br> tech is not rocket science does not matter in the least. </font></td></tr></table></td></tr></table> <br> &nbsp;<br> as for me, i'm learning, i'm having fun and i could share what i know to people around me, which just might make this world a better place. perhaps that's what i love in computational media design. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>benelek</b><br><BR><a href="board_general_action_icqpager_UIN_3516098.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=3516098&img=5" alt="3516098" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=3516098" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="3516098" BORDER=0></a>
+             <a href="http://www.benelek.cjb.net" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: real time packet sniffing</b><BR>
+                &#171; <B>Reply #4 on:</B> Jan 23<sup>rd</sup>, 2003, 3:00pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            oooh, now THIS is sounding interesting. next on my list of things to become involved in <img border=0 src="public_html/YaBBImages/wink.gif"> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="5"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>REAS</b><br><i></i><BR><BR>
+     <a href="http://reas.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: real time packet sniffing</b><BR>
+                &#171; <B>Reply #5 on:</B> Jan 23<sup>rd</sup>, 2003, 4:53pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I think that John the Carnivore developer (as quoted by Martin ) makes some very good points. In many senses, I feel that the Proce55ing project is very similar. We're not developing any fundamental new technologies or discovering new algorithms, but rather we are combining many disparate pieces into one system that makes approaching programming and media art more accessible for some people. Like Carnivore, our contribution is in communication and structure, rather than technology. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="6"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>RSG</b><br><BR><a href="aim:goim?screenname=dlkj83jdk3883ll&message=Hi.+Are+you+there?"><img src="public_html/YaBBImages/aim.gif" alt="dlkj83jdk3883ll" border="0"></a>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: real time packet sniffing</b><BR>
+                &#171; <B>Reply #6 on:</B> Nov 30<sup>th</sup>, 2004, 1:09am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            i know this is an old thread.. but just wanted to report that you can download sample code for connecting to CarnivorePE from Processing at <a href="http://rhizome.org/carnivore/" target="_blank">http://rhizome.org/carnivore/</a> &nbsp;<br> &nbsp;<br> i haven't done anything complex with this code, but it seems to work =) &nbsp;<br> &nbsp;<br> would love to see what people come up with. &nbsp;<br> &nbsp;<br> (one bug is that it doesn't seem to close the socket to carnivore when you quit the applet, so you will have to quit/restart Processing from time to time to force a reset. if anyone knows how to fix this, let me know and i'll change the client template code.) 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="7"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>johndoe5050</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: real time packet sniffing</b><BR>
+                &#171; <B>Reply #7 on:</B> Feb 25<sup>th</sup>, 2005, 6:46pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            I realize I'm kind of late on the scene, but I wanted to respond to Martin who said that packet-sniffing is illegal. Actually, in the United States, any unencrypted information that is transmitted over the airwaves is fair game and legally readable by anyone. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="8"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Martin</b><br><BR><a href="board_general_action_icqpager_UIN_122417302.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=122417302&img=5" alt="122417302" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=122417302" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="122417302" BORDER=0></a><a href="http://edit.yahoo.com/config/send_webmesg.target=martingomez_lists" target="_blank"><img src="public_html/YaBBImages/yim.gif" alt="martingomez_lists" border="0"></a><img SRC="http://opi.yahoo.com/online?u=martingomez_lists&m=g&t=0" BORDER=0 alt=""><a href="aim:goim?screenname=mg1ph&message=Hi.+Are+you+there"><img src="public_html/YaBBImages/aim.gif" alt="mg1ph" border="0"></a>
+             <a href="http://decode.ateneo.edu/martin/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: real time packet sniffing</b><BR>
+                &#171; <B>Reply #8 on:</B> Feb 27<sup>th</sup>, 2005, 10:49am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            ah ok. i'm not aware of u.s. laws as i'm on the other side of the globe. hehe <img border=0 src="public_html/YaBBImages/wink.gif"> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="9"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>manbehindcurtain</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: real time packet sniffing</b><BR>
+                &#171; <B>Reply #9 on:</B> Mar 30<sup>th</sup>, 2005, 11:50pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            again, not to dredge up an old thread, but most packets aren't pulled from the &quot;airwaves&quot;... they're pulled from the net (wires, generally). &nbsp;Since the law seems to draw a distinction in other cases (even cops need warrants to tap someone's phone) I'm pretty sure there is a distinction here. &nbsp;Something a radio/tv station transmits is fair game for anyone to pick up (probably because it's MEANT to be broadcast to a large, unknown audience), but a private telephone conversation isn't. &nbsp;I'm going to go out on a limb and say packet sniffing is probably illegal. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_general_action_display_num_1043109679.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option selected value="?board=general">=> General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option value="?board=Programs">&nbsp; - Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_general_action_display_num_1112256157.html">Previous topic</a> | <a href="board_general_action_display_num_1111096751.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

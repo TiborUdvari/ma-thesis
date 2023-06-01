@@ -1,0 +1,656 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - rotating a sine wave?</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Contributions_Beyond_action_display_num_1112719128.html#Examples" class="nav">Topics & Contributions
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Contributions_Beyond.html" class="nav">Beyond Categories</a> </b>(Moderator: REAS)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    rotating a sine wave?</b></font></td>
+    <td valign="bottom" align="right">&#171; No topic | <a href="board_Contributions_Beyond_action_display_num_1112654200.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/thread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: rotating a sine wave?</b> &nbsp;(Read 3528 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>lunetta</b><br><BR><a href="board_Contributions_Beyond_action_icqpager_UIN_72004752.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=72004752&img=5" alt="72004752" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=72004752" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="72004752" BORDER=0></a>
+             <a href="http://www.lunetta.com.br" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>rotating a sine wave?</b><BR>
+                &#171; <B> on:</B> Apr 5<sup>th</sup>, 2005, 6:38pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Hello all <br> &nbsp;<br> I have a geometry question that is keeping me awake; <br> &nbsp;<br> how should I set the parametric equations of a sine wave in order to rotate it? <br> &nbsp;<br> here's an example: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> float a, w, T, t, x, y, scopelength, wavelength; <br> void setup&#40;&#41; { <br> size&#40;500,500&#41;; <br> background&#40;255&#41;; <br> stroke&#40;0&#41;; <br> &nbsp;<br> a = 20; &#47;&#47; a = amplitude <br> w = 10; &#47;&#47; w = frequency <br> scopelength = sqrt&#40;2&#41;*width; <br> wavelength = scopelength&#47;w; <br> } <br> void draw&#40;&#41; { <br> &nbsp;<br> beginShape&#40;LINE_STRIP&#41;; <br> for &#40;float i = 0; i&lt;w*TWO_PI; i+=TWO_PI&#47;128&#41; { <br> t = i*wavelength&#47;TWO_PI; <br> x = t*cos&#40;PI&#47;4&#41;; <br> y = t*sin&#40;PI&#47;4&#41;+ a*sin&#40;i&#41;; <br> vertex&#40;x,y&#41;; <br> } <br> endShape&#40;&#41;; <br> } <br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> &nbsp;<br> As you can see, the sine wave is following the inclined path; but it's crests are aligned to a horizontal normal. What would be a simple formula to make the sine wave to follow the line normal? &nbsp;<br> &nbsp;<br> I can't draw the sine and apply a rotateZ command, since this is a part of a bigger code... <br> &nbsp;<br> Really thanks a lot for any idea! <br> &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Quasimondo</b><br><BR>
+             <a href="http://incubator.quasimondo.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: rotating a sine wave?</b><BR>
+                &#171; <B>Reply #1 on:</B> Apr 5<sup>th</sup>, 2005, 9:16pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Here's something that works: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> &nbsp;<br> &nbsp;<br> float cx,cy,freq,amp,phase; <br> &nbsp;<br> void setup&#40;&#41; { &nbsp;<br> size&#40;500,500&#41;; &nbsp;<br> stroke&#40;0&#41;; &nbsp;<br> &nbsp;cx=width&#47;2; <br> &nbsp;cy=height&#47;2; <br> &nbsp;freq=8; <br> &nbsp;amp=30; <br> &nbsp;phase=0; <br> } &nbsp;<br> &nbsp;<br> void mousePressed&#40;&#41;{ <br> &nbsp; cx=mouseX; <br> &nbsp; cy=mouseY; <br> } <br> &nbsp;<br> void loop&#40;&#41;{ <br> &nbsp;<br> &nbsp;background&#40;0xffffff&#41;; <br> &nbsp;<br> &nbsp;float x,y,a; <br> &nbsp;float dx=mouseX&#45;cx; <br> &nbsp;float dy=mouseY&#45;cy; <br> &nbsp;float l=sqrt&#40;dx*dx+dy*dy&#41;; <br> &nbsp;<br> &nbsp;phase+=0&#46;1; <br> &nbsp; &nbsp; <br> &nbsp;dx&#47;=l; <br> &nbsp;dy&#47;=l; <br> &nbsp; <br> &nbsp;a=atan2&#40;dy,dx&#41;+HALF_PI; <br> &nbsp;float nx=amp*cos&#40;a&#41;; <br> &nbsp;float ny=amp*sin&#40;a&#41;; <br> &nbsp; <br> &nbsp; <br> &nbsp;beginShape&#40;LINE_STRIP&#41;; &nbsp;<br> &nbsp;float tstep=1&#46;0 &#47; l; <br> &nbsp;<br> &nbsp;for &#40;float t=0;t&lt;=1&#46;0;t+=tstep&#41;{ <br> &nbsp; &nbsp;a=sin&#40;phase+TWO_PI*t*freq&#41;; <br> &nbsp; &nbsp;x=cx+t*l*dx+nx*a; <br> &nbsp; &nbsp;y=cy+t*l*dy+ny*a; <br> &nbsp; &nbsp;vertex&#40;x,y&#41;; &nbsp;<br> &nbsp;} &nbsp;<br> endShape&#40;&#41;; &nbsp;<br> } &nbsp;<br> &nbsp;<br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> The simple principle is to start with a line and offset its normal at t by the amount of the sine at t. <br> &nbsp;<br> If you comment out the <b>phase+=0.1;</b> part it will stop to animate. Higher settings for <b>freq</b> will increase the amounts of waves, <b>amp</b> controls the amplitude. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">Mario Klingemann | <a href="http://quasimondo.com" target="_blank">Quasimondo</a> | <a href="http://incubator.quasimondo.com" target="_blank">Incubator</a> | <a href="http://codeazur.com" target="_blank">côdeazur</a>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Quasimondo</b><br><BR>
+             <a href="http://incubator.quasimondo.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: rotating a sine wave?</b><BR>
+                &#171; <B>Reply #2 on:</B> Apr 5<sup>th</sup>, 2005, 9:28pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Here is a slight variation where the ends of the curve will always stick to the start and end points of the chosen line (as long as the frequency is an integer): <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> float cx,cy,freq,amp,phase; <br> &nbsp;<br> void setup&#40;&#41; { &nbsp;<br> size&#40;500,500&#41;; &nbsp;<br> stroke&#40;0&#41;; &nbsp;<br> &nbsp;cx=width&#47;2; <br> &nbsp;cy=height&#47;2; <br> &nbsp;freq=8; <br> &nbsp;amp=30; <br> &nbsp;phase=0; <br> } &nbsp;<br> &nbsp;<br> void mousePressed&#40;&#41;{ <br> &nbsp; cx=mouseX; <br> &nbsp; cy=mouseY; <br> } <br> &nbsp;<br> void loop&#40;&#41;{ <br> &nbsp;<br> &nbsp;background&#40;0xffffff&#41;; <br> &nbsp;<br> &nbsp;float x,y,a; <br> &nbsp;float dx=mouseX&#45;cx; <br> &nbsp;float dy=mouseY&#45;cy; <br> &nbsp;float l=sqrt&#40;dx*dx+dy*dy&#41;; <br> &nbsp;<br> &nbsp;phase+=0&#46;1; <br> &nbsp; &nbsp; <br> &nbsp;dx&#47;=l; <br> &nbsp;dy&#47;=l; <br> &nbsp; <br> &nbsp;a=atan2&#40;dy,dx&#41;+HALF_PI; <br> &nbsp;float nx=amp*cos&#40;a&#41;; <br> &nbsp;float ny=amp*sin&#40;a&#41;; <br> &nbsp; <br> &nbsp;float ox=nx*sin&#40;phase&#41;; <br> &nbsp;float oy=ny*sin&#40;phase&#41;; <br> &nbsp; <br> &nbsp;beginShape&#40;LINE_STRIP&#41;; &nbsp;<br> &nbsp;float tstep=1&#46;0 &#47; l; <br> &nbsp;<br> &nbsp;for &#40;float t=0;t&lt;=1&#46;0;t+=tstep&#41;{ <br> &nbsp; &nbsp;a=sin&#40;phase+TWO_PI*t*freq&#41;; <br> &nbsp; &nbsp;x=cx+t*l*dx+nx*a&#45;ox; <br> &nbsp; &nbsp;y=cy+t*l*dy+ny*a&#45;oy; <br> &nbsp; &nbsp;vertex&#40;x,y&#41;; &nbsp;<br> &nbsp;} &nbsp;<br> endShape&#40;&#41;; &nbsp;<br> } &nbsp;<br>  </font></td></tr></table></td></tr></table> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">Mario Klingemann | <a href="http://quasimondo.com" target="_blank">Quasimondo</a> | <a href="http://incubator.quasimondo.com" target="_blank">Incubator</a> | <a href="http://codeazur.com" target="_blank">côdeazur</a>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Quasimondo</b><br><BR>
+             <a href="http://incubator.quasimondo.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: rotating a sine wave?</b><BR>
+                &#171; <B>Reply #3 on:</B> Apr 5<sup>th</sup>, 2005, 9:36pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            And one more with variable amplitude at start and end: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> float cx,cy,freq,amp1,amp2,phase; <br> &nbsp;<br> void setup&#40;&#41; { &nbsp;<br> size&#40;500,500&#41;; &nbsp;<br> stroke&#40;0&#41;; &nbsp;<br> &nbsp;cx=width&#47;2; <br> &nbsp;cy=height&#47;2; <br> &nbsp;freq=8; <br> &nbsp;amp1=2; <br> &nbsp;amp2=30; <br> &nbsp;phase=0; <br> } &nbsp;<br> &nbsp;<br> void mousePressed&#40;&#41;{ <br> &nbsp; cx=mouseX; <br> &nbsp; cy=mouseY; <br> } <br> &nbsp;<br> void loop&#40;&#41;{ <br> &nbsp;<br> &nbsp;background&#40;0xffffff&#41;; <br> &nbsp;<br> &nbsp;float x,y,a; <br> &nbsp;float dx=mouseX&#45;cx; <br> &nbsp;float dy=mouseY&#45;cy; <br> &nbsp;float l=sqrt&#40;dx*dx+dy*dy&#41;; <br> &nbsp;<br> &nbsp;phase+=0&#46;1; <br> &nbsp;  &nbsp;<br> &nbsp;dx&#47;=l; <br> &nbsp;dy&#47;=l; <br> &nbsp; <br> &nbsp;a=atan2&#40;dy,dx&#41;+HALF_PI; <br> &nbsp;float nx=amp1*cos&#40;a&#41;; <br> &nbsp;float ny=amp1*sin&#40;a&#41;; <br> &nbsp; <br> &nbsp;float ntx=&#40;amp2&#45;amp1&#41;*cos&#40;a&#41;; <br> &nbsp;float nty=&#40;amp2&#45;amp1&#41;*sin&#40;a&#41;; <br> &nbsp; <br> &nbsp; <br> &nbsp;beginShape&#40;LINE_STRIP&#41;; &nbsp;<br> &nbsp;float tstep=1&#46;0 &#47; l; <br> &nbsp;<br> &nbsp;for &#40;float t=0;t&lt;=1&#46;0;t+=tstep&#41;{ <br> &nbsp;  a=sin&#40;phase+TWO_PI*t*freq&#41;; <br> &nbsp;  x=cx+t*l*dx+nx*a+ntx*t*a; <br> &nbsp;  y=cy+t*l*dy+ny*a+nty*t*a; <br> &nbsp;  vertex&#40;x,y&#41;; &nbsp;<br> &nbsp;} &nbsp;<br> endShape&#40;&#41;; &nbsp;<br> } &nbsp;<br>  </font></td></tr></table></td></tr></table> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Apr 5<sup>th</sup>, 2005, 9:36pm by Quasimondo</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">Mario Klingemann | <a href="http://quasimondo.com" target="_blank">Quasimondo</a> | <a href="http://incubator.quasimondo.com" target="_blank">Incubator</a> | <a href="http://codeazur.com" target="_blank">côdeazur</a>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>lunetta</b><br><BR><a href="board_Contributions_Beyond_action_icqpager_UIN_72004752.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=72004752&img=5" alt="72004752" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=72004752" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="72004752" BORDER=0></a>
+             <a href="http://www.lunetta.com.br" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: rotating a sine wave?</b><BR>
+                &#171; <B>Reply #4 on:</B> Apr 6<sup>th</sup>, 2005, 4:49pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Hi Mario <br> &nbsp;<br> wow, it really works. <br> First of all, really thanks for you taking the time to do this; the sine thing is a part of an important project for me here, and I've been struggling a bit to get it done. <br> &nbsp;<br> I don't want to abuse your good will nor your patience, but I'd like to ask you something; <br> &nbsp;<br> I'm not being able to understand exactly what do you get dividing the length of the right triangle by its sides; and further, what is obtained by using it as atan2 coordinate getting the angle from the source with the atan2: <br> &nbsp;<br>  <B>Quote:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td width="100%"><table cellpadding="2" cellspacing="0" class="quote" width="100%"><tr><td width="100%"><font face="Arial,Helvetica" class="quote" size="1"> <br> &nbsp;dx/=l; <br> &nbsp;dy/=l; <br> &nbsp; <br> &nbsp;a=atan2(dy,dx)+HALF_PI; &nbsp;<br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> &nbsp;<br> I'm not sure if I compreheend what's going on there... any hint on the technique is welcome <br> &nbsp;<br> again, thank you very very much for the example code. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="5"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>Quasimondo</b><br><BR>
+             <a href="http://incubator.quasimondo.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: rotating a sine wave?</b><BR>
+                &#171; <B>Reply #5 on:</B> Apr 6<sup>th</sup>, 2005, 5:54pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Hi Carlos, <br> &nbsp;<br> actually that was something I wanted to try anyway (part of my current interest in curves). <br> &nbsp;<br> So what is it that am I doing here? <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> &nbsp;float dx=mouseX&#45;cx; &nbsp;<br> &nbsp;float dy=mouseY&#45;cy; <br> &nbsp;float l=sqrt&#40;dx*dx+dy*dy&#41;; &nbsp;<br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> First calculate the horizontal (dx) and vertical (dy) distance between the line segment's endpoints. Then Pytagoras give us the length l of it. <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> &nbsp;dx&#47;=l; &nbsp;<br> &nbsp;dy&#47;=l; &nbsp;<br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> Now I normalize the distances and thus get a unit vector of length 1 which will serve as the slope of the line. <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> &nbsp;a=atan2&#40;dy,dx&#41;+HALF_PI; &nbsp;<br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> atan2 of the vector's x/y components will give me the angle in radians of that verctor. Adding HALF_PI rotates that vector by 90 degrees. <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> float nx=amp*cos&#40;a&#41;; &nbsp;<br> float ny=amp*sin&#40;a&#41;; &nbsp;<br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> Now with this angle I calculate the normal vector or rather its x and y components. For performance reasons I already multiply it with the amplitude of the sine wave. <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> float tstep=1&#46;0 &#47; l; &nbsp;<br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> This defines the precision of the curve representation. So with 1.0/l it would draw a straight line in segments of 1 pixel length - so for a curve the single segments will be longer than 1. <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> &nbsp;for &#40;float t=0;t&lt;=1&#46;0;t+=tstep&#41;{ &nbsp;<br> &nbsp; &nbsp;a=sin&#40;phase+TWO_PI*t*freq&#41;; &nbsp;<br> &nbsp; &nbsp;x=cx+t*l*dx+nx*a; &nbsp;<br> &nbsp; &nbsp;y=cy+t*l*dy+ny*a; &nbsp;<br> &nbsp; &nbsp;vertex&#40;x,y&#41;; &nbsp; <br> &nbsp;} <br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> t will always go from 0 to 1. this means that as long as freq is an integer the sinwave will always make one or more complete cycles (TWO_PI*t*freq). phase is just adjusting the start of the cycle. cx is the startpoint of the line segment. From there we step towards the endpoint in the direction of our slope vector. If you only used cx+t*l*dx it would give you a straight line. But at each step we are adding the normal (which has the length of the the amplitude) multiplied by the sinewave (which comes in a range between -1 to 1) value it will give us a point that is offset perpendicular to the line. <br> &nbsp;<br> Hmmm, is that somehow understandable? <br> &nbsp;<br> I have a gut feeling that some of the calculations could be simplified (the normalization might not even be necessary) - but that's how I approached it for now. <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">Mario Klingemann | <a href="http://quasimondo.com" target="_blank">Quasimondo</a> | <a href="http://incubator.quasimondo.com" target="_blank">Incubator</a> | <a href="http://codeazur.com" target="_blank">côdeazur</a>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="6"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>Quasimondo</b><br><BR>
+             <a href="http://incubator.quasimondo.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: rotating a sine wave?</b><BR>
+                &#171; <B>Reply #6 on:</B> Apr 6<sup>th</sup>, 2005, 6:03pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Oh my.... <br> &nbsp;<br> I knew that something was non-elegant. <br> &nbsp;<br> Forget the atan2 part - we already have the angle with the slope so what I did was complete nonsense. All that is necessary is to flip the dx/dy by 90 degrees and normalize them: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> float cx,cy,freq,amp,phase; <br> &nbsp;<br> void setup&#40;&#41; { &nbsp;<br> size&#40;500,500&#41;; &nbsp;<br> stroke&#40;0&#41;; &nbsp;<br> &nbsp;cx=width&#47;2; <br> &nbsp;cy=height&#47;2; <br> &nbsp;freq=8; <br> &nbsp;amp=30; <br> &nbsp;phase=0; <br> } &nbsp;<br> &nbsp;<br> void mousePressed&#40;&#41;{ <br> &nbsp; cx=mouseX; <br> &nbsp; cy=mouseY; <br> } <br> &nbsp;<br> void loop&#40;&#41;{ <br> &nbsp;<br> &nbsp;background&#40;0xffffff&#41;; <br> &nbsp;<br> &nbsp;float x,y,a; <br> &nbsp;float dx=mouseX&#45;cx; <br> &nbsp;float dy=mouseY&#45;cy; <br> &nbsp;float l=sqrt&#40;dx*dx+dy*dy&#41;; <br> &nbsp;<br> &nbsp;phase+=0&#46;1; <br> &nbsp;  <br> &nbsp;float nx = amp*dy&#47;l; &nbsp;<br> &nbsp;float ny = amp*&#45;dx&#47;l; <br> &nbsp;<br> &nbsp;beginShape&#40;LINE_STRIP&#41;; &nbsp;<br> &nbsp;float tstep=1&#46;0 &#47; l; <br> &nbsp;<br> &nbsp;for &#40;float t=0;t&lt;=1&#46;0;t+=tstep&#41;{ <br> &nbsp;  a=sin&#40;phase+TWO_PI*t*freq&#41;; <br> &nbsp;  x=cx+t*dx+nx*a; <br> &nbsp;  y=cy+t*dy+ny*a; <br> &nbsp;  vertex&#40;x,y&#41;; &nbsp;<br> &nbsp;} &nbsp;<br> endShape&#40;&#41;; &nbsp;<br> } &nbsp;<br>  </font></td></tr></table></td></tr></table> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Apr 6<sup>th</sup>, 2005, 6:04pm by Quasimondo</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">Mario Klingemann | <a href="http://quasimondo.com" target="_blank">Quasimondo</a> | <a href="http://incubator.quasimondo.com" target="_blank">Incubator</a> | <a href="http://codeazur.com" target="_blank">côdeazur</a>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="7"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>lunetta</b><br><BR><a href="board_Contributions_Beyond_action_icqpager_UIN_72004752.html" target="_blank"><img src="http://web.icq.com/whitepages/online?icq=72004752&img=5" alt="72004752" border="0"></a><a href="http://wwp.icq.com/scripts/search.dll?to=72004752" target="_blank"><img src="public_html/YaBBImages/icqadd.gif" alt="72004752" BORDER=0></a>
+             <a href="http://www.lunetta.com.br" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: rotating a sine wave?</b><BR>
+                &#171; <B>Reply #7 on:</B> Apr 6<sup>th</sup>, 2005, 6:12pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            <img border=0 src="public_html/YaBBImages/smiley.gif"> <br> great! <br> Hey, really thanks for all that. I guess I'll be able to understand now, just have to spend this night with your code. My wife is jealous, Processing is getting more attention than her lately... <br> &nbsp;<br> the normalizing is the place where I got stuck before; I have this project ready, but the sine waves were not aligned to the normals... I'll try again now. <br> &nbsp;<br> thanks again for the help 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_Contributions_Beyond_action_display_num_1112719128.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option value="?board=Syntax">&nbsp; - Syntax</option>
+<option value="?board=Programs">&nbsp; - Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option selected value="?board=Contributions_Beyond">=> Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; No topic | <a href="board_Contributions_Beyond_action_display_num_1112654200.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>

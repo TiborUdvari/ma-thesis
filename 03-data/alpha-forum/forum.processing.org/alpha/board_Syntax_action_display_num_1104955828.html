@@ -1,0 +1,941 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Processing 1.0 _ALPHA_ - Arrays of objects (and extended objects)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+if ((navigator.appVersion.substring(0,1) == "5" && navigator.userAgent.indexOf('Gecko') != -1) || navigator.userAgent.search(/Opera/) != -1) {
+   document.write('<META HTTP-EQUIV="pragma" CONTENT="no-cache">');
+}
+// -->
+</script>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#CC6600" vlink="#CC6600" alink="#CC6600" leftmargin="0" topmargin="0" rightmargin="0">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="550" colspan="2" bgcolor="#000000"> <img src="images/processing.gif" width="500" height="50"></td>
+    <td width="180" align="right" valign="top" bgcolor="#000000"> <img src="images/1pix.gif" width="100" height="5"><br>
+        <a href="https://forum.processing.org/faq/index.html"><font color="#CC9900">FAQ</font></a> 
+    </td>
+    <td width="20" bgcolor="#000000"><img src="images/nav_topright.gif" width="20" height="50"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55" bgcolor="#996600" valign="top"><img src="images/nav_midleft.gif" width="55" height="25"></td>
+    <td width="675" valign="top" rowspan="2"> 
+      <table width="675" valign="top" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="25" bgcolor="#996600"><a href="http://processing.org/"><font color="#FFFFFF">Cover</font></a></td>
+		<td height="25" bgcolor="#996600"><div id="menu_right" style="float: right">
+			<a href="http://feed.processing.org/">&raquo;Feed</a> &nbsp;
+			<a href="http://forum.processing.org/">&raquo;Forum</a> &nbsp;
+			<a href="http://wiki.processing.org/">&raquo;Wiki</a> &nbsp;
+			<a href="http://code.google.com/p/processing">&raquo;Code</a>
+		</div></td>
+        </tr>
+
+      </table>
+    </td>
+    <td width="20" bgcolor="#996600" valign="top"></td>
+  </tr>
+  <tr>
+	<td height="25" colspan="3"></td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="55"><img src="images/1pix.gif" width="1" height="25"></td>
+    <td width="695"> </td>
+  </tr>
+  <tr>
+    <td><img src="images/1pix.gif" width="55" height="1"></td>
+    <td align="left" valign="top"><b>
+		This is the archive Discourse for the Processing (ALPHA) software. <br />
+		Please visit the <a href="http://forum.processing.org/">new Processing forum</a> for current information.
+		<br />
+		<br />
+		</b>
+	</td>
+  </tr>
+  <tr> 
+    <td><img src="images/1pix.gif" width="55" height="45"></td>
+  </tr>
+</table>
+<!--#echo banner=""--> 
+<table width="750" align="left" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55"></td>
+    <td width="695">
+<script language="JavaScript1.2" src="public_html/ubbc.js" type="text/javascript"></script>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign=bottom colspan="2"><font class="nav"><B>
+    <img src="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="index.html" class="nav">Processing 1.0 _ALPHA_</a><br>
+    <img src="public_html/YaBBImages/tline.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Syntax_action_display_num_1104955828.html#help" class="nav">Programming Questions & Help
+</a><br>
+    <img src="public_html/YaBBImages/tline2.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    <a href="board_Syntax.html" class="nav">Syntax</a> </b>(Moderators: fry, REAS)<b><br>
+    <img SRC="public_html/YaBBImages/tline3.gif" border="0" alt=""><IMG SRC="public_html/YaBBImages/open.gif" border="0" alt="">&nbsp;&nbsp;
+    Arrays of objects (and extended objects)</b></font></td>
+    <td valign="bottom" align="right">&#171; <a href="board_Syntax_action_display_num_1103759798.html">Previous topic</a> | <a href="board_Syntax_action_display_num_1105038698.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+<BR>
+<!-- THIS IS THE TOP HEADER OF THE CATEGORY -->
+<table border="0" width="100%" cellspacing="1" cellpadding="4" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align="right">
+            </td>
+          </tr>
+        </table>
+  </tr>
+</table>
+<!-- THIS IS THE BOARD AUTHOR HEADER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td valign="middle" align="left" width="20%" bgcolor="#999966" class="titlebg">
+        <font class="text1" color="#FFFFFF">&nbsp;<img src="public_html/YaBBImages/thread.gif" alt="">
+        &nbsp;<b>Author</b></font></td>
+        <td valign="middle" align="left" bgcolor="#999966" class="titlebg" width="80%">
+        <font class="text1" color="#FFFFFF"><b>&nbsp;Topic: Arrays of objects (and extended objects)</b> &nbsp;(Read 570 times)</font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<a name="0"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>james-wddg</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Arrays of objects (and extended objects)</b><BR>
+                &#171; <B> on:</B> Jan 5<sup>th</sup>, 2005, 9:10pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Can someone help me out on a way to do the following. <br> &nbsp;<br> I have a class: <br> class Agent <br> &nbsp;<br> it is extended as &nbsp;<br> class Commnicator <br> &nbsp;<br> I want to be able to use a single multidimensional array of these objects that doesn't care whether an object at a specific point in the array is the base Agent class or the extended class Communicator. &nbsp;<br> &nbsp;<br> that's about it - any insight would be great. <br> &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="1"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>amoeba</b><br><BR>
+     <a href="http://www.unlekker.net/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Arrays of objects (and extended objects)</b><BR>
+                &#171; <B>Reply #1 on:</B> Jan 6<sup>th</sup>, 2005, 12:56am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            ok, given: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1">class Communicator { <br> } <br> &nbsp;<br> class Agent extends Communicator { <br> } <br> &nbsp;<br> &#47;&#47; then you can do the following&#58; <br> &nbsp;<br> Communicator c&#91;&#93;=new Communicator&#91;100&#93;; <br> c&#91;0&#93;=new Communicator&#40;&#41;; <br> c&#91;1&#93;=new Agent&#40;&#41;; <br> &nbsp;<br> &#47;&#47; this only works if c&#91;1&#93; really is an Agent object&#46; <br> Agent a=&#40;Agent&#41;c&#91;1&#93;; </font></td></tr></table></td></tr></table> <br> &nbsp;<br> you need to typecast to the subclass to get access to fields and methods not defined in the superclass. &nbsp;<br> &nbsp;<br> get the idea? <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">marius watz // amoeba<br><a href="http://processing.unlekker.net/" target="_blank">http://processing.unlekker.net/</a><br>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="2"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>james-wddg</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Arrays of objects (and extended objects)</b><BR>
+                &#171; <B>Reply #2 on:</B> Jan 6<sup>th</sup>, 2005, 4:58pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Is there any way to tell what class an object belongs to without keeping a list somewhere? 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="3"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>st33d</b><br><BR>
+             <a href="http://www.robotacid.com" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a>  <img src="public_html/YaBBImages/email.gif" alt="Email" border="0"><BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Arrays of objects (and extended objects)</b><BR>
+                &#171; <B>Reply #3 on:</B> Jan 6<sup>th</sup>, 2005, 6:27pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Most datatypes in java have a method that will alter it or find out out any relevant information you want. <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> class1 c1 = new class1&#40;&#41;; <br> class2 c2 = new class2&#40;&#41;; <br> void setup&#40;&#41;{ <br> } <br> &nbsp;<br> void draw&#40;&#41;{ <br> println&#40;c1&#46;getClass&#40;&#41;&#41;; <br> println&#40;c2&#46;getClass&#40;&#41;&#41;; <br> } <br> &nbsp;<br> class class1 { <br> } <br> class class2 extends class1 { <br> } <br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> It's worth looking through the link below for methods you can apply to Strings, ints, floats and so on for useful tools before you go off writing functions to get around problems (as I was starting to). All of it should work in Processing. <br> &nbsp;<br> <a href="http://java.sun.com/j2se/1.3/docs/api/index.html" target="_blank">http://java.sun.com/j2se/1.3/docs/api/index.html</a> <br> &nbsp;<br> I hope this helps. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">I could murder a pint.
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="4"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>liminal</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Arrays of objects (and extended objects)</b><BR>
+                &#171; <B>Reply #4 on:</B> Jan 6<sup>th</sup>, 2005, 6:32pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            There are a few ways to tell what type an object is. For what you're doing, the instanceof operator is probably what you want: <br> &nbsp;<br> class Communicator {} <br> class Agent extends Communicator {} <br> &nbsp;<br> Communicator[] array; <br> &nbsp;<br> if (array[i] instanceof Agent) { <br> &nbsp; &nbsp;// sub class <br> } else { <br> &nbsp; &nbsp;// must be the superclass <br> } <br> &nbsp;<br> There are other things you can do too, such as reflection, but don't go there unless you need to. <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="5"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>liminal</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Arrays of objects (and extended objects)</b><BR>
+                &#171; <B>Reply #5 on:</B> Jan 6<sup>th</sup>, 2005, 6:36pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            Ok, s33d 'went there' <img border=0 src="public_html/YaBBImages/wink.gif"> so if you want to use reflection, then you'd do something like this: <br> &nbsp;<br> if (array[i].getClass() == Agent.class) { <br> } else { <br> } <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="6"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>TomC</b><br><BR>
+     <a href="http://www.tom-carden.co.uk/p5" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Arrays of objects (and extended objects)</b><BR>
+                &#171; <B>Reply #6 on:</B> Jan 6<sup>th</sup>, 2005, 6:44pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            <B>on Jan 6<sup>th</sup>, 2005, 4:58pm, <a href="board_Syntax_action_display_num_1104955828.html#2">james-wddg  wrote</a>:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td width="100%"><table cellpadding="2" cellspacing="0" class="quote" width="100%"><tr><td width="100%"><font face="Arial,Helvetica" class="quote" size="1">Is there any way to tell what class an object belongs to without keeping a list somewhere </font></td></tr></table></td></tr></table> <br> &nbsp;<br> If you need to know what type an object is, you probably shouldn't put it in a mixed-type collection. <br> &nbsp;<br> The point of this is that if you have a bunch of different objects which are all inherited from a particular base class, if you put them in one big collection you can treat them all the same way, even if they implement different functionality. <br> &nbsp;<br> e.g. for a bunch of things which can be drawn... <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> &nbsp;<br> &nbsp;<br> class Drawable { <br> &nbsp; void draw&#40;&#41; { <br> &nbsp;   &#47;&#47; do nothing &nbsp;<br> &nbsp;   &#47;&#47; NB&#58;&#45; Drawable should really be an interface but that's another lesson <br> &nbsp; } <br> } <br> &nbsp;<br> class Rectangle extends Drawable { <br> &nbsp; void draw&#40;&#41; { <br> &nbsp;   rect&#40;0,0,10,10&#41;; <br> &nbsp; } <br> } <br> &nbsp;<br> class Circle extends Drawable { <br> &nbsp; void draw&#40;&#41; { <br> &nbsp;   ellipse&#40;0,0,10,10&#41;; <br> &nbsp; } <br> } <br> &nbsp;<br> Drawable&#91;&#93; drawables; <br> &nbsp;<br> void setup&#40;&#41; { <br> &nbsp; size&#40;100,100&#41;; <br> &nbsp; drawables = new Drawable&#91;10&#93;; <br> &nbsp; for &#40;int i = 0; i &lt; drawables&#46;length; i++&#41; { <br> &nbsp;   &#47;&#47; roughly half the time, make a circle, otherwise make a rectangle <br> &nbsp;   if &#40;random&#40;0&#46;0,1&#46;0&#41; &lt; 0&#46;5&#41; { <br> &nbsp;drawables&#91;i&#93; = new Circle&#40;&#41;; &nbsp;<br> &nbsp;   } <br> &nbsp;   else { <br> &nbsp;drawables&#91;i&#93; = new Rectangle&#40;&#41;; &nbsp;<br> &nbsp;   } <br> &nbsp; } <br> } <br> &nbsp;<br> void draw&#40;&#41; { <br> &nbsp; for &#40;int i = 0; i &lt; drawables&#46;length; i++&#41; { <br> &nbsp;   &#47;&#47; we only care that it has a draw method <br> &nbsp;   &#47;&#47; the right one will be called automatically <br> &nbsp;   drawables&#91;i&#93;&#46;draw&#40;&#41;; <br> &nbsp;   &#47;&#47; move the origin for the next one <br> &nbsp;   translate&#40;width&#47;drawables&#46;length, height&#47;drawables&#46;length,0&#41;; <br> &nbsp; } <br> } <br> &nbsp;<br>  </font></td></tr></table></td></tr></table> <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Jan 6<sup>th</sup>, 2005, 6:45pm by TomC</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="7"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>james-wddg</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Arrays of objects (and extended objects)</b><BR>
+                &#171; <B>Reply #7 on:</B> Jan 6<sup>th</sup>, 2005, 8:14pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            TomC - thanks, that was orginally what I was trying to do. &nbsp;I honestly don't know how I ended up rewriting everything with the Vector class. &nbsp; <br> &nbsp;<br> question: <br> the compiler dies on me when I try to do this: <br> &nbsp;<br> class Agent{ <br> &nbsp; Agent(int something){ <br> &nbsp; &nbsp; int somethinghere = 1; <br> &nbsp; } <br> } <br> &nbsp;<br> class SuperAgent extends Agent{ <br> &nbsp; SuperAgent(){ <br> &nbsp; } <br> } <br> &nbsp;<br> can you extend classes with constructors that have arguments passed into them? <br> &nbsp;<br> thanks 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="8"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>TomC</b><br><BR>
+     <a href="http://www.tom-carden.co.uk/p5" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Arrays of objects (and extended objects)</b><BR>
+                &#171; <B>Reply #8 on:</B> Jan 7<sup>th</sup>, 2005, 1:02pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            The SuperAgent constructor is trying to call an Agent constructor first, and expects one with no arguments. <br> &nbsp;<br> You'll either need to implement a constructor for Agent which doesn't need any arguments, or explicitly call the <tt>Agent(int something);</tt> constructor from the <tt>SuperAgent</tt> constructor using the special <tt>super()</tt> method. <br> &nbsp;<br> Remember you can have as many constructors as you like, so long as they take different arguments.  It's good practice to implement a no-argument constructor which assigns default values to all the base class attributes so that you don't have to worry about setting up the base class from your subclasses. <br> &nbsp;<br> So either: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> &nbsp;<br> class Agent { <br> &nbsp;&#47;&#47; &#46;&#46;&#46; <br> &nbsp;Agent&#40;&#41; { <br> &nbsp;  &#47;&#47; default initialisation in here <br> &nbsp;} <br> } <br> &nbsp;<br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> or: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> &nbsp;<br> class SuperAgent extends Agent { <br> &nbsp;&#47;&#47; &#46;&#46;&#46; <br> &nbsp;SuperAgent&#40;&#41; { <br> &nbsp;  super&#40;0&#41;; &#47;&#47; set up the Agent part of SuperAgent <br> &nbsp;  &#47;&#47; SuperAgent&#45;specific initialisation here <br> &nbsp;} <br> } <br> &nbsp;<br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> The <tt>super()</tt> function is a special function that calls the constructor of the base class.  It can take arguments, so long as there is a corresponding constructor.  So if SuperAgent extends Agent, then calling super(0) will use the Agent(int something) constructor. <br> &nbsp;<br> This example might be clearer, without the Super/super() confusion: <br> &nbsp;<br>  <B>Code:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td><table cellpadding="2" cellspacing="0" class="code" width="100%"><tr><td><font face="Courier New" class="code" size="1"> <br> &nbsp;<br> class Vehicle { <br> &nbsp; int numwheels; <br> &nbsp; Vehicle&#40;&#41; { <br> &nbsp;   numwheels = 4; &nbsp;<br> &nbsp;   println&#40;&quot;made a vehicle with &quot; + numwheels + &quot; wheels&quot;&#41;; <br> &nbsp; } <br> &nbsp; Vehicle&#40;int numwheels&#41; { <br> &nbsp;   this&#46;numwheels = numwheels; <br> &nbsp;   println&#40;&quot;made a vehicle with &quot; + numwheels + &quot; wheels&quot;&#41;; <br> &nbsp; } <br> } <br> &nbsp;<br> class Car extends Vehicle { <br> &nbsp; int numdoors; <br> &nbsp; Car&#40;&#41; { <br> &nbsp;   super&#40;&#41;; <br> &nbsp;   numdoors = 3; <br> &nbsp;   println&#40;&quot;made a car with &quot; + numdoors + &quot; doors&quot;&#41;; <br> &nbsp; } <br> &nbsp; Car&#40;int numdoors&#41; { <br> &nbsp;   super&#40;4&#41;; <br> &nbsp;   this&#46;numdoors = numdoors; <br> &nbsp;   println&#40;&quot;made a car with &quot; + numdoors + &quot; doors&quot;&#41;; <br> &nbsp; } <br> &nbsp; Car&#40;int numwheels, int numdoors&#41; { <br> &nbsp;   super&#40;numwheels&#41;; <br> &nbsp;   this&#46;numdoors = numdoors; <br> &nbsp;   println&#40;&quot;made a car with &quot; + numdoors + &quot; doors&quot;&#41;; <br> &nbsp; } <br> } <br> &nbsp;<br> println&#40;&quot;v1&#58;&quot;&#41;; <br> Vehicle v1 = new Vehicle&#40;&#41;; <br> println&#40;&quot;v2&#58;&quot;&#41;; <br> Vehicle v2 = new Vehicle&#40;2&#41;; <br> println&#40;&quot;c1&#58;&quot;&#41;; <br> Car c1 = new Car&#40;&#41;; <br> println&#40;&quot;c2&#58;&quot;&#41;; <br> Car c2 = new Car&#40;2&#41;; <br> println&#40;&quot;c3&#58;&quot;&#41;; <br> Car c3 = new Car&#40;5,7&#41;; <br> &nbsp;<br>  </font></td></tr></table></td></tr></table> <br> &nbsp;<br> Will output this: <br> &nbsp;<br> <pre> <br> v1: <br> made a vehicle with 4 wheels <br> v2: <br> made a vehicle with 2 wheels <br> c1: <br> made a vehicle with 4 wheels <br> made a car with 3 doors <br> c2: <br> made a vehicle with 4 wheels <br> made a car with 2 doors <br> c3: <br> made a vehicle with 5 wheels <br> made a car with 7 doors <br> </pre> <br> &nbsp;<br> &nbsp;<br> Try changing the values in the Vehicle constructors, and commenting out the calls to super in the Car constructors.  That should help you figure out what happens. <br> &nbsp;<br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left">&#171; <i>Last Edit: Jan 7<sup>th</sup>, 2005, 1:09pm by TomC</i> &#187;</td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="9"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>james-wddg</b><br><BR>
+    <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Arrays of objects (and extended objects)</b><BR>
+                &#171; <B>Reply #9 on:</B> Jan 7<sup>th</sup>, 2005, 5:18pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            That's pretty cool. <br> &nbsp;<br> I ended up essentially doing what you said. &nbsp;I didn't know that you can have multiple contructors for a class tho. &nbsp; <br> &nbsp;<br> I created the basic Agent(){} functions then created another init(){} function that I would pass all the variables into. <br> &nbsp;<br> Probably not the best coding methodology - but it got me moving again. <br> &nbsp;<br> thanks! <br> &nbsp;<br> James 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="10"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>toxi</b><br><BR>
+     <a href="http://toxi.co.uk/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Arrays of objects (and extended objects)</b><BR>
+                &#171; <B>Reply #10 on:</B> Jan 7<sup>th</sup>, 2005, 5:58pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            having worked on a few bigger java projects recently, i came to prefer interfaces over using inheritance. code becomes a lot cleaner whilst providing more flexibility than extending classes. interfaces are java's answer to multiple inheritance: a class can &quot;implement&quot; more than one interface. <br> &nbsp;<br> also, by cleverly defining what features go in an interface you can also interpret them as different &quot;views&quot; or axes to your code/class. e.g. a v.similar example outside the realm of coding could be the <a href="http://del.icio.us" target="_blank">del.icio.us</a> social bookmarks manager, which allows you to access data via 3 axes: users, tags, urls. bringing it back to a coding point of view, each del.icio.us entry &quot;implements&quot; these 3 interfaces. <br> &nbsp;<br> more info in <a href="http://processing.org/discourse/yabb/board_Syntax_action_display_num_1104525897.html#2" target="_blank">this thread</a> and these articles: <br> &nbsp;<br> <a href="http://www.informit.com/articles/printerfriendly.asp?p=331398" target="_blank">Why Java Interfaces Are So VERY Cool</a> <br> <a href="http://www.javaworld.com/javaworld/jw-11-1998/jw-11-techniques_p.html" target="_blank">Inheritance versus composition: Which one should you choose</a> <br> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr"><a href="http://toxi.co.uk/" target="_blank">http://toxi.co.uk/</a>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="11"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#FFFFFF" class="windowbg2">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg2" bgcolor="#FFFFFF" border="0">
+          <tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="20%" rowspan="2">
+            <b>amoeba</b><br><BR>
+     <a href="http://www.unlekker.net/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Arrays of objects (and extended objects)</b><BR>
+                &#171; <B>Reply #11 on:</B> Jan 8<sup>th</sup>, 2005, 1:34am &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            <B>on Jan 7<sup>th</sup>, 2005, 5:58pm, <a href="board_Syntax_action_display_num_1104955828.html#10">toxi  wrote</a>:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td width="100%"><table cellpadding="2" cellspacing="0" class="quote" width="100%"><tr><td width="100%"><font face="Arial,Helvetica" class="quote" size="1">having worked on a few bigger java projects recently, i came to prefer interfaces over using inheritance. code becomes a lot cleaner... </font></td></tr></table></td></tr></table> <br> toxi, ever the purist. you're right, of course, except that using true inheritance allows you to reuse code. &nbsp;<br> &nbsp;<br> personally I tend to use a strategy like TomC's &quot;Drawable&quot; example. it allows tailoring individual subclasses while keeping core code common, provided the central functionality can be provided in a generic way , i.e. draw() etc... <br> &nbsp;<br> interfaces are nice, tho. 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg2" bgcolor="#FFFFFF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">marius watz // amoeba<br><a href="http://processing.unlekker.net/" target="_blank">http://processing.unlekker.net/</a><br>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<a name="12"></a>
+
+<!-- THIS IS THE REPEATING MESSAGE TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" class="bordercolor" align="center">
+  <tr>
+    <td>
+    <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td bgcolor="#D7D7AF" class="windowbg">
+        <table width="100%" cellpadding="4" cellspacing="0" class="windowbg" bgcolor="#D7D7AF" border="0">
+          <tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="20%" rowspan="2">
+            <b>toxi</b><br><BR>
+     <a href="http://toxi.co.uk/" target="_blank"><img src="public_html/YaBBImages/www.gif" alt="WWW" border="0"></a> <BR>
+
+      
+            </td>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="top" width="80%" height="100%">
+
+            <!-- THIS TABLE CONTAINS THE HEADER FOR EACH MESSAGE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left" valign="middle">
+                <B>Re: Arrays of objects (and extended objects)</b><BR>
+                &#171; <B>Reply #12 on:</B> Jan 8<sup>th</sup>, 2005, 1:36pm &#187;</td>
+                <td align="right" valign="top" nowrap height="20">
+                
+
+ 
+
+                </td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr">
+            
+            <B>on Jan 8<sup>th</sup>, 2005, 1:34am, <a href="board_Syntax_action_display_num_1104955828.html#11">amoeba  wrote</a>:</B><table bgcolor="#FFFFFF" class="bordercolor" cellspacing="1" width="90%"><tr><td width="100%"><table cellpadding="2" cellspacing="0" class="quote" width="100%"><tr><td width="100%"><font face="Arial,Helvetica" class="quote" size="1"> <br> toxi, ever the purist. you're right, of course, except that using true inheritance allows you to reuse code. </font></td></tr></table></td></tr></table> <br> &nbsp;<br> i guess it has more to do with my belief that Occam's Razor also applies to our thoughts and ideas expressed as code... <br> &nbsp;<br> also didn't mean to say using interfaces is the best at all occasions. inheritance has its place of course too! <br> &nbsp;<br> btw. remember, i'm a jack of all trades, not a purist! <img border=0 src="public_html/YaBBImages/smiley.gif"> 
+            
+            </td>
+          </tr><tr>
+            <td class="windowbg" bgcolor="#D7D7AF" valign="bottom">
+            <!-- I REMOVED THE LOGGED STATMENT HERE -->
+            <table width="100%" border="0">
+              <tr>
+                <td align="left"></td>
+                <td align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <hr width="100%" size="1" class="hr"><a href="http://toxi.co.uk/" target="_blank">http://toxi.co.uk/</a>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<!-- THIS IS THE BOTTOM HEADER -->
+<table border=0 width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="bordercolor">
+  <tr>
+    <td>
+    <table cellpadding="4" cellspacing="1" border="0" width="100%">
+      <tr>
+        <td align="left" class="catbg" bgcolor="#B0B07E" width="100%">
+        <table cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><b>Pages:</b> <b>1</b>&nbsp;</td>
+            <td class="catbg" bgcolor="#B0B07E" align=right>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table><br>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" colspan="2">
+    </td>
+    <td valign="top" height="18" align="right">
+<form method="post" action="board_Syntax_action_display_num_1104955828.html" name="jump">
+<select name="values" onChange="if(this.options[this.selectedIndex].value) window.location.href="index.html" + this.options[this.selectedIndex].value;">
+<option value="">Forum Jump:</option>
+<option value="">-----------------------------</option>
+<option value="#Discuss">Discussion</option>
+<option value="">-----------------------------</option><option value="?board=Collaboration">&nbsp; - Community, Collaboration, Status</option>
+<option value="?board=Events">&nbsp; - Events, Publications, Propaganda</option>
+<option value="?board=general">&nbsp; - General Processing Discussion</option>
+<option value="">-----------------------------</option>
+<option value="#help">Programming Questions & Help</option>
+<option value="">-----------------------------</option><option selected value="?board=Syntax">=> Syntax</option>
+<option value="?board=Programs">&nbsp; - Programs</option>
+<option value="?board=Integrate">&nbsp; - Integration</option>
+<option value="">-----------------------------</option>
+<option value="#Examples">Topics & Contributions</option>
+<option value="">-----------------------------</option><option value="?board=Tools">&nbsp; - Tools</option>
+<option value="?board=Contribution_Responsive">&nbsp; - Responsive Form, Games</option>
+<option value="?board=Contribution_Info">&nbsp; - Information Visualization</option>
+<option value="?board=Contribution_Simlation">&nbsp; - Simulation, Artificial Life</option>
+<option value="?board=Contribution_Physical">&nbsp; - Tangible Computing</option>
+<option value="?board=Contribution_Automated">&nbsp; - Automated Systems</option>
+<option value="?board=Contributions_Audiovisual">&nbsp; - Sound</option>
+<option value="?board=VideoCamera">&nbsp; - Video, Camera</option>
+<option value="?board=Contributions_Beyond">&nbsp; - Beyond Categories</option>
+<option value="">-----------------------------</option>
+<option value="#Suggestions">Suggestions</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_Software">&nbsp; - Software Suggestions</option>
+<option value="?board=proce55ing_website">&nbsp; - Website, Reference, Example Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Bugs">Bugs</option>
+<option value="">-----------------------------</option><option value="?board=Proce55ing_software_bugs">&nbsp; - Software Bugs</option>
+<option value="?board=Proce55ing_website_bugs">&nbsp; - Website, Reference, Example Bugs</option>
+<option value="?board=BugFixes">&nbsp; - Bug Fixes, Implemented Suggestions</option>
+<option value="">-----------------------------</option>
+<option value="#Teaching">Teaching</option>
+<option value="">-----------------------------</option><option value="?board=CourseBlueprints">&nbsp; - Course Blueprints</option>
+<option value="?board=TheoryandPractice">&nbsp; - Theory and Practice</option>
+</select>
+</form></td>
+  </tr><tr>
+    <td colspan="3" valign="top" align="right">&#171; <a href="board_Syntax_action_display_num_1103759798.html">Previous topic</a> | <a href="board_Syntax_action_display_num_1105038698.html">Next topic</a> &#187;</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="55"><img src="public_html/YaBBImages/1pix.gif" width="55" height="160"></td>
+    <td width="695" valign="bottom"><style type="text/css">/*
+<a href="index.html"><font size="1">Processing 1.0 _ALPHA_</font></a> &#187; <font size="1">Powered by</font> <a href="http://www.yabbforum.com"><font size="1">YaBB 1 Gold - SP 1.1</font></a><font size="1">!<BR>
+YaBB © 2000-2002, </font><a href="http://www.xnull.com"><font size="1">Xnull</font></a><font size="1">. All Rights Reserved.</font>
+*/</style></td>
+  </tr>
+</table>
+</body>
+</html>
