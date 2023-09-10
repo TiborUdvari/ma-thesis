@@ -8,7 +8,7 @@ wget --recursive --no-clobber --page-requisites --html-extension --convert-links
 
 Launch data science dev environment
 
-```
+``` 
 docker run -it --rm -p 10000:8888 -v "${PWD}":/home/jovyan/work jupyter/datascience-notebook:2023-05-30
 ```
 
