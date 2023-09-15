@@ -1,7 +1,10 @@
 # Created by https://www.toptal.com/developers/gitignore/api/macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos
 
+main.text
+
 ## Latex
+*.run.xml
 *.aux
 *.fdb_latexmk
 *.fls
@@ -10,7 +13,9 @@
 *.pdf
 *.synctex.gz
 *.toc
-
+*.bbl
+*.bcf
+*.blg
 
 ### macOS ###
 # General
