@@ -17,6 +17,11 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \graphicspath{{images/}}
+\usepackage{svg}
+%\svgsetup{inkscapelatex=false} % - does not use the latex fonts in imported svg
+
+\usepackage{lmodern}
+
 
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \usepackage[style=apa, backend=biber]{biblatex}
@@ -74,6 +79,13 @@ Over the years, Processing has been adopted across various disciplines, showcasi
 \section{Methodology}
 
 \subsection{Research Design}
+Given the passage of time since the inception of the project, there's potential for memory bias or lack of firsthand experience among contemporary audiences. Research has shown that human memory can be fallible, with biases affecting recall and even leading to the construction of false memories. To mitigate these potential challenges, a quantitative analysis was employed as a vital component of this study.
+% todo – find studies referring to these phenomena
+
+However, a comprehensive understanding of the motivations, perceptions, and sentiments of the participants demands more than just quantitative analyses. Anthropological studies have consistently highlighted the limitations of solely relying on numbers to interpret the complex interplay of human experiences, beliefs, and emotions. Thus, interviews stand as a cardinal ethnographic instrument. Engaging in direct dialogues with interlocutors provides access to their lived experiences, emic perspectives, and personal narratives—dimensions that can remain obscured in purely numerical representations. By integrating quantitative methodologies with qualitative ethnographic approaches, this research aspires to achieve a nuanced understanding, addressing both the structural and phenomenological facets of the study's subject.
+% todo - simplify this, it's too long and not specific enough
+
+The quantitative research is used to find key contributors to interview.
 \subsection{Quantitative Methods}
 \subsubsection{ALPHA Forum Textual Analysis: Approach and Tools}
 The research process began by manually reading the forum to identify themes and complemented with quantitative approaches. 
@@ -83,6 +95,10 @@ The research process began by manually reading the forum to identify themes and 
 
 \subsubsection{Forum Contributions Descriptive Statistics}
 
+Creating a dataset from the ALPHA forum, which was stated to be the most relevant from Casey.
+Creating a dataset from the source control.
+Potentially creating and merging datasets from subsequent forums, to coincide with the launch of libraries.
+
 \subsection{Qualitative Methods}
 \subsubsection{Interviews: Sample Selection, Interview Guide and Tools}
 
@@ -90,6 +106,21 @@ The research process began by manually reading the forum to identify themes and 
 \section{Data Presentation and Analysis}
 
 \subsection{Quantitative Findings}
+
+\subsubsection{Patterns in Forum Contributions}
+There were 11,926 posts across 2,626 topics from 02/08/2002, 15:29 to the 19/04/2005, 09:55 across 1039 authors in the forum.
+
+The alpha forum was a YaBB (Yet another Bulletin Board), it was seperated into forums which conained boards which contained topics which contained posts.
+
+% todo - create a graphic for this
+\begin{figure}[h!] 
+  \centering
+  %\includesvg[pretex=\scriptsize, width=1\textwidth]{images/alpha-forums-by-posts.svg}
+  \includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/alpha-forums-by-posts.svg}
+  \caption{Forums by numer of posts}
+  \label{fig:forums}  
+\end{figure}
+
 \subsubsection{Trends in Git Commits}
 
 Considering the \textit{Processing} project, its dependency on its primary contributor, Ben Fry, stands out as a potential vulnerability. Fry's instrumental role over the past two decades underscores the significance of his contributions. Were they to be unexpectedly interrupted, the project could face substantial challenges. This scenario exemplifies a high bus factor risk \parencite{BusFactor2023}, wherein the success and continuity of a project are profoundly dependent on a single, or very few, contributors. Such vulnerabilities appear to be common in open source projects, a sentiment humorously captured in popular culture and comics \parencite{munroeDependency2020}.
@@ -102,7 +133,6 @@ Considering the \textit{Processing} project, its dependency on its primary contr
     \small Source: \textit{XKCD}, \url{https://xkcd.com/2347/}, licensed under CC BY-NC 2.5.
 \end{figure}
 
-\subsubsection{Patterns in Forum Contributions}
 
 \subsection{Qualitative Insights}
 \subsubsection{Themes from the ALPHA Forum}

@@ -1,0 +1,77 @@
+%% Creator: Inkscape 1.1 (c4e8f9e, 2021-05-24), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'alpha-forums-by-posts_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{601.70214844bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.19820237)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{alpha-forums-by-posts_svg-tex.pdf}}%
+    \put(0.19527123,0.17863288){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Bugs\end{tabular}}}}%
+    \put(0.19527123,0.15245714){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Discussion\end{tabular}}}}%
+    \put(0.19527123,0.1262814){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Programming Questions \& Help\end{tabular}}}}%
+    \put(0.19527123,0.10010566){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Suggestions\end{tabular}}}}%
+    \put(0.19527123,0.07392992){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Teaching\end{tabular}}}}%
+    \put(0.19527123,0.04775417){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Topics \& Contributions\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{alpha-forums-by-posts_svg-tex.pdf}}%
+    \put(0.2064894,0.01609399){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.29167543,0.01609399){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}500\end{tabular}}}}%
+    \put(0.37686145,0.01609399){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1,000\end{tabular}}}}%
+    \put(0.46204748,0.01609399){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1,500\end{tabular}}}}%
+    \put(0.5472335,0.01609399){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2,000\end{tabular}}}}%
+    \put(0.63241952,0.01609399){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2,500\end{tabular}}}}%
+    \put(0.71760555,0.01609399){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}3,000\end{tabular}}}}%
+    \put(0.80279157,0.01609399){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}3,500\end{tabular}}}}%
+    \put(0.8879776,0.01609399){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}4,000\end{tabular}}}}%
+    \put(0.97316362,0.01609399){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}4,500\end{tabular}}}}%
+    \put(1.0004869,0.00250753){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Frequency →\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{alpha-forums-by-posts_svg-tex.pdf}}%
+  \end{picture}%
+\endgroup%
