@@ -18,10 +18,9 @@
 \usepackage{graphicx}
 \graphicspath{{images/}}
 \usepackage{svg}
-%\svgsetup{inkscapelatex=false} % - does not use the latex fonts in imported svg
+\svgsetup{inkscapelatex=false} % - does not use the latex fonts in imported svg
 
 \usepackage{lmodern}
-
 
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \usepackage[style=apa, backend=biber]{biblatex}
@@ -112,13 +111,19 @@ There were 11,926 posts across 2,626 topics from 02/08/2002, 15:29 to the 19/04/
 
 The alpha forum was a YaBB (Yet another Bulletin Board), it was seperated into forums which conained boards which contained topics which contained posts.
 
-% todo - create a graphic for this
 \begin{figure}[h!] 
-  \centering
-  %\includesvg[pretex=\scriptsize, width=1\textwidth]{images/alpha-forums-by-posts.svg}
+  \centering 
   \includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/alpha-forums-by-posts.svg}
   \caption{Forums by numer of posts}
   \label{fig:forums}  
+\end{figure}
+
+\begin{figure}[htbp] 
+  \centering
+  \includegraphics[width=1\textwidth]{alpha-forums-activity.png} 
+  % \includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=0.6\textwidth]{images/alpha-forums-activity.svg}
+  \caption{Forums activity}
+  \label{fig:forum-activity}  
 \end{figure}
 
 \subsubsection{Trends in Git Commits}

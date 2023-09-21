@@ -3,7 +3,7 @@
 
 main.text
 work_journal.tex
-
+*.pdf_tex
 ## Latex
 *.run.xml
 *.aux
