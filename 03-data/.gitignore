@@ -1,3 +1,8 @@
+# Scraping things, include when scraping finished successfully
+forum.processing.org
+wget_log*.txt
+*.warc.gz
+
 config.py
 
 # Created by https://www.toptal.com/developers/gitignore/api/jupyternotebooks
