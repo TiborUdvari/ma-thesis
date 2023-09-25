@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos
 
+# vim
+.swp
+
 main.text
 work_journal.tex
 *.pdf_tex
