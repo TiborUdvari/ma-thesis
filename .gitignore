@@ -2,6 +2,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos
 
 processing-web-archive
+beta-forum-parsing
 
 # vim
 .swp
