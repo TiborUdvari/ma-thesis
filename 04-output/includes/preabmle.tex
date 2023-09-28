@@ -1,0 +1,16 @@
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{svg}
+\svgsetup{inkscapelatex=false} % - does not use the latex fonts in imported svg
+
+\usepackage{lmodern}
+\usepackage{array}  % Allows for more flexible column formatting
+\usepackage{booktabs}  % Improves table aesthetics
+\usepackage[skip=0.5ex, justification=raggedright, singlelinecheck=false]{caption}
+
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage[style=apa, backend=biber]{biblatex}
+\addbibresource{main.bib}
+
+\newcommand{\getyear}[1]{\citeyear{#1}}

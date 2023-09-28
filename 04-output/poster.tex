@@ -1,0 +1,114 @@
+\documentclass[final]{beamer}
+\usepackage[size=a3,orientation=landscape, scale=1.1]{beamerposter}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage[scaled]{helvet} % Helvetica font
+\renewcommand\familydefault{\sfdefault} 
+
+\input{includes/preabmle.tex}
+
+
+% Setup a minimalistic theme
+\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{block title}{bg=black,fg=white}
+\setbeamercolor{block body}{bg=white,fg=black}
+
+% Metadata
+\title{Processing}
+\author{Tibor Udvari}
+\institute{HEAD – Genève}
+\date{\today}
+
+\setbeamercolor{chcolor}{bg=black,fg=white}
+\setbeamertemplate{headline}{
+  \begin{beamercolorbox}[wd=\paperwidth, ht=2cm, dp=1ex,center]{chcolor}
+    \vbox to\headheight{\vfil
+        \vskip0.25cm  % Adjust this value to shift text up or down
+      \centering
+      \Large Charting the Beginnings of the Processing Community: Implications for Collaborative Open Source Art Development \\
+      \small Tibor Udvari, HEAD Genève
+      \vfil}
+  \end{beamercolorbox}
+}
+
+\begin{document}
+\begin{frame}[t]
+  \begin{columns}[t]
+    \begin{column}{.32\textwidth}
+      \begin{block}{Introduction}
+        \begin{quote}
+          "The processing project is a community, a piece of software that you run, and a language. And that order is important." – Ben Fry \parencite[19:22]{artsatmit2017CASTSymposium2017}
+          \end{quote}
+      \end{block}
+      % \begin{block}{Research scope}
+      %   Forums
+      %   Releases
+      %   Source control
+      % \end{block}
+      \begin{block}{Data sources}
+        \input{includes/table-data-sources.tex}        
+      \end{block}
+      \begin{block}{Source control commits}
+
+        \input{includes/figure-top12-github.tex}
+        The principal contributor and one of the main authors of Processing did the overwhelming majority of all the commits to the main codebase, even until today.
+      \end{block}
+      \begin{block}{Libraries}
+        
+        \input{includes/figure-libraries.tex}
+
+        %While the main code repository suggests mainly contributions from a single author, more than 150 libraries were published regularly across 18 different categories.
+      \end{block}
+
+    \end{column}
+    \begin{column}{.32\textwidth}
+      \begin{block}{Forum posts}
+        \input{includes/figure-forum-posts.tex}
+        While Ben Fry also has the most activity, the distribution is not as skewed as the source control commits. Technical and bug related discussions might contribute to this.
+      \end{block}
+      \begin{block}{Forum vs git activity}
+        \input{includes/figure-forum-git-activity.tex}
+        
+      \end{block}
+
+      \begin{block}{Furter research}
+        \begin{itemize}
+          \item Analyse corpus with Large Language Model (sentiment analysis, topic extraction)
+          \item Investigate peaks in data
+          \item Conduct a survay across most active contributors
+          \item Setup interviews 
+        \end{itemize}
+      \end{block}
+
+      \begin{block}{References}
+        \printbibliography
+      \end{block}
+    \end{column}
+
+    \begin{column}{.32\textwidth}
+      \begin{block}{Forum posts}
+        \input{includes/figure-forum-posts.tex}
+        While Ben Fry also has the most activity, the distribution is not as skewed as the source control commits. Technical and bug related discussions might contribute to this.
+      \end{block}
+      \begin{block}{Forum vs git activity}
+        \input{includes/figure-forum-git-activity.tex}
+        
+      \end{block}
+
+      \begin{block}{Furter research}
+        \begin{itemize}
+          \item Analyse corpus with Large Language Model (sentiment analysis, topic extraction)
+          \item Investigate peaks in data
+          \item Conduct a survay across most active contributors
+          \item Setup interviews 
+        \end{itemize}
+      \end{block}
+
+      \begin{block}{References}
+        \printbibliography
+      \end{block}
+    \end{column}
+    
+  \end{columns}
+\end{frame}
+\end{document}
