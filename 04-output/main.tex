@@ -15,18 +15,19 @@
 % Useful packages
 \usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 \input{includes/preabmle.tex}
+\usepackage{hyperref}
 
-\title{Charting the Beginnings of the Processing Community: Implications for Collaborative Open Source Art Development}
+\title{Building and Sustaining Open Source Art Communities: Lessons from the Processing Project}
 \author{Tibor Udvari}
 
 \begin{document}
-
 \maketitle
 
 \begin{abstract}
 What are the dynamics that lead to the creation of a community around a piece of software? How do these dynamics influence the development of the software itself? This thesis explores these questions through the lens of the Processing community, a community of artists and designers who use the Processing software to create interactive art. The paper traces the history of the Processing community from its beginnings in 2001 to the present day, using a combination of interviews, archival research, and analysis of the software development cycle itself. The paper finds that the Processing community was created through a combination of factors, including the software's design, the community's shared values, and the community's shared history. The paper also finds that the community's shared history has influenced the development of the software itself, with the community's values and history influencing the software's design. The paper concludes by discussing the implications of these findings for the development of collaborative open source art software.
 \end{abstract}
 
+\newpage
 %\tableofcontents
 
 \section{Introduction}
@@ -41,9 +42,8 @@ Processing was developed as a programming language and environment specifically 
 
 Ben Fry shed light on the holistic nature of the Processing initiative, noting:
 \begin{quote}
-"The processing project is a community, a piece of software that you run, and a language. And that order is important."
+"The processing project is a community, a piece of software that you run, and a language. And that order is important." – Ben Fry \parencite[19:22]{artsatmit2017CASTSymposium2017}
 \end{quote}
-\parencite[19:22]{artsatmit2017CASTSymposium2017}
 
 In its design philosophy, Processing introduced the concept of "software sketches". It was designed with an accessible entry point for beginners, while also providing advanced capabilities for experienced users \parencite{reasProcessingProgrammingMedia2006}.
 
@@ -58,130 +58,113 @@ Over the years, Processing has been adopted across various disciplines, showcasi
 
 \section{Literature review}
 \subsection{Open Source Contributions: Historical Perspective and Modern Implications}
+
+Open source software has evolved from a grassroots, community-driven activity into a mainstream phenomenon influencing all sectors of software development. This transition has been analyzed from numerous perspectives, including Etienne Wenger's theory of Communities of Practice, which posits that learning occurs in social contexts \parencite{wengerCommunitiesPracticeLearning1998}. This theory underscores the importance of shared experiences, tools, and discourse in shaping a community's collective practice. In the context of open-source software, these dynamics offer invaluable insights into the sustainability and progression of such projects. For instance, the Processing community exemplifies more than just a collection of individual contributors; it represents a dynamic community molded by common goals and collective learning.
+
+This communal focus contrasts sharply with the software development models described in Eric S. Raymond's seminal work "The Cathedral and the Bazaar" \parencite{CathedralBazaarMusings2002a}. The Cathedral model is marked by careful planning and centralized authority, more akin to the early GNU projects initiated by Richard Stallman in the 1980s. Conversely, the Bazaar model encourages open collaboration and decentralization—features commonly associated with contemporary open source projects. These two models can be conceptualized as endpoints of a continuum, with real-world communities of practice, like the Processing community, potentially embodying characteristics of both.
+
+Although Richard Stallman's Free Software Movement initially utilized a Cathedral-like approach, the evolution of version control systems like Git has facilitated the adoption of more decentralized, Bazaar-like models. This technological and philosophical shift intriguingly complements Wenger's notions of "mutual engagement," "joint enterprise," and "shared repertoire"—elements that nurture a sense of community and shared objectives \parencite{wengerCommunitiesPracticeLearning1998}.
+
+Fast-forwarding to today, the landscape now includes not just individual contributors but major corporations as well, injecting both challenges and opportunities into existing communities. The Processing project stands as a compelling case study to examine how an open-source community can preserve its foundational ethos while simultaneously adapting to contemporary requirements.
+
+To holistically grasp the intricate interplay of social and technical factors contributing to the success of open-source initiatives, a multidimensional analysis is essential. Such an approach would synthesize various frameworks, including Wenger's Communities of Practice \parencite{wengerCommunitiesPracticeLearning1998} and Raymond's Cathedral and Bazaar models \parencite{CathedralBazaarMusings2002a}, aiming to provide a nuanced understanding of a community's past, present dynamics, and future potential.
+
+
 \subsection{Motivations behind Open Source Contributions}
 \subsection{The intersection of Creative Coding and Open Source}
-\subsection{Relevant Methodological Approaches in Computer Science and Anthropology}
+%\subsection{Relevant Methodological Approaches in Computer Science and Anthropology}
 
 \section{Methodology}
 
 \subsection{Research Design}
-Given the passage of time since the inception of the project, there's potential for memory bias or lack of firsthand experience among contemporary audiences. Research has shown that human memory can be fallible, with biases affecting recall and even leading to the construction of false memories. To mitigate these potential challenges, a quantitative analysis was employed as a vital component of this study.
-% todo – find studies referring to these phenomena
+Given the potential for memory bias due to the passage of time since the project's inception, this study employs a mixed-methods approach. While human memory can be fallible, introducing biases and even constructing false memories, quantitative analysis serves as a foundational component to mitigate these challenges. It allows for the identification of key contributors based on metrics such as commit frequency and significance, forum participation, and library contributions. These quantitative findings inform the selection of interviewees, acting as a preliminary filter to locate core contributors and library authors for qualitative interviews.
 
-However, a comprehensive understanding of the motivations, perceptions, and sentiments of the participants demands more than just quantitative analyses. Anthropological studies have consistently highlighted the limitations of solely relying on numbers to interpret the complex interplay of human experiences, beliefs, and emotions. Thus, interviews stand as a cardinal ethnographic instrument. Engaging in direct dialogues with interlocutors provides access to their lived experiences, emic perspectives, and personal narratives—dimensions that can remain obscured in purely numerical representations. By integrating quantitative methodologies with qualitative ethnographic approaches, this research aspires to achieve a nuanced understanding, addressing both the structural and phenomenological facets of the study's subject.
-% todo - simplify this, it's too long and not specific enough
+Anthropological studies have consistently highlighted the limitations of relying solely on quantitative data to understand the complex interplay of human experiences, beliefs, and emotions. Hence, qualitative interviews stand as a cardinal ethnographic instrument, offering access to the lived experiences, emic perspectives, and personal narratives of participants—dimensions that are often obscured in purely numerical representations.
 
-The quantitative research is used to find key contributors to interview.
+By purposefully integrating quantitative methodologies with qualitative ethnographic approaches, this research aspires to offer a nuanced understanding of both the structural and phenomenological aspects of the Processing community.
+
 \subsection{Quantitative Methods}
+\subsubsection*{Data sources}
+
+The research draws upon multiple data sources to form a comprehensive picture of the Processing community and its development practices. These range from forum discussions at various phases of the project to commit histories and issue trackers. The parsing status indicates the extent to which each data source has been prepared for analysis. 
+\input{includes/table-data-sources.tex}        
+
 \subsubsection*{Evolution of Community Discussion Platforms}
-In the early days of the Processing project, community interactions predominantly took place on forums. These forums served as a primary channel for users to share experiences, discuss problems, and seek help. Notably, the forum discussions underwent significant transformations in terms of platforms over the years, as can be observed in Table \ref{table:forums}.
+In the early days of the Processing project, community interactions predominantly took place on forums. These forums served as a primary channel for users to share experiences, discuss problems, and seek help. Notably, the forum discussions underwent significant transformations in terms of platforms over the years, as can be observed in Table \ref{table:forums}. \parencite{ProcessingForum}
 
-\begin{table}[h]
-  \raggedright
-  \caption{Archival forums composition}
-  \label{table:forums}
-  \begin{tabular}{l l l c}
-      \toprule
-      Forum name & Years & URL \\
-      \midrule
-      Processing alpha forum & 2002-2005 & \href{https://forum.processing.org/alpha/}{forum.processing.org/alpha} \\
-      Processing beta forum & 2005-2010 & \href{https://forum.processing.org/beta/}{forum.processing.org/beta}  \\
-      Processing 1.0 forum & 2010-2013 & \href{https://forum.processing.org/one/}{forum.processing.org/one} \\
-      Processing 2.0 and 3.0 forum & 2013-2018 & \href{https://forum.processing.org/two/}{forum.processing.org/two} \\
-      Current processing forum & 2018 - now & \href{https://discourse.processing.org/}{discourse.processing.org} \\
-      \bottomrule
-  \end{tabular}
-\end{table}
-
-\cite{ProcessingForum}
+\input{includes/table-forums.tex}
 
 This dynamic shift from one platform to another indicates an evolving user-base and a growing set of needs and tools that community members require for effective collaboration.
 
 \subsubsection*{Shift in Software-Related Discussions}
 
-Initially, software-related discussions were confined to these forums. However, as the project matured, the complexity of issues warranted more specialized platforms for effective tracking and resolution. Consequently, the community transitioned from forums to Bugzilla \parencite{BugzillaArchiveProcessing} and eventually to GitHub Issues\parencite{ProcessingProcessingSource}\parencite{ProcessingProcessing4Processing} . Each shift represented not just a change in platform, but also an evolution in how the community interacted with and contributed to the project. GitHub Issues, for instance, not only enables detailed tracking of software bugs but also allows for more collaborative forms of problem-solving, with capabilities for code reviews, linking pull requests, and so on.
+Initially, software-related discussions were confined to these forums. However, as the project matured, the complexity of issues warranted more specialized platforms for effective tracking and resolution. Consequently, the community transitioned from forums to Bugzilla \parencite{BugzillaArchiveProcessing} and eventually to GitHub Issues\parencite{ProcessingProcessingSource}\parencite{ProcessingProcessing4Processing}. 
 
 \subsubsection*{The Ecosystem of Libraries}
-An important milestone in the Processing ecosystem was the introduction of libraries. These libraries extended the functionalities of the base platform, thereby attracting a broader range of users and contributors. Such an analysis not only sheds light on the diversification of the project but also identifies key contributors and library authors who could potentially be sought out for qualitative interviews. The identification of these contributors adds another layer to our understanding of community participation, opening doors to insights into individual motivations and collective behaviors.
+An important milestone in the Processing ecosystem was the introduction of libraries. These libraries extended the functionalities of the base platform, thereby attracting a broader range of users and contributors. Such an analysis not only sheds light on the diversification of the project but also identifies key contributors and library authors who could potentially be sought out for qualitative interviews. The identification of these contributors adds another layer to our understanding of community participation.
 
-\begin{table}[h]
-  \raggedright
-  \caption{Data sources}
-  \label{table:data-sources}
-  \begin{tabular}{l l l c}
-      \toprule
-      Name & Type & Status \\
-      \midrule
-      Processing alpha forum & Forum & Parsed \\
-      Processing beta forum & Forum & Parsed  \\
-      Processing 1.0 forum & Forum & Downloaded \\
-      Processing 2.0 and 3.0 forum & Forum  & Not downloaded \\
-      Current processing forum & Forum & Not downloaded\\
-      Github project & Commit history & Parsed \\
-      Processing libraries\textsuperscript{*} & Software release information & Parsed \\
-      \bottomrule
-      \multicolumn{3}{l}{\footnotesize \textsuperscript{*}Note: The data set was reconstructed from the processing website archive and is not complete.}
-  \end{tabular}
-\end{table}
+\input{includes/figure-libraries.tex}
 
 
-\subsubsection{ALPHA Forum Textual Analysis: Approach and Tools}
-The research process began by manually reading the forum to identify themes and complemented with quantitative approaches. 
+\subsubsection{Forum Textual Analysis: Approach and Tools}
+%The research process began by manually reading the forum to identify themes and complemented with quantitative approaches. 
 %todo forum composition
 
 \input{forum_notes.tex}
 
 \subsubsection{Forum Contributions Descriptive Statistics}
 
-Creating a dataset from the ALPHA forum, which was stated to be the most relevant from Casey.
-Creating a dataset from the source control.
-Potentially creating and merging datasets from subsequent forums, to coincide with the launch of libraries.
-
 \subsection{Qualitative Methods}
 \subsubsection{Interviews: Sample Selection, Interview Guide and Tools}
+The introduction of libraries in the Processing ecosystem has served as a significant milestone, expanding the project's functionalities and, consequently, its user base. To gain nuanced insights into this aspect, our sample will be drawn from two main categories:
+
+\begin{enumerate}
+    \item \textbf{Core Contributors:} Those who have significantly contributed to the main Processing repository, shaping the foundational architecture.
+    \item \textbf{Library Authors:} Contributors who have extended the functionalities of Processing by developing libraries, thus diversifying the ecosystem.
+\end{enumerate}
+
+These groups were identified through a combination of git commit history, contributions to the forums, and other public documentation. Special attention will be given to those who have been consistently active or have made impactful contributions.
 
 
 \section{Data Presentation and Analysis}
 
 \subsection{Quantitative Findings}
 
-\subsubsection{Patterns in Forum Contributions}
-There were 11,926 posts across 2,626 topics from 02/08/2002, 15:29 to the 19/04/2005, 09:55 across 1039 authors in the forum.
-
-The alpha forum was a YaBB (Yet another Bulletin Board), it was seperated into forums which conained boards which contained topics which contained posts.
-
-\begin{figure}[h!] 
-  \centering 
-  \includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/alpha-forums-by-posts.svg}
-  \caption{Forums by number of posts}
-  \label{fig:forums}  
-\end{figure}
-
-\input{includes/figure-alltime-sourcecode-commits.tex}
-
-\begin{figure}[htbp] 
-  \centering
-  \includegraphics[width=1\textwidth]{alpha-forums-activity.png} 
-  % \includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=0.6\textwidth]{images/alpha-forums-activity.svg}
-  \caption{Forums activity}
-  \label{fig:forum-activity}  
-\end{figure}
-
 \subsubsection{Trends in Git Commits}
 
 Considering the \textit{Processing} project, its dependency on its primary contributor, Ben Fry, stands out as a potential vulnerability. Fry's instrumental role over the past two decades underscores the significance of his contributions. Were they to be unexpectedly interrupted, the project could face substantial challenges. This scenario exemplifies a high bus factor risk \parencite{BusFactor2023}, wherein the success and continuity of a project are profoundly dependent on a single, or very few, contributors. Such vulnerabilities appear to be common in open source projects, a sentiment humorously captured in popular culture and comics \parencite{munroeDependency2020}.
 
-\begin{figure}[h!] 
-    \centering
-    \includegraphics[width=0.75\textwidth]{dependency.png} 
-    \caption{Dependency}
-    \label{fig:dependency_comic}
-    \small Source: \textit{XKCD}, \url{https://xkcd.com/2347/}, licensed under CC BY-NC 2.5.
-\end{figure}
+\input{includes/figure-top12-github.tex}
 
+\input{includes/figure-xkdc.tex}
+
+\subsubsection{Patterns in Forum Contributions}
+
+Although Ben Fry remains the most active contributor in forum discussions, the activity distribution is more balanced compared to Git commits. This may be due to the broader range of topics discussed, including technical issues and bugs.
+
+\input{includes/figure-forum-posts.tex}
+
+\input{includes/figure-alpha-forum-activity.tex}
+
+%\input{includes/figure-alltime-sourcecode-commits.tex}
+
+
+%\input{includes/figure-alpha-forum-activity.tex}
+
+
+\subsubsection{Synthesized Data Analysis: Git Commits, Releases, and Forum Activity}
+
+\input{includes/figure-forum-git-activity.tex}
+\newpage
+\subsubsection{Alpha Forum Patterns in Forum Contributions (to remove)}
+There were 11,926 posts across 2,626 topics from 02/08/2002, 15:29 to the 19/04/2005, 09:55 across 1039 authors in the forum.
+
+The alpha forum was a YaBB (Yet another Bulletin Board), it was seperated into forums which conained boards which contained topics which contained posts.
+
+\input{includes/figure-alpha-forum-by-posts.tex}
 
 \subsection{Qualitative Insights}
-\subsubsection{Themes from the ALPHA Forum}
+\subsubsection{Themes from the Forum}
 \subsubsection{Interview Highlights and Key Takeaways}
 
 \section{Discussion}
