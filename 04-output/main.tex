@@ -14,20 +14,7 @@
 
 % Useful packages
 \usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
-\usepackage{amsmath}
-\usepackage{graphicx}
-\graphicspath{{images/}}
-\usepackage{svg}
-\svgsetup{inkscapelatex=false} % - does not use the latex fonts in imported svg
-
-\usepackage{lmodern}
-
-\usepackage[colorlinks=true, allcolors=blue]{hyperref}
-\usepackage[style=apa, backend=biber]{biblatex}
-\addbibresource{main.bib}
-
-\newcommand{\getyear}[1]{\citeyear{#1}}
-
+\input{includes/preabmle.tex}
 
 \title{Charting the Beginnings of the Processing Community: Implications for Collaborative Open Source Art Development}
 \author{Tibor Udvari}
@@ -43,7 +30,7 @@ What are the dynamics that lead to the creation of a community around a piece of
 %\tableofcontents
 
 \section{Introduction}
-\subsection{The Background and Importance of Open Source Projects}
+% \subsection{The Background and Importance of Open Source Projects}
 % -- about open source communities in general
 % -- importance of open source projects, maybe mention how flash died out, and the recent unity price change ?
 
@@ -86,6 +73,58 @@ However, a comprehensive understanding of the motivations, perceptions, and sent
 
 The quantitative research is used to find key contributors to interview.
 \subsection{Quantitative Methods}
+\subsubsection*{Evolution of Community Discussion Platforms}
+In the early days of the Processing project, community interactions predominantly took place on forums. These forums served as a primary channel for users to share experiences, discuss problems, and seek help. Notably, the forum discussions underwent significant transformations in terms of platforms over the years, as can be observed in Table \ref{table:forums}.
+
+\begin{table}[h]
+  \raggedright
+  \caption{Archival forums composition}
+  \label{table:forums}
+  \begin{tabular}{l l l c}
+      \toprule
+      Forum name & Years & URL \\
+      \midrule
+      Processing alpha forum & 2002-2005 & \href{https://forum.processing.org/alpha/}{forum.processing.org/alpha} \\
+      Processing beta forum & 2005-2010 & \href{https://forum.processing.org/beta/}{forum.processing.org/beta}  \\
+      Processing 1.0 forum & 2010-2013 & \href{https://forum.processing.org/one/}{forum.processing.org/one} \\
+      Processing 2.0 and 3.0 forum & 2013-2018 & \href{https://forum.processing.org/two/}{forum.processing.org/two} \\
+      Current processing forum & 2018 - now & \href{https://discourse.processing.org/}{discourse.processing.org} \\
+      \bottomrule
+  \end{tabular}
+\end{table}
+
+\cite{ProcessingForum}
+
+This dynamic shift from one platform to another indicates an evolving user-base and a growing set of needs and tools that community members require for effective collaboration.
+
+\subsubsection*{Shift in Software-Related Discussions}
+
+Initially, software-related discussions were confined to these forums. However, as the project matured, the complexity of issues warranted more specialized platforms for effective tracking and resolution. Consequently, the community transitioned from forums to Bugzilla \parencite{BugzillaArchiveProcessing} and eventually to GitHub Issues\parencite{ProcessingProcessingSource}\parencite{ProcessingProcessing4Processing} . Each shift represented not just a change in platform, but also an evolution in how the community interacted with and contributed to the project. GitHub Issues, for instance, not only enables detailed tracking of software bugs but also allows for more collaborative forms of problem-solving, with capabilities for code reviews, linking pull requests, and so on.
+
+\subsubsection*{The Ecosystem of Libraries}
+An important milestone in the Processing ecosystem was the introduction of libraries. These libraries extended the functionalities of the base platform, thereby attracting a broader range of users and contributors. Such an analysis not only sheds light on the diversification of the project but also identifies key contributors and library authors who could potentially be sought out for qualitative interviews. The identification of these contributors adds another layer to our understanding of community participation, opening doors to insights into individual motivations and collective behaviors.
+
+\begin{table}[h]
+  \raggedright
+  \caption{Data sources}
+  \label{table:data-sources}
+  \begin{tabular}{l l l c}
+      \toprule
+      Name & Type & Status \\
+      \midrule
+      Processing alpha forum & Forum & Parsed \\
+      Processing beta forum & Forum & Parsed  \\
+      Processing 1.0 forum & Forum & Downloaded \\
+      Processing 2.0 and 3.0 forum & Forum  & Not downloaded \\
+      Current processing forum & Forum & Not downloaded\\
+      Github project & Commit history & Parsed \\
+      Processing libraries\textsuperscript{*} & Software release information & Parsed \\
+      \bottomrule
+      \multicolumn{3}{l}{\footnotesize \textsuperscript{*}Note: The data set was reconstructed from the processing website archive and is not complete.}
+  \end{tabular}
+\end{table}
+
+
 \subsubsection{ALPHA Forum Textual Analysis: Approach and Tools}
 The research process began by manually reading the forum to identify themes and complemented with quantitative approaches. 
 %todo forum composition
@@ -114,9 +153,11 @@ The alpha forum was a YaBB (Yet another Bulletin Board), it was seperated into f
 \begin{figure}[h!] 
   \centering 
   \includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/alpha-forums-by-posts.svg}
-  \caption{Forums by numer of posts}
+  \caption{Forums by number of posts}
   \label{fig:forums}  
 \end{figure}
+
+\input{includes/figure-alltime-sourcecode-commits.tex}
 
 \begin{figure}[htbp] 
   \centering
