@@ -1,5 +1,10 @@
 # MD2 Thesis – Creative Coding Communities
 
+Character count command (without spaces)
+```
+pdftotext main.pdf - | iconv -c -t ASCII//TRANSLIT |tr -d " " | wc -m
+```
+
 ## Organisation
 
 ```
