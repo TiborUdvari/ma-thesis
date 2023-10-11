@@ -7,6 +7,13 @@ one-forum-parsing
 # vim
 .swp
 
+# Indesign files
+*.idlk
+
+temp-include.md
+presentation.iapresenter
+indesign
+
 main.text
 work_journal.tex
 *.pdf_tex
