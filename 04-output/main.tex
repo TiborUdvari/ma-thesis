@@ -1,5 +1,10 @@
 \documentclass{article}
 
+% todo add back add back things
+
+% convert to icml pandoc -s -f latex -t icml -o main.icml main.tex
+
+
 % todo
 % forum analysis
   % zotero export quote and reference it in the text
@@ -16,6 +21,17 @@
 \usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 \input{includes/preabmle.tex}
 \usepackage{hyperref}
+
+\DeclareCiteCommand{\fullcitefigure}
+  {\boolfalse{citetracker}%
+   \boolfalse{pagetracker}%
+   \usebibmacro{prenote}}
+  {\printtext{Photo by \printnames{author}, published in \printlist{organization} in \cite*{guptaBenFryConference2018}}%
+   \renewcommand{\mkbibparens}[1]{} % Remove parentheses around citation
+   \unspace\parencite{\thefield{entrykey}}} 
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
+
 
 \title{Building and Sustaining Open Source Art Communities: Lessons from the Processing Project}
 \author{Tibor Udvari}
@@ -49,7 +65,9 @@ In its design philosophy, Processing introduced the concept of "software sketche
 
 Over the years, Processing has been adopted across various disciplines, showcasing its versatility. To further its impact and development, the Processing Foundation was established, with notable contributors like Daniel Shiffman. The foundation aims to support and expand the reach of the Processing software and its associated projects.
 
-\subsection{Objective and Scope of the Research}
+% todo add
+%\subsection{Objective and Scope of the Research}
+
 % Choice of processing, because the community has been around for a while and the project is still alive and taught in schools, also at a high school level
 
 % modular toolkit, not a monolith
@@ -69,9 +87,9 @@ Fast-forwarding to today, the landscape now includes not just individual contrib
 
 To holistically grasp the intricate interplay of social and technical factors contributing to the success of open-source initiatives, a multidimensional analysis is essential. Such an approach would synthesize various frameworks, including Wenger's Communities of Practice \parencite{wengerCommunitiesPracticeLearning1998} and Raymond's Cathedral and Bazaar models \parencite{CathedralBazaarMusings2002a}, aiming to provide a nuanced understanding of a community's past, present dynamics, and future potential.
 
-
-\subsection{Motivations behind Open Source Contributions}
-\subsection{The intersection of Creative Coding and Open Source}
+% todo add
+%\subsection{Motivations behind Open Source Contributions}
+%\subsection{The intersection of Creative Coding and Open Source}
 %\subsection{Relevant Methodological Approaches in Computer Science and Anthropology}
 
 \section{Methodology}
@@ -100,19 +118,137 @@ This dynamic shift from one platform to another indicates an evolving user-base 
 
 Initially, software-related discussions were confined to these forums. However, as the project matured, the complexity of issues warranted more specialized platforms for effective tracking and resolution. Consequently, the community transitioned from forums to Bugzilla \parencite{BugzillaArchiveProcessing} and eventually to GitHub Issues\parencite{ProcessingProcessingSource}\parencite{ProcessingProcessing4Processing}. 
 
+
+
+\begin{figure}[htbp]
+  \centering
+  
+  % Row 1
+  \begin{subfigure}[b]{0.24\textwidth}
+      \includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/month1.svg}
+      \caption{Month 1}
+      \label{fig:month1}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.24\textwidth}
+    \includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/month2.svg}
+      \caption{Month 2}
+      \label{fig:month2}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.24\textwidth}
+    \includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/month3.svg}
+      \caption{Month 3}
+      \label{fig:month3}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.24\textwidth}
+    \includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/month4.svg}
+      \caption{Month 4}
+      \label{fig:month4}
+  \end{subfigure}
+  
+  % Add space between rows
+  \vspace{0.25cm}
+
+  % Row 2
+  \begin{subfigure}[b]{0.24\textwidth}
+    \includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/month5.svg}
+      \caption{Month 5}
+      \label{fig:month5}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.24\textwidth}
+    \includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/month6.svg}
+      \caption{Month 6}
+      \label{fig:month6}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.24\textwidth}
+    \includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/month7.svg}
+      \caption{Month 7}
+      \label{fig:month 7}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.24\textwidth}
+    \includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/month8.svg}
+      \caption{Month 8}
+      \label{fig:month 8}
+  \end{subfigure}
+
+  % Add space between rows
+  \vspace{0.25cm}
+
+  % Row 3
+  \begin{subfigure}[b]{0.24\textwidth}
+    \includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/month9.svg}
+      \caption{Month 9}
+      \label{fig:month9}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.24\textwidth}
+    \includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/month10.svg}
+      \caption{Month 10}
+      \label{fig:month10}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.24\textwidth}
+    \includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/month11.svg}
+      \caption{Month 11}
+      \label{fig:month11}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.24\textwidth}
+    \includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/month12.svg}
+      \caption{Month 12}
+      \label{fig:month12}
+  \end{subfigure}
+  
+  \caption{Monthly graphs}
+  \label{fig:monthlyGraphs}
+\end{figure}
+
+
+\begin{figure}[h!] 
+  \centering 
+  \includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/year.svg}
+  \caption{Year}
+  \label{figure:year}  
+\end{figure}
+
 \subsubsection*{The Ecosystem of Libraries}
 An important milestone in the Processing ecosystem was the introduction of libraries. These libraries extended the functionalities of the base platform, thereby attracting a broader range of users and contributors. Such an analysis not only sheds light on the diversification of the project but also identifies key contributors and library authors who could potentially be sought out for qualitative interviews. The identification of these contributors adds another layer to our understanding of community participation.
 
 \input{includes/figure-libraries.tex}
 
-
-\subsubsection{Forum Textual Analysis: Approach and Tools}
+% todo add
+%\subsubsection{Forum Textual Analysis: Approach and Tools}
 %The research process began by manually reading the forum to identify themes and complemented with quantitative approaches. 
 %todo forum composition
 
-\input{forum_notes.tex}
+% todo add
+%\subsubsection{Forum Contributions Descriptive Statistics}
 
-\subsubsection{Forum Contributions Descriptive Statistics}
+% todo - add back
+
+% \begin{figure}[H]
+%   \begin{minipage}{\textwidth}
+%     \includegraphics[width=\linewidth]{images/pcd2018.jpg}
+%     \caption[Ben Fry at PCD 2018]{Ben Fry with conference atendees at Processing Community Day 2018. \fullcitefigure{guptaBenFryConference2018}.}
+%     \label{fig:benFry}
+    
+%   \end{minipage}
+% \end{figure}
+
+
+% \begin{figure}[h] 
+%   \centering 
+%   \includegraphics[width=1\textwidth]{} 
+%   \caption[Ben Fry at PCD 2018]{Ben Fry with conference attendees. Source: \citefield{guptaBenFryConference2018}{author}, Medium, \citeyear{guptaBenFryConference2018}.}
+
+%   \label{figure:benfry-pcd}  
+% \end{figure}
+% \textbf{Note.} Source: \textcite{guptaBenFryConference2018}.
 
 \subsection{Qualitative Methods}
 \subsubsection{Interviews: Sample Selection, Interview Guide and Tools}
@@ -125,7 +261,6 @@ The introduction of libraries in the Processing ecosystem has served as a signif
 
 These groups were identified through a combination of git commit history, contributions to the forums, and other public documentation. Special attention will be given to those who have been consistently active or have made impactful contributions.
 
-
 \section{Data Presentation and Analysis}
 
 \subsection{Quantitative Findings}
@@ -136,15 +271,18 @@ Considering the \textit{Processing} project, its dependency on its primary contr
 
 \input{includes/figure-top12-github.tex}
 
-\input{includes/figure-xkdc.tex}
+% todo
+% \input{includes/figure-xkdc.tex}
 
 \subsubsection{Patterns in Forum Contributions}
 
 Although Ben Fry remains the most active contributor in forum discussions, the activity distribution is more balanced compared to Git commits. This may be due to the broader range of topics discussed, including technical issues and bugs.
 
-\input{includes/figure-forum-posts.tex}
+% todo add back
+%\input{includes/figure-forum-posts.tex}
 
-\input{includes/figure-alpha-forum-activity.tex}
+%todo add back
+%\input{includes/figure-alpha-forum-activity.tex}
 
 %\input{includes/figure-alltime-sourcecode-commits.tex}
 
@@ -152,10 +290,12 @@ Although Ben Fry remains the most active contributor in forum discussions, the a
 %\input{includes/figure-alpha-forum-activity.tex}
 
 
-\subsubsection{Synthesized Data Analysis: Git Commits, Releases, and Forum Activity}
+% \subsubsection{Synthesized Data Analysis: Git Commits, Releases, and Forum Activity}
 
-\input{includes/figure-forum-git-activity.tex}
-\newpage
+% todo add back
+%\input{includes/figure-forum-git-activity.tex}
+
+% \newpage
 \subsubsection{Alpha Forum Patterns in Forum Contributions (to remove)}
 There were 11,926 posts across 2,626 topics from 02/08/2002, 15:29 to the 19/04/2005, 09:55 across 1039 authors in the forum.
 
@@ -163,22 +303,23 @@ The alpha forum was a YaBB (Yet another Bulletin Board), it was seperated into f
 
 \input{includes/figure-alpha-forum-by-posts.tex}
 
-\subsection{Qualitative Insights}
-\subsubsection{Themes from the Forum}
-\subsubsection{Interview Highlights and Key Takeaways}
+% todo add
+% \subsection{Qualitative Insights}
+% \subsubsection{Themes from the Forum}
+% \subsubsection{Interview Highlights and Key Takeaways}
 
-\section{Discussion}
+% \section{Discussion}
 
-\subsection{Integrating Quantitative and Qualitative Findings}
-\subsection{Implications for the Open Source Community}
-\subsection{The Unique Case of Processing and Creative Coding}
-\subsection{Limitations of the Study}
+% \subsection{Integrating Quantitative and Qualitative Findings}
+% \subsection{Implications for the Open Source Community}
+% \subsection{The Unique Case of Processing and Creative Coding}
+% \subsection{Limitations of the Study}
 
-\section{Conclusion and Recommendations}
+% \section{Conclusion and Recommendations}
 
-\subsection{Recap of Key Findings}
-\subsection{Practical Implications for Open Source Projects}
-\subsection{Recommendations for Future Research}
+% \subsection{Recap of Key Findings}
+% \subsection{Practical Implications for Open Source Projects}
+% \subsection{Recommendations for Future Research}
 
 \section{Acknowledgements}
 I'm grateful to Randall Munroe of XKCD for his insightful and humorous comic strips. The comic "Dependency" from \getyear{munroeDependency2020} is in Figure~\ref{fig:dependency_comic} and cited as~\cite{munroeDependency2020}. It's under the Creative Commons Attribution-NonCommercial 2.5 License (CC BY-NC 2.5). License details: \url{https://creativecommons.org/licenses/by-nc/2.5/}.
@@ -199,7 +340,7 @@ I'm grateful to Randall Munroe of XKCD for his insightful and humorous comic str
 \end{itemize}
 
 
-\subsection{List of Forum Threads Analyzed}
+% \subsection{List of Forum Threads Analyzed}
 
 
 \end{document}
