@@ -20,3 +20,7 @@ The research adopts a multi-pronged approach:
 * `data`: Contains Jupyter notebooks that were used to collect and preprocess the data for the thesis.
 * `output`: Includes all LaTeX files necessary to compile the thesis into a PDF.
 * `README.md`: This README file, providing an overview of the project and its structure.
+
+## Additional Resources
+- [Observable collection](https://observablehq.com/collection/@tiborudvari/processing-project-visualizations): This is a collection of visualizations generated from the dataset.
+- [HuggingFace Dataset](https://huggingface.co/datasets/TiborUdvari/processing-project): The dataset is hosted on HuggingFace as the file sizes became too large for Github.

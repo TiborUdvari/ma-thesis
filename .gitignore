@@ -1,11 +1,17 @@
 # Created by https://www.toptal.com/developers/gitignore/api/macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos
 
+huggingface-dataset
+
 processing-web-archive
 beta-forum-parsing
 one-forum-parsing
 # vim
 .swp
+
+# Some files are too large for git
+forum-data.csv
+one-forum-data.csv
 
 # Indesign files
 *.idlk
