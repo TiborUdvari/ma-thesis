@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos
 
+# Interviews - include video files and are generally long, handled transcripts in Zotero
+interviews
+
 huggingface-dataset
 
 processing-web-archive
