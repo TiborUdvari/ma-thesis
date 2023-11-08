@@ -1,9 +1,5 @@
 \documentclass{article}
 
-% todo add back add back things
-
-% convert to icml pandoc -s -f latex -t icml -o main.icml main.tex
-
 % todo
 % forum analysis
   % zotero export quote and reference it in the text
@@ -32,8 +28,11 @@
   {\usebibmacro{postnote}}
 
 
-\title{Building and Sustaining Open Source Art Communities: Lessons from the Processing Project}
+% \title{Building and Sustaining Open Source Art Communities: Lessons from the Processing Project}
+\title{Code, Community, and Creativity: Navigating the Complexities of Collective Contribution and Sustainability in the Processing Project}
 \author{Tibor Udvari}
+
+
 
 \begin{document}
 \maketitle
@@ -49,6 +48,8 @@ What are the dynamics that lead to the creation of a community around a piece of
 % \subsection{The Background and Importance of Open Source Projects}
 % -- about open source communities in general
 % -- importance of open source projects, maybe mention how flash died out, and the recent unity price change ?
+
+% todo NN - il faudrait des éléments visuels qui illustre mais aussi donne à voir ce qu’est Processing, et éventuellement là “où est la communauté”: des screenshots de forums, etc.
 
 \subsection{The Processing Project: A brief overview}
 % todo - adapt to focus more on the research question
@@ -72,6 +73,27 @@ Over the years, Processing has been adopted across various disciplines, showcasi
 % modular toolkit, not a monolith
 % community, application, syntax
 % commercial software
+
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{images/processing_alpha_forum_screenshot.png} 
+  \caption{Processing Alpha Forum (https://forum.processing.org/alpha)}
+  \label{fig:alpha_forum_screenshot}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[width=0.5\textwidth]{images/processing_ide.png} 
+  \caption{Processing IDE \parencite{reasProcessingIDE2015}}
+  \label{fig:processing_ide_screenshot}
+\end{figure}
+
+% todo NN add figure about processing ide
+% todo NN ne pas distinguer la litt review de l’introduction, ni la méthodo, il faudrait tout mettre dedans pour montrer (1) en quoi cela permet de formuler une question de recherche (qui reste à expliciter ici), (2) mettre en place une méthodologie pour y répondre
+
+% todo NN Rappelle toi qu’une revue de littérature sert à préciser ton questionnement général décrcit en introduction et formuler une question de recherche puis une méthodo pour y répondre. Tu le fais heureusement déjà un peu !
+
+% todo NN et en fin de cette grosses introduction tu pourrais mettre l’annonce du plan du mémoire, ce que vont contenir les chapitres
 
 \section{Literature review}
 \subsection{Open Source Contributions: Historical Perspective and Modern Implications}
@@ -125,6 +147,8 @@ Building upon established frameworks such as the taxonomy by Bonaccorsi et al.~\
 
 \input{includes/table-motivations.tex}
 
+% todo NN cette taxonomie est intéressante, mais il faudrait la commenter dans le corps de texte en 2.2, qu’elle vienne nourrir ce que tu as mis au-dessus comme texte, là tu la pose rapidement sans trop détailler comment elle a été produite et ce qu’elle nous dit
+
 %\subsection{The intersection of Creative Coding and Open Source}
 %\subsection{Relevant Methodological Approaches in Computer Science and Anthropology}
 
@@ -133,6 +157,7 @@ Building upon established frameworks such as the taxonomy by Bonaccorsi et al.~\
 \subsection{Research Design}
 Given the potential for memory bias due to the passage of time since the project's inception, this study employs a mixed-methods approach. While human memory can be fallible, introducing biases and even constructing false memories, quantitative analysis serves as a foundational component to mitigate these challenges. It allows for the identification of key contributors based on metrics such as commit frequency and significance, forum participation, and library contributions. These quantitative findings inform the selection of interviewees, acting as a preliminary filter to locate core contributors and library authors for qualitative interviews.
 
+% todo NN attention : tu cites ici une généralité sans référence…
 Anthropological studies have consistently highlighted the limitations of relying solely on quantitative data to understand the complex interplay of human experiences, beliefs, and emotions. Hence, qualitative interviews stand as a cardinal ethnographic instrument, offering access to the lived experiences, emic perspectives, and personal narratives of participants—dimensions that are often obscured in purely numerical representations.
 
 By purposefully integrating quantitative methodologies with qualitative ethnographic approaches, this research aspires to offer a nuanced understanding of both the structural and phenomenological aspects of the Processing community.
@@ -158,6 +183,9 @@ Initially, software-related discussions were confined to these forums. However, 
 An important milestone in the Processing ecosystem was the introduction of libraries. These libraries extended the functionalities of the base platform, thereby attracting a broader range of users and contributors. Such an analysis not only sheds light on the diversification of the project but also identifies key contributors and library authors who could potentially be sought out for qualitative interviews. The identification of these contributors adds another layer to our understanding of community participation.
 
 \input{includes/figure-libraries.tex}
+
+% todo NN ce serait bien de mieux valoriser cette figure 2 visuellement, dans une mise en page aérée et large
+
 
 % todo add
 %\subsubsection{Forum Textual Analysis: Approach and Tools}
