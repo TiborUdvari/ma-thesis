@@ -1,70 +1,27 @@
-\documentclass[draft]{article}
-%\input{includes/preamble.tex}
+\input{includes/preamble.tex}
 
-\usepackage[utf8]{inputenc}
-\DeclareUnicodeCharacter{2068}{}
-\DeclareUnicodeCharacter{2069}{}
+% Define the geometry for the special page
+\newgeometry{left=1in,right=1in,top=1in,bottom=1in}
 
-\usepackage{amsmath}
-\usepackage{graphicx} 
-\usepackage{svg}
-\graphicspath{{images/}}
-\svgsetup{inkscapelatex=false} % - does not use the latex fonts in imported svg
-
-\usepackage{lmodern}
-\usepackage{array}  % Allows for more flexible column formatting
-\usepackage{booktabs}  % Improves table aesthetics
-\usepackage[skip=0.5ex, justification=raggedright, singlelinecheck=false]{caption}
-\usepackage{enumitem}
-\usepackage{float} % Required for the H specifier
-\usepackage{subcaption} % Required for sub-figures
-
-% table
-\usepackage{multirow}
-\usepackage{tabularx}
-\usepackage{booktabs}
-\usepackage{hyperref}
-
-\PassOptionsToPackage{colorlinks=true, allcolors=blue}{hyperref}
-
-\usepackage[style=apa, backend=biber]{biblatex}
-\addbibresource{main.bib}
-
-\newcommand{\getyear}[1]{\citeyear{#1}}
-
-\DeclareCiteCommand{\fullcitefigure}
-  {\boolfalse{citetracker}%
-   \boolfalse{pagetracker}%
-   \usebibmacro{prenote}}
-  {\printtext{Photo by \printnames{author}, published in \printlist{organization} in \cite*{guptaBenFryConference2018}}%
-   \renewcommand{\mkbibparens}[1]{} % Remove parentheses around citation
-   \unspace\parencite{\thefield{entrykey}}} 
-  {\multicitedelim}
-  {\usebibmacro{postnote}}
-
-
-\DeclareBibliographyDriver{artwork}{%
-  \printnames{author}%
-  \setunit*{\addspace}%
-  \printfield{year}%
-  \setunit*{\addspace}%
-  \printfield{title}%
-  \setunit*{\addperiod\space}%
-  \printfield{howpublished}%
-  \setunit*{\addperiod\space}%
-  \printfield{note}%
-  \setunit*{\addperiod\space}%
-  \usebibmacro{url+urldate}%
-  \finentry
+% Command to start a special page
+\newcommand{\specialsection}[2]{
+    \newpage
+    \pagecolor{black}\afterpage{\nopagecolor}
+    \thispagestyle{empty}
+    \begingroup
+    \color{white}
+    \centering
+    \vspace*{\stretch{1}}
+    \section*{\Huge\textbf{#1}} % Add the section to the table of contents
+    \addcontentsline{toc}{section}{#1} % Manually add the section to the table of contents
+    \fontsize{12pt}{14pt}\selectfont
+    #2
+    \vspace*{\stretch{1}}
+    \endgroup
+    \newpage
 }
+ 
 
-% observable
-  % quantify the forum posts by categories, do a sitemap
-
-% Notes
-% Citation commands \cite \parencite \textcite 
-
-% \title{Building and Sustaining Open Source Art Communities: Lessons from the Processing Project}
 \title{Code, Community, and Creativity: Navigating the Complexities of Collective Contribution and Sustainability in the Processing Project}
 \author{Tibor Udvari}
 
@@ -73,11 +30,17 @@
 \maketitle
 
 \begin{abstract}
-What are the dynamics that lead to the creation of a community around a piece of software? How do these dynamics influence the development of the software itself? This thesis explores these questions through the lens of the Processing community, a community of artists and designers who use the Processing software to create interactive art. The paper traces the history of the Processing community from its beginnings in 2001 to the present day, using a combination of interviews, archival research, and analysis of the software development cycle itself. The paper finds that the Processing community was created through a combination of factors, including the software's design, the community's shared values, and the community's shared history. The paper also finds that the community's shared history has influenced the development of the software itself, with the community's values and history influencing the software's design. The paper concludes by discussing the implications of these findings for the development of collaborative open source art software.
+What are the dynamics that lead to the creation of a community around a piece of software? How do these dynamics influence the development of the software itself? This thesis explores these questions through the lens of the Processing community, a community of artists and designers who use the Processing software to create interactive art. The paper traces the history of the Processing community from its beginnings in 2001 to the present day, using a combination of interviews, archival research, and analysis of the software development cycle itself. The paper finds that the Processing community was created through a combination of factors, including the software's design, the community's shared values, and the community's shared history. The paper also finds that the community's shared history has influenced the development of the software itself, with the community's values and history influencing the software's design. The paper concludes by discussing the implications of these findings for the development of collaborative open source art software. 
 \end{abstract}
+ 
+\clearpage % Start on a new page after the table of contents
 
-\newpage
-%\tableofcontents
+% Use the custom command to create a special section page with a title and description
+\specialsection{Introduction}{This is the introduction to our document. Here we set the stage for the content that is to follow. }
+
+% Reset the geometry and page color for the following pages
+\restoregeometry
+\nopagecolor
 
 \section{Introduction}
 % \subsection{The Background and Importance of Open Source Projects}

@@ -1,12 +1,12 @@
-\documentclass[draft]{article}
+\documentclass[]{article}
 
+\usepackage{lipsum}
 \usepackage[utf8]{inputenc}
-\usepackage{ifthen}
 
 \usepackage{amsmath}
-\usepackage{graphicx}
-\graphicspath{{images/}}
+\usepackage{graphicx} 
 \usepackage{svg}
+\graphicspath{{images/}}
 \svgsetup{inkscapelatex=false} % - does not use the latex fonts in imported svg
 
 \usepackage{lmodern}
@@ -20,13 +20,19 @@
 % table
 \usepackage{multirow}
 \usepackage{tabularx}
-\usepackage{booktabs}
 \usepackage{hyperref}
 
 \PassOptionsToPackage{colorlinks=true, allcolors=blue}{hyperref}
-\usepackage[style=apa, backend=biber]{biblatex}
 
+\usepackage[style=apa, backend=biber]{biblatex}
 \addbibresource{main.bib}
+
+
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{afterpage} % for the \afterpage command
+
 
 \newcommand{\getyear}[1]{\citeyear{#1}}
 
@@ -39,3 +45,63 @@
    \unspace\parencite{\thefield{entrykey}}} 
   {\multicitedelim}
   {\usebibmacro{postnote}}
+
+
+\DeclareBibliographyDriver{artwork}{%
+  \printnames{author}%
+  \setunit*{\addspace}%
+  \printfield{year}%
+  \setunit*{\addspace}%
+  \printfield{title}%
+  \setunit*{\addperiod\space}%
+  \printfield{howpublished}%
+  \setunit*{\addperiod\space}%
+  \printfield{note}%
+  \setunit*{\addperiod\space}%
+  \usebibmacro{url+urldate}%
+  \finentry
+}
+
+% Fonts
+\usepackage[]{fontspec}
+
+
+% Define commands for setting up each font family
+\newcommand{\setupInterFonts}{
+    \setmainfont{Inter}[
+        Path = ./fonts/Inter/,
+        Scale = MatchLowercase,
+        UprightFont = *-Regular,
+        BoldFont = *-Bold,
+        Extension = .ttf
+    ]
+}
+
+\newcommand{\setupSourceSansFonts}{
+    \setsansfont{SourceSans3}[
+        Path = ./fonts/SourceSans3/,
+        Scale = MatchLowercase,
+        UprightFont = *-Regular,
+        BoldFont = *-Bold,
+        ItalicFont = *-Italic,
+        BoldItalicFont = *-BoldItalic,
+        Extension = .ttf
+    ]
+}
+
+\newcommand{\setupSourceSerifFonts}{
+    \newfontfamily\seriffont{SourceSerif4}[
+        Path = ./fonts/SourceSerif4/,
+        Scale = MatchLowercase,
+        UprightFont = *-Regular,
+        BoldFont = *-Bold,
+        ItalicFont = *-Italic,
+        BoldItalicFont = *-BoldItalic,
+        Extension = .ttf
+    ]
+}
+
+% Then use the desired command to switch to that font setup
+%\setupInterFonts
+% \setupSourceSansFonts
+\setupSourceSerifFonts

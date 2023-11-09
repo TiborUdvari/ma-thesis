@@ -5,8 +5,39 @@
   "latex-workshop.latex.tools": [
     {
       "name": "latexmk",
+      "command": "xelatex",
+      "args": [
+        "-xelatex",
+        "-shell-escape", 
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "lualatexmk",
       "command": "latexmk",
       "args": [
+        "-lualatex",
+        "-shell-escape", 
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "xelatexmk",
+      "command": "latexmk",
+      "args": [
+        "-xelatex",
         "-shell-escape", 
         "-synctex=1",
         "-interaction=nonstopmode",
@@ -26,15 +57,16 @@
       ]
     },
     {
-      "name": "latexmk (latexmkrc)",
-      "tools": [
-        "latexmk_rconly"
-      ]
-    },
-    {
       "name": "latexmk (lualatex)",
       "tools": [
         "lualatexmk"
+      ]
+    },
+
+    {
+      "name": "latexmk (latexmkrc)",
+      "tools": [
+        "latexmk_rconly"
       ]
     },
     {
