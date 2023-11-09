@@ -1,21 +1,36 @@
-\documentclass{article}
+\documentclass[draft]{article}
+%\input{includes/preamble.tex}
 
-% todo
-% forum analysis
-  % zotero export quote and reference it in the text
-  % make a csv to read the entire forum
-  % check a way of analysing into multiple categories
+\usepackage[utf8]{inputenc}
+\DeclareUnicodeCharacter{2068}{}
+\DeclareUnicodeCharacter{2069}{}
 
-% observable
-  % quantify the forum posts by categories, do a sitemap
+\usepackage{amsmath}
+\usepackage{graphicx} 
+\usepackage{svg}
+\graphicspath{{images/}}
+\svgsetup{inkscapelatex=false} % - does not use the latex fonts in imported svg
 
-% Notes
-% Citation commands \cite \parencite \textcite 
+\usepackage{lmodern}
+\usepackage{array}  % Allows for more flexible column formatting
+\usepackage{booktabs}  % Improves table aesthetics
+\usepackage[skip=0.5ex, justification=raggedright, singlelinecheck=false]{caption}
+\usepackage{enumitem}
+\usepackage{float} % Required for the H specifier
+\usepackage{subcaption} % Required for sub-figures
 
-% Useful packages
-\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
-\input{includes/preabmle.tex}
+% table
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{booktabs}
 \usepackage{hyperref}
+
+\PassOptionsToPackage{colorlinks=true, allcolors=blue}{hyperref}
+
+\usepackage[style=apa, backend=biber]{biblatex}
+\addbibresource{main.bib}
+
+\newcommand{\getyear}[1]{\citeyear{#1}}
 
 \DeclareCiteCommand{\fullcitefigure}
   {\boolfalse{citetracker}%
@@ -28,13 +43,33 @@
   {\usebibmacro{postnote}}
 
 
+\DeclareBibliographyDriver{artwork}{%
+  \printnames{author}%
+  \setunit*{\addspace}%
+  \printfield{year}%
+  \setunit*{\addspace}%
+  \printfield{title}%
+  \setunit*{\addperiod\space}%
+  \printfield{howpublished}%
+  \setunit*{\addperiod\space}%
+  \printfield{note}%
+  \setunit*{\addperiod\space}%
+  \usebibmacro{url+urldate}%
+  \finentry
+}
+
+% observable
+  % quantify the forum posts by categories, do a sitemap
+
+% Notes
+% Citation commands \cite \parencite \textcite 
+
 % \title{Building and Sustaining Open Source Art Communities: Lessons from the Processing Project}
 \title{Code, Community, and Creativity: Navigating the Complexities of Collective Contribution and Sustainability in the Processing Project}
 \author{Tibor Udvari}
 
-
-
 \begin{document}
+
 \maketitle
 
 \begin{abstract}
@@ -501,14 +536,16 @@ The alpha forum was a YaBB (Yet another Bulletin Board), it was seperated into f
 \section{Acknowledgements}
 I'm grateful to Randall Munroe of XKCD for his insightful and humorous comic strips. The comic "Dependency" from \getyear{munroeDependency2020} is in Figure~\ref{fig:dependency_comic} and cited as~\cite{munroeDependency2020}. It's under the Creative Commons Attribution-NonCommercial 2.5 License (CC BY-NC 2.5). License details: \url{https://creativecommons.org/licenses/by-nc/2.5/}.
 
-\section{Bibliography}
 \printbibliography
 
-\section{Appendices}
 
-\subsection{Interview Transcripts}
+\section{Bibliography}
 
-\input{interview_guide}
+\subsection{Bibliography}
+\newpage
+
+%\section{Appendices}
+
 \subsection{Data Collection Tools and Scripts}
 
 \begin{itemize}

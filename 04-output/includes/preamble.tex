@@ -1,0 +1,41 @@
+\documentclass[draft]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{ifthen}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{svg}
+\svgsetup{inkscapelatex=false} % - does not use the latex fonts in imported svg
+
+\usepackage{lmodern}
+\usepackage{array}  % Allows for more flexible column formatting
+\usepackage{booktabs}  % Improves table aesthetics
+\usepackage[skip=0.5ex, justification=raggedright, singlelinecheck=false]{caption}
+\usepackage{enumitem}
+\usepackage{float} % Required for the H specifier
+\usepackage{subcaption} % Required for sub-figures
+
+% table
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+\PassOptionsToPackage{colorlinks=true, allcolors=blue}{hyperref}
+\usepackage[style=apa, backend=biber]{biblatex}
+
+\addbibresource{main.bib}
+
+\newcommand{\getyear}[1]{\citeyear{#1}}
+
+\DeclareCiteCommand{\fullcitefigure}
+  {\boolfalse{citetracker}%
+   \boolfalse{pagetracker}%
+   \usebibmacro{prenote}}
+  {\printtext{Photo by \printnames{author}, published in \printlist{organization} in \cite*{guptaBenFryConference2018}}%
+   \renewcommand{\mkbibparens}[1]{} % Remove parentheses around citation
+   \unspace\parencite{\thefield{entrykey}}} 
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
