@@ -1,7 +1,10 @@
-\documentclass[]{article}
+\documentclass[draft]{article}
 
 \usepackage{lipsum}
 \usepackage[utf8]{inputenc}
+\usepackage{calc}
+\usepackage{fancyhdr}
+\usepackage{ragged2e}
 
 \usepackage{amsmath}
 \usepackage{graphicx} 
@@ -27,12 +30,59 @@
 \usepackage[style=apa, backend=biber]{biblatex}
 \addbibresource{main.bib}
 
+% Define Lengths
+\newlength{\paperWidth}
+\newlength{\paperHeight}
+\newlength{\leftMargin}
+\newlength{\rightMargin}
+\newlength{\topMargin}
+\newlength{\bottomMargin}
+\newlength{\spiralWidth}
 
-\usepackage{geometry}
+\setlength{\paperWidth}{158mm}
+\setlength{\paperHeight}{210mm}
+\setlength{\spiralWidth}{10.7mm}
+
+% Define ratios
+\newcommand{\marginRatio}{0.15}
+
+% Use the ratio to calculate margins
+\setlength{\leftMargin}{\paperWidth*\real{\marginRatio}}
+\setlength{\rightMargin}{\paperWidth*\real{\marginRatio}}
+\setlength{\topMargin}{\paperHeight*\real{\marginRatio}}
+\setlength{\bottomMargin}{\paperHeight*\real{\marginRatio}}
+
+\usepackage[paperwidth=\paperWidth,
+    paperheight=\paperHeight, 
+    left=\leftMargin, 
+    right=\rightMargin, 
+    top=\topMargin, 
+    bottom=\bottomMargin,
+    marginparwidth=0mm,
+    marginparsep=0mm,
+    headheight=0mm,
+    hoffset=\spiralWidth,
+    voffset=-5mm,
+    headsep=0mm,
+    footskip=0mm]{geometry}
 \usepackage{xcolor}
 \usepackage{titlesec}
 \usepackage{afterpage} % for the \afterpage command
 
+% Set up the page style for fancy headers and footers
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+
+% Remove the header line
+\renewcommand{\headrulewidth}{0pt}
+% Remove the footer line, if needed
+\renewcommand{\footrulewidth}{0pt}
+
+\fancyfoot[R]{\raisebox{-15mm}{\thepage}}
+
+
+% To move the page number further to the right you can use \fancyfootoffset
+%\fancyfootoffset[B]{10mm} % Adjust the offset to move the page number outside the defined text margin
 
 \newcommand{\getyear}[1]{\citeyear{#1}}
 
@@ -104,4 +154,55 @@
 % Then use the desired command to switch to that font setup
 %\setupInterFonts
 % \setupSourceSansFonts
-\setupSourceSerifFonts
+% \setupSourceSerifFonts
+
+% Define the command to set up Inter font
+%  \newfontfamily\headingfont{Inter}[
+%    Path = ./fonts/Inter/,
+%    Scale = MatchLowercase,
+%    UprightFont = *-Regular,
+%    BoldFont = *-Bold,
+%    Extension = .ttf
+%  ]
+
+%  \newfontfamily\headingfont{SourceSerif4}[
+%     Path = ./fonts/SourceSerif4/,
+%     Scale = MatchLowercase,
+%     UprightFont = *-Regular,
+%     BoldFont = *-Bold,
+%     ItalicFont = *-Italic,
+%     BoldItalicFont = *-BoldItalic,
+%     Extension = .ttf
+% ]
+
+
+\newfontfamily\headingfont{SourceSans3}[
+    Path = ./fonts/SourceSans3/,
+    Scale = MatchLowercase,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold,
+    ItalicFont = *-Italic,
+    BoldItalicFont = *-BoldItalic,
+    Extension = .ttf
+]
+
+\newfontfamily\bodyfont{SourceSerif4}[
+    Path = ./fonts/SourceSerif4/,
+    Scale = MatchLowercase,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold,
+    ItalicFont = *-Italic,
+    BoldItalicFont = *-BoldItalic,
+    Extension = .ttf
+]
+
+% Apply the body font to the normal text
+\renewcommand{\normalsize}{\fontsize{10}{12}\selectfont\bodyfont}
+\renewcommand{\large}{\fontsize{12}{14}\selectfont\bodyfont}
+\renewcommand{\Large}{\fontsize{14}{18}\selectfont\bodyfont}
+% Add any other size commands you need to redefine
+
+% % Apply the Inter font to section headings
+\titleformat*{\section}{\Large\headingfont}
+\titleformat*{\subsection}{\large\headingfont}
+\titleformat*{\subsubsection}{\normalsize\headingfont}
