@@ -1,0 +1,143 @@
+\documentclass[]{article}
+\input{includes/preamble-vars.tex}
+
+%\input{includes/preamble.tex}
+
+\input{includes/preamble-fonts.tex}
+\input{includes/preamble-metadata.tex}
+
+\usepackage{adjustbox}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{xcolor}
+\usepackage{printlen}
+\usepackage{tikz}
+
+\uselengthunit{mm}
+
+\newlength{\spiralDiam}
+\newlength{\foldWidth}
+\newlength{\foldOne}
+\newlength{\foldTwo}
+\newlength{\foldThree}
+
+% \setlength{\paperWidth}{158mm}
+% \setlength{\paperHeight}{210mm}
+\setlength{\spiralDiam}{8.5mm}
+\setlength{\foldWidth}{1mm}
+\setlength{\foldOne}{\paperWidth}
+
+\setlength{\foldTwo}{\foldOne}
+\addtolength{\foldTwo}{\foldWidth}
+\addtolength{\foldTwo}{0.5\spiralDiam}
+
+\setlength{\foldThree}{\foldTwo}
+\addtolength{\foldThree}{\foldWidth}
+\addtolength{\foldThree}{\spiralDiam}
+
+% back cover | spriralEge | spine | cover
+\newlength{\totalWidth}
+\setlength{\totalWidth}{\foldThree}
+\addtolength{\totalWidth}{\foldWidth}
+\addtolength{\totalWidth}{\foldTwo}
+
+\newlength{\spineStart}
+\setlength{\spineStart}{\foldTwo}
+% \addtolength{\spineStart}{\foldWidth}
+
+\usepackage[paperwidth=\totalWidth,
+    paperheight=\paperHeight,
+    margin=0mm,
+    headheight=0mm,
+    headsep=0mm,
+    footskip=0mm]{geometry}
+
+\thispagestyle{empty}
+
+\begin{document}
+\noindent 
+
+\begin{tikzpicture}[remember picture, overlay]
+    \draw[gray, thick] ([xshift=\foldOne]current page.south west) -- ([xshift=\foldOne]current page.north west);
+    \draw[gray, thick] ([xshift=\foldTwo]current page.south west) -- ([xshift=\foldTwo]current page.north west);
+    \draw[gray, thick] ([xshift=\foldThree]current page.south west) -- ([xshift=\foldThree]current page.north west);
+\end{tikzpicture}
+
+
+% \begin{adjustbox}{minipage=\foldOne,margin=10pt}
+%     % Your content goes here...
+% \end{adjustbox}
+
+
+\begin{textblock*}{\foldOne}(0mm,0mm)
+    \noindent
+    \begin{adjustbox}{minipage=\dimexpr\foldOne-20mm,margin=10mm}
+    % \begin{minipage}[t][\paperHeight][c]{\foldOne}  % Adjust width for spine
+    %   \centering
+      {\Large\textbf{Abstract}}\\[1cm]
+      \noindent
+      {\myAbstract}\\[2cm]
+    \end{adjustbox}
+    
+  \end{textblock*}
+
+
+% Cover page positioned to start after the spine
+\begin{textblock*}{\foldTwo}(\foldThree,0mm)
+    \noindent
+
+    %\begin{adjustbox}{minipage=[t][\paperheight][c]{\dimexpr\foldtwo-20mm}, margin=10mm}
+    \begin{adjustbox}{minipage=\dimexpr\foldTwo-40mm, margin=20mm}
+    % \begin{adjustbox}{minipage=\dimexpr\foldOne-20mm,margin=10mm}
+    %\begin{minipage}[t][\paperHeight][c]{\foldTwo}  % [minipage height][vertical alignment]{minipage width}
+      % Center the content vertically and horizontally
+      \centering
+      \vspace*{20mm}
+      % Title
+      {\Huge\textbf{\myShortTitle}}\\[1cm]
+      
+      % Subtitle or a shorter version of the abstract
+      {\large An Examination of the Intersection between Technology and Art}\\[2cm]
+      
+      % Author
+      {\Large\textbf{Tibor Udvari}}\\[0.5cm]
+      
+      % Institution
+      {\large\textit{\myInstitution}}\\[0.5cm]
+      
+      % Advisor
+      {\large\textit{Advised by \myAdvisorShort}}\\[3cm]
+      
+      % Date
+      {\large December 2023}
+      
+      % Any additional text or graphics can be included here
+    \end{adjustbox}
+  \end{textblock*}
+
+  \begin{textblock*}{\spiralDiam}(\spineStart,0mm)
+    \noindent
+    \rotatebox{270}{%
+      \parbox[c][\spiralDiam][c]{\paperHeight}{%
+        \centering
+        % Spine content here...
+        \textbf{\myShortTitle} by \textbf{Tibor Udvari}
+      }
+    }
+  \end{textblock*}
+
+
+% % Add your content
+% \begin{tikzpicture}[remember picture, overlay]
+%     % Position a node for the front cover content (change 'xshift' to position it correctly)
+%     \node[align=center, font=\Huge, text width=5cm] at ([xshift=-4cm]current page.center) {Front Cover Title};
+
+%     % Position a node for the back cover content (change 'xshift' to position it correctly)
+%     \node[align=center, text width=5cm] at ([xshift=4cm]current page.center) {Back Cover Content};
+
+%     % Position a node for the spine content (change 'yshift' to position it correctly)
+%     \node[rotate=90, align=center, text width=5cm] at ([yshift=0cm]current page.center) {Spine Title};
+% \end{tikzpicture}
+
+
+
+\end{document}

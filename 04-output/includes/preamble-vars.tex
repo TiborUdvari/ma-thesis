@@ -1,0 +1,29 @@
+\usepackage{calc}
+
+% Define Lengths
+\newlength{\paperWidth}
+\newlength{\paperHeight}
+\newlength{\leftMargin}
+\newlength{\rightMargin}
+\newlength{\topMargin}
+\newlength{\bottomMargin}
+\newlength{\spiralWidth}
+
+\newlength{\diagramPaperWidth}
+
+\setlength{\spiralWidth}{10.7mm}
+\setlength{\paperWidth}{158mm}
+\setlength{\paperHeight}{210mm}
+
+\setlength{\diagramPaperWidth}{\paperWidth}
+\addtolength{\diagramPaperWidth}{\paperWidth}
+\addtolength{\diagramPaperWidth}{-\spiralWidth}
+
+% Define ratios
+\newcommand{\marginRatio}{0.15}
+
+% Use the ratio to calculate margins
+\setlength{\leftMargin}{\paperWidth*\real{\marginRatio}}
+\setlength{\rightMargin}{\paperWidth*\real{\marginRatio}}
+\setlength{\topMargin}{\paperHeight*\real{\marginRatio}}
+\setlength{\bottomMargin}{\paperHeight*\real{\marginRatio}}

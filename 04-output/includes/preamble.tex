@@ -1,9 +1,8 @@
-\documentclass[draft]{article}
+\usepackage{pdfpages}
 
 \usepackage{lipsum}
 \usepackage[utf8]{inputenc}
 \usepackage{calc}
-\usepackage{fancyhdr}
 \usepackage{ragged2e}
 
 \usepackage{amsmath}
@@ -30,29 +29,28 @@
 \usepackage[style=apa, backend=biber]{biblatex}
 \addbibresource{main.bib}
 
-% Define Lengths
-\newlength{\paperWidth}
-\newlength{\paperHeight}
-\newlength{\leftMargin}
-\newlength{\rightMargin}
-\newlength{\topMargin}
-\newlength{\bottomMargin}
-\newlength{\spiralWidth}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{afterpage} % for the \afterpage command
 
-\setlength{\paperWidth}{158mm}
-\setlength{\paperHeight}{210mm}
-\setlength{\spiralWidth}{10.7mm}
+% \newcommand{\savegeometry}{\newgeometry{paperwidth=\paperWidth,
+% paperheight=\paperHeight, 
+% left=\leftMargin, 
+% right=\rightMargin, 
+% top=\topMargin, 
+% bottom=\bottomMargin,
+% marginparwidth=0mm,
+% marginparsep=0mm,
+% headheight=0mm,
+% hoffset=\spiralWidth,
+% voffset=-5mm,
+% headsep=0mm,
+% footskip=0mm}}
 
-% Define ratios
-\newcommand{\marginRatio}{0.15}
+% \newcommand{\restoregeometry}{\restoregeometry}
 
-% Use the ratio to calculate margins
-\setlength{\leftMargin}{\paperWidth*\real{\marginRatio}}
-\setlength{\rightMargin}{\paperWidth*\real{\marginRatio}}
-\setlength{\topMargin}{\paperHeight*\real{\marginRatio}}
-\setlength{\bottomMargin}{\paperHeight*\real{\marginRatio}}
-
-\usepackage[paperwidth=\paperWidth,
+\newcommand{\specialpagegeometry}{\newgeometry{
+    paperwidth=300mm,
     paperheight=\paperHeight, 
     left=\leftMargin, 
     right=\rightMargin, 
@@ -64,22 +62,23 @@
     hoffset=\spiralWidth,
     voffset=-5mm,
     headsep=0mm,
-    footskip=0mm]{geometry}
-\usepackage{xcolor}
-\usepackage{titlesec}
-\usepackage{afterpage} % for the \afterpage command
+    footskip=0mm
+    }}
 
-% Set up the page style for fancy headers and footers
-\pagestyle{fancy}
-\fancyhf{} % Clear all header and footer fields
+% Command to start a special page with a new size
+\newcommand{\beginspecialpage}{
+    \clearpage % Ensure we start on a new page
+    \specialpagegeometry % Apply the special geometry
+    \pagestyle{empty} % Optional: remove headers and footers
+}
 
-% Remove the header line
-\renewcommand{\headrulewidth}{0pt}
-% Remove the footer line, if needed
-\renewcommand{\footrulewidth}{0pt}
+% Command to end the special page and restore the original geometry
+% todo - end special page already defined
 
-\fancyfoot[R]{\raisebox{-15mm}{\thepage}}
-
+% \newcommand{\endspecialpage}{
+%     \clearpage % Ensure we end the special page
+%     \afterpage{\restoregeometry} % Restore the original geometry on the following page
+% }
 
 % To move the page number further to the right you can use \fancyfootoffset
 %\fancyfootoffset[B]{10mm} % Adjust the offset to move the page number outside the defined text margin
@@ -112,97 +111,98 @@
   \finentry
 }
 
-% Fonts
-\usepackage[]{fontspec}
+%%% Custom tags to extract pages later %%%%
 
+\usepackage{etoolbox}
+\makeatletter
+\newcommand{\customtag}[1]{%
+  \edef\@currentlabel{#1}% Define the label
+  \label{#1}% Standard labeling
+  \immediate\write\@mainaux{% Write directly to the main .aux file
+    \string\newcustomtag{#1}{\thepage}%
+  }%
+}
+\newcommand{\newcustomtag}[2]{% Dummy macro for .aux file
+  % This will do nothing during LaTeX document generation
+  % It's only purpose is to write entries to the .aux file
+}
+\makeatother
 
-% Define commands for setting up each font family
-\newcommand{\setupInterFonts}{
-    \setmainfont{Inter}[
-        Path = ./fonts/Inter/,
-        Scale = MatchLowercase,
-        UprightFont = *-Regular,
-        BoldFont = *-Bold,
-        Extension = .ttf
-    ]
+%%% Special page command %%%
+% Command to start a special page
+\newcommand{\specialsection}[2]{
+    \newpage
+    \pagecolor{black}\afterpage{\nopagecolor}
+    \thispagestyle{empty}
+    \begingroup
+    \color{white}
+    \centering
+    \vspace*{\stretch{1}}
+    \section*{\Huge\textbf{#1}} % Add the section to the table of contents
+    \addcontentsline{toc}{section}{#1} % Manually add the section to the table of contents
+    \fontsize{12pt}{14pt}\selectfont
+    #2
+    \vspace*{\stretch{1}}
+    \endgroup
+    \newpage
 }
 
-\newcommand{\setupSourceSansFonts}{
-    \setsansfont{SourceSans3}[
-        Path = ./fonts/SourceSans3/,
-        Scale = MatchLowercase,
-        UprightFont = *-Regular,
-        BoldFont = *-Bold,
-        ItalicFont = *-Italic,
-        BoldItalicFont = *-BoldItalic,
-        Extension = .ttf
-    ]
+
+%%%% Paper size stuff %%%%%
+% Set up the page style for fancy headers and footers
+
+%\setlength{\paperWidth}{158mm}
+%\setlength{\paperHeight}{210mm}
+
+% 158 * 2 - 10.7 - 305.3
+
+\usepackage[usegeometry,paper=158mm:210mm]{typearea}
+
+\usepackage[
+    %paperwidth=\paperWidth,
+    %paperheight=\paperHeight,
+    left=\leftMargin, 
+    right=\rightMargin, 
+    top=\topMargin, 
+    bottom=\bottomMargin,
+    marginparwidth=0mm,
+    marginparsep=0mm,
+    headheight=0mm,
+    %hoffset=\spiralWidth,
+    %voffset=-5mm,
+    headsep=0mm,
+    %showframe,
+    footskip=22.5mm]{geometry}
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfootoffset[R]{1cm} % Extend the right footer into the right margin by 1cm
+
+\fancyfoot[R]{\thepage} % "LE" for Left Even pages, "RO" for Right Odd pages
+    
+\newcommand\changepapersize[1]{%
+  %\cleardoublepage
+  \clearpage
+  \KOMAoptions{paper=#1,paper=landscape,DIV=calc}%
+  \newgeometry{margin=1in,footskip=0.5in,showframe}%
 }
 
-\newcommand{\setupSourceSerifFonts}{
-    \newfontfamily\seriffont{SourceSerif4}[
-        Path = ./fonts/SourceSerif4/,
-        Scale = MatchLowercase,
-        UprightFont = *-Regular,
-        BoldFont = *-Bold,
-        ItalicFont = *-Italic,
-        BoldItalicFont = *-BoldItalic,
-        Extension = .ttf
-    ]
-}
-
-% Then use the desired command to switch to that font setup
-%\setupInterFonts
-% \setupSourceSansFonts
-% \setupSourceSerifFonts
-
-% Define the command to set up Inter font
-%  \newfontfamily\headingfont{Inter}[
-%    Path = ./fonts/Inter/,
-%    Scale = MatchLowercase,
-%    UprightFont = *-Regular,
-%    BoldFont = *-Bold,
-%    Extension = .ttf
-%  ]
-
-%  \newfontfamily\headingfont{SourceSerif4}[
-%     Path = ./fonts/SourceSerif4/,
-%     Scale = MatchLowercase,
-%     UprightFont = *-Regular,
-%     BoldFont = *-Bold,
-%     ItalicFont = *-Italic,
-%     BoldItalicFont = *-BoldItalic,
-%     Extension = .ttf
-% ]
+\AtBeginDocument{\storeareas\defaultareasettings}
+\BeforeRestoreareas{\clearpage}
+  
 
 
-\newfontfamily\headingfont{SourceSans3}[
-    Path = ./fonts/SourceSans3/,
-    Scale = MatchLowercase,
-    UprightFont = *-Regular,
-    BoldFont = *-Bold,
-    ItalicFont = *-Italic,
-    BoldItalicFont = *-BoldItalic,
-    Extension = .ttf
-]
+%%% Random comments %%%%
+% \clearpage % Start on a new page after the table of contents
 
-\newfontfamily\bodyfont{SourceSerif4}[
-    Path = ./fonts/SourceSerif4/,
-    Scale = MatchLowercase,
-    UprightFont = *-Regular,
-    BoldFont = *-Bold,
-    ItalicFont = *-Italic,
-    BoldItalicFont = *-BoldItalic,
-    Extension = .ttf
-]
+% % Use the custom command to create a special section page with a title and description
+% \specialsection{Introduction}{This is the introduction to our document. Here we set the stage for the content that is to follow. }
 
-% Apply the body font to the normal text
-\renewcommand{\normalsize}{\fontsize{10}{12}\selectfont\bodyfont}
-\renewcommand{\large}{\fontsize{12}{14}\selectfont\bodyfont}
-\renewcommand{\Large}{\fontsize{14}{18}\selectfont\bodyfont}
-% Add any other size commands you need to redefine
-
-% % Apply the Inter font to section headings
-\titleformat*{\section}{\Large\headingfont}
-\titleformat*{\subsection}{\large\headingfont}
-\titleformat*{\subsubsection}{\normalsize\headingfont}
+% % Reset the geometry and page color for the following pages
+% \restoregeometry
+% \nopagecolor

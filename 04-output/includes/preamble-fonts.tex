@@ -1,0 +1,99 @@
+% Fonts
+\usepackage[]{fontspec}
+\usepackage{titlesec}
+
+% Define commands for setting up each font family
+\newcommand{\setupInterFonts}{
+    \setmainfont{Inter}[
+        Path = ./fonts/Inter/,
+        Scale = MatchLowercase,
+        UprightFont = *-Regular,
+        BoldFont = *-Bold,
+        Extension = .ttf
+    ]
+}
+
+\newcommand{\setupSourceSansFonts}{
+    \setsansfont{SourceSans3}[
+        Path = ./fonts/SourceSans3/,
+        Scale = MatchLowercase,
+        UprightFont = *-Regular,
+        BoldFont = *-Bold,
+        ItalicFont = *-Italic,
+        BoldItalicFont = *-BoldItalic,
+        Extension = .ttf
+    ]
+}
+
+\newcommand{\setupSourceSerifFonts}{
+    \newfontfamily\seriffont{SourceSerif4}[
+        Path = ./fonts/SourceSerif4/,
+        Scale = MatchLowercase,
+        UprightFont = *-Regular,
+        BoldFont = *-Bold,
+        ItalicFont = *-Italic,
+        BoldItalicFont = *-BoldItalic,
+        Extension = .ttf
+    ]
+}
+
+% Then use the desired command to switch to that font setup
+%\setupInterFonts
+% \setupSourceSansFonts
+% \setupSourceSerifFonts
+
+% Define the command to set up Inter font
+ \newfontfamily\headingfont{Inter}[
+   Path = ./fonts/Inter/,
+   Scale = MatchLowercase,
+   UprightFont = *-Regular,
+   BoldFont = *-Bold,
+   Extension = .ttf
+ ]
+
+%  \newfontfamily\headingfont{SourceSerif4}[
+%     Path = ./fonts/SourceSerif4/,
+%     Scale = MatchLowercase,
+%     UprightFont = *-Regular,
+%     BoldFont = *-Bold,
+%     ItalicFont = *-Italic,
+%     BoldItalicFont = *-BoldItalic,
+%     Extension = .ttf
+% ]
+
+
+% \newfontfamily\headingfont{SourceSans3}[
+%     Path = ./fonts/SourceSans3/,
+%     Scale = MatchLowercase,
+%     UprightFont = *-Regular,
+%     BoldFont = *-Bold,
+%     ItalicFont = *-Italic,
+%     BoldItalicFont = *-BoldItalic,
+%     Extension = .ttf
+% ]
+
+\newfontfamily\bodyfont{SourceSerif4}[
+    Path = ./fonts/SourceSerif4/,
+    Scale = MatchLowercase,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold,
+    ItalicFont = *-Italic,
+    BoldItalicFont = *-BoldItalic,
+    Extension = .ttf
+]
+
+% Apply the body font to the normal text
+\renewcommand{\normalsize}{\fontsize{10}{12}\selectfont\bodyfont}
+\renewcommand{\large}{\fontsize{12}{14}\selectfont\bodyfont}
+\renewcommand{\Large}{\fontsize{14}{18}\selectfont\bodyfont}
+% Add any other size commands you need to redefine
+
+\renewcommand{\Huge}{\fontsize{25}{30}\selectfont\headingfont}
+\renewcommand{\LARGE}{\fontsize{20}{25}\selectfont\headingfont}
+\renewcommand{\Large}{\fontsize{14}{18}\selectfont\headingfont}
+\renewcommand{\large}{\fontsize{12}{14}\selectfont\headingfont}
+
+% % Apply the Inter font to section headings
+\titleformat*{\section}{\Large\headingfont}
+\titleformat*{\subsection}{\large\headingfont}
+\titleformat*{\subsubsection}{\normalsize\headingfont}

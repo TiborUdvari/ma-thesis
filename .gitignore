@@ -27,6 +27,7 @@ main.text
 work_journal.tex
 *.pdf_tex
 ## Latex
+*.xdv 
 *.run.xml
 *.aux
 *.fdb_latexmk
