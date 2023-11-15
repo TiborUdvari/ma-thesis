@@ -130,16 +130,17 @@
 
 %%% Special page command %%%
 % Command to start a special page
-\newcommand{\specialsection}[2]{
+\newcommand{\specialsection}[4]{
     \newpage
-    \pagecolor{black}\afterpage{\nopagecolor}
+    \customtag{intropage}
+    \pagecolor{#3}\afterpage{\nopagecolor}
     \thispagestyle{empty}
     \begingroup
-    \color{white}
+    \color{#4}
     \centering
     \vspace*{\stretch{1}}
-    \section*{\Huge\textbf{#1}} % Add the section to the table of contents
-    \addcontentsline{toc}{section}{#1} % Manually add the section to the table of contents
+    \section{#1} % Add the section to the table of contents
+    % \addcontentsline{toc}{section}{#1} % Manually add the section to the table of contents
     \fontsize{12pt}{14pt}\selectfont
     #2
     \vspace*{\stretch{1}}
@@ -168,8 +169,8 @@
     marginparwidth=0mm,
     marginparsep=0mm,
     headheight=0mm,
-    %hoffset=\spiralWidth,
-    %voffset=-5mm,
+    hoffset=0.5\spiralWidth,
+    voffset=-5mm,
     headsep=0mm,
     %showframe,
     footskip=22.5mm]{geometry}
@@ -201,7 +202,6 @@
 % \clearpage % Start on a new page after the table of contents
 
 % % Use the custom command to create a special section page with a title and description
-% \specialsection{Introduction}{This is the introduction to our document. Here we set the stage for the content that is to follow. }
 
 % % Reset the geometry and page color for the following pages
 % \restoregeometry

@@ -1,14 +1,64 @@
-\section{Introduction}
-% \subsection{The Background and Importance of Open Source Projects}
-% -- about open source communities in general
-% -- importance of open source projects, maybe mention how flash died out, and the recent unity price change ?
+\specialsection{Introduction}{}{black}{white}
 
-% todo NN - il faudrait des éléments visuels qui illustre mais aussi donne à voir ce qu’est Processing, et éventuellement là “où est la communauté”: des screenshots de forums, etc.
+\subsection{The Enduring Legacy of Processing} % in Computational Design
 
-\subsection{The Processing Project: A brief overview}
-% todo - adapt to focus more on the research question
+Processing has marked its presence in the realm of digital design and creative coding with an enduring significance since its initial release on August 9, 2001 \parencite{processingfoundation20thAnniversaryProcessing2022}. This platform has not only persisted for over two decades but has also seen an expansion in its user base, indicating its continued relevance in a rapidly evolving field. Its role in shaping software literacy and education, especially for beginners, is well-documented, with its straightforward approach to coding and design principles that resonate with Maeda’s laws of simplicity \parencite{JohnMaedaLaws2020}.
 
-Processing was developed as a programming language and environment specifically tailored for the media arts communities. Its inception took place at the MIT Media Lab's Aesthetics and Computation Group (ACG) in 2001, led by Ben Fry and Casey Reas. Its foundational concepts build upon the earlier work from the Design By Numbers (DBN) programming platform, a project spearheaded by John Maeda \parencite{fryModernPrometheusHistory2018}.
+The platform's design ethos, often aligned with principles such as "Low Threshold, High Ceiling, and Wide Walls," has facilitated a nurturing environment for learning and creation \parencite{resnickDesignPrinciplesTools}. The steady increase in the adoption of Processing, as indicated by user metrics that align with academic calendars, underscores its integration into educational structures \parencite{fryModernPrometheusHistory2018}. These metrics, alongside community surveys, suggest that Processing has transcended its educational utility, finding a place in professional workflows \parencite{2016CommunitySurvey}.
+
+Processing's contribution to the field is further underlined by its influence on other significant projects, such as Arduino, which has roots in the same ethos and community \parencite{barraganUntoldHistoryArduino2016}. Its adaptability is evident through its evolution into variants like p5.js, Processing for Android, and Processing for Python, suggesting a responsive growth to the needs of its community, as visible on the Processing website.
+
+In light of its historical context and the progressive adaptation to user needs, Processing stands as a distinguished example of enduring software in the creative coding community. It is this longevity and adaptability that prompt a closer examination of its design philosophy and community dynamics. As we witness the retirement of once-pivotal tools like Flash or Director, Processing's sustained relevance raises questions about the underlying factors contributing to its success \parencite{hortonDeathTechnicalSkill} \parencite{steveThoughtsFlashApple2010} \parencite{FutureAdobeContribute2019}.
+
+However, despite its success and influence, a concerning aspect is the project's sustainability, considering the reliance on a small cadre of volunteer developers for the majority of the codebase \parencite{fryModernPrometheusHistory2018}. This situation poses significant questions about the long-term viability of open-source projects that are driven by community rather than commercial support.
+
+\subsection{Research Questions}
+
+In the preceding sections, we have contextualized Processing as a pivotal tool that has withstood the test of time, promulgating computational design and creative coding. This thesis seeks to unearth the dynamics that underpin the formation and perpetuation of a community around an open-source software such as Processing. The investigation pivots around a central research question:
+
+\begin{quote}
+"What were the foundational dynamics that not only instigated but also sustained the collaborative spirit of the Processing community? And how did these dynamics, entwined with the intrinsic motivations of open-source contributors, influence the evolution of Processing's software development over the years?"
+\end{quote}
+
+This question is aimed at dissecting the symbiotic relationship between community involvement and software innovation, probing into how the motivations of developers, particularly those contributing on a voluntary basis, shaped the trajectory of Processing's growth. The thesis will examine:
+
+\begin{itemize}
+  \item The initial factors that attracted contributors to Processing and the elements that fostered their long-term engagement.
+  \item The various forms of contributions made to the project, from coding to community support and education.
+  \item The transformation of these community dynamics from the nascent stages of Processing to its present-day stature.
+  \item The underpinning reasons for continued voluntary participation in the project's development, despite the absence of direct financial incentives.
+\end{itemize}
+
+The insights garnered from this exploration will augment our understanding of the sustainable models for the development of collaborative open-source software in the arts.
+
+\subsection{The Beginnings of the Processing Project at the MIT Media Lab}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=1\textwidth]{images/2019_zipdecode.png} 
+  \caption{Ben Fry's "zipdecode" sketch, an early and influential work created with Processing, showcasing the power of the Bagel renderer in generating engaging 2D visualizations \parencite{fryZipdecode1999}.}
+  \label{fig:zipdecode}
+\end{figure}
+
+The Processing project was initiated at the MIT Media Lab's Aesthetics and Computation Group (ACG) in 2001 by Ben Fry and Casey Reas. It was conceived as a direct successor to the Design By Numbers (DBN) project but sought to transcend DBN's limitations such as the 100x100 pixel grid, enabling the creation of larger sketches with a broader color palette. This expanded capability was a direct response to the needs observed in a workshop at the Rhode Island School of Design (RISD), which Elise Co participated in \parencite{fryModernPrometheusHistory2018}.
+
+Processing utilized "Bagel" as its core rendering engine, focusing on 2D graphics to facilitate media arts creation. While Bagel's capabilities were robust for 2D rendering, the Media Lab's reliance on ACU for 3D projects meant that Processing had a more specialized, albeit limited, use within the lab's ecosystem \parencite{fryBagel}.
+
+One of the early demonstrations of Processing's potential was Fry's "zipdecode" sketch. This project, rendered using Processing, highlighted the platform's utility in creative coding and effectively captured the attention of the broader design and technology communities \parencite{AppleScienceProfiles2011} \parencite{fryZipdecode1999}.
+
+
+In its formative years, Processing was also influenced by other prototyping tools such as Java, Director, and Flash, which were integral to the ACG's dynamic environment \parencite[23]{fryComputationalInformationDesign2004}. 
+
+The educational use of Processing, particularly in workshops, provided real-time user testing and feedback. This hands-on approach allowed Fry and his team to observe user interactions and quickly implement improvements, illustrating the project's commitment to user-centered development \parencite{fryEmailInterviewProcessing2023}.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=1\textwidth]{images/fry2004-frameworks.png} 
+  \caption{Processing framework origins \parencite[23]{fryComputationalInformationDesign2004}}
+  \label{fig:processing_framework_inspirations}
+\end{figure}
+
+\subsection{The ingredients of the Processing Project}
 
 Ben Fry shed light on the holistic nature of the Processing initiative, noting:
 \begin{quote}
@@ -27,10 +77,7 @@ Over the years, Processing has been adopted across various disciplines, showcasi
 % modular toolkit, not a monolith
 % community, application, syntax
 % commercial software
-
-
-    
-
+  
 \begin{figure}
   \centering
   \includegraphics[width=0.7\textwidth]{images/processing_alpha_forum_screenshot.png} 
@@ -38,9 +85,8 @@ Over the years, Processing has been adopted across various disciplines, showcasi
   \label{fig:alpha_forum_screenshot}
 \end{figure}
 
-
 \begin{figure}
-  \includegraphics[width=0.5\textwidth]{images/processing_ide.png} 
+  \includegraphics[width=1\textwidth]{images/processing_ide.png} 
   \caption{Processing IDE \parencite{reasProcessingIDE2015}}
   \label{fig:processing_ide_screenshot}
 \end{figure}
@@ -48,11 +94,16 @@ Over the years, Processing has been adopted across various disciplines, showcasi
 % todo NN add figure about processing ide
 % todo NN ne pas distinguer la litt review de l’introduction, ni la méthodo, il faudrait tout mettre dedans pour montrer (1) en quoi cela permet de formuler une question de recherche (qui reste à expliciter ici), (2) mettre en place une méthodologie pour y répondre
 
+% question de recherche – à forumuler
+% methodologie
+
+
+
 % todo NN Rappelle toi qu’une revue de littérature sert à préciser ton questionnement général décrcit en introduction et formuler une question de recherche puis une méthodo pour y répondre. Tu le fais heureusement déjà un peu !
 
 % todo NN et en fin de cette grosses introduction tu pourrais mettre l’annonce du plan du mémoire, ce que vont contenir les chapitres
 
-\section{Literature review}
+% \section{Literature review}
 
 \subsection{Open Source Contributions: Historical Perspective and Modern Implications}
 
