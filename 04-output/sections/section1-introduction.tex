@@ -1,6 +1,14 @@
 \specialsection{Introduction}{}{black}{white}
 
-\subsection{The Enduring Legacy of Processing} % in Computational Design
+\begin{figure}
+    \includegraphics[width=1\textwidth]{images/processing_ide.png} 
+    \caption{Processing IDE \parencite{reasProcessingIDE2015}}
+    \label{fig:processing_ide_screenshot}
+  \end{figure}
+  
+
+\subsection{The Legacy of Processing} % in Computational Design
+%\subsection{The Enduring Legacy of Processing} % in Computational Design
 
 Processing has marked its presence in the realm of digital design and creative coding with an enduring significance since its initial release on August 9, 2001 \parencite{processingfoundation20thAnniversaryProcessing2022}. This platform has not only persisted for over two decades but has also seen an expansion in its user base, indicating its continued relevance in a rapidly evolving field. Its role in shaping software literacy and education, especially for beginners, is well-documented, with its straightforward approach to coding and design principles that resonate with Maeda’s laws of simplicity \parencite{JohnMaedaLaws2020}.
 
@@ -14,7 +22,13 @@ However, despite its success and influence, a concerning aspect is the project's
 
 \subsection{Research Questions}
 
-In the preceding sections, we have contextualized Processing as a pivotal tool that has withstood the test of time, promulgating computational design and creative coding. This thesis seeks to unearth the dynamics that underpin the formation and perpetuation of a community around an open-source software such as Processing. The investigation pivots around a central research question:
+In the preceding sections, we have contextualized Processing as a pivotal tool that has withstood the test of time, promulgating computational design and creative coding. Reflecting on Ben Fry's insightful perspective on Processing:
+
+\begin{quote}
+"The processing project is a community, a piece of software that you run, and a language. And that order is important." – Ben Fry \parencite[19:22]{artsatmit2017CASTSymposium2017}
+\end{quote}
+
+we understand the layered nature of the platform. This thesis seeks to unearth the dynamics that underpin the formation and perpetuation of a community around an open-source software such as Processing. The investigation pivots around a central research question:
 
 \begin{quote}
 "What were the foundational dynamics that not only instigated but also sustained the collaborative spirit of the Processing community? And how did these dynamics, entwined with the intrinsic motivations of open-source contributors, influence the evolution of Processing's software development over the years?"
@@ -23,140 +37,51 @@ In the preceding sections, we have contextualized Processing as a pivotal tool t
 This question is aimed at dissecting the symbiotic relationship between community involvement and software innovation, probing into how the motivations of developers, particularly those contributing on a voluntary basis, shaped the trajectory of Processing's growth. The thesis will examine:
 
 \begin{itemize}
-  \item The initial factors that attracted contributors to Processing and the elements that fostered their long-term engagement.
-  \item The various forms of contributions made to the project, from coding to community support and education.
-  \item The transformation of these community dynamics from the nascent stages of Processing to its present-day stature.
-  \item The underpinning reasons for continued voluntary participation in the project's development, despite the absence of direct financial incentives.
+\item The initial factors that attracted contributors to Processing and the elements that fostered their long-term engagement, as indicated by Fry's prioritization of the community.
+\item The various forms of contributions made to the project, from coding to community support and education, reflecting the intertwined nature of the software and language.
+\item The transformation of these community dynamics from the nascent stages of Processing to its present-day stature.
+\item The underpinning reasons for continued voluntary participation in the project's development, despite the absence of direct financial incentives, aligning with Fry's understanding of the community's primacy.
 \end{itemize}
 
 The insights garnered from this exploration will augment our understanding of the sustainable models for the development of collaborative open-source software in the arts.
 
-\subsection{The Beginnings of the Processing Project at the MIT Media Lab}
+\subsection{Information sources}
 
-\begin{figure}
-  \centering
-  \includegraphics[width=1\textwidth]{images/2019_zipdecode.png} 
-  \caption{Ben Fry's "zipdecode" sketch, an early and influential work created with Processing, showcasing the power of the Bagel renderer in generating engaging 2D visualizations \parencite{fryZipdecode1999}.}
-  \label{fig:zipdecode}
-\end{figure}
+% Research Design
+Given the potential for memory bias due to the passage of time since the project's inception, this study employs a mixed-methods approach. While human memory can be fallible, introducing biases and even constructing false memories, quantitative analysis serves as a foundational component to mitigate these challenges. It allows for the identification of key contributors based on metrics such as commit frequency and significance, forum participation, and library contributions. These quantitative findings inform the selection of interviewees, acting as a preliminary filter to locate core contributors and library authors for qualitative interviews.
 
-The Processing project was initiated at the MIT Media Lab's Aesthetics and Computation Group (ACG) in 2001 by Ben Fry and Casey Reas. It was conceived as a direct successor to the Design By Numbers (DBN) project but sought to transcend DBN's limitations such as the 100x100 pixel grid, enabling the creation of larger sketches with a broader color palette. This expanded capability was a direct response to the needs observed in a workshop at the Rhode Island School of Design (RISD), which Elise Co participated in \parencite{fryModernPrometheusHistory2018}.
+By purposefully integrating quantitative methodologies with qualitative ethnographic approaches, this research aspires to offer a nuanced understanding of both the structural and phenomenological aspects of the Processing community.
 
-Processing utilized "Bagel" as its core rendering engine, focusing on 2D graphics to facilitate media arts creation. While Bagel's capabilities were robust for 2D rendering, the Media Lab's reliance on ACU for 3D projects meant that Processing had a more specialized, albeit limited, use within the lab's ecosystem \parencite{fryBagel}.
-
-One of the early demonstrations of Processing's potential was Fry's "zipdecode" sketch. This project, rendered using Processing, highlighted the platform's utility in creative coding and effectively captured the attention of the broader design and technology communities \parencite{AppleScienceProfiles2011} \parencite{fryZipdecode1999}.
+% Data Sources
+The research draws upon multiple data sources to form a comprehensive picture of the Processing community and its development practices. These range from forum discussions at various phases of the project to commit histories and issue trackers. The parsing status indicates the extent to which each data source has been prepared for analysis. 
 
 
-In its formative years, Processing was also influenced by other prototyping tools such as Java, Director, and Flash, which were integral to the ACG's dynamic environment \parencite[23]{fryComputationalInformationDesign2004}. 
-
-The educational use of Processing, particularly in workshops, provided real-time user testing and feedback. This hands-on approach allowed Fry and his team to observe user interactions and quickly implement improvements, illustrating the project's commitment to user-centered development \parencite{fryEmailInterviewProcessing2023}.
-
-\begin{figure}
-  \centering
-  \includegraphics[width=1\textwidth]{images/fry2004-frameworks.png} 
-  \caption{Processing framework origins \parencite[23]{fryComputationalInformationDesign2004}}
-  \label{fig:processing_framework_inspirations}
-\end{figure}
-
-\subsection{The ingredients of the Processing Project}
-
-Ben Fry shed light on the holistic nature of the Processing initiative, noting:
-\begin{quote}
-"The processing project is a community, a piece of software that you run, and a language. And that order is important." – Ben Fry \parencite[19:22]{artsatmit2017CASTSymposium2017}
-\end{quote}
-
-In its design philosophy, Processing introduced the concept of "software sketches". It was designed with an accessible entry point for beginners, while also providing advanced capabilities for experienced users \parencite{reasProcessingProgrammingMedia2006}.
-
-Over the years, Processing has been adopted across various disciplines, showcasing its versatility. To further its impact and development, the Processing Foundation was established, with notable contributors like Daniel Shiffman. The foundation aims to support and expand the reach of the Processing software and its associated projects.
-
-% todo add
-%\subsection{Objective and Scope of the Research}
-
-% Choice of processing, because the community has been around for a while and the project is still alive and taught in schools, also at a high school level
-
-% modular toolkit, not a monolith
-% community, application, syntax
-% commercial software
-  
-\begin{figure}
-  \centering
-  \includegraphics[width=0.7\textwidth]{images/processing_alpha_forum_screenshot.png} 
-  \caption{Processing Alpha Forum (https://forum.processing.org/alpha)}
-  \label{fig:alpha_forum_screenshot}
-\end{figure}
-
-\begin{figure}
-  \includegraphics[width=1\textwidth]{images/processing_ide.png} 
-  \caption{Processing IDE \parencite{reasProcessingIDE2015}}
-  \label{fig:processing_ide_screenshot}
-\end{figure}
-
-% todo NN add figure about processing ide
-% todo NN ne pas distinguer la litt review de l’introduction, ni la méthodo, il faudrait tout mettre dedans pour montrer (1) en quoi cela permet de formuler une question de recherche (qui reste à expliciter ici), (2) mettre en place une méthodologie pour y répondre
-
-% question de recherche – à forumuler
-% methodologie
+%\input{includes/table-data-sources.tex}      
 
 
-
-% todo NN Rappelle toi qu’une revue de littérature sert à préciser ton questionnement général décrcit en introduction et formuler une question de recherche puis une méthodo pour y répondre. Tu le fais heureusement déjà un peu !
-
-% todo NN et en fin de cette grosses introduction tu pourrais mettre l’annonce du plan du mémoire, ce que vont contenir les chapitres
-
-% \section{Literature review}
-
-\subsection{Open Source Contributions: Historical Perspective and Modern Implications}
-
-Open source software has evolved from a grassroots, community-driven activity into a mainstream phenomenon influencing all sectors of software development. This transition has been analyzed from numerous perspectives, including Etienne Wenger's theory of Communities of Practice, which posits that learning occurs in social contexts \parencite{wengerCommunitiesPracticeLearning1998}. This theory underscores the importance of shared experiences, tools, and discourse in shaping a community's collective practice. In the context of open-source software, these dynamics offer invaluable insights into the sustainability and progression of such projects. For instance, the Processing community exemplifies more than just a collection of individual contributors; it represents a dynamic community molded by common goals and collective learning.
-
-This communal focus contrasts sharply with the software development models described in Eric S. Raymond's seminal work "The Cathedral and the Bazaar" \parencite{CathedralBazaarMusings2002a}. The Cathedral model is marked by careful planning and centralized authority, more akin to the early GNU projects initiated by Richard Stallman in the 1980s. Conversely, the Bazaar model encourages open collaboration and decentralization—features commonly associated with contemporary open source projects. These two models can be conceptualized as endpoints of a continuum, with real-world communities of practice, like the Processing community, potentially embodying characteristics of both.
-
-Although Richard Stallman's Free Software Movement initially utilized a Cathedral-like approach, the evolution of version control systems like Git has facilitated the adoption of more decentralized, Bazaar-like models. This technological and philosophical shift intriguingly complements Wenger's notions of "mutual engagement," "joint enterprise," and "shared repertoire"—elements that nurture a sense of community and shared objectives \parencite{wengerCommunitiesPracticeLearning1998}.
-
-Fast-forwarding to today, the landscape now includes not just individual contributors but major corporations as well, injecting both challenges and opportunities into existing communities. The Processing project stands as a compelling case study to examine how an open-source community can preserve its foundational ethos while simultaneously adapting to contemporary requirements.
-
-To holistically grasp the intricate interplay of social and technical factors contributing to the success of open-source initiatives, a multidimensional analysis is essential. Such an approach would synthesize various frameworks, including Wenger's Communities of Practice \parencite{wengerCommunitiesPracticeLearning1998} and Raymond's Cathedral and Bazaar models \parencite{CathedralBazaarMusings2002a}, aiming to provide a nuanced understanding of a community's past, present dynamics, and future potential.
-
-
-
-
-\subsection{The Centrality of Open Source Values in Processing}
-
-% Contextualizing the Open Source Movement
-The open source movement has undeniably influenced a myriad of practical applications, ranging from operating systems like Linux to various software tools. However, its impact on the realm of creative software tools has been comparatively limited. According to Reas and Fry~\parencite[30]{reasProcessingProgrammingHandbook2007}, companies like Adobe and Microsoft largely dominate the field, limiting the open-source philosophy's penetration into the culture of arts software. % Here, you establish the broader impact of open source and point out a gap in its influence over artistic software.
-
-% Importance of Open Source Ethos in Processing
-Within this context, Processing emerges as a significant counterexample, embedding the ethos of open source at its very core. This ethos is not simply a byproduct but an intentional design choice to promote software literacy. Reas and Fry define literacy in the context of software as the ability to both "read" and "write" within a medium~\parencite[29]{reasProcessingProgrammingHandbook2007}. % This highlights how Processing intentionally incorporates open source values to facilitate a specific kind of literacy.
-
-% Elaborating Software Literacy
-In traditional print writing, literacy involves generating rhetorical tools that aim to demonstrate and convince. In contrast, computer-based literacy enables one to create processes that can simulate and decide. % This part elaborates on what software literacy entails, contrasting it with traditional forms of literacy.
-
-% Processing's Alignment with Design Principles
-Moreover, Processing exemplifies many of the Design Principles for Tools to Support Creative Thinking as suggested by Resnick~\parencite{resnickDesignPrinciplesTools}. Particularly, by fostering a culture of collaboration and open exchange, Processing does not merely align with open source motivations but elevates itself as a superior Creativity Support Tool (CST). % This wraps up the section by connecting Processing's open-source ethos to broader design principles, emphasizing its role as a potent CST.
-
-
-
-
-\subsection{Understanding the Drivers of Open Source Contributions in the Processing Community}
-
-While existing literature often focuses on the role of companies in contributing to open-source projects through complementary services like consulting, our study diverges by focusing on individual contributors. In the context of the Processing community, corporate involvement is notably lesser when compared to platforms like Linux that have substantial corporate contributions.
-
-The 2016 Processing community survey revealed a significant number of users employ the language for educational purposes. This is consistent with Processing's design ethos, which is aimed at being educationally accessible. However, the extent to which this educational usage intersects with what can be termed as `professional use' remains unclear.
-
-For the purpose of this study, `professional use' is understood to primarily include artists and designers. This nuanced categorization helps in probing the overlap between professional and educational use within the Processing community.
-
-Building upon established frameworks such as the taxonomy by Bonaccorsi et al.~\cite{bonaccorsiComparingMotivationsIndividual2006}, which categorizes motivations behind open-source contributions into Economic, Social, and Technological domains, our study intends to adapt this taxonomy to suit the specific nuances of the Processing community.
-
-\begin{figure}[h!] 
-  \centering
-  \includegraphics[width=0.9\textwidth]{images/community-survey.png} 
-  \caption{Processing 2016 community survey result \parencite{2016CommunitySurvey}}
-  \label{fig:community_survey}
-\end{figure}
-
-\input{includes/table-motivations.tex}
-
-% todo NN cette taxonomie est intéressante, mais il faudrait la commenter dans le corps de texte en 2.2, qu’elle vienne nourrir ce que tu as mis au-dessus comme texte, là tu la pose rapidement sans trop détailler comment elle a été produite et ce qu’elle nous dit
-
-%\subsection{The intersection of Creative Coding and Open Source}
-%\subsection{Relevant Methodological Approaches in Computer Science and Anthropology}
+\begin{table}[h]
+    \small
+    %\adjustbox{max width=\textwidth}{
+    \begin{adjustbox}{center}
+    \begin{tabular}{l l l c}
+        \toprule
+        Name & Type & Status \\
+        \midrule
+        Processing alpha forum & Forum & Parsed \\
+        Processing beta forum & Forum & Parsed  \\
+        Processing 1.0 forum & Forum & Downloaded \\
+        Processing 2.0 and 3.0 forum & Forum  & Not downloaded \\
+        Current processing forum & Forum & Not downloaded\\
+        Github project & Commit history & Parsed \\
+        Processing Release Data & Release notes & Parsed \\
+        Github Release Data & Release notes \& download statistics & Parsed \\
+        Processing libraries\textsuperscript{*} & Software release information & Parsed \\
+        Bugzilla & Software issue tracker & Not downloaded \\
+        Github Issues & Software issue tracker & Not downloaded \\
+        \bottomrule
+        \multicolumn{3}{l}{\footnotesize \textsuperscript{*}Note: The data set was reconstructed from the processing website archive and is not complete.}
+    \end{tabular}
+    \end{adjustbox}
+%} 
+    \caption{Overview of Data Sources Used for Analyzing the Processing Community}
+  \end{table}

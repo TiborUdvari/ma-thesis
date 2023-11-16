@@ -2,6 +2,16 @@
   "files.exclude": {
     "**/.git": false
   },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+        "before": ["<C-j>"],
+        "commands": ["editor.action.moveLinesDownAction"]
+    }, // moveLineDown
+    {
+        "before": ["<C-k>"],
+        "commands": ["editor.action.moveLinesUpAction"]
+    } // moveLineUp
+],
   "latex-workshop.latex.tools": [
     {
       "name": "latexmk",
