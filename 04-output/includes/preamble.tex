@@ -1,5 +1,5 @@
 \usepackage{pdfpages}
-\usepackage{adjustbox}
+\usepackage[export]{adjustbox}
 
 
 \usepackage{lipsum}
@@ -21,10 +21,25 @@
 \usepackage{float} % Required for the H specifier
 \usepackage{subcaption} % Required for sub-figures
 
+\usepackage{listings}
+\lstset{
+    language=C++,
+    basicstyle=\ttfamily\scriptsize
+%     keywordstyle=\color{blue},
+%     stringstyle=\color{red},
+%     commentstyle=\color{green},
+%     morecomment=[l][\color{magenta}]{\#},
+%     breaklines=true,
+%     frame=single
+}
+
 % table
+\usepackage{multicol}
+\usepackage{subcaption}
 \usepackage{multirow}
 \usepackage{tabularx}
 \usepackage{hyperref}
+\usepackage{makecell}
 
 \PassOptionsToPackage{colorlinks=true, allcolors=blue}{hyperref}
 

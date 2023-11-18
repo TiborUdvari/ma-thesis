@@ -1,12 +1,16 @@
-\documentclass[draft, twoside]{article}
+\documentclass[twoside]{article}
 \input{includes/preamble-vars.tex}
 \input{includes/preamble-metadata.tex}
 \input{includes/preamble.tex}
 \input{includes/preamble-fonts.tex}
 
+\includeonly {
+    % sections/title-page
+    % sections/section-community
+}
 \begin{document}
 
-% --- Custom tools ---
+% --- Custom tools --
 % Large paper size
 %\changepapersize{305.3mm:210mm}
 %\customtag{largepage} to get out large pages
@@ -21,12 +25,19 @@
 \include{sections/section-language}
 \include{sections/section-software}
 \include{sections/section-community}
+
+% \begin{figure}
+%     \includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/figure-libraries.svg}
+%     \caption{Distribution of Libraries in the Processing Project}
+%     \label{figure:libraries}  
+% \end{figure}
+
 %\include{sections/section2-methodology}
 %\include{sections/section3-presentation}
 %\include{sections/section-integration}
-%\include{sections/section-conclusion}
-%\include{sections/section-acknowledgements}
-%\include{sections/section-bibliography}
-%\include{sections/section-appendices}
+\include{sections/section-conclusion}
+\include{sections/section-acknowledgements}
+\include{sections/section-bibliography}
+\include{sections/section-appendices}
 
 \end{document}
