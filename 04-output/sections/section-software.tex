@@ -1,6 +1,10 @@
 % Software
 \specialsection{Software}{}{black}{white}
 
+% Contributions are more like how
+% Cathedral and the bazaar is more like how
+% Open source motivations are more like why
+
 \begin{figure}
 	\centering
 	\includegraphics[width=0.9\textwidth]{images/processing-mini-cd.png}
@@ -94,6 +98,17 @@ The \textit{Processing} project illuminates a crucial challenge often faced by o
 
 The imbalanced contribution landscape is vividly illustrated in Figure~\ref{fig:alpha-commits}. During the period of the alpha forum, only six individuals contributed code to the repository. This stands in stark contrast to the activity on the forum, where over 1000 individuals were engaged in discussions and queries. The commits themselves were also sporadic and infrequent. As Casey aptly points out: ``I think one thing that’s important to clarify is that Ben Fry, my collaborator, is the primary software engineer of the project [...]'' \parencite[p. 330]{conradGraphicDesignPostdigital2021}.
 
+This discrepancy between the number of code contributors and forum participants is indeed profound, as corroborated by the subsequent visualizations ~\ref{fig:top12-github} and comic anecdotes ~\ref{fig:dependency_comic}. The limited number of contributors to the codebase and the concentrated responsibility on a few individuals amplify the bus factor risk, an issue that warrants deeper investigation and consideration for the long-term health of the project.
+
+\changepapersize{305.3mm:210mm}
+\customtag{largepage}
+
+{
+	\LARGE
+	\noindent Version control statistics 
+}
+\input{includes/figure-top12-github.tex}
+\input{includes/figure-xkdc.tex}
 \begin{figure}[h!]
 	\centering
 	\includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/processing-alpha-commits.svg}
@@ -101,12 +116,8 @@ The imbalanced contribution landscape is vividly illustrated in Figure~\ref{fig:
 	\label{fig:alpha-commits}
 \end{figure}
 
-This discrepancy between the number of code contributors and forum participants is indeed profound, as corroborated by the subsequent visualizations ~\ref{fig:top12-github} and comic anecdotes ~\ref{fig:dependency_comic}. The limited number of contributors to the codebase and the concentrated responsibility on a few individuals amplify the bus factor risk, an issue that warrants deeper investigation and consideration for the long-term health of the project.
 
-
-\input{includes/figure-top12-github.tex}
-
-\input{includes/figure-xkdc.tex}
+\defaultareasettings
 
 The commit logs within the Processing project's GitHub repository, while rich with data, do not provide a complete visualization of early contributions. In an interview with Ben Fry, it was elucidated that contributions from various lab members, including those from Simon Greenwold, were indeed substantial in the project's formative years. These contributions, although crucial, are not conspicuously traceable through the GitHub interface. Fry explains that due to the constraints of the version control systems like CVS and Subversion used at the time, he personally committed code from other contributors, ensuring their efforts were acknowledged in the commit logs, even if not directly attributed in the repository's graphical interface.
 
@@ -124,7 +135,7 @@ Building upon established frameworks such as the taxonomy by Bonaccorsi et al.~\
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.9\textwidth]{images/community-survey.png}
+	\includegraphics[width=\textwidth]{images/community-survey.png}
 	\caption{Processing 2016 community survey result \parencite{2016CommunitySurvey}}
 	\label{fig:community_survey}
 \end{figure}
@@ -135,8 +146,6 @@ Building upon established frameworks such as the taxonomy by Bonaccorsi et al.~\
 
 %\subsection{The intersection of Creative Coding and Open Source}
 %\subsection{Relevant Methodological Approaches in Computer Science and Anthropology}
-
-\subsection{Open Source Contributions}
 
 Open source software has evolved from a grassroots, community-driven activity into a mainstream phenomenon influencing all sectors of software development. This transition has been analyzed from numerous perspectives, including Etienne Wenger's theory of Communities of Practice, which posits that learning occurs in social contexts \parencite{wengerCommunitiesPracticeLearning1998}. This theory underscores the importance of shared experiences, tools, and discourse in shaping a community's collective practice. In the context of open-source software, these dynamics offer invaluable insights into the sustainability and progression of such projects. For instance, the Processing community exemplifies more than just a collection of individual contributors; it represents a dynamic community molded by common goals and collective learning.
 
@@ -149,7 +158,20 @@ Fast-forwarding to today, the landscape now includes not just individual contrib
 To holistically grasp the intricate interplay of social and technical factors contributing to the success of open-source initiatives, a multidimensional analysis is essential. Such an approach would synthesize various frameworks, including Wenger's Communities of Practice \parencite{wengerCommunitiesPracticeLearning1998} and Raymond's Cathedral and Bazaar models \parencite{CathedralBazaarMusings2002a}, aiming to provide a nuanced understanding of a community's past, present dynamics, and future potential.
 
 \subsection{An ecosytem of libraries}
+\todo[inline]{Add Casey Reas quote}
 An important milestone in the Processing ecosystem was the introduction of libraries. These libraries extended the functionalities of the base platform, thereby attracting a broader range of users and contributors. Such an analysis not only sheds light on the diversification of the project but also identifies key contributors and library authors who could potentially be sought out for qualitative interviews. The identification of these contributors adds another layer to our understanding of community participation.
+
+Libraries have always been a crucial component of the Processing community, serving as essential building blocks that extend the platform's capabilities and foster creative exploration. Contributors to these libraries, like Ricard Marxer, Andreas Schlegel, and Karsten Schmidt, are not just developers; they are innovators who play a pivotal role in shaping the Processing ecosystem. Their motivations for contributing provide insightful perspectives into the diverse factors that inspire individuals to engage in open-source projects.
+
+Ricard Marxer, the mind behind the 'geomerative' library, was driven by a blend of personal interest, community engagement, and the thrill of technological innovation. His enthusiasm for programming is evident in his creation of the geomerative library, which addressed specific needs in geometry processing within Processing. Marxer's comment, "I made generative for that, like it was the generative library for geometry," reflects his personal investment in solving technical challenges. Furthermore, his involvement in the community was not solely about personal achievement but also about being part of a larger group, as he fondly recalls the social aspects, "I really enjoyed going a lot to Madrid...and I get to meet all the people from the community of processing."
+
+Andreas Schlegel, who created ControlP5, shows a different set of motivations. While not focusing on economic benefits, the social aspect of his work, particularly recognition within the community, was significant for him. Schlegel mentions, "I do get recognized for writing these libraries and for, by those who are familiar with the community and have used processing before." His contributions, initially experimental, reflected an altruistic intent to provide something useful to the community. Schlegel's journey from learning to contributing, "In the beginning, learning more through reading, and then after a while, I would then also help out and respond to questions that were coming in," highlights the importance of community interaction in driving motivation.
+
+Karsten Schmidt's contributions to toxiclibs were deeply rooted in technological curiosity and a penchant for experimentation. His focus on software side projects and the technical aspects of programming are evident. Schmidt's involvement in early Processing development and creation of toxiclibs suggests a keen interest in working with new technologies. He demonstrated a broader interest in software development challenges, going beyond Processing to work with other languages and tools, as indicated in his discussions about various technical aspects.
+
+The concept of "scratching a personal itch" emerges as a notable motivator for these contributors. They developed their libraries while addressing specific, personal needs or challenges, a common driver in many open-source projects. Marxer's development of the geomerative library, Schlegel's creation of ControlP5, and Schmidt's work on toxiclibs hint at this motivation, where the initial impetus to contribute often stemmed from their own experiences and requirements.
+
+In summary, the motivations of library contributors in the Processing community are as diverse as their backgrounds. From Marxer's enjoyment of coding and community involvement to Schlegel's recognition within the community and Schmidt's technological curiosity, these motivations underscore the multifaceted nature of open-source contribution. Here, personal passions, community dynamics, and the thrill of technological innovation converge, highlighting the unique blend of personal, social, and technological factors that drive individuals to contribute to open-source projects like Processing.
 
 \changepapersize{305.3mm:210mm}
 \customtag{largepage}
