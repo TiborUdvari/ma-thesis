@@ -102,39 +102,29 @@ This discrepancy between the number of code contributors and forum participants 
 	\LARGE
 	\noindent Version control statistics
 }
-
-\vfill
-
-\noindent
-	\begin{minipage}[t]{0.15\textwidth}
-		\noindent
+\begin{multicols}{3}
+	\begin{minipage}{\columnwidth}
 		\begin{figure}[H]
-			\frame{\includegraphics[width=\textwidth]{dependency.png}}
-			\caption{Dependency}
-			\label{fig:dependency_comic}
-			% \small Source: \textit{XKCD}, \url{https://xkcd.com/2347/}, licensed under CC BY-NC 2.5.
-		\end{figure}
-	\end{minipage}
-	\hspace{2mm}
-	\begin{minipage}[t]{0.442\textwidth}
-		\begin{figure}[H]
-			\frame{\includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=\textwidth, keepaspectratio]{images/figure-top12-github.svg}}
+			\includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/figure-top12-github.svg}
 			\caption{Top 12 source code contributors by number of commits}
 			\label{fig:top12-github}
 		\end{figure}
 	\end{minipage}
-\vspace{0.1cm}
-\begin{figure}[H]
-	\frame{\includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/processing-alpha-commits.svg}}
+	\begin{minipage}{\columnwidth}
+		\begin{figure}[H]
+			\includegraphics[width=0.5\textwidth]{dependency.png}
+			\caption{Dependency}
+			\label{fig:dependency_comic}
+			\small Source: \textit{XKCD}, \url{https://xkcd.com/2347/}, licensed under CC BY-NC 2.5.
+		\end{figure}
+	\end{minipage}
+\end{multicols}
+\begin{figure}[h!]
+	\centering
+	\includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/processing-alpha-commits.svg}
 	\caption{Commits up to and including the Processing alpha forum}
 	\label{fig:alpha-commits}
 \end{figure}
-
-\begin{multicols}{3}
-	\noindent	
-	The version control statistics portray a significant concentration of contributions by Ben Fry, indicating his pivotal role in maintaining the project across its timeline. The bar chart demonstrates Fry's preeminence through the sheer volume of his contributions relative to others. However, it's important to recognize that such visualizations do not fully encapsulate the breadth of contributions, especially in the project's nascent stages. Interviews suggest that many early contributions, made before the advent of sophisticated version control systems, remain unrepresented in these statistics. Thus, while the data underscores Fry's central involvement, it also omits a spectrum of foundational efforts that were integral to the project's initial development.
-	\vfill\null
-\end{multicols}
 
 
 \defaultareasettings
