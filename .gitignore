@@ -1,6 +1,11 @@
 # Created by https://www.toptal.com/developers/gitignore/api/macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos
 
+
+# vim stuff 
+*.swp
+
+
 # Interviews - include video files and are generally long, handled transcripts in Zotero
 interviews
 

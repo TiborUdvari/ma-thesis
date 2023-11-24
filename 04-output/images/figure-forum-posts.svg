@@ -1,11 +1,430 @@
-<svg class="plot-d6a7b5" fill="currentColor" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle" width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>.plot-d6a7b5 {
-  display: block;
-  background: white;
-  height: auto;
-  height: intrinsic;
-  max-width: 100%;
-}
-.plot-d6a7b5 text,
-.plot-d6a7b5 tspan {
-  white-space: pre;
-}</style><g aria-label="y-axis tick" fill="none" stroke="currentColor" transform="translate(0,9)"><path transform="translate(100,26)" d="M0,0L-6,0"/><path transform="translate(100,46)" d="M0,0L-6,0"/><path transform="translate(100,66)" d="M0,0L-6,0"/><path transform="translate(100,86)" d="M0,0L-6,0"/><path transform="translate(100,106)" d="M0,0L-6,0"/><path transform="translate(100,126)" d="M0,0L-6,0"/><path transform="translate(100,146)" d="M0,0L-6,0"/><path transform="translate(100,166)" d="M0,0L-6,0"/><path transform="translate(100,186)" d="M0,0L-6,0"/><path transform="translate(100,206)" d="M0,0L-6,0"/><path transform="translate(100,226)" d="M0,0L-6,0"/><path transform="translate(100,246)" d="M0,0L-6,0"/></g><g aria-label="y-axis tick label" text-anchor="end" transform="translate(-9,9)"><text y="0.32em" transform="translate(100,26)">fry</text><text y="0.32em" transform="translate(100,46)">PhiLho </text><text y="0.32em" transform="translate(100,66)">REAS</text><text y="0.32em" transform="translate(100,86)">Cedric</text><text y="0.32em" transform="translate(100,106)">arielm</text><text y="0.32em" transform="translate(100,126)">benelek</text><text y="0.32em" transform="translate(100,146)">fjen</text><text y="0.32em" transform="translate(100,166)">Martin</text><text y="0.32em" transform="translate(100,186)">TomC</text><text y="0.32em" transform="translate(100,206)">mKoser</text><text y="0.32em" transform="translate(100,226)">st33d</text><text y="0.32em" transform="translate(100,246)">flight404</text></g><g aria-label="x-grid" stroke="currentColor" stroke-opacity="0.1"><line x1="100" x2="100" y1="20" y2="270"/><line x1="158.72193436960276" x2="158.72193436960276" y1="20" y2="270"/><line x1="217.44386873920553" x2="217.44386873920553" y1="20" y2="270"/><line x1="276.1658031088083" x2="276.1658031088083" y1="20" y2="270"/><line x1="334.88773747841105" x2="334.88773747841105" y1="20" y2="270"/><line x1="393.6096718480138" x2="393.6096718480138" y1="20" y2="270"/><line x1="452.3316062176165" x2="452.3316062176165" y1="20" y2="270"/><line x1="511.05354058721935" x2="511.05354058721935" y1="20" y2="270"/><line x1="569.7754749568221" x2="569.7754749568221" y1="20" y2="270"/><line x1="628.4974093264249" x2="628.4974093264249" y1="20" y2="270"/><line x1="687.2193436960276" x2="687.2193436960276" y1="20" y2="270"/><line x1="745.9412780656304" x2="745.9412780656304" y1="20" y2="270"/></g><g aria-label="x-axis tick" fill="none" stroke="currentColor"><path transform="translate(100,270)" d="M0,0L0,6"/><path transform="translate(158.72193436960276,270)" d="M0,0L0,6"/><path transform="translate(217.44386873920553,270)" d="M0,0L0,6"/><path transform="translate(276.1658031088083,270)" d="M0,0L0,6"/><path transform="translate(334.88773747841105,270)" d="M0,0L0,6"/><path transform="translate(393.6096718480138,270)" d="M0,0L0,6"/><path transform="translate(452.3316062176165,270)" d="M0,0L0,6"/><path transform="translate(511.05354058721935,270)" d="M0,0L0,6"/><path transform="translate(569.7754749568221,270)" d="M0,0L0,6"/><path transform="translate(628.4974093264249,270)" d="M0,0L0,6"/><path transform="translate(687.2193436960276,270)" d="M0,0L0,6"/><path transform="translate(745.9412780656304,270)" d="M0,0L0,6"/></g><g aria-label="x-axis tick label" font-variant="tabular-nums" transform="translate(0,9)"><text y="0.71em" transform="translate(100,270)">0</text><text y="0.71em" transform="translate(158.72193436960276,270)">200</text><text y="0.71em" transform="translate(217.44386873920553,270)">400</text><text y="0.71em" transform="translate(276.1658031088083,270)">600</text><text y="0.71em" transform="translate(334.88773747841105,270)">800</text><text y="0.71em" transform="translate(393.6096718480138,270)">1,000</text><text y="0.71em" transform="translate(452.3316062176165,270)">1,200</text><text y="0.71em" transform="translate(511.05354058721935,270)">1,400</text><text y="0.71em" transform="translate(569.7754749568221,270)">1,600</text><text y="0.71em" transform="translate(628.4974093264249,270)">1,800</text><text y="0.71em" transform="translate(687.2193436960276,270)">2,000</text><text y="0.71em" transform="translate(745.9412780656304,270)">2,200</text></g><g aria-label="x-axis label" text-anchor="end" transform="translate(17,27)"><text transform="translate(780,270)">Frequency →</text></g><g aria-label="bar"><rect x="100" width="165.30224525043178" y="86" height="18"/><rect x="100" width="122.43523316062178" y="166" height="18"/><rect x="100" width="283.9205526770294" y="46" height="18"/><rect x="100" width="257.4956822107081" y="66" height="18"/><rect x="100" width="101.5889464594128" y="186" height="18"/><rect x="100" width="165.00863557858372" y="106" height="18"/><rect x="100" width="164.42141623488777" y="126" height="18"/><rect x="100" width="141.8134715025907" y="146" height="18"/><rect x="100" width="83.38514680483593" y="246" height="18"/><rect x="100" width="680" y="26" height="18"/><rect x="100" width="89.55094991364422" y="206" height="18"/><rect x="100" width="88.67012089810018" y="226" height="18"/></g><g aria-label="rule" stroke="currentColor"><line x1="100" x2="100" y1="20" y2="270"/></g><g aria-label="tip" fill="white" stroke="currentColor" pointer-events="none" text-anchor="start" transform="translate(0,9)"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   class="plot-d6a7b5"
+   fill="currentColor"
+   font-family="system-ui, sans-serif"
+   font-size="10"
+   text-anchor="middle"
+   width="800"
+   height="300"
+   viewBox="0 0 800 300"
+   version="1.1"
+   id="svg70"
+   sodipodi:docname="figure-forum-posts.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs70" />
+  <sodipodi:namedview
+     id="namedview70"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <style
+     id="style1">.plot-d6a7b5 {&#10;  display: block;&#10;  background: white;&#10;  height: auto;&#10;  height: intrinsic;&#10;  max-width: 100%;&#10;}&#10;.plot-d6a7b5 text,&#10;.plot-d6a7b5 tspan {&#10;  white-space: pre;&#10;}</style>
+  <g
+     aria-label="y-axis tick"
+     fill="none"
+     stroke="currentColor"
+     transform="translate(0,9)"
+     id="g12">
+    <path
+       transform="translate(100,26)"
+       d="M0,0L-6,0"
+       id="path1" />
+    <path
+       transform="translate(100,46)"
+       d="M0,0L-6,0"
+       id="path2" />
+    <path
+       transform="translate(100,66)"
+       d="M0,0L-6,0"
+       id="path3" />
+    <path
+       transform="translate(100,86)"
+       d="M0,0L-6,0"
+       id="path4" />
+    <path
+       transform="translate(100,106)"
+       d="M0,0L-6,0"
+       id="path5" />
+    <path
+       transform="translate(100,126)"
+       d="M0,0L-6,0"
+       id="path6" />
+    <path
+       transform="translate(100,146)"
+       d="M0,0L-6,0"
+       id="path7" />
+    <path
+       transform="translate(100,166)"
+       d="M0,0L-6,0"
+       id="path8" />
+    <path
+       transform="translate(100,186)"
+       d="M0,0L-6,0"
+       id="path9" />
+    <path
+       transform="translate(100,206)"
+       d="M0,0L-6,0"
+       id="path10" />
+    <path
+       transform="translate(100,226)"
+       d="M0,0L-6,0"
+       id="path11" />
+    <path
+       transform="translate(100,246)"
+       d="M0,0L-6,0"
+       id="path12" />
+  </g>
+  <g
+     aria-label="y-axis tick label"
+     text-anchor="end"
+     transform="translate(-9,9)"
+     id="g23">
+    <text
+       y="0.32em"
+       transform="translate(100,26)"
+       id="text12">fry</text>
+    <text
+       y="0.32em"
+       transform="translate(100,46)"
+       id="text13">PhiLho </text>
+    <text
+       y="0.32em"
+       transform="translate(100,66)"
+       id="text14">REAS</text>
+    <text
+       y="0.32em"
+       transform="translate(100,86)"
+       id="text15">Cedric</text>
+    <text
+       y="0.32em"
+       transform="translate(100,106)"
+       id="text16">arielm</text>
+    <text
+       y="0.32em"
+       transform="translate(100,126)"
+       id="text17">benelek</text>
+    <text
+       y="0.32em"
+       transform="translate(100,146)"
+       id="text18">fjen</text>
+    <text
+       y="0.32em"
+       transform="translate(100,166)"
+       id="text19">Martin</text>
+    <text
+       y="0.32em"
+       transform="translate(100,186)"
+       id="text20">TomC</text>
+    <text
+       y="0.32em"
+       transform="translate(100,206)"
+       id="text21">mKoser</text>
+    <text
+       y="0.32em"
+       transform="translate(100,226)"
+       id="text22">st33d</text>
+    <text
+       y="0.32em"
+       transform="translate(100,246)"
+       id="text23">flight404</text>
+  </g>
+  <g
+     aria-label="x-grid"
+     stroke="currentColor"
+     stroke-opacity="0.1"
+     id="g34">
+    <line
+       x1="100"
+       x2="100"
+       y1="20"
+       y2="270"
+       id="line23" />
+    <line
+       x1="158.72193436960276"
+       x2="158.72193436960276"
+       y1="20"
+       y2="270"
+       id="line24" />
+    <line
+       x1="217.44386873920553"
+       x2="217.44386873920553"
+       y1="20"
+       y2="270"
+       id="line25" />
+    <line
+       x1="276.1658031088083"
+       x2="276.1658031088083"
+       y1="20"
+       y2="270"
+       id="line26" />
+    <line
+       x1="334.88773747841105"
+       x2="334.88773747841105"
+       y1="20"
+       y2="270"
+       id="line27" />
+    <line
+       x1="393.6096718480138"
+       x2="393.6096718480138"
+       y1="20"
+       y2="270"
+       id="line28" />
+    <line
+       x1="452.3316062176165"
+       x2="452.3316062176165"
+       y1="20"
+       y2="270"
+       id="line29" />
+    <line
+       x1="511.05354058721935"
+       x2="511.05354058721935"
+       y1="20"
+       y2="270"
+       id="line30" />
+    <line
+       x1="569.7754749568221"
+       x2="569.7754749568221"
+       y1="20"
+       y2="270"
+       id="line31" />
+    <line
+       x1="628.4974093264249"
+       x2="628.4974093264249"
+       y1="20"
+       y2="270"
+       id="line32" />
+    <line
+       x1="687.2193436960276"
+       x2="687.2193436960276"
+       y1="20"
+       y2="270"
+       id="line33" />
+    <line
+       x1="745.9412780656304"
+       x2="745.9412780656304"
+       y1="20"
+       y2="270"
+       id="line34" />
+  </g>
+  <g
+     aria-label="x-axis tick"
+     fill="none"
+     stroke="currentColor"
+     id="g45">
+    <path
+       transform="translate(100,270)"
+       d="M0,0L0,6"
+       id="path34" />
+    <path
+       transform="translate(158.72193436960276,270)"
+       d="M0,0L0,6"
+       id="path35" />
+    <path
+       transform="translate(217.44386873920553,270)"
+       d="M0,0L0,6"
+       id="path36" />
+    <path
+       transform="translate(276.1658031088083,270)"
+       d="M0,0L0,6"
+       id="path37" />
+    <path
+       transform="translate(334.88773747841105,270)"
+       d="M0,0L0,6"
+       id="path38" />
+    <path
+       transform="translate(393.6096718480138,270)"
+       d="M0,0L0,6"
+       id="path39" />
+    <path
+       transform="translate(452.3316062176165,270)"
+       d="M0,0L0,6"
+       id="path40" />
+    <path
+       transform="translate(511.05354058721935,270)"
+       d="M0,0L0,6"
+       id="path41" />
+    <path
+       transform="translate(569.7754749568221,270)"
+       d="M0,0L0,6"
+       id="path42" />
+    <path
+       transform="translate(628.4974093264249,270)"
+       d="M0,0L0,6"
+       id="path43" />
+    <path
+       transform="translate(687.2193436960276,270)"
+       d="M0,0L0,6"
+       id="path44" />
+    <path
+       transform="translate(745.9412780656304,270)"
+       d="M0,0L0,6"
+       id="path45" />
+  </g>
+  <g
+     aria-label="x-axis tick label"
+     font-variant="tabular-nums"
+     transform="translate(0,9)"
+     id="g56">
+    <text
+       y="0.71em"
+       transform="translate(100,270)"
+       id="text45">0</text>
+    <text
+       y="0.71em"
+       transform="translate(158.72193436960276,270)"
+       id="text46">200</text>
+    <text
+       y="0.71em"
+       transform="translate(217.44386873920553,270)"
+       id="text47">400</text>
+    <text
+       y="0.71em"
+       transform="translate(276.1658031088083,270)"
+       id="text48">600</text>
+    <text
+       y="0.71em"
+       transform="translate(334.88773747841105,270)"
+       id="text49">800</text>
+    <text
+       y="0.71em"
+       transform="translate(393.6096718480138,270)"
+       id="text50">1,000</text>
+    <text
+       y="0.71em"
+       transform="translate(452.3316062176165,270)"
+       id="text51">1,200</text>
+    <text
+       y="0.71em"
+       transform="translate(511.05354058721935,270)"
+       id="text52">1,400</text>
+    <text
+       y="0.71em"
+       transform="translate(569.7754749568221,270)"
+       id="text53">1,600</text>
+    <text
+       y="0.71em"
+       transform="translate(628.4974093264249,270)"
+       id="text54">1,800</text>
+    <text
+       y="0.71em"
+       transform="translate(687.2193436960276,270)"
+       id="text55">2,000</text>
+    <text
+       y="0.71em"
+       transform="translate(745.9412780656304,270)"
+       id="text56">2,200</text>
+  </g>
+  <g
+     aria-label="x-axis label"
+     text-anchor="end"
+     transform="translate(17,27)"
+     id="g57">
+    <text
+       transform="translate(780,270)"
+       id="text57">Frequency →</text>
+  </g>
+  <g
+     aria-label="bar"
+     id="g68">
+    <rect
+       x="100"
+       width="165.30224525043178"
+       y="86"
+       height="18"
+       id="rect57" />
+    <rect
+       x="100"
+       width="122.43523316062178"
+       y="166"
+       height="18"
+       id="rect58" />
+    <rect
+       x="100"
+       width="283.9205526770294"
+       y="46"
+       height="18"
+       id="rect59" />
+    <rect
+       x="100"
+       width="257.4956822107081"
+       y="66"
+       height="18"
+       id="rect60" />
+    <rect
+       x="100"
+       width="101.5889464594128"
+       y="186"
+       height="18"
+       id="rect61" />
+    <rect
+       x="100"
+       width="165.00863557858372"
+       y="106"
+       height="18"
+       id="rect62" />
+    <rect
+       x="100"
+       width="164.42141623488777"
+       y="126"
+       height="18"
+       id="rect63" />
+    <rect
+       x="100"
+       width="141.8134715025907"
+       y="146"
+       height="18"
+       id="rect64" />
+    <rect
+       x="100"
+       width="83.38514680483593"
+       y="246"
+       height="18"
+       id="rect65" />
+    <rect
+       x="100"
+       width="680"
+       y="26"
+       height="18"
+       id="rect66" />
+    <rect
+       x="100"
+       width="89.55094991364422"
+       y="206"
+       height="18"
+       id="rect67" />
+    <rect
+       x="100"
+       width="88.67012089810018"
+       y="226"
+       height="18"
+       id="rect68" />
+  </g>
+  <g
+     aria-label="rule"
+     stroke="currentColor"
+     id="g69">
+    <line
+       x1="100"
+       x2="100"
+       y1="20"
+       y2="270"
+       id="line68" />
+  </g>
+  <g
+     aria-label="tip"
+     fill="white"
+     stroke="currentColor"
+     pointer-events="none"
+     text-anchor="start"
+     transform="translate(0,9)"
+     id="g70" />
+</svg>

@@ -2,7 +2,12 @@
   "files.exclude": {
     "**/.git": false
   },
-  "vim.normalModeKeyBindingsNonRecursive": [
+  "workbench.colorCustomizations": {
+    "editorError.foreground": "#00000000",
+    "editorWarning.foreground": "#00000000",
+    "editorInfo.foreground": "#00000000",
+  },
+"vim.normalModeKeyBindingsNonRecursive": [
     {
         "before": ["<C-j>"],
         "commands": ["editor.action.moveLinesDownAction"]
