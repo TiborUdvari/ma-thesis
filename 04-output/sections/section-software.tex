@@ -93,119 +93,60 @@ However, Processing's development was occasionally constrained by its nature as 
 This aspect of Processing's development is detailed in a book titled 'Graphic design in the post-digital age: a survey of practices fueled by creative coding,' which notes that Processing began as a personal initiative, mainly developed during nights and weekends. The project's funding sources, including MIT's indirect support through Fry's graduate stipend and the Interaction Design Institute Ivrea (IDII)'s support through Reas's salary, further underscore its ancillary status \parencite[396]{conradGraphicDesignPostdigital2021}.
 
 This part-time commitment likely impacted the level of engagement in the project. As Raymond puts it, regarding Linux: 'Linus was keeping his hacker/users constantly stimulated and rewarded—stimulated by the prospect of having an ego-satisfying piece of the action, rewarded by the sight of constant (even daily) improvement in their work' \parencite[28]{raymondCathedralBazaar1999}. In contrast, Processing's intermittent development schedule may have limited its potential for maximal engagement.
-Note this as well "Treating your users as co-developers is your least-hassle route to rapid code improvement and effective debugging.” (Raymond, 1999, p. 27)
 
-As the project evolved, Fry's role expanded to include the review and integration of contributions from other participants. He focused on preserving the simplicity of the project and making deliberate choices about what features to include, a strategy critical for the project's enduring success and practicality. \parencite{Processing4CONTRIBUTINGMd}
+This engagement disparity becomes more evident when examining the contribution landscape within the Processing project, as depicted in Figure~\ref{fig:alpha-commits}. The figure highlights Ben Fry's central role, especially during the alpha forum phase. Notably, only six individuals, including Fry, actively contributed code to the repository, a stark contrast to the more than 1000 individuals engaged in forum discussions. Such a scenario suggests that Fry's involvement was not just central but potentially overshadowing, limiting the scope for broader community contributions. This aspect is particularly crucial given the acknowledged limitations of version control systems in fully capturing the nuances of individual contributions.
 
-As more people wanted to develop different things for the project a library system was created. This is discussed more in detail in the following chapter. 
+Fry's predominant role in Processing raises critical concerns about the project's resilience and sustainability, as observed in many open-source initiatives. Over the past two decades, his extensive contributions have been indispensable. Yet, they also introduce a high-risk factor known as the "bus factor" \parencite{BusFactor2023}, reflecting the project's vulnerability due to its heavy reliance on a few key individuals. This phenomenon, while common across open-source projects and often humorously depicted in popular culture \parencite{munroeDependency2020}, poses a significant challenge to the long-term health of Processing.
 
-The maxim "Release early, release often," attributed to Eric S. Raymond in his seminal text "The Cathedral and the Bazaar" \parencite{raymondCathedralBazaar1999}, is often touted as a catalyst for vibrant open-source communities. In particular, projects like Linux have benefited from this approach, allowing rapid integration of contributions from a distributed network of contributors. This not only boosts the morale of individual contributors but also creates a dynamic and responsive development environment.
-
-There were 162 revisions before the arrival of processing version 1 as can be seen on Figure~\ref{fig:releases-lines} and quantified in the Table~\ref{tab:release-statistics}. The beginning was characterised by more frequent releases, than later especially for version 4 where things were basically just maintenance mode. There were days with multiple releases “Release early, release often.” ([Raymond, 1999, p. 28]
-
-“In those early times (around 1991) it was not u n k n o w n for him to release a new kernel more than once a day!” ([Raymond, 1999, p. 28](zotero://select/library/items/87U5FDLI)) ([pdf]
-
-This wasn't helped by the side project nature of processing.  
-Moreover, the project’s side-project nature is confirmed by revision comments such as one from 05/01/2003, which reads: "hopefully January 2003 will be a good month for p5, as I have a short bit of time to work on it [...] I hope to get a few revisions out this month so I can get back to my 'real' work." These comments illuminate that, for core contributors, Processing is not necessarily viewed as a full-time commitment.
-
-The perception of Processing as a side project rather than a full-time commitment for its core contributors is corroborated through multiple channels. For example, a revision comment from May 1, 2003, highlights this sentiment, stating, ``hopefully January 2003 will be a good month for p5, as I have a short bit of time to work on it [...] I hope to get a few revisions out this month so I can get back to my `real' work.'' This observation is further substantiated by a 2021 study titled ``Graphic design in the post-digital age: a survey of practices fueled by creative coding,'' which notes that Processing began as a personal initiative and was largely developed during nights and weekends. The study further reveals that the project received indirect funding from MIT through Fry's graduate stipend, and from Interaction Design Institute Ivrea (IDII) through Reas's salary, again indicating its ancillary nature in the professional lives of its principal contributors~\parencite[396]{conradGraphicDesignPostdigital2021}.
-The fact that it was part time meant that probably they didn't get as much engagemeng as could have been gotten.
-“Linus was keeping his hacker/ users constantly stimulated and rewarded--stimulated by the prospect of having an ego-satisfying piece of the action, rewarded by the sight of constant (even daily) improvement in their work.”
-
----------------------
-He noted that it was a really interesting project was all still very. young, there was a lot of stuff to do
+The discrepancy between the small cadre of code contributors and the expansive forum community is further underscored in subsequent visualizations (see Figures~\ref{fig:top12-github} and \ref{fig:dependency_comic}). This imbalance not only reflects the concentrated responsibility on a handful of developers, prominently featuring Fry, but also amplifies the risks associated with the bus factor. Addressing this disparity is vital for the sustainable future of the Processing project, necessitating a deeper exploration of strategies to diversify and expand its development base.
 
 The contribution landscape within the Processing project, as vividly illustrated in Figure~\ref{fig:alpha-commits}, further highlights Fry's central role. During the alpha forum phase, only six individuals actively contributed code to the repository, contrasting sharply with the over 1000 individuals engaged in forum discussions. As previously discussed, it is important to bear in mind the limitations of the version control system's depiction of contributions.
 
-% Plan
-% Describe and then analyse
-% Analyse per segment or as a whole? 
-% Get the lessons that are relevant from the cathedral and the bazaar
-% Analyse by feature and add positives
-% analyse contribution
-% analysis according to the Cathedral / Bazaar model
-
-% Source code imbalance
-
-% Releases. Is this important? How does it compare? 
-% Trends in git commits
 The \textit{Processing} project illuminates a crucial challenge often faced by open source communities: the dependency on key contributors. In the case of Processing, Ben Fry's central role over the past two decades raises concerns about the project's resilience and sustainability. His substantial contributions create a high-risk situation termed the "bus factor" \parencite{BusFactor2023}, which indicates how vulnerable a project becomes when overly reliant on a single or a small number of contributors. This vulnerability is not unique to Processing, as such dependency models are commonly observed across open source projects, often humorously discussed in popular culture \parencite{munroeDependency2020}.
+
 This discrepancy between the number of code contributors and forum participants is indeed profound, as corroborated by the subsequent visualizations ~\ref{fig:top12-github} and comic anecdotes ~\ref{fig:dependency_comic}. The limited number of contributors to the codebase and the concentrated responsibility on a few individuals amplify the bus factor risk, an issue that warrants deeper investigation and consideration for the long-term health of the project.
 
-% Graphs - side project
-% It was his code base
-% Nature of development
-% - Through teaching, workshops
-% Part time basis, commits coming up on workshop dates
-% Look at graph to show the development before the release of the forum
-% Dynamics at the MIT Media Lab
-% Analysis though the prism of the Cathedral model
-% User motivations
-% Read back Simon Greenwold interview
-% Java tools for prototyping
-% Technical background
+% Motivations according to the taxonomy
+Transitioning from the observed discrepancy between the wide forum engagement and the limited core code contributors, it is pivotal to contextualize the commitment of these few key individuals within a structured framework. The taxonomy by Bonaccorsi et al.~\cite{bonaccorsiComparingMotivationsIndividual2006} provides a valuable lens through which to examine their motivations. This taxonomy categorizes the motivations into Economic, Social, and Technological factors, each offering a distinct perspective on the individual's involvement.
 
-From interviews, we can see that other contributors Simon Greenwold sometimes would have liked features to be developed in a different way, also Karsten Schmidt. \todo[inline]{Mention example} 
+Ben Fry’s technological motivation for developing Processing is deeply rooted in his personal experience with the cumbersome nature of existing tools for computational design. His aim was to create a platform that could sidestep these complexities, thus “scratching his own itch” and aid in teaching:
 
-This dynamic is highly relevant of the Cathedral type of software development, through a carefully planned project lead implementing the main functionalities of the project, sometimes to the frustration of others. There were a lot of peopel that wanted functionalities outisde of the knowledge of the creators, lots of discussions so the libraries system was introduced, which will be discussed more in detail in later chapters.
+\begin{quote}
+	“As researchers, all those extra steps just got in the way: we already knew how to do those things, and it just made the process tedious. So with Processing, we wanted to get closer to just having things show up and work.” 
+\end{quote}
 
-% Motivations
-for me personally is the motivation that comes from seeing really talented people
+This technological motivation is also echoed by Karsten Schmidt, whose initial involvement was propelled by the technological potential and the the opportunities within the young Processing project:
 
-Personal itch
-Although ironically, it wasn't really used at the Media Lab while we were there: John used it in a couple of the classes he taught, much to the griping of students who either wanted it to do more, or others who felt like they could build their own tools that were better. It wasn't until the years after I had left the Lab that it began to be used more commonly (i.e. in the later 2000s).
+\begin{quote}
+"The project was still young, there was a lot of stuff to do ... So I was not really a Processing user in the beginning. I became a user as I was contributing code to the actual tool." 
+\end{quote}
 
-% 
-The profiles of contributors were from people that already had vast experience with graphics and graphics programming. They might have sensed limitations to what processing was capable of and were thus more frustrated than beginner users who came into the fold later. Mention toxi: look what I could do with director
+The economic incentives for engaging with Processing were not clear, Simon Greenwold’s statement highlights the absence of monetary gain and the low economic competition in the field:
+\begin{quote}
+	“There's no money in it. So who's going to come challenge it, right?” 
+\end{quote}
+	
+Yet, despite the lack of financial motivation, Processing found significant traction in educational settings, where the alternatives left much to be desired. Greenwold’s assessment of the other tools available at the time underlines this point:
+	
+\begin{quote}
+"They were terrible. Just terrible. Yeah, Flash the director and Flash weren't the same yet. They came together and then both died." 
+\end{quote}
 
-Motivations of these contributors:
-Economic, Technological, Social
-The main motivations for the creator Ben was an idea of a continuation of DBN, 
+The role of Processing in education is further substantiated by visual evidence, as illustrated in the community survey results conducted in 2016, which underscore its widespread adoption as a teaching tool.
+\todo[inline]{Add ref to community survey}
 
-Tool for reseach ... 
-As researchers, all those extra steps just got in the way: we already knew how to do those things, and it just made the process tedious. So with Processing, we wanted to get closer to just having things show up and work.
+The social aspect of Fry’s motivations cannot be understated. His commitment to teaching and sharing knowledge, particularly with individuals who may not have coding expertise, signifies a strong social incentive that aligns with the open-source ethos of knowledge dissemination:
 
-. There was this connection between what we wanted to teach (and what students wanted to learn) with DBN, that mirrored the things that were difficult or tedious when coding in C/C++ with ACU.
-Responsability
+\begin{quote}
+	"One of the most important things about the community for me personally is the motivation that comes from seeing really talented people use tools like this. That's realy exciting and makes me want to work harder."
+\end{quote}
+\begin{quote}
+“I learned to code at a very young age because other people shared their code... Their willingness to share, or even answer questions of a 9- or 10- or 12-year-old was a pretty incredible gift, and had a huge impact.” 
+\end{quote}
 
-Always intertwined with teaching purposes
+Fry’s dedication to education and community engagement is a testament to the social motivations that are central to the Processing project. This commitment has not only fostered a supportive community but also helped proliferate computational design skills among a broader audience, further amplifying the project's impact.
 
-I learned to code at a very young age because other people shared their code. This was before the open source movement, and concepts like “Free Software” were codified. It was just considered a normal and just way to do things at the time. So that was a major influence for me: paying forward what all those people had done for me. Their willingness to share, or even answer questions of a 9- or 10- or 12-year-old was a pretty incredible gift, and had a huge impact.
-
-Examples from revision 56
-net and video code was contributed by hernando barragan of ivrea
-http://people.interaction-ivrea.it/h.barragan
-everyone say "thanks hernando!"
-
-the audio code is by carlos rocha, a hired gun whose 
-employment was made possible by the generous support of ivrea. 
-yay carlos! yay ivrea!
-
-It is worth mentioning that the Processing project is different from the types of software analyzed in the Cathedral and the Bazaar. The software itself in this case is used to create other applications for designers and artists. In this sense processing can be categorised as a Creativity Sustaining Toolkit for visual arts. It is in essence a tool to create other things directly. The examples of the mail server analzed in the cathedral and the bazaar it is mereley an end user application that the user runs with a predictable end result.
-
-A contributor in this sense to the project, would contribute code to evolve the software, but also in the mission of a low floow, high ceiling ethos encourage users to explore the limits of this system. Throgh the building of examples, contributing documentation, answering questions etc.
-
-An interesting reference for this is more a communities of practice dynamic. 
-Introduce communities of practice.
-The fostering of the values spoken of in communities of practice can create a vibrant creative community that learns from itself, though it's interest, in what was primarily discussed as computational design at that time. They get better at it and create tools for other members of the community. Building and discussing in the open and commenting on each others work creates a dynamic that can be seen in an academic setting through peer review.
-
-Open source software has evolved from a grassroots, community-driven activity into a mainstream phenomenon influencing all sectors of software development. This transition has been analyzed from numerous perspectives, including Etienne Wenger's theory of Communities of Practice, which posits that learning occurs in social contexts \parencite{wengerCommunitiesPracticeLearning1998}. This theory underscores the importance of shared experiences, tools, and discourse in shaping a community's collective practice. In the context of open-source software, these dynamics offer invaluable insights into the sustainability and progression of such projects. For instance, the Processing community exemplifies more than just a collection of individual contributors; it represents a dynamic community molded by common goals and collective learning.
-
-However, through voices the Processing Foundation highlights that even though the bazaar model is percieved as an efficient way to develop efficient software, it is sometimes overvalued as an only way of making a contribution.
-
-“Contributors recognize that writing code is not the only way to become a contributor; they think teaching, organizing community events, and creating tutorials and documentation are valuable ways of contributing and building community. One contributor that I talked to even suggested that perhaps final users should also be considered contributors because without them there would be no reason for developing or teaching p5.js.” \parencite[41]{processingfoundation20thAnniversaryProcessing2022}
-
-This communal focus contrasts sharply with the software development models described in Eric S. Raymond's seminal work "The Cathedral and the Bazaar" \parencite{CathedralBazaarMusings2002a}. The Cathedral model is marked by careful planning and centralized authority, more akin to the early GNU projects initiated by Richard Stallman in the 1980s. Conversely, the Bazaar model encourages open collaboration and decentralization—features commonly associated with contemporary open source projects. These two models can be conceptualized as endpoints of a continuum, with real-world communities of practice, like the Processing community, potentially embodying characteristics of both.
-
-Although Richard Stallman's Free Software Movement initially utilized a Cathedral-like approach, the evolution of version control systems like Git has facilitated the adoption of more decentralized, Bazaar-like models. This technological and philosophical shift intriguingly complements Wenger's notions of "mutual engagement," "joint enterprise," and "shared repertoire"—elements that nurture a sense of community and shared objectives \parencite{wengerCommunitiesPracticeLearning1998}.
-
-To holistically grasp the intricate interplay of social and technical factors contributing to the success of open-source initiatives, a multidimensional analysis is essential. Such an approach would synthesize various frameworks, including Wenger's Communities of Practice \parencite{wengerCommunitiesPracticeLearning1998} and Raymond's Cathedral and Bazaar models \parencite{CathedralBazaarMusings2002a}, aiming to provide a nuanced understanding of a community's past, present dynamics, and future potential.
-
-% in the following paragraph remove emphasis from the role of companies, mention that there is an interest in the motivations actors contributing to these projects because they mostly seem to lay in contrast with traditional economic normes - provide citation
-% Economic Motivating Factors - While existing literature often focuses on the role of companies in contributing to open-source projects through complementary services like consulting, our study diverges by focusing on individual contributors. In the context of the Processing community, corporate involvement is notably lesser when compared to platforms like Linux that have substantial corporate contributions.
-
-% The followind taxonomy is deemed interesting as a basis of analysis. Other frameworks exist, analysing the behaviour of comanies for example, but are not of interest for us
-Building upon established frameworks such as the taxonomy by Bonaccorsi et al.~\cite{bonaccorsiComparingMotivationsIndividual2006}, which categorizes motivations behind open-source contributions into Economic, Social, and Technological domains, our study intends to adapt this taxonomy to suit the specific nuances of the Processing community.
+In sum, the core contributors to Processing, already posessing strong technical skills, have been driven by a confluence of motivations. Technologically, they aimed to create a tool that would overcome the limitations of existing software. Economically, while there was no direct financial incentive, the educational adoption of Processing has led to an increase in its use and, indirectly, its importance in the computational design landscape. Socially, the emphasis on teaching and sharing knowledge has been a cornerstone of the project’s philosophy, ensuring that Processing remains an accessible and community-focused platform.
 
 \begin{figure}[h!]
 	\centering
@@ -213,48 +154,38 @@ Building upon established frameworks such as the taxonomy by Bonaccorsi et al.~\
 	\caption{Processing 2016 community survey result \parencite{2016CommunitySurvey}}
 	\label{fig:community_survey}
 \end{figure}
-% Education
-The 2016 Processing community survey revealed a significant number of users employ the language for educational purposes. This is consistent with Processing's design ethos, which is aimed at being educationally accessible. However, the extent to which this educational usage intersects with what can be termed as `professional use' remains unclear.
-
-For the purpose of this study, `professional use' is understood to primarily include artists and designers. This nuanced categorization helps in probing the overlap between professional and educational use within the Processing community.
 
 \subsection{An ecosytem of libraries}
-\todo[inline]{Add Casey Reas quote}
-An important milestone in the Processing ecosystem was the introduction of libraries. These libraries extended the functionalities of the base platform, thereby attracting a broader range of users and contributors. Such an analysis not only sheds light on the diversification of the project but also identifies key contributors and library authors who could potentially be sought out for qualitative interviews. The identification of these contributors adds another layer to our understanding of community participation.
+The integration of libraries marked a significant turning point in the Processing ecosystem. These additions expanded the core platform's capabilities, thus drawing a wider array of users and contributors. In the Processing community, libraries have been indispensable, acting as fundamental components that not only enhance the platform’s functionality but also encourage inventive exploration.
 
-Libraries have always been a crucial component of the Processing community, serving as essential building blocks that extend the platform's capabilities and foster creative exploration. Contributors to these libraries, like Ricard Marxer, Andreas Schlegel, and Karsten Schmidt, are not just developers; they are innovators who play a pivotal role in shaping the Processing ecosystem. Their motivations for contributing provide insightful perspectives into the diverse factors that inspire individuals to engage in open-source projects.
+This evolution in development philosophy is captured through the insights of Casey Reas, a co-founder of Processing. Reflecting on the initial phases of Processing's development, Reas observed, "One of the important early decisions was to make what we call 'libraries.' Ben [Fry] and I realized that we were in a bottleneck and getting in the way of how people wanted to expand and extend Processing" \parencite[329]{conradGraphicDesignPostdigital2021}. This statement underscores the pivotal shift towards an approach that embraced openness and collaborative progress in the development process.
 
-Ricard Marxer, the mind behind the 'geomerative' library, was driven by a blend of personal interest, community engagement, and the thrill of technological innovation. His enthusiasm for programming is evident in his creation of the geomerative library, which addressed specific needs in geometry processing within Processing. Marxer's comment, "I made generative for that, like it was the generative library for geometry," reflects his personal investment in solving technical challenges. Furthermore, his involvement in the community was not solely about personal achievement but also about being part of a larger group, as he fondly recalls the social aspects, "I really enjoyed going a lot to Madrid...and I get to meet all the people from the community of processing."
+The development and integration of libraries within the Processing ecosystem primarily exemplify the bazaar model of software development, with a nod to the modularity characteristic of the GNU model. This is particularly evident in how some libraries evolved into core components of Processing.
 
-Andreas Schlegel, who created ControlP5, shows a different set of motivations. While not focusing on economic benefits, the social aspect of his work, particularly recognition within the community, was significant for him. Schlegel mentions, "I do get recognized for writing these libraries and for, by those who are familiar with the community and have used processing before." His contributions, initially experimental, reflected an altruistic intent to provide something useful to the community. Schlegel's journey from learning to contributing, "In the beginning, learning more through reading, and then after a while, I would then also help out and respond to questions that were coming in," highlights the importance of community interaction in driving motivation.
+A notable example is the development of the OpenGL renderer by Andrés Colubri. This library, initially developed independently to enhance Processing's performance, was later integrated into the main software following its widespread acceptance within the community. This integration process is a classic example of the bazaar model, where development is open, collaborative, and evolutionary, driven by the diverse needs and contributions of the user base. \parencite{Processing4CONTRIBUTINGMd}
 
-Karsten Schmidt's contributions to toxiclibs were deeply rooted in technological curiosity and a penchant for experimentation. His focus on software side projects and the technical aspects of programming are evident. Schmidt's involvement in early Processing development and creation of toxiclibs suggests a keen interest in working with new technologies. He demonstrated a broader interest in software development challenges, going beyond Processing to work with other languages and tools, as indicated in his discussions about various technical aspects.
+While the modularity and individual contributions in this process bear some resemblance to the GNU model, it is important to note that Processing's approach is more reflective of the dynamic and decentralized nature of the bazaar model. The bazaar model emphasizes open collaboration and iterative development, which is more aligned with the community-driven development culture seen in Processing.
 
-The concept of "scratching a personal itch" emerges as a notable motivator for these contributors. They developed their libraries while addressing specific, personal needs or challenges, a common driver in many open-source projects. Marxer's development of the geomerative library, Schlegel's creation of ControlP5, and Schmidt's work on toxiclibs hint at this motivation, where the initial impetus to contribute often stemmed from their own experiences and requirements.
+% Data analysis
+Utilizing publicly available data from the Processing website archive, I successfully reconstructed the release history of various libraries between October 2011 and June 2014. This period reflects active development and frequent releases across multiple library categories, as illustrated in Figure~\ref*{figure:libraries}. As a result of the absence of earlier data, it led to a somewhat arbitrary choice of interview subjects from this time period. Consequently, the insights obtained may not fully represent the experiences within the Processing community at it's beginning. Despite these limitations, the interviews provided valuable qualitative insights into the motivations and contributions of library developers. 
 
-In summary, the motivations of library contributors in the Processing community are as diverse as their backgrounds. From Marxer's enjoyment of coding and community involvement to Schlegel's recognition within the community and Schmidt's technological curiosity, these motivations underscore the multifaceted nature of open-source contribution. Here, personal passions, community dynamics, and the thrill of technological innovation converge, highlighting the unique blend of personal, social, and technological factors that drive individuals to contribute to open-source projects like Processing.
+\todo[inline]{Include graphic of specific libraries}
 
-\changepapersize{305.3mm:210mm}
-\customtag{largepage}
 
-{
-	\LARGE
-	\noindent Libraries releases
-}
 
-\begin{figure}[H]
-	\includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/figure-libraries.svg}
-	\caption{Distribution of Libraries in the Processing Project}
-	\label{figure:libraries}
-\end{figure}
+When analyzing interviews guided by Bonaccorsi et al.'s taxonomy, it becomes clear that technological innovation and community engagement were the primary driving forces behind the contributors. For instance, Karsten Schmidt's experiences reflect a strong technological motivation. He aimed to push the limits of computational design's expressive potential and, as a result, was compelled to create tools such as toxiclibs. This library aligned more closely with his vision than other frameworks, such as Flash or Director, which constrained creative expression within predefined roles and stage-based metaphors like directors, actors, and scripts. In his words, "I really wanted something new, the way I can be more expressive with the actual computational side, the algorithm side."
 
-\begin{multicols}{3}
-	\todo[inline]{Shorten this explanation, or move some parts elsewhere}
-	\noindent
-	This graph illustrates the distribution of Processing library releases over a period from January 2012 to April 2014. Each dot on the graph signifies a release event for a library in various categories such as 3D, Animation, and GUI. The process of releasing these libraries was manual, requiring approval on the Processing website before they became available for update. This artisanal method meant that only the latest versions of the libraries were accessible, without an option to retrieve previous iterations.
-	\noindent
-	The data for this graph was meticulously reconstructed using a 'git blame' operation on the data folder containing links to these libraries. It's worth noting that this data may not fully represent the entirety of the Processing library space. The reconstruction is based on a single version of the website's data, lacking a comprehensive historical record that could have been obtained from multiple website versions. Thus, while the graph provides valuable insights into the release patterns and activity within the Processing community, it comes with the caveat of being an incomplete representation due to the availability of only one snapshot of the website data.
-	\noindent
-	In the context of the Processing community, this graph serves as a historical lens, capturing the cadence of library updates and highlighting the active categories of development. Despite the limitations in data scope, it reflects a significant portion of the community's contributions and the evolution of library offerings during the specified timeframe.
-\end{multicols}
-\defaultareasettings
+Similarly, Andreas Schlegel's development of ControlP5 was driven by a practical need in his projects. He sought a tool that could provide a more intuitive and effective way of managing user interfaces within Processing. Schlegel's creation of ControlP5 can be seen as 'scratching his own itch', addressing personal challenges that benefit the wider community, as he noted: "ControlP5 started as a need for sliders and buttons to control the visuals I was working on."
+
+Marxer emphasized the collective effort and the shared sense of purpose among diverse individuals involved in open-source projects. He pointed out that these collaborative environments provide a platform for individuals from various backgrounds to learn from each other, contribute to a larger cause, and collectively advance the field. The social dynamics of open-source projects are crucial, as Marxer noted: "So it's a sense of community. I think, in a sense, of working together as a society."
+
+According to Schlegel, his first library, oscP5, resulted from his final year project in his master's in media arts and technology, which focused on designing a computer network for artistic applications. Initially, he did not intend to write it for the community, but that came as an afterthought. Similarly, Marxer reflected that Geomerative was initially a technological tool to "do letters that were joined by the serifs," but it ended up being a whole project in generative typography.
+
+As contributors like Schmidt and Schlegel delved deeper into the technology, they also became integral members of a burgeoning community. The collaborative ethos of the Processing community is evident in Marxer's statement: "yeah, the goal is that all the work you do, nobody else should go through that and do it." He was a DIY enthusiast, and he enjoyed seeing how things could be done. 
+
+Schmidt also mentions that "open source was essentially amateur culture... there are labors of love for most people; it's what's done in their spare time or what comes out from some interesting work projects, what people want to share." Although not the primary draw, economic factors emerge in the narrative, albeit as a secondary consideration. Schmidt's indirect financial benefits from his open-source work underline this point: "in other times, I have indirectly made a living through my open-source work, but not directly from it." Schlegel's experience similarly reveals that while economic gain was not the goal, the recognition and opportunities that arose from his contributions had positive professional implications.
+
+The interplay between these motivations underscores the complexity of open-source software development. The contributors are often initially attracted by the technological challenges. As they immerse themselves in the work, the community aspect becomes more significant, providing a supportive network for sharing and growth. This dynamic appears to be particularly relevant at the beginning of a project when the necessary tools and infrastructure have not yet been built out.
+
+
+\input{foldouts/libraries.tex}
