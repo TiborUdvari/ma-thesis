@@ -1,16 +1,19 @@
-$biber="echo 'skipping biber'"
-# # Use Biber as bibtex backend
-# $biber = 'biber %O %B';
-# $bib_program = 'biber';
+# 1. Biber active
+# $biber="echo 'skipping biber'"
 
-# # Use this for pdflatex
-# #$pdf_mode = 1;
+# 2. Biber inactive
+# Use Biber as bibtex backend
+$biber = 'biber %O %B';
+$bib_program = 'biber';
 
-# # Use this for lualatex
-# #$pdf_mode = 4;
+# Use this for pdflatex
+#$pdf_mode = 1;
 
-# # Use this for xelatex
-# $pdf_mode = 5;
+# Use this for lualatex
+#$pdf_mode = 4;
 
-# # Recompile if .bib files change
-# $watch_files = [ 'bib' ];
+# Use this for xelatex
+$pdf_mode = 5;
+
+# Recompile if .bib files change
+$watch_files = [ 'bib' ];

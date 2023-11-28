@@ -1,11 +1,15 @@
 \usepackage{pdfpages}
 \usepackage[export]{adjustbox}
 
-\usepackage{todonotes}
+% \usepackage{todonotes}
+\usepackage[disable]{todonotes}
 \usepackage{lipsum}
 \usepackage[utf8]{inputenc}
 \usepackage{calc}
 \usepackage{ragged2e}
+\usepackage[american]{babel}
+\usepackage{csquotes}
+
 
 \usepackage{amsmath}
 \usepackage{graphicx} 
@@ -150,10 +154,12 @@
 \newcommand{\specialsection}[4]{
     \newpage
     \customtag{intropage}
-    \pagecolor{#3}\afterpage{\nopagecolor}
+    % \pagecolor{#3}\afterpage{\nopagecolor}
+    \pagecolor{white}\afterpage{\nopagecolor}
     \thispagestyle{empty}
     \begingroup
-    \color{#4}
+    \color{black}
+    % \color{#4}
     \centering
     \vspace*{\stretch{1}}
     \section{#1} % Add the section to the table of contents
