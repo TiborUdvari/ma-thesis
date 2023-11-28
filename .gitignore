@@ -13,6 +13,8 @@
 [._]ss[a-gi-z]
 [._]sw[a-p]
 
+*.ps
+
 # Session
 Session.vim
 Sessionx.vim
