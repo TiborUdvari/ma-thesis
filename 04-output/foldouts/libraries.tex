@@ -2,13 +2,26 @@
 \changepapersize{305.3mm:210mm}
 \customtag{largepage}
 
-{
-	\LARGE
-	\noindent Libraries releases
-}
+\thispagestyle{empty}
+\begingroup
+\raggedright 
+\vspace*{\stretch{1}}
+\section*{Library Releases} 
+\fontsize{12pt}{14pt}\selectfont
+\vspace*{\stretch{1}}
+\endgroup
+
+\newpage
+\customtag{largepage}
+
+% {
+% 	\LARGE
+% 	\noindent Library Releases
+% }
 
 \begin{figure}[H]
 	\includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/figure-libraries.svg}
+	\vspace{3pt}
 	\caption{Distribution of Libraries in the Processing Project}
 	\label{figure:libraries}
 \end{figure}
@@ -20,6 +33,6 @@
 	\noindent
 	The data for this graph was meticulously reconstructed using a 'git blame' operation on the data folder containing links to these libraries. It's worth noting that this data may not fully represent the entirety of the Processing library space. The reconstruction is based on a single version of the website's data, lacking a comprehensive historical record that could have been obtained from multiple website versions. Thus, while the graph provides valuable insights into the release patterns and activity within the Processing community, it comes with the caveat of being an incomplete representation due to the availability of only one snapshot of the website data.
 	\noindent
-	In the context of the Processing community, this graph serves as a historical lens, capturing the cadence of library updates and highlighting the active categories of development. Despite the limitations in data scope, it reflects a significant portion of the community's contributions and the evolution of library offerings during the specified timeframe.
+	 Despite the limitations in data scope, it reflects a significant portion of the community's contributions and the evolution of library offerings during the specified timeframe.
 \end{multicols}
 \defaultareasettings

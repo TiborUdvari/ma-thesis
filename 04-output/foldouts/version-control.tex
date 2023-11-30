@@ -2,12 +2,24 @@
 \changepapersize{305.3mm:210mm}
 \customtag{largepage}
 
-{
-	\LARGE
-	\noindent Version Control Statistics
-}
+\thispagestyle{empty}
+\begingroup
+\raggedright 
+\vspace*{\stretch{1}}
+\section*{Version Control} 
+\fontsize{12pt}{14pt}\selectfont
+\vspace*{\stretch{1}}
+\endgroup
 
-\vfill
+\newpage
+\customtag{largepage}
+
+% {
+% 	\LARGE
+% 	\noindent Version Control Statistics
+% }
+
+% \vfill
 
 \noindent
 	\begin{minipage}[t]{0.15\textwidth}
@@ -30,7 +42,7 @@
 \vspace{0.1cm}
 \begin{figure}[H]
 	\frame{\includesvg[pretex=\sffamily\fontsize{5.58pt}{8pt}\selectfont, width=1\textwidth, keepaspectratio]{images/processing-alpha-commits.svg}}
-	\caption{Commits up to and including the Processing alpha forum}
+	\caption[Early commits]{Updates before and during Processing forum's alpha stage}
 	\label{fig:alpha-commits}
 \end{figure}
 

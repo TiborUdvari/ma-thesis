@@ -9,6 +9,9 @@
 \newlength{\bottomMargin}
 \newlength{\spiralWidth}
 
+\newlength{\bleed}
+\setlength{\bleed}{3mm} 
+
 \newlength{\diagramPaperWidth}
 
 \setlength{\spiralWidth}{10.7mm}
@@ -23,7 +26,15 @@
 \newcommand{\marginRatio}{0.15}
 
 % Use the ratio to calculate margins
+% left margin needs bleed
+
+
 \setlength{\leftMargin}{\paperWidth*\real{\marginRatio}} % 158 * 0.15
 \setlength{\rightMargin}{\paperWidth*\real{\marginRatio}} % 
 \setlength{\topMargin}{\paperHeight*\real{\marginRatio}}
 \setlength{\bottomMargin}{\paperHeight*\real{\marginRatio}}
+
+% \setlength{\leftMargin}{\paperWidth*\real{\marginRatio}+\bleed\relax} % 158 * 0.15
+% \setlength{\rightMargin}{\paperWidth*\real{\marginRatio}+\bleed\relax} % 
+% \setlength{\topMargin}{\paperHeight*\real{\marginRatio}+\bleed\relax}
+% \setlength{\bottomMargin}{\paperHeight*\real{\marginRatio}+\bleed\relax}

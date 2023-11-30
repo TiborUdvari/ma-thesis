@@ -20,6 +20,8 @@ def extract_page_numbers(aux_file_path, tag):
 
 # Function to add a blank page with the size of the first page in the PDF
 def add_blank_page(writer, reader):
+    print("ADDED BLANK PAGE")
+    return
     width = reader.pages[0].mediabox.width
     height = reader.pages[0].mediabox.height
     blank_page = PdfWriter().add_blank_page(width=width, height=height)
