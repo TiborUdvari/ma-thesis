@@ -9,7 +9,7 @@ clean:
 	rm ./out/*.aux ./out/*.log ./out/*.toc ./out/*.lof ./out/*.lot ./out/*.out ./out/*.synctex.gz ./out/*.synctex ./out/*.fls ./out/*.fdb_latexmk
 
 print:
-	echo "Generating print files" && python3 extract_pages.py ./out/main intropage largepage -d print
+	echo "Generating print files" && python3 extract_pages.py ./out/main largepage -d print
 
 cc:
 	pdftotext out/main.pdf - | iconv -c -t ASCII//TRANSLIT |tr -d " " | wc -m

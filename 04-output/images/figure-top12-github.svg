@@ -1,11 +1,84 @@
-<svg class="plot-d6a7b5" fill="currentColor" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle" width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>.plot-d6a7b5 {
-  display: block;
-  background: white;
-  height: auto;
-  height: intrinsic;
-  max-width: 100%;
-}
-.plot-d6a7b5 text,
-.plot-d6a7b5 tspan {
-  white-space: pre;
-}</style><g aria-label="y-axis tick" fill="none" stroke="currentColor" transform="translate(0,9)"><path transform="translate(260,26)" d="M0,0L-6,0"/><path transform="translate(260,46)" d="M0,0L-6,0"/><path transform="translate(260,66)" d="M0,0L-6,0"/><path transform="translate(260,86)" d="M0,0L-6,0"/><path transform="translate(260,106)" d="M0,0L-6,0"/><path transform="translate(260,126)" d="M0,0L-6,0"/><path transform="translate(260,146)" d="M0,0L-6,0"/><path transform="translate(260,166)" d="M0,0L-6,0"/><path transform="translate(260,186)" d="M0,0L-6,0"/><path transform="translate(260,206)" d="M0,0L-6,0"/><path transform="translate(260,226)" d="M0,0L-6,0"/><path transform="translate(260,246)" d="M0,0L-6,0"/></g><g aria-label="y-axis tick label" text-anchor="end" transform="translate(-9,9)"><text y="0.32em" transform="translate(260,26)">Ben Fry</text><text y="0.32em" transform="translate(260,46)">codeanticode</text><text y="0.32em" transform="translate(260,66)">Manindra Moharana</text><text y="0.32em" transform="translate(260,86)">Jakub Valtar</text><text y="0.32em" transform="translate(260,106)">Casey Reas</text><text y="0.32em" transform="translate(260,126)">jdf</text><text y="0.32em" transform="translate(260,146)">gohai</text><text y="0.32em" transform="translate(260,166)">Akarshit Wal</text><text y="0.32em" transform="translate(260,186)">pesckal</text><text y="0.32em" transform="translate(260,206)">A Pottinger</text><text y="0.32em" transform="translate(260,226)">Daniel Shiffman</text><text y="0.32em" transform="translate(260,246)">lonnen</text></g><g aria-label="x-grid" stroke="currentColor" stroke-opacity="0.1"><line x1="260" x2="260" y1="20" y2="270"/><line x1="368.889121557952" x2="368.889121557952" y1="20" y2="270"/><line x1="477.77824311590405" x2="477.77824311590405" y1="20" y2="270"/><line x1="586.6673646738561" x2="586.6673646738561" y1="20" y2="270"/><line x1="695.5564862318082" x2="695.5564862318082" y1="20" y2="270"/></g><g aria-label="x-axis tick" fill="none" stroke="currentColor"><path transform="translate(260,270)" d="M0,0L0,6"/><path transform="translate(368.889121557952,270)" d="M0,0L0,6"/><path transform="translate(477.77824311590405,270)" d="M0,0L0,6"/><path transform="translate(586.6673646738561,270)" d="M0,0L0,6"/><path transform="translate(695.5564862318082,270)" d="M0,0L0,6"/></g><g aria-label="x-axis tick label" font-variant="tabular-nums" transform="translate(0,9)"><text y="0.71em" transform="translate(260,270)">0</text><text y="0.71em" transform="translate(368.889121557952,270)">2,000</text><text y="0.71em" transform="translate(477.77824311590405,270)">4,000</text><text y="0.71em" transform="translate(586.6673646738561,270)">6,000</text><text y="0.71em" transform="translate(695.5564862318082,270)">8,000</text></g><g aria-label="x-axis label" text-anchor="end" transform="translate(17,27)"><text transform="translate(780,270)">Frequency →</text></g><g aria-label="bar"><rect x="260" width="7.350015705161809" y="206" height="18"/><rect x="260" width="8.820018846194102" y="166" height="18"/><rect x="260" width="520" y="26" height="18"/><rect x="260" width="22.213380797822253" y="106" height="18"/><rect x="260" width="6.1522353680242645" y="226" height="18"/><rect x="260" width="27.058946707151108" y="86" height="18"/><rect x="260" width="31.30562244791122" y="66" height="18"/><rect x="260" width="115.36802429065023" y="46" height="18"/><rect x="260" width="9.364464453983885" y="146" height="18"/><rect x="260" width="10.398911108784432" y="126" height="18"/><rect x="260" width="4.900010470107816" y="246" height="18"/><rect x="260" width="7.5133493874986925" y="186" height="18"/></g><g aria-label="rule" stroke="currentColor"><line x1="260" x2="260" y1="20" y2="270"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;}
+	.st1{font-family:'Helvetica';}
+	.st2{font-size:9.526px;}
+	.st3{fill:none;stroke:#000000;stroke-opacity:0.1;}
+	.st4{enable-background:new    ;}
+	.st5{font-family:'MyriadPro-Regular';}
+	.st6{fill:none;}
+</style>
+<g transform="translate(0,9)">
+	<path class="st0" d="M265,25h-5.7"/>
+	<path class="st0" d="M265,44.1h-5.7"/>
+	<path class="st0" d="M265,63.1h-5.7"/>
+	<path class="st0" d="M265,82.2h-5.7"/>
+	<path class="st0" d="M265,101.2h-5.7"/>
+	<path class="st0" d="M265,120.3h-5.7"/>
+	<path class="st0" d="M265,139.3h-5.7"/>
+	<path class="st0" d="M265,158.4h-5.7"/>
+	<path class="st0" d="M265,177.4h-5.7"/>
+	<path class="st0" d="M265,196.5h-5.7"/>
+	<path class="st0" d="M265,215.5h-5.7"/>
+	<path class="st0" d="M265,234.6h-5.7"/>
+</g>
+<g transform="translate(-9,9)">
+	<text transform="matrix(1 0 0 1 232.0572 28.0523)" class="st1 st2">Ben Fry</text>
+	<text transform="matrix(1 0 0 1 208.7354 47.1045)" class="st1 st2">codeanticode</text>
+	<text transform="matrix(1 0 0 1 180.1524 66.1563)" class="st1 st2">Manindra Moharana</text>
+	<text transform="matrix(1 0 0 1 213.1587 85.2085)" class="st1 st2">Jakub Valtar</text>
+	<text transform="matrix(1 0 0 1 213.5215 104.2603)" class="st1 st2">Casey Reas</text>
+	<text transform="matrix(1 0 0 1 255.3467 123.3125)" class="st1 st2">jdf</text>
+	<text transform="matrix(1 0 0 1 242.0997 142.3648)" class="st1 st2">gohai</text>
+	<text transform="matrix(1 0 0 1 212.2935 161.4165)" class="st1 st2">Akarshit Wal</text>
+	<text transform="matrix(1 0 0 1 233.1084 180.4683)" class="st1 st2">pesckal</text>
+	<text transform="matrix(1 0 0 1 218.8008 199.5201)" class="st1 st2">A Pottinger</text>
+	<text transform="matrix(1 0 0 1 198.3301 218.5728)" class="st1 st2">Daniel Shiffman</text>
+	<text transform="matrix(1 0 0 1 236.8018 237.6245)" class="st1 st2">lonnen</text>
+</g>
+<g>
+	<line class="st3" x1="265" y1="19.7" x2="265" y2="257.9"/>
+	<line class="st3" x1="368.7" y1="19.7" x2="368.7" y2="257.9"/>
+	<line class="st3" x1="472.4" y1="19.7" x2="472.4" y2="257.9"/>
+	<line class="st3" x1="576.2" y1="19.7" x2="576.2" y2="257.9"/>
+	<line class="st3" x1="679.9" y1="19.7" x2="679.9" y2="257.9"/>
+</g>
+<g>
+	<path class="st0" d="M265,257.9v5.7"/>
+	<path class="st0" d="M368.7,257.9v5.7"/>
+	<path class="st0" d="M472.4,257.9v5.7"/>
+	<path class="st0" d="M576.2,257.9v5.7"/>
+	<path class="st0" d="M679.9,257.9v5.7"/>
+</g>
+<g transform="translate(0,9)">
+	<text transform="matrix(1 0 0 1 262.3321 264.2017)" class="st1 st2">0</text>
+	<text transform="matrix(1 0 0 1 356.7896 264.2017)" class="st1 st2">2,000</text>
+	<text transform="matrix(1 0 0 1 460.5176 264.2017)" class="st1 st2">4,000</text>
+	<text transform="matrix(1 0 0 1 564.2452 264.2017)" class="st1 st2">6,000</text>
+	<text transform="matrix(1 0 0 1 667.9727 264.2017)" class="st1 st2">8,000</text>
+</g>
+<g transform="translate(17,27)">
+	<text transform="matrix(1 0 0 1 705.837 256.5855)" class="st4"><tspan x="0" y="0" class="st1 st2">Frequency </tspan><tspan x="47.7" y="0" class="st5 st2">→</tspan></text>
+</g>
+<g>
+	<rect x="265" y="196.9" width="7" height="17.1"/>
+	<rect x="265" y="158.8" width="8.4" height="17.1"/>
+	<rect x="265" y="25.4" width="495.4" height="17.1"/>
+	<rect x="265" y="101.6" width="21.2" height="17.1"/>
+	<rect x="265" y="216" width="5.9" height="17.1"/>
+	<rect x="265" y="82.6" width="25.8" height="17.1"/>
+	<rect x="265" y="63.5" width="29.8" height="17.1"/>
+	<rect x="265" y="44.5" width="109.9" height="17.1"/>
+	<rect x="265" y="139.7" width="8.9" height="17.1"/>
+	<rect x="265" y="120.7" width="9.9" height="17.1"/>
+	<rect x="265" y="235" width="4.7" height="17.1"/>
+	<rect x="265" y="177.8" width="7.2" height="17.1"/>
+</g>
+<g>
+	<line class="st0" x1="265" y1="19.7" x2="265" y2="257.9"/>
+</g>
+<rect x="146.3" y="-0.7" class="st6" width="653.4" height="300"/>
+</svg>

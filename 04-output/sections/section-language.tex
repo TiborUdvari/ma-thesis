@@ -3,9 +3,12 @@
 \subsection{The Origins}
 \begin{figure}
     \includegraphics[max width=\textwidth]{images/dbn.png} 
-    \caption{Design By Numbers Example \parencite[66]{maedaDesignNumbers2001}}
+    \caption[Design By Numbers example]{Design By Numbers example \parencite[66]{maedaDesignNumbers2001}}
     \label{fig:dbn}
   \end{figure}
+
+
+ 
 
 The conceptualization of Processing is intricately linked to the environment at the MIT Media Lab's Aesthetics + Computation Group (ACG). Under the leadership of John Maeda, the ACG embraced a philosophy that dismantled traditional academic divisions between technological and artistic disciplines. Maeda articulated this vision: \enquote{Hybrids that can fluidly cross the chasm between technology and the arts are mutations in the academic system...During the 1990s the mutants that managed to defy this norm would either seek me out, or else I would reach out to find them myself. Bringing these unique people together was my primary passion, and that’s how I came into contact with Casey Reas and Ben Fry} \parencite{reasProcessingProgrammingHandbook2007a}.
 
@@ -17,55 +20,25 @@ This realization of DBN's limitations was particularly pronounced during Reas an
 
 Fry's experience with the advanced graphics framework ACU, inspirations from Flash and Director, and developing and teaching DBN culminated in the creation of Processing. This evolution was a response to the pedagogical and practical challenges faced in teaching computational design, aiming to expand beyond DBN's black-and-white, pixel-restricted canvas to a platform that could accommodate the breadth and depth of artistic expression.
 
+
+\clearpage
 \begin{figure}
     \includegraphics[max width=\textwidth]{images/turtle.png}
-    \caption{Physical turtle \parencite[ii]{papertMindstormsChildrenComputers1980}}
+    \caption[Physical turtle]{Physical turtle \parencite[ii]{papertMindstormsChildrenComputers1980}}
     \label{fig:turtle-commands}
   \end{figure}
-
+  \clearpage
   \begin{figure}
     \includegraphics[max width=\textwidth]{images/turtle-commands.png} 
-    \caption{Turtle Commands \parencite[827]{solomonHistoryLogo2020a}}
+    \caption[Turtle commands]{Turtle commands \parencite[827]{solomonHistoryLogo2020a}}
     \label{fig:turtle-commands}
   \end{figure}
-
-\begin{figure}
-    \includegraphics[max width=\textwidth]{images/fry2004-frameworks.png} 
-    \caption{Precursors of Processing \parencite[127]{fryComputationalInformationDesign2004}}
-    \label{fig:dbn}
-  \end{figure}
-
-\begin{table}[h!]
-    \begin{adjustbox}{center}
-    \begin{tabular}{|l|l|}
-    \hline
-    Processing & Java \\
-    \hline
-    \texttt{background(0);} & \makecell[l]{\texttt{g.setColor(Color.black);}\\\texttt{fillRect(0, 0, size.width, size.height);}} \\
-    \hline
-    \texttt{background(255);} & \makecell[l]{\texttt{g.setColor(Color.white);}\\\texttt{fillRect(0, 0, size.width, size.height);}} \\
-    \hline
-    \texttt{background(255, 204, 0);} & \makecell[l]{\texttt{g.setColor(new Color(255, 204, 0));}\\\texttt{fillRect(0, 0, size.width, size.height);}} \\
-    \hline
-    \texttt{stroke(255);} & \makecell[l]{\texttt{g.setColor(Color.white)}} \\
-    \hline
-    \texttt{stroke(0);} & \makecell[l]{\texttt{g.setColor(Color.black)}} \\
-    \hline
-    \texttt{stroke(255, 204, 0);} & \makecell[l]{\texttt{g.setColor(new Color(255, 204, 0));}} \\
-    \hline
-    \texttt{fill(0, 102, 153);} & \makecell[l]{\texttt{g.setColor(new Color(0, 102, 153));}} \\
-    \hline
-    \texttt{point(30, 20);} & \makecell[l]{\texttt{g.drawLine(30, 20, 30, 20);}} \\
-    \hline
-    \texttt{line(0, 20, 80, 20);} & \makecell[l]{\texttt{g.drawLine(0, 20, 80, 20);}} \\
-    \hline
-    \texttt{rect(10, 20, 30, 30);} & \makecell[l]{\texttt{g.fillRect(10, 20, 30, 30);}\\\texttt{g.drawRect(10, 20, 30, 30);}} \\
-    \hline
-    \end{tabular}
-    \end{adjustbox}
-    \caption{Comparison of Processing and Java library commands for graphics.}
-    \label{table:processing_java_comparison}
-    \end{table}
+  \clearpage
+% \begin{figure}
+%     \includegraphics[max width=\textwidth]{images/fry2004-frameworks.png} 
+%     \caption{Precursors of Processing \parencite[127]{fryComputationalInformationDesign2004}}
+%     \label{fig:dbn}
+%   \end{figure}
 
   \newpage 
 
@@ -75,7 +48,7 @@ Fry's experience with the advanced graphics framework ACU, inspirations from Fla
     \caption[Ben Fry at PCD 2018]{Ben Fry at Processing Community Day 2018}
   \end{figure}
   
-\subsection{Values of the Processing Project}
+\subsection{Values}
 
 The success of the Processing language is evidenced by its proliferation into various flavors such as Processing for Python, Android, and p5.js, each adaptation carrying the core philosophy into new contexts and platforms. This diversification attests to the robustness and adaptability of the language, reflecting its foundational values of accessibility, diversity, and inclusivity in the realm of creative coding.
 
@@ -85,13 +58,51 @@ The integration of sketching into the development process via Processing reflect
 
 By actively seeking to dismantle the barriers that have traditionally made programming an esoteric and often inaccessible field, Processing has opened its doors to a boarder audience. It champions the idea that programming should be within reach of anyone interested in visual exploration, not just those with a technical pedigree.
 
-\subsection{Evaluating Design Implications in Processing}
+\begin{table}
+  \begin{adjustbox}{center}
+  \begin{tabular}{|l|l|}
+  \hline
+  Processing & Java \\
+  \hline
+  \texttt{background(0);} & \makecell[l]{\texttt{g.setColor(Color.black);}\\\texttt{fillRect(0, 0, size.width, size.height);}} \\
+  \hline
+  \texttt{background(255);} & \makecell[l]{\texttt{g.setColor(Color.white);}\\\texttt{fillRect(0, 0, size.width, size.height);}} \\
+  \hline
+  \texttt{background(255, 204, 0);} & \makecell[l]{\texttt{g.setColor(new Color(255, 204, 0));}\\\texttt{fillRect(0, 0, size.width, size.height);}} \\
+  \hline
+  \texttt{stroke(255);} & \makecell[l]{\texttt{g.setColor(Color.white)}} \\
+  \hline
+  \texttt{stroke(0);} & \makecell[l]{\texttt{g.setColor(Color.black)}} \\
+  \hline
+  \texttt{stroke(255, 204, 0);} & \makecell[l]{\texttt{g.setColor(new Color(255, 204, 0));}} \\
+  \hline
+  \texttt{fill(0, 102, 153);} & \makecell[l]{\texttt{g.setColor(new Color(0, 102, 153));}} \\
+  \hline
+  \texttt{point(30, 20);} & \makecell[l]{\texttt{g.drawLine(30, 20, 30, 20);}} \\
+  \hline
+  \texttt{line(0, 20, 80, 20);} & \makecell[l]{\texttt{g.drawLine(0, 20, 80, 20);}} \\
+  \hline
+  \texttt{rect(10, 20, 30, 30);} & \makecell[l]{\texttt{g.fillRect(10, 20, 30, 30);}\\\texttt{g.drawRect(10, 20, 30, 30);}} \\
+  \hline
+  \end{tabular}
+  \end{adjustbox}
+  \caption{Comparison of Processing and Java library commands for graphics.}
+  \label{table:processing_java_comparison}
+  \end{table}
 
-\begin{figure}
+
+
+\clearpage
+
+\begin{figure}[h]
   \includegraphics[max width=\textwidth]{images/Chronotext.png}
   \caption{Chronotext project by Ariel Malka}
   \label{fig:chronotext}
 \end{figure}
+
+\subsection{Design Implications}
+
+
 
 The inception of Processing has significantly democratized the field of creative coding, with its workshop-centric educational approach enabling rapid assimilation by novices. This educational framework, spanning brief afternoon sessions to extensive week-long courses, has been pivotal in achieving the project's intent to simplify the initial learning curve for beginners. 
 
@@ -107,10 +118,11 @@ While the obfuscation of the unnecessary elements in the graphics pipeline offer
 
 
 
+\clearpage
 
 \begin{figure}
     \centering
     \includegraphics[max width=\textwidth]{images/normative.png}
-    \caption{A representation from openprocessing.org, showcasing the prevalent aesthetic trends influenced by Processing's design framework.}
+    \caption[Openprocessing screenshot]{A screenshot of openprocessing.org, depicting  prevalent aesthetic trends}
     \label{fig:normative}
 \end{figure}

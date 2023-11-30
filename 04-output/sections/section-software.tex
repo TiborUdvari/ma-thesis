@@ -68,7 +68,6 @@ Following this, interviews were conducted with key figures: Ben Fry, the lead so
 
 Ben Fry's role as the leading technical engineer was significant in developing the Processing project. The observations of his collaborators underscore this. Casey Reas emphasizes Fry's primary role: 'I think one thing that's important to clarify is that Ben Fry, my collaborator, is the primary software engineer of the project' \parencite[p. 330]{conradGraphicDesignPostdigital2021}. Simon Greenwold further corroborates this, highlighting Fry's authoritative approach: "He's maintaining strong control, like it's his code base. I think that's part of why it's great".
 
-\input{foldouts/frequency-of-releases.tex}
 \input{foldouts/version-control.tex}
 
 % Initial Release: August 9 2001 -> Alpha Forum initial post: August 2 2002
@@ -99,6 +98,8 @@ This engagement disparity becomes more evident when examining the contribution l
 
 As observed in many open-source initiatives, Fry's predominant role in Processing raises critical concerns about the project's resilience and sustainability. As corroborated by the subsequent visualizations ~\ref{fig:top12-github} his contributions were essential to keep the project running all this time. Over the past two decades, his extensive contributions have been indispensable. However, they also introduce a high-risk factor known as the "bus factor" \parencite{BusFactor2023}, reflecting the project's vulnerability due to its heavy reliance on a few key individuals. This phenomenon, while common across open-source projects and often humorously depicted in popular culture \parencite{munroeDependency2020}, poses a significant challenge to the long-term health of Processing.
 
+\input{foldouts/frequency-of-releases.tex}
+
 Transitioning from the observed discrepancy between the comprehensive forum engagement and the limited core code contributors, it is pivotal to contextualize the commitment of these few key individuals within a structured framework. The taxonomy by Bonaccorsi et al.~\cite{bonaccorsiComparingMotivationsIndividual2006} provides a valuable lens through which to examine their motivations. This taxonomy categorizes the motivations into Economic, Social, and Technological factors, each offering a distinct perspective on the individual's involvement.
 
 Ben Fry's technological motivation for developing Processing is deeply rooted in his personal experience with the cumbersome nature of existing tools for computational design. He aimed to create a platform that could sidestep these complexities, thus "scratching his own itch" and aid in teaching: "As researchers, all those extra steps just got in the way: we already knew how to do those things, and it just made the process tedious. So with Processing, we wanted to get closer to just having things show up and work." 
@@ -120,7 +121,7 @@ In sum, the core contributors to Processing, who already possess strong technica
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\textwidth]{images/community-survey.png}
-	\caption{Processing 2016 community survey result \parencite{processingfoundation2016CommunitySurvey2016}}
+	\caption[Processing 2016 community survey]{Processing 2016 community survey result \parencite{processingfoundation2016CommunitySurvey2016}}
 	\label{fig:community_survey}
 \end{figure}
 
@@ -138,7 +139,7 @@ While the modularity and individual contributions in this process resemble the G
 % Data analysis
 Utilizing publicly available data from the Processing website archive, active libraries' release history was successfully reconstructed between October 2011 and June 2014. This period reflects active development and frequent releases across multiple library categories, as Figure~\ref*{figure:libraries} illustrates. As a result of the absence of earlier data, it led to a somewhat arbitrary choice of interview subjects from this period. Consequently, the insights obtained may not fully represent the experiences within the Processing community at its beginning. Despite these limitations, the interviews provided valuable qualitative insights into the motivations and contributions of library developers. 
 
-\todo[inline]{Include graphic of specific libraries}
+\input{foldouts/libraries.tex}
 
 When analyzing interviews guided by Bonaccorsi et al.'s taxonomy, it becomes clear that technological innovation and community engagement were the primary driving forces behind the contributors. For instance, Karsten Schmidt's experiences reflect a strong technological motivation. He aimed to push the limits of computational design's expressive potential and, as a result, was compelled to create tools such as toxiclibs. This library aligned more closely with his vision than other frameworks, such as Flash or Director, which constrained creative expression within predefined roles and stage-based metaphors like directors, actors, and scripts. He said, "I really wanted something new, the way I can be more expressive with the actual computational side, the algorithm side."
 
@@ -155,4 +156,3 @@ Schmidt also mentions that "open source was essentially amateur culture... there
 The interplay between these motivations underscores the complexity of open-source software development. The contributors are often initially attracted by the technological challenges. As they immerse themselves in the work, the community aspect becomes more significant, providing a supportive network for sharing and growth. This dynamic is particularly relevant when the necessary tools and infrastructure have not yet been built out at the beginning of a project.
 
 
-\input{foldouts/libraries.tex}
